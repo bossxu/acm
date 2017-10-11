@@ -26,7 +26,7 @@ struct Edge
   int next,to,w;
 }edge[2*maxn];
 int tot,head[maxn];
-int num[maxn],dp[maxn];
+int dp[maxn];
 // num 子树结点数
 // dp  走完子树所要花费的路程
 void add(int u, int v,int w)
@@ -36,50 +36,45 @@ void add(int u, int v,int w)
   edge[tot].next = head[u];
   head[u] = tot++;
 }
-bool vis[maxn];
 int n;
 int mmin;
 int nnum;
 int ans[maxn];
-void dfs_1(int u, int v)
+void dfs_1(int u, int fa)
 {
-  vis[u] = 1;
-  num[u] = 1;
   dp[u] = 0;
   for(int i = head[u];i!=-1;i = edge[i].next)
   {
     int v = edge[i].to;
     int w = edge[i].w;
-    if(!vis[v])
+    if(v!=fa)
     {
      dfs_1(v,u);
-     num[u]+=num[v];
      dp[u]+=dp[v]+w;
     }
   }
-  printf("num[u]==%d  dp[u]==%d\n",num[u],dp[u]);
 }
-void dfs_2(int u,int v)
+void dfs_2(int u,int fa)
 {
-  vis[u]=1;
   for(int i = head[u];i!=-1;i = edge[i].next)
   {
     int v = edge[i].to;
-    if(vis[v])
+    int w = edge[i].w;
+    if(v == fa)
     continue;
-    dp[v] += n-num[v]-(dp[u]-dp[v]);
-    printf("U==%d  V==%d  dp[u]==%d\n",u,v,dp[u]);
-    if(dp[v]<mmin)
-    {
-      ans[0] = u;
-      nnum=1;
-      mmin = dp[v];
-    }
-    else if(dp[v]==mmin)
-    {
-      ans[nnum++]=v;
-    }
+    if(w == 1) dp[v] = dp[u]-dp[v]- 1+dp[v];
+    else  dp[v] = dp[u]+1;
     dfs_2(v,u);
+  }
+  if(dp[u]<mmin)
+  {
+    ans[0] = u;
+    nnum=1;
+    mmin = dp[u];
+  }
+  else if(dp[u]==mmin)
+  {
+    ans[nnum++]=u;
   }
 }
 inline int read()// 可能这就是开挂吧
@@ -90,11 +85,12 @@ inline int read()// 可能这就是开挂吧
 }
 int main()
 {
-    freopen("in.txt","r",stdin);
-    freopen("out.txt","w",stdout);
+    //freopen("in.txt","r",stdin);
+    //freopen("out.txt","w",stdout);
   while(cin>>n)
   {
     clr(head,-1);
+    tot = 1;
     for(int i = 1; i<n ;i++)
     {
       int a,b;
@@ -102,16 +98,14 @@ int main()
       add(a,b,0);
       add(b,a,1);
     }
-    tot = 1;
-    clr(vis,0);
     dfs_1(1,-1);
     mmin = INF;
-    clr(vis,0);
     dfs_2(1,-1);
+    sort(ans,ans+nnum);
     cout<<mmin<<endl;
     for(int i = 0;i<nnum-1;i++)
-    printf("%d ",dp[ans[i]]);
-    cout<<dp[ans[nnum-1]]<<endl;
+    printf("%d ",ans[i]);
+    cout<<ans[nnum-1]<<endl;
   }
 
   return 0;

@@ -20,22 +20,12 @@ typedef long long ll;
 #define clr(a,x) memset(a,x,sizeof(a))
 #define cle(a,n) for(int i=1;i<=n;i++) a.clear();
 const double eps = 1e-6;
-int map[20][20];
-int dp[1<<16];
 int main()
 {
-  freopen("in.txt","r",stdin);
-  freopen("out.txt","w",stdout);
-  int t,co = 0;
-  cin>>t;
-  while(t--)
-  {
-    int n;
-    cin>>n;
-    for(int i = 0;i<n;i++)
-     for(int j = 0;j<n;j++)
-      cin>>map[i][j];
-    
-  }
+  //freopen("in.txt","r",stdin);
+  //freopen("out.txt","w",stdout);
+    int a = 51&6;
+   cout<<a<<endl;
+   getchar();
   return 0;
 }

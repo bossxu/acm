@@ -18,10 +18,11 @@ typedef long long ll;
 #define INF 0x3f3f3f3f
 #define mod 1e9+7
 #define clr(a,x) memset(a,x,sizeof(a))
+//很神奇的是只要一个符合的答案就行
 int main()
 {
-    freopen("in.txt","r",stdin);
-    freopen("out.txt","w",stdout);
+    //freopen("in.txt","r",stdin);
+    //freopen("out.txt","w",stdout);
     int w;
     int n;
     int v[22];
@@ -53,10 +54,16 @@ int main()
         w--;
       }
       int k = dp[w];
+      int c[20];
+      int l=0;
       while(head[k]!=0)
       {
-        printf("%d ",head[k]);
+        c[l++]=head[k];
         k-=head[k];
+      }
+      for(int i=l-1;i>=0;i--)
+      {
+        printf("%d ",c[i]);
       }
       cout<<"sum:"<<dp[w]<<endl;
     }

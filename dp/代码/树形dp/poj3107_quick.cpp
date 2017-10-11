@@ -19,6 +19,7 @@ typedef long long ll;
 #define mod 1e9+7
 #define clr(a,x) memset(a,x,sizeof(a))
 #define cle(a,n) for(int i=1;i<=n;i++) a.clear();
+const double eps = 1e-6;
 const int maxn = 50005;
 int head[maxn],tot;
 int vis[maxn];

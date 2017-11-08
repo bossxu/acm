@@ -23,6 +23,7 @@ const int mod = 1e9+7 ;
 const double eps = 1e-6;
 int a[1005][1005];
 int n,k;
+// 找寻环节 ,
 bool check(int x)
 {
   int flag = 1;
@@ -34,8 +35,8 @@ bool check(int x)
 }
 int main()
 {
-  freopen("in.txt","r",stdin);
-  freopen("out.txt","w",stdout);
+  //freopen("in.txt","r",stdin);
+  //freopen("out.txt","w",stdout);
 
    while(cin>>n>>k)
    {

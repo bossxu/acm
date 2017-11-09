@@ -30,6 +30,10 @@ int vis[10005];
 int m[10005];
 int t[10005];
 int tot,minn;
+//这题的问题在于给的数不是连续的数
+//所以不能和以前的一样直接进行对应
+//这里的复杂度有n*n
+//如果离散化一下,估计要好一点
 void dfs(int x)
 {
   for(int i = 1;i<=n;i++)
@@ -45,8 +49,8 @@ void dfs(int x)
 }
 int main()
 {
-  freopen("in.txt","r",stdin);
-  freopen("out.txt","w",stdout);
+  //freopen("in.txt","r",stdin);
+  //freopen("out.txt","w",stdout);
   while(cin>>n)
   {
     clr(vis,0);
@@ -71,7 +75,7 @@ int main()
    }
   for(int i =0;i<tot;i++)
   {
-    sum += min(shu[i].val*(shu[i].num-2),minn*(shu[i].num+1)+shu[i].val);
+    sum += min(shu[i].val*(shu[i].num-2),minn*(shu[i].num+1)+shu[i].val);// 个人认为这个是点睛之笔
   }
   cout<<sum<<endl;
 

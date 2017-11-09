@@ -38,9 +38,10 @@ void init()
   {
     for(int j = 2;j<=i;j++)
     {
-      for(int k = 1;k<i && i-k>=j-1;k++)
+      for(int k = 1;k<i;k++)
       {
-        dp[i][j] = max(dp[i-k][j-1]*k/gcd(dp[i-k][j-1],k),dp[i][j]);
+        if(k>=j-1)
+        dp[i][j] = max(dp[k][j-1]*(i-k)/gcd(dp[k][j-1],i-k),dp[i][j]);
       }
     }
   }

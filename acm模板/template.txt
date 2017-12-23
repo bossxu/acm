@@ -2,5 +2,7 @@ latex常用语法
 \usepackage{CJKutf8}
 
 \begin{CJK}{UTF8}{gkai}
-这是一个楷体中文测试，处理简体字。
+
 \end{CJK}
+
+\newpage 换页

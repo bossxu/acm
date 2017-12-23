@@ -1,8 +1,27 @@
 \documentclass[a4paper,11pt]{article}
 \usepackage{listings}
 \usepackage{CJKutf8}
+\usepackage{minted}
+\usepackage{xcolor}      %代码着色宏包
+\usepackage{CJK}         %显示中文宏包
+\lstset{
+    basicstyle=\tt,
+    %行号
+    numbers=left,
+    rulesepcolor=\color{red!20!green!20!blue!20},
+    escapeinside=``,
+    xleftmargin=2em,xrightmargin=0em, aboveskip=1em,
+    %背景框
+    framexleftmargin=2mm,
+    frame=shadowbox,
+    %样式
+    keywordstyle=\color{blue}\bfseries,
+    identifierstyle=\bf,
+    numberstyle=\color[RGB]{0,192,192},
+    commentstyle=\it\color[RGB]{96,96,96},
+    stringstyle=\rmfamily\slshape\color[RGB]{128,0,0},
+    }
 % define the title
-\usepackage{listings}
 \author{langman}
 \title{ACM-template}
 
@@ -31,7 +50,8 @@
   #define INF 0x3f3f3f3f
   const int mod = 1e9+7 ;
   #define clr(a,x) memset(a,x,sizeof(a))
-  #define cle(a,n) for(int i=1;i<=n;i++) a.clear();
+  #define cle(a,n) for(int i=1;i<=n;i++)
+  a.clear();
   const double eps = 1e-6;
   int main()
   {
@@ -58,22 +78,22 @@ int LIS (Cmp cmp)(nlogn)
     m = 0;
     for (int i=0;i<n;i++)
     {
-        int pos = lower_bound(end, end+m, a[i], cmp)-end;
-        end[pos] = a[i], m += pos==m;
+      int pos=lower_bound(end,end+m,a[i],cmp)-end;
+      end[pos]=a[i],m+=pos==m;
     }
     return m;
 }
-    cout << LIS(less<int>()) << endl;         //struct up
-    cout << LIS(less_equal<int>()) << endl;   // up
-    cout << LIS(greater<int>()) << endl;      //struct dpwn
-    cout << LIS(greater_equal<int>()) << endl;//down
+    cout << LIS(less<int>()) << endl;
+    cout << LIS(less_equal<int>()) << endl;
+    cout << LIS(greater<int>()) << endl;
+    cout << LIS(greater_equal<int>()) << endl;
 \end{lstlisting}
 \subsection{dp in bag}
 \begin{CJK}{UTF8}{gkai}
 背包的题目,是比较基础的dp类型的题\\
 01和完全背包相对来说比较简单,n方 的复杂度\\
 部分背包的话相对来说,因该是把部分背包换成01背包,降低复杂度\\
-\\
+\\\\
 他的状态点在于
 当背包容量为x时，他的最佳状态
 然后找出容量是x的时候能从
@@ -82,7 +102,7 @@ int LIS (Cmp cmp)(nlogn)
 1：背包的构造\\
 2：背包状态转移方程的寻找\\
 3：方向是从前到后，还是从后到前\\
-4：dp维数的确定\\
+4：dp维数的确定\\\\\\\\
 \end{CJK}
 
 \begin{lstlisting}[language = C]
@@ -105,9 +125,9 @@ for(int i = 0;i<num;i++)
     dp[j] = max(dp[j],dp[j-money[i]]+value[i]);
   }
 }
-
-
 \end{lstlisting}
+\subsection{dp in tree}
+
 
 
 

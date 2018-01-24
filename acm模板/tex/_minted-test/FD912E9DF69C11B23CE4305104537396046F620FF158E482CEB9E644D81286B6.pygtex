@@ -1,0 +1,55 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{// Bellman Ford 存在最短路 这个比较难看感觉}
+\PYG{c+c1}{//这个可以有负权}
+\PYG{c+c1}{//但是  spfa 是在bellmen Ford 的基础上的加强}
+\PYG{c+c1}{//这里用的是用前向星的方法去建图}
+\PYG{c+c1}{//这里不用判重边的还是很舒服}
+\PYG{k+kt}{int} \PYG{n}{N}\PYG{p}{,}\PYG{n}{M}\PYG{p}{;}
+\PYG{k+kt}{int} \PYG{n}{cnt}\PYG{p}{;}
+\PYG{k}{struct} \PYG{n}{edge}\PYG{p}{\PYGZob{}}
+\PYG{k+kt}{int} \PYG{n}{to}\PYG{p}{,}\PYG{n}{Next}\PYG{p}{,}\PYG{n}{w}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}\PYG{n}{E}\PYG{p}{[}\PYG{n}{maxn}\PYG{p}{];}
+\PYG{k+kt}{int} \PYG{n}{pre}\PYG{p}{[}\PYG{n}{maxn}\PYG{p}{],}\PYG{n}{dp}\PYG{p}{[}\PYG{n}{maxn}\PYG{p}{];}\PYG{c+c1}{//pre 路径结点 dp 最短路}
+\PYG{k+kt}{bool} \PYG{n}{vis}\PYG{p}{[}\PYG{n}{maxn}\PYG{p}{];}
+\PYG{k+kt}{int} \PYG{n}{in}\PYG{p}{[}\PYG{n}{maxn}\PYG{p}{];}\PYG{c+c1}{//这个的作用在于处理进去过多少次 就能看出是不是存在负环}
+\PYG{k+kt}{void} \PYG{n+nf}{addedge}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{x}\PYG{p}{,}\PYG{k+kt}{int} \PYG{n}{y}\PYG{p}{,}\PYG{k+kt}{int} \PYG{n}{z}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+\PYG{n}{E}\PYG{p}{[}\PYG{o}{++}\PYG{n}{cnt}\PYG{p}{]} \PYG{p}{.}\PYG{n}{to} \PYG{o}{=} \PYG{n}{y}\PYG{p}{;}
+\PYG{n}{E}\PYG{p}{[}\PYG{n}{cnt}\PYG{p}{].}\PYG{n}{Next} \PYG{o}{=} \PYG{n}{pre}\PYG{p}{[}\PYG{n}{x}\PYG{p}{];}
+\PYG{n}{E}\PYG{p}{[}\PYG{n}{cnt}\PYG{p}{].}\PYG{n}{w} \PYG{o}{=} \PYG{n}{z}\PYG{p}{;}
+\PYG{n}{pre}\PYG{p}{[}\PYG{n}{x}\PYG{p}{]} \PYG{o}{=} \PYG{n}{cnt}\PYG{p}{;}
+\PYG{k}{return}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{bool} \PYG{n+nf}{spfa}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{s}\PYG{p}{)}\PYG{c+c1}{//这个算法还能判断是否存在负环}
+\PYG{p}{\PYGZob{}}
+\PYG{k+kt}{int} \PYG{n}{i}\PYG{p}{,}\PYG{n}{t}\PYG{p}{,}\PYG{n}{temp}\PYG{p}{;}
+\PYG{n}{queue}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}}\PYG{n}{Q}\PYG{p}{;}
+\PYG{n}{clr}\PYG{p}{(}\PYG{n}{vis}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{);}
+\PYG{n}{clr}\PYG{p}{(}\PYG{n}{dp}\PYG{p}{,}\PYG{n}{INF}\PYG{p}{);}
+\PYG{n}{clr}\PYG{p}{(}\PYG{n}{in}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{);}
+
+\PYG{n}{Q}\PYG{p}{.}\PYG{n}{push}\PYG{p}{(}\PYG{n}{s}\PYG{p}{);}
+\PYG{n}{vis}\PYG{p}{[}\PYG{n}{s}\PYG{p}{]} \PYG{o}{=} \PYG{n+nb}{true}\PYG{p}{;}
+\PYG{n}{dp}\PYG{p}{[}\PYG{n}{s}\PYG{p}{]} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+
+\PYG{k}{while}\PYG{p}{(}\PYG{o}{!}\PYG{n}{Q}\PYG{p}{.}\PYG{n}{empty}\PYG{p}{())}
+\PYG{p}{\PYGZob{}}
+  \PYG{n}{t} \PYG{o}{=} \PYG{n}{Q}\PYG{p}{.}\PYG{n}{front}\PYG{p}{();}\PYG{n}{Q}\PYG{p}{.}\PYG{n}{pop}\PYG{p}{();}\PYG{n}{vis}\PYG{p}{[}\PYG{n}{t}\PYG{p}{]} \PYG{o}{=} \PYG{n+nb}{false}\PYG{p}{;}
+  \PYG{k}{for}\PYG{p}{(}\PYG{n}{i} \PYG{o}{=} \PYG{n}{pre}\PYG{p}{[}\PYG{n}{t}\PYG{p}{];}\PYG{n}{i}\PYG{p}{;}\PYG{n}{i}\PYG{o}{=}\PYG{n}{E}\PYG{p}{[}\PYG{n}{i}\PYG{p}{].}\PYG{n}{Next}\PYG{p}{)}
+  \PYG{p}{\PYGZob{}}
+    \PYG{n}{temp} \PYG{o}{=} \PYG{n}{E}\PYG{p}{[}\PYG{n}{i}\PYG{p}{].}\PYG{n}{to}\PYG{p}{;}
+    \PYG{k}{if}\PYG{p}{(}\PYG{n}{dp}\PYG{p}{[}\PYG{n}{temp}\PYG{p}{]} \PYG{o}{\PYGZgt{}} \PYG{n}{dp}\PYG{p}{[}\PYG{n}{t}\PYG{p}{]}\PYG{o}{+}\PYG{n}{E}\PYG{p}{[}\PYG{n}{i}\PYG{p}{].}\PYG{n}{w}\PYG{p}{)}
+    \PYG{p}{\PYGZob{}}
+      \PYG{n}{dp}\PYG{p}{[}\PYG{n}{temp}\PYG{p}{]} \PYG{o}{=} \PYG{n}{dp}\PYG{p}{[}\PYG{n}{t}\PYG{p}{]}\PYG{o}{+}\PYG{n}{E}\PYG{p}{[}\PYG{n}{i}\PYG{p}{].}\PYG{n}{w}\PYG{p}{;}
+      \PYG{k}{if}\PYG{p}{(}\PYG{o}{!}\PYG{n}{vis}\PYG{p}{[}\PYG{n}{temp}\PYG{p}{])}
+      \PYG{p}{\PYGZob{}}
+        \PYG{n}{Q}\PYG{p}{.}\PYG{n}{push}\PYG{p}{(}\PYG{n}{temp}\PYG{p}{);}
+        \PYG{n}{vis}\PYG{p}{[}\PYG{n}{temp}\PYG{p}{]} \PYG{o}{=} \PYG{n+nb}{true}\PYG{p}{;}
+        \PYG{k}{if}\PYG{p}{(}\PYG{o}{++}\PYG{n}{in}\PYG{p}{[}\PYG{n}{temp}\PYG{p}{]}\PYG{o}{\PYGZgt{}}\PYG{n}{N}\PYG{p}{)} \PYG{k}{return} \PYG{n+nb}{false}\PYG{p}{;} \PYG{c+c1}{//负环判定关键}
+      \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+  \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\PYG{k}{return} \PYG{n+nb}{true}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

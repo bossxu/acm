@@ -1,0 +1,34 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{//prime 算法}
+\PYG{c+c1}{//还有一个不想去写了 没有这个必要}
+\PYG{c+c1}{//注意重边}
+\PYG{c+c1}{// 还有这个算法 在树生成不起来的情况下 需要特判一下}
+\PYG{c+c1}{// dfs一遍就行 看是否全联通}
+\PYG{k+kt}{int} \PYG{n}{map}\PYG{p}{[}\PYG{n}{maxn}\PYG{p}{][}\PYG{n}{maxn}\PYG{p}{];}
+\PYG{k+kt}{int} \PYG{n}{dp}\PYG{p}{[}\PYG{n}{maxn}\PYG{p}{];}
+\PYG{k+kt}{int} \PYG{n}{vis}\PYG{p}{[}\PYG{n}{maxn}\PYG{p}{];}
+\PYG{k+kt}{int} \PYG{n}{N}\PYG{p}{;}
+\PYG{k+kt}{int} \PYG{n+nf}{prime}\PYG{p}{()}
+\PYG{p}{\PYGZob{}}
+  \PYG{n}{clr}\PYG{p}{(}\PYG{n}{dp}\PYG{p}{,}\PYG{n}{INF}\PYG{p}{);}
+  \PYG{n}{clr}\PYG{p}{(}\PYG{n}{vis}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{);}
+  \PYG{n}{dp}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+  \PYG{k+kt}{int} \PYG{n}{res} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+  \PYG{k}{while}\PYG{p}{(}\PYG{n+nb}{true}\PYG{p}{)}
+  \PYG{p}{\PYGZob{}}
+    \PYG{k+kt}{int} \PYG{n}{v} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{;}
+    \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{u} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;}\PYG{n}{u}\PYG{o}{\PYGZlt{}=}\PYG{n}{N}\PYG{p}{;}\PYG{n}{u}\PYG{o}{++}\PYG{p}{)}
+    \PYG{p}{\PYGZob{}}
+      \PYG{k}{if}\PYG{p}{(}\PYG{o}{!}\PYG{n}{vis}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{p}{(}\PYG{n}{v}\PYG{o}{==\PYGZhy{}}\PYG{l+m+mi}{1} \PYG{o}{||} \PYG{n}{dp}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]}\PYG{o}{\PYGZlt{}}\PYG{n}{dp}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]))} \PYG{n}{v} \PYG{o}{=} \PYG{n}{u}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{if}\PYG{p}{(}\PYG{n}{v} \PYG{o}{==} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{)} \PYG{k}{break}\PYG{p}{;}
+    \PYG{n}{vis}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;}
+    \PYG{n}{res} \PYG{o}{+=} \PYG{n}{dp}\PYG{p}{[}\PYG{n}{v}\PYG{p}{];}
+    \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{u} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;}\PYG{n}{u}\PYG{o}{\PYGZlt{}=}\PYG{n}{N}\PYG{p}{;}\PYG{n}{u}\PYG{o}{++}\PYG{p}{)}
+    \PYG{p}{\PYGZob{}}
+      \PYG{n}{dp}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{=} \PYG{n}{min}\PYG{p}{(}\PYG{n}{dp}\PYG{p}{[}\PYG{n}{u}\PYG{p}{],}\PYG{n}{map}\PYG{p}{[}\PYG{n}{v}\PYG{p}{][}\PYG{n}{u}\PYG{p}{]);}
+    \PYG{p}{\PYGZcb{}}
+  \PYG{p}{\PYGZcb{}}
+  \PYG{k}{return} \PYG{n}{res}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

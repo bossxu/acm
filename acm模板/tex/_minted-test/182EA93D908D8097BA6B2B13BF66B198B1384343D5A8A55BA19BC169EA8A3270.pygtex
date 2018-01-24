@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+ \PYG{k+kt}{int} \PYG{n}{par}\PYG{p}{[}\PYG{n}{maxn}\PYG{p}{];}
+ \PYG{k+kt}{int} \PYG{n}{rank}\PYG{p}{[}\PYG{n}{maxn}\PYG{p}{];}
+
+ \PYG{k+kt}{void} \PYG{n+nf}{init}\PYG{p}{()}
+ \PYG{p}{\PYGZob{}}
+   \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZlt{}=}\PYG{n}{n}\PYG{p}{;}\PYG{n}{i}\PYG{o}{++}\PYG{p}{)}
+   \PYG{p}{\PYGZob{}}
+     \PYG{n}{par}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{=} \PYG{n}{i}\PYG{p}{;}
+     \PYG{n}{rank}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+   \PYG{p}{\PYGZcb{}}
+ \PYG{p}{\PYGZcb{}}
+
+ \PYG{k+kt}{int} \PYG{n+nf}{find}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{x}\PYG{p}{)}
+ \PYG{p}{\PYGZob{}}
+   \PYG{k}{return} \PYG{n}{x}\PYG{o}{==}\PYG{n}{par}\PYG{p}{[}\PYG{n}{x}\PYG{p}{]}\PYG{o}{?}\PYG{n+nl}{x}\PYG{p}{:}\PYG{n}{find}\PYG{p}{(}\PYG{n}{par}\PYG{p}{[}\PYG{n}{x}\PYG{p}{]);}
+ \PYG{p}{\PYGZcb{}}
+\end{Verbatim}

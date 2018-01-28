@@ -1,0 +1,12 @@
+/home/langman/桌面/C与C++/数据结构与算法/栈/循环队列的问题.c: In function ‘Creat’:
+/home/langman/桌面/C与C++/数据结构与算法/栈/循环队列的问题.c:24:5: error: conversion to non-scalar type requested
+     z->base=(Elemtype )malloc(MAXSIZE*sizeof(Elemtype));
+     ^
+/home/langman/桌面/C与C++/数据结构与算法/栈/循环队列的问题.c: In function ‘Insert’:
+/home/langman/桌面/C与C++/数据结构与算法/栈/循环队列的问题.c:31:16: error: expected identifier before ‘(’ token
+     *(z->base->(a+z->rear))=e;
+                ^
+/home/langman/桌面/C与C++/数据结构与算法/栈/循环队列的问题.c: In function ‘Output’:
+/home/langman/桌面/C与C++/数据结构与算法/栈/循环队列的问题.c:38:16: error: expected identifier before ‘(’ token
+     e=z->base->(a+z->rear);
+                ^

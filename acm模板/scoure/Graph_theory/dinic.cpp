@@ -1,27 +1,5 @@
-#include<iostream>
-#include<cstdio>
-#include<cstring>
-#include<string>
-#include<algorithm>
-#include<queue>
-#include<stack>
-#include<vector>
-#include<cmath>
-#include<set>
-#include<cstdlib>
-#include<functional>
-#include<climits>
-#include<cctype>
-#include<iomanip>
-using namespace std;
-typedef long long ll;
-#define INF 0x3f3f3f3f
-const int mod = 1e9+7 ;
-#define clr(a,x) memset(a,x,sizeof(a))
-#define cle(a,n) for(int i=1;i<=n;i++) a.clear();
-const double eps = 1e-6;
 //最大流 dinic算法
-
+//记得有时候要建双向边
 const int MAXN = 1000;
 struct edge{int to,cap,rev;};   //用边来存图
 vector<edge>G[MAXN];            //图的链接表表示
@@ -85,30 +63,4 @@ int max_flow(int s,int t)    //从 s 到 t 的最大流
     while((f = dfs(s,t,INF)) > 0 )
     flow += f;
   }
-}
-
-
-int main()
-{
-  //freopen("in.txt","r",stdin);
-  //freopen("out.txt","w",stdout);
-  int t;
-  //cin>>t;
-  int flag = 0;
-  int n,m;
-  while(cin>>m>>n)
-  {
-    int a,b;
-    ll c;
-    for(int i = 1;i<=n;i++) G[i].clear();
-    for(int i = 1;i<=m;i++)
-    {
-      cin>>a>>b>>c;
-      addedge(a,b,c);
-      addedge(b,a,c);
-    }
-    //printf("Case %d: ",++flag);
-    cout<<max_flow(1,n)<<endl;
-  }
-  return 0;
 }

@@ -1,0 +1,68 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{//最大流 dinic算法}
+
+\PYG{k}{const} \PYG{k+kt}{int} \PYG{n}{MAXN} \PYG{o}{=} \PYG{l+m+mi}{1000}\PYG{p}{;}
+\PYG{k}{struct} \PYG{n}{edge}\PYG{p}{\PYGZob{}}\PYG{k+kt}{int} \PYG{n}{to}\PYG{p}{,}\PYG{n}{cap}\PYG{p}{,}\PYG{n}{rev}\PYG{p}{;\PYGZcb{};}   \PYG{c+c1}{//用边来存图}
+\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{n}{edge}\PYG{o}{\PYGZgt{}}\PYG{n}{G}\PYG{p}{[}\PYG{n}{MAXN}\PYG{p}{];}            \PYG{c+c1}{//图的链接表表示}
+\PYG{k+kt}{int} \PYG{n}{level}\PYG{p}{[}\PYG{n}{MAXN}\PYG{p}{];}                \PYG{c+c1}{//顶点到源点的距离标号}
+\PYG{k+kt}{int} \PYG{n}{iter}\PYG{p}{[}\PYG{n}{MAXN}\PYG{p}{];}                 \PYG{c+c1}{//当前弧在其之前的边已经没有用了}
+
+\PYG{k+kt}{void} \PYG{n+nf}{addedge}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{from}\PYG{p}{,}\PYG{k+kt}{int} \PYG{n}{to}\PYG{p}{,}\PYG{k+kt}{int} \PYG{n}{cap}\PYG{p}{)}    \PYG{c+c1}{//为图加一条从from到to的容量为cap的边}
+\PYG{p}{\PYGZob{}}
+  \PYG{n}{G}\PYG{p}{[}\PYG{n}{from}\PYG{p}{].}\PYG{n}{push\PYGZus{}back}\PYG{p}{((}\PYG{n}{edge}\PYG{p}{)\PYGZob{}}\PYG{n}{to}\PYG{p}{,}\PYG{n}{cap}\PYG{p}{,(}\PYG{k+kt}{int}\PYG{p}{)}\PYG{n}{G}\PYG{p}{[}\PYG{n}{to}\PYG{p}{].}\PYG{n}{size}\PYG{p}{()\PYGZcb{});}
+  \PYG{n}{G}\PYG{p}{[}\PYG{n}{to}\PYG{p}{].}\PYG{n}{push\PYGZus{}back}\PYG{p}{((}\PYG{n}{edge}\PYG{p}{)\PYGZob{}}\PYG{n}{from}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{,(}\PYG{k+kt}{int}\PYG{p}{)}\PYG{n}{G}\PYG{p}{[}\PYG{n}{from}\PYG{p}{].}\PYG{n}{size}\PYG{p}{()}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{\PYGZcb{});}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{void} \PYG{n+nf}{bfs}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{s}\PYG{p}{)}              \PYG{c+c1}{//bfs计算从源点出发的距离标号}
+\PYG{p}{\PYGZob{}}
+  \PYG{n}{clr}\PYG{p}{(}\PYG{n}{level}\PYG{p}{,}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{);}
+  \PYG{n}{queue}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}}\PYG{n}{que}\PYG{p}{;}
+  \PYG{n}{level}\PYG{p}{[}\PYG{n}{s}\PYG{p}{]} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+  \PYG{n}{que}\PYG{p}{.}\PYG{n}{push}\PYG{p}{(}\PYG{n}{s}\PYG{p}{);}
+  \PYG{k}{while}\PYG{p}{(}\PYG{o}{!}\PYG{n}{que}\PYG{p}{.}\PYG{n}{empty}\PYG{p}{())}
+  \PYG{p}{\PYGZob{}}
+    \PYG{k+kt}{int} \PYG{n}{v} \PYG{o}{=} \PYG{n}{que}\PYG{p}{.}\PYG{n}{front}\PYG{p}{();}
+    \PYG{n}{que}\PYG{p}{.}\PYG{n}{pop}\PYG{p}{();}
+    \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZlt{}}\PYG{n}{G}\PYG{p}{[}\PYG{n}{v}\PYG{p}{].}\PYG{n}{size}\PYG{p}{();}\PYG{n}{i}\PYG{o}{++}\PYG{p}{)}
+    \PYG{p}{\PYGZob{}}
+      \PYG{n}{edge} \PYG{o}{\PYGZam{}}\PYG{n}{e} \PYG{o}{=} \PYG{n}{G}\PYG{p}{[}\PYG{n}{v}\PYG{p}{][}\PYG{n}{i}\PYG{p}{];}
+      \PYG{k}{if}\PYG{p}{(}\PYG{n}{e}\PYG{p}{.}\PYG{n}{cap}\PYG{o}{\PYGZgt{}}\PYG{l+m+mi}{0} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{level}\PYG{p}{[}\PYG{n}{e}\PYG{p}{.}\PYG{n}{to}\PYG{p}{]}\PYG{o}{\PYGZlt{}}\PYG{l+m+mi}{0}\PYG{p}{)}
+      \PYG{p}{\PYGZob{}}
+        \PYG{n}{level}\PYG{p}{[}\PYG{n}{e}\PYG{p}{.}\PYG{n}{to}\PYG{p}{]} \PYG{o}{=} \PYG{n}{level}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{;}
+        \PYG{n}{que}\PYG{p}{.}\PYG{n}{push}\PYG{p}{(}\PYG{n}{e}\PYG{p}{.}\PYG{n}{to}\PYG{p}{);}
+      \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+  \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{int} \PYG{n+nf}{dfs}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{v}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{t}\PYG{p}{,}\PYG{k+kt}{int} \PYG{n}{f}\PYG{p}{)}             \PYG{c+c1}{//通过dfs寻找增广路}
+\PYG{p}{\PYGZob{}}
+  \PYG{k}{if}\PYG{p}{(}\PYG{n}{v} \PYG{o}{==} \PYG{n}{t}\PYG{p}{)} \PYG{k}{return} \PYG{n}{f}\PYG{p}{;}
+  \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{n}{iter}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]} \PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZlt{}}\PYG{n}{G}\PYG{p}{[}\PYG{n}{v}\PYG{p}{].}\PYG{n}{size}\PYG{p}{();}\PYG{n}{i}\PYG{o}{++}\PYG{p}{)}
+  \PYG{p}{\PYGZob{}}
+    \PYG{n}{edge} \PYG{o}{\PYGZam{}}\PYG{n}{e} \PYG{o}{=} \PYG{n}{G}\PYG{p}{[}\PYG{n}{v}\PYG{p}{][}\PYG{n}{i}\PYG{p}{];}
+    \PYG{k}{if}\PYG{p}{(}\PYG{n}{e}\PYG{p}{.}\PYG{n}{cap} \PYG{o}{\PYGZgt{}} \PYG{l+m+mi}{0} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{level}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]} \PYG{o}{\PYGZlt{}} \PYG{n}{level}\PYG{p}{[}\PYG{n}{e}\PYG{p}{.}\PYG{n}{to}\PYG{p}{])}
+    \PYG{p}{\PYGZob{}}
+       \PYG{k+kt}{int} \PYG{n}{d} \PYG{o}{=} \PYG{n}{dfs}\PYG{p}{(}\PYG{n}{e}\PYG{p}{.}\PYG{n}{to}\PYG{p}{,}\PYG{n}{t}\PYG{p}{,}\PYG{n}{min}\PYG{p}{(}\PYG{n}{f}\PYG{p}{,}\PYG{n}{e}\PYG{p}{.}\PYG{n}{cap}\PYG{p}{));}
+       \PYG{k}{if}\PYG{p}{(}\PYG{n}{d}\PYG{o}{\PYGZgt{}}\PYG{l+m+mi}{0}\PYG{p}{)}
+       \PYG{p}{\PYGZob{}}
+          \PYG{n}{e}\PYG{p}{.}\PYG{n}{cap} \PYG{o}{\PYGZhy{}=}\PYG{n}{d}\PYG{p}{;}
+          \PYG{n}{G}\PYG{p}{[}\PYG{n}{e}\PYG{p}{.}\PYG{n}{to}\PYG{p}{][}\PYG{n}{e}\PYG{p}{.}\PYG{n}{rev}\PYG{p}{].}\PYG{n}{cap} \PYG{o}{+=} \PYG{n}{d}\PYG{p}{;}
+          \PYG{k}{return} \PYG{n}{d}\PYG{p}{;}
+       \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+  \PYG{p}{\PYGZcb{}}
+  \PYG{k}{return} \PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{int} \PYG{n+nf}{max\PYGZus{}flow}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{s}\PYG{p}{,}\PYG{k+kt}{int} \PYG{n}{t}\PYG{p}{)}    \PYG{c+c1}{//从 s 到 t 的最大流}
+\PYG{p}{\PYGZob{}}
+  \PYG{k+kt}{int} \PYG{n}{flow} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+  \PYG{k}{while}\PYG{p}{(}\PYG{n+nb}{true}\PYG{p}{)}
+  \PYG{p}{\PYGZob{}}
+    \PYG{n}{bfs}\PYG{p}{(}\PYG{n}{s}\PYG{p}{);}
+    \PYG{k}{if}\PYG{p}{(}\PYG{n}{level}\PYG{p}{[}\PYG{n}{t}\PYG{p}{]} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{0} \PYG{p}{)} \PYG{k}{return} \PYG{n}{flow}\PYG{p}{;}
+    \PYG{n}{clr}\PYG{p}{(}\PYG{n}{iter}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{);}
+    \PYG{k+kt}{int} \PYG{n}{f}\PYG{p}{;}
+    \PYG{k}{while}\PYG{p}{((}\PYG{n}{f} \PYG{o}{=} \PYG{n}{dfs}\PYG{p}{(}\PYG{n}{s}\PYG{p}{,}\PYG{n}{t}\PYG{p}{,}\PYG{n}{INF}\PYG{p}{))} \PYG{o}{\PYGZgt{}} \PYG{l+m+mi}{0} \PYG{p}{)}
+    \PYG{n}{flow} \PYG{o}{+=} \PYG{n}{f}\PYG{p}{;}
+  \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

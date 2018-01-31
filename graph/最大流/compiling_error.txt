@@ -1,0 +1,28 @@
+/home/langman/桌面/acm/graph/最大流/flow.cpp: In function ‘int dfs(int, int, int)’:
+/home/langman/桌面/acm/graph/最大流/flow.cpp:63:38: error: no matching function for call to ‘min(int&, ll&)’
+        int d = dfs(e.to,t,min(f,e.cap));
+                                      ^
+In file included from /usr/include/c++/5/bits/char_traits.h:39:0,
+                 from /usr/include/c++/5/ios:40,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from /home/langman/桌面/acm/graph/最大流/flow.cpp:1:
+/usr/include/c++/5/bits/stl_algobase.h:195:5: note: candidate: template<class _Tp> const _Tp& std::min(const _Tp&, const _Tp&)
+     min(const _Tp& __a, const _Tp& __b)
+     ^
+/usr/include/c++/5/bits/stl_algobase.h:195:5: note:   template argument deduction/substitution failed:
+/home/langman/桌面/acm/graph/最大流/flow.cpp:63:38: note:   deduced conflicting types for parameter ‘const _Tp’ (‘int’ and ‘ll {aka long long int}’)
+        int d = dfs(e.to,t,min(f,e.cap));
+                                      ^
+In file included from /usr/include/c++/5/bits/char_traits.h:39:0,
+                 from /usr/include/c++/5/ios:40,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from /home/langman/桌面/acm/graph/最大流/flow.cpp:1:
+/usr/include/c++/5/bits/stl_algobase.h:243:5: note: candidate: template<class _Tp, class _Compare> const _Tp& std::min(const _Tp&, const _Tp&, _Compare)
+     min(const _Tp& __a, const _Tp& __b, _Compare __comp)
+     ^
+/usr/include/c++/5/bits/stl_algobase.h:243:5: note:   template argument deduction/substitution failed:
+/home/langman/桌面/acm/graph/最大流/flow.cpp:63:38: note:   deduced conflicting types for parameter ‘const _Tp’ (‘int’ and ‘ll {aka long long int}’)
+        int d = dfs(e.to,t,min(f,e.cap));
+                                      ^

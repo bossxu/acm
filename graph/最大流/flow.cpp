@@ -22,14 +22,14 @@ const int mod = 1e9+7 ;
 const double eps = 1e-6;
 //最大流 dinic算法
 const int MAXN = 1000;
-struct edge{ll to,cap,rev;};
+struct edge{int to,cap,rev;};
 vector<edge>G[MAXN];
 int level[MAXN];
 int iter[MAXN];
-void addedge(ll from,ll to,ll cap)
+void addedge(int from,int to,int cap)
 {
-  G[from].push_back((edge){to,cap,(ll)G[to].size()});
-  G[to].push_back((edge){from,0,(ll)G[from].size()-1});
+  G[from].push_back((edge){to,cap,(int)G[to].size()});
+  G[to].push_back((edge){from,0,(int)G[from].size()-1});
 }
 void bfs(int s)
 {
@@ -89,12 +89,12 @@ int main()
   //freopen("in.txt","r",stdin);
   //freopen("out.txt","w",stdout);
   int t;
-  cin>>t;
+  //cin>>t;
   int flag = 0;
   int n,m;
   while(cin>>m>>n)
   {
-    ll a,b;
+    int a,b;
     ll c;
     for(int i = 1;i<=n;i++) G[i].clear();
     for(int i = 1;i<=m;i++)

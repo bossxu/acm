@@ -1,0 +1,28 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{//欧拉函数 求的是 1 \PYGZhy{}\PYGZgt{} n\PYGZhy{}1 中与n 互质的数的个数}
+\PYG{n}{ll} \PYG{n+nf}{phi}\PYG{p}{(}\PYG{n}{ll} \PYG{n}{n}\PYG{p}{)} \PYG{c+c1}{//直接实现}
+\PYG{p}{\PYGZob{}}
+  \PYG{n}{ll} \PYG{n}{rea} \PYG{o}{=} \PYG{n}{n}\PYG{p}{;}
+  \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{2}\PYG{p}{;}\PYG{n}{i}\PYG{o}{*}\PYG{n}{i}\PYG{o}{\PYGZlt{}=}\PYG{n}{n}\PYG{p}{;}\PYG{n}{i}\PYG{o}{++}\PYG{p}{)}
+  \PYG{p}{\PYGZob{}}
+    \PYG{k}{if}\PYG{p}{(}\PYG{n}{n}\PYG{o}{\PYGZpc{}}\PYG{n}{i} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{p}{)}
+    \PYG{p}{\PYGZob{}}
+      \PYG{n}{rea} \PYG{o}{=} \PYG{n}{rea} \PYG{o}{\PYGZhy{}} \PYG{n}{rea}\PYG{o}{/}\PYG{n}{i}\PYG{p}{;}
+      \PYG{k}{do} \PYG{n}{n}\PYG{o}{/=}\PYG{n}{i}\PYG{p}{;}
+      \PYG{k}{while}\PYG{p}{(}\PYG{n}{n}\PYG{o}{\PYGZpc{}}\PYG{n}{i} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{p}{);}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{if}\PYG{p}{(}\PYG{n}{n}\PYG{o}{\PYGZgt{}}\PYG{l+m+mi}{1}\PYG{p}{)}
+    \PYG{n}{rea} \PYG{o}{=} \PYG{n}{rea} \PYG{o}{\PYGZhy{}} \PYG{n}{rea}\PYG{o}{/}\PYG{n}{n}\PYG{p}{;}
+    \PYG{k}{return} \PYG{n}{rea}\PYG{p}{;}
+  \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\PYG{c+c1}{//素数表}
+\PYG{k+kt}{bool} \PYG{n}{check}\PYG{p}{[}\PYG{l+m+mi}{50000}\PYG{p}{];}
+\PYG{k+kt}{int} \PYG{n}{p}\PYG{p}{[}\PYG{l+m+mi}{20000}\PYG{p}{];}
+\PYG{k+kt}{void} \PYG{n+nf}{prim}\PYG{p}{()}\PYG{c+c1}{//线性筛素数}
+\PYG{p}{\PYGZob{}}
+  \PYG{n}{clr}\PYG{p}{(}\PYG{n}{check}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{);}
+
+
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

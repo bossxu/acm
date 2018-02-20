@@ -1,0 +1,24 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{//欧几里得求最大公因数}
+\PYG{k+kt}{int} \PYG{n+nf}{gcd}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{a}\PYG{p}{,}\PYG{k+kt}{int} \PYG{n}{b}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+   \PYG{k}{return} \PYG{n}{b} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{o}{?}\PYG{n+nl}{a}\PYG{p}{:}\PYG{n}{gcd}\PYG{p}{(}\PYG{n}{n}\PYG{p}{,}\PYG{n}{a}\PYG{o}{\PYGZpc{}}\PYG{n}{b}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\PYG{c+c1}{//扩展欧几里得算法}
+\PYG{c+c1}{// a*x + b*y = gcd(a,b) 这个是用于 x 和 y}
+\PYG{c+c1}{// 不能肯定 x，y的正负}
+\PYG{k+kt}{int} \PYG{n+nf}{exgcd}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{a}\PYG{p}{,}\PYG{k+kt}{int} \PYG{n}{b}\PYG{p}{,}\PYG{k+kt}{int} \PYG{o}{\PYGZam{}}\PYG{n}{x}\PYG{p}{,}\PYG{k+kt}{int} \PYG{o}{\PYGZam{}}\PYG{n}{y}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+   \PYG{k}{if}\PYG{p}{(}\PYG{n}{b} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{p}{)}
+   \PYG{p}{\PYGZob{}}
+     \PYG{n}{x} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;}
+     \PYG{n}{y} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+     \PYG{k}{return} \PYG{n}{a}\PYG{p}{;}
+   \PYG{p}{\PYGZcb{}}
+   \PYG{k+kt}{int} \PYG{n}{r} \PYG{o}{=} \PYG{n}{exgcd}\PYG{p}{(}\PYG{n}{b}\PYG{p}{,}\PYG{n}{a}\PYG{o}{\PYGZpc{}}\PYG{n}{b}\PYG{p}{,}\PYG{n}{x}\PYG{p}{,}\PYG{n}{y}\PYG{p}{);}
+   \PYG{k+kt}{int} \PYG{n}{t} \PYG{o}{=} \PYG{n}{y}\PYG{p}{;}
+   \PYG{n}{y} \PYG{o}{=} \PYG{n}{x} \PYG{o}{\PYGZhy{}} \PYG{p}{(}\PYG{n}{a}\PYG{o}{/}\PYG{n}{b}\PYG{p}{)}\PYG{o}{*}\PYG{n}{y}\PYG{p}{;}
+   \PYG{n}{x} \PYG{o}{=} \PYG{n}{t}\PYG{p}{;}
+   \PYG{k}{return} \PYG{n}{r}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

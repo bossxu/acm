@@ -1,6 +1,6 @@
 \begin{Verbatim}[commandchars=\\\{\}]
 \PYG{c+c1}{//最大流 dinic算法}
-
+\PYG{c+c1}{//记得有时候要建双向边}
 \PYG{k}{const} \PYG{k+kt}{int} \PYG{n}{MAXN} \PYG{o}{=} \PYG{l+m+mi}{1000}\PYG{p}{;}
 \PYG{k}{struct} \PYG{n}{edge}\PYG{p}{\PYGZob{}}\PYG{k+kt}{int} \PYG{n}{to}\PYG{p}{,}\PYG{n}{cap}\PYG{p}{,}\PYG{n}{rev}\PYG{p}{;\PYGZcb{};}   \PYG{c+c1}{//用边来存图}
 \PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{n}{edge}\PYG{o}{\PYGZgt{}}\PYG{n}{G}\PYG{p}{[}\PYG{n}{MAXN}\PYG{p}{];}            \PYG{c+c1}{//图的链接表表示}

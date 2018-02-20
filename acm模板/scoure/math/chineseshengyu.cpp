@@ -1,40 +1,41 @@
-// 扩展中国剩余定理
-int k;
-ll chu[maxn],yu[maxn];// 除数 余数
-ll yu1,yu2,chu1,chu2;
-ll item;
-bool flag;
-ll gcd(ll a,ll b)
-{
-  if(!b) return a;
-  else return gcd(b,a%b);
+int n;
+ll a[maxn],m[maxn];//a余数 m除数
+ll gcd(ll a,ll b) {
+    return !b?a:gcd(b,a%b);
 }
-void exgcd(ll a,ll b,ll &x,ll &y)
-{
-  if(!b) x = 1,y = 0;
-  else exgcd(b,a%b,y,x) , y-=a/b*x;
+ll exgcd(ll a,ll b,ll &x,ll &y) {
+    if (!b) {
+        x=1,y=0;
+        return a;
+    }
+    ll d=exgcd(b,a%b,y,x);
+    y-=(a/b)*x;
+    return d;
 }
-ll inv(ll a,ll b)
-{
-  ll x = 0,y =0;
-  exgcd(a,b,x,y);
-  x = (x%b+b)%b;
-  if(!x) x+=b;
-  return x;
+ll inv(ll a,ll m) {
+    ll x,y;
+    ll d=exgcd(a,m,x,y);
+    if (d==-1) return -1;
+    return (x%m+m)%m;
 }
-void slove()
-{
-  for(int i = 2;i<=k;i++)    //k组数
-  {
-    yu1 = yu[i-1],yu2 = yu[i];
-    chu1 = chu[i-1],chu2 = chu[i];
-    item = gcd(chu1,chu2);
-    if((yu1 - yu2)%t!=0) flag = 0,break;
-    chu[i] = chu1*chu2/item;
-    yu[i] = inv(chu1/item,chu2/item) * ((yu2 - yu1)/t)%(chu2/item)*chu1+yu1;
-    yu[i] = (yu[i]%chu[i]+chu[i])%chu[i];
-  }
-  if(!flag) cout<<"-1"<<endl;
-  else
-  cout<<yu[k]<<endl;
+bool merge(ll a1,ll m1,ll a2,ll m2,ll &a3,ll &m3) {
+    ll d=gcd(m1,m2),c=a2-a1;
+    if (c%d) return false;
+    c=(c%m2+m2)%m2,
+    c/=d,m1/=d,m2/=d,
+    c*=inv(m1,m2),
+    c=(c%m2+m2)%m2,
+    c=(c*m1*d)+a1;
+    m3=m1*m2*d;
+    a3=(c%m3+m3)%m3;
+    return true;
+}
+ll crt() {
+    ll a1=a[1],m1=m[1];
+    for (int i=2;i<=n;i++) {
+        ll aa,mm;
+        if (!merge(a1,m1,a[i],m[i],aa,mm)) return -1;
+        a1=aa,m1=mm;
+    }
+    return (a1%m1+m1)%m1;
 }

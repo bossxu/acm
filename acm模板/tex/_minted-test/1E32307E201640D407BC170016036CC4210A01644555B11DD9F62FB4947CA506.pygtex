@@ -1,0 +1,20 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{LIS}\PYG{p}{(}\PYG{n}{LDS}\PYG{p}{)}
+\PYG{k}{template}\PYG{o}{\PYGZlt{}}\PYG{k}{class} \PYG{n+nc}{Cmp}\PYG{o}{\PYGZgt{}}
+\PYG{k+kt}{int} \PYG{n}{LIS} \PYG{p}{(}\PYG{n}{Cmp} \PYG{n}{cmp}\PYG{p}{)(}\PYG{n}{nlogn}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{k}{static} \PYG{k+kt}{int} \PYG{n}{m}\PYG{p}{,} \PYG{n}{end}\PYG{p}{[}\PYG{n}{N}\PYG{p}{];}
+    \PYG{n}{m} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+    \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZlt{}}\PYG{n}{n}\PYG{p}{;}\PYG{n}{i}\PYG{o}{++}\PYG{p}{)}
+    \PYG{p}{\PYGZob{}}
+        \PYG{k+kt}{int} \PYG{n}{pos} \PYG{o}{=} \PYG{n}{lower\PYGZus{}bound}\PYG{p}{(}\PYG{n}{end}\PYG{p}{,} \PYG{n}{end}\PYG{o}{+}\PYG{n}{m}\PYG{p}{,} \PYG{n}{a}\PYG{p}{[}\PYG{n}{i}\PYG{p}{],} \PYG{n}{cmp}\PYG{p}{)}\PYG{o}{\PYGZhy{}}\PYG{n}{end}\PYG{p}{;}
+        \PYG{n}{end}\PYG{p}{[}\PYG{n}{pos}\PYG{p}{]} \PYG{o}{=} \PYG{n}{a}\PYG{p}{[}\PYG{n}{i}\PYG{p}{],} \PYG{n}{m} \PYG{o}{+=} \PYG{n}{pos}\PYG{o}{==}\PYG{n}{m}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{return} \PYG{n}{m}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+    \PYG{n}{cout} \PYG{o}{\PYGZlt{}\PYGZlt{}} \PYG{n}{LIS}\PYG{p}{(}\PYG{n}{less}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}}\PYG{p}{())} \PYG{o}{\PYGZlt{}\PYGZlt{}} \PYG{n}{endl}\PYG{p}{;}         \PYG{c+c1}{//严格上升}
+    \PYG{n}{cout} \PYG{o}{\PYGZlt{}\PYGZlt{}} \PYG{n}{LIS}\PYG{p}{(}\PYG{n}{less\PYGZus{}equal}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}}\PYG{p}{())} \PYG{o}{\PYGZlt{}\PYGZlt{}} \PYG{n}{endl}\PYG{p}{;}   \PYG{c+c1}{//非严格上升}
+    \PYG{n}{cout} \PYG{o}{\PYGZlt{}\PYGZlt{}} \PYG{n}{LIS}\PYG{p}{(}\PYG{n}{greater}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}}\PYG{p}{())} \PYG{o}{\PYGZlt{}\PYGZlt{}} \PYG{n}{endl}\PYG{p}{;}      \PYG{c+c1}{//严格下降}
+    \PYG{n}{cout} \PYG{o}{\PYGZlt{}\PYGZlt{}} \PYG{n}{LIS}\PYG{p}{(}\PYG{n}{greater\PYGZus{}equal}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}}\PYG{p}{())} \PYG{o}{\PYGZlt{}\PYGZlt{}} \PYG{n}{endl}\PYG{p}{;}\PYG{c+c1}{//非严格下降}
+\PYG{err}{```}
+\end{Verbatim}

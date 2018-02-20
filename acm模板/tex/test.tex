@@ -9,8 +9,9 @@
 \begin{document}
 \maketitle
 \begin{CJK}{UTF8}{gbsn}
+\tableofcontents
+\newpage
 \section{头文件}
-
 \inputminted{c++}{../scoure/head.cpp}
 \newpage
 \section{图论}
@@ -34,7 +35,101 @@
 \subsubsection{Dinic}
 板子先存着,坑定用的着
 \inputminted{c++}{../scoure/Graph_theory/dinic.cpp}
+\newpage
+\section{数学方面}
+\subsection{三个特别的数}
+\subsubsection{Fib 数列}
+$$f(x) = f(x-1)+f(x-2)$$
+$$f(0) = 0,f(1) = 1$$
+\subsubsection{卡特兰 数}
+$$\sum_{i=1}^n f_i*f_{n-i}=f_n$$
+$$h(n) = C_{2n}^n - C_{2n-1}^{n}$$
+注意它这个数字来自于什么情况。
+\subsubsection{斯大林公式}
+$$ \sqrt{2*PI*n} * (\frac{n}{e})^n = n!$$
+\subsection{数论}
+第一个自然是最基础的欧几里得算法，欧几里得算法的用处有很多，求最大公倍数，解方程，很多。在后面的过程会把一些常见的板子列出来，一般来说这些板子
+都已经经过验证，但是不好说对吧。简单题我们可以通过
+一些模板直接得出答案，但是怎么说，这些对于难题
+估计只能算工具，重要的是如何转换。
+\subsubsection{欧几里得}
+\inputminted{c++}{../scoure/math/GCD.cpp}
+然后是基于这个定理得出的一个定理，中国剩余定理
+\inputminted{c++}{../scoure/math/chineseshengyu.cpp}
+\subsubsection{乘法逆元}
+思想是通过扩展欧几里得来得出，如果缘分到了，那么
+还能用费马小定理来解
+\inputminted{c++}{../scoure/math/niyuan.cpp}
+\subsubsection{欧拉函数}
+这个东西好呀，他求的是比n小的，并且和n互质的数的个数
+\inputminted{c++}{../scoure/math/oula.cpp}
+更多的来说我觉得这个东西是一个工具，他对解一些题有很重要的作用，起到一个工具的作用
+我目前学的比较浅，对他的优化作用没有很深的了解。
+\subsubsection{莫比乌斯函数}
+$$ F_n = \sum_{i=1}^n f_i $$
+$$ f_i = \sum_{d|n} u(d)*f(\frac{d}{n}) $$
+和欧拉函数一样很重要的一个函数他的定义我就不说了，毕竟我latex学的还不好，公式的
+插入对我来说用处不大。
+\inputminted{c++}{../scoure/math/mobius.cpp}
+\newpage
+\subsection{组合数学}
+\subsubsection{求组合数}
+第一个是求组合数,方法很多不去列举，注意的是一般来说，组合数都是需要去
+模一个数，所以他的分母在计算的时候是需要去求逆元的
+\inputminted{c++}{../scoure/math/zuhe.cpp}
+\subsubsection{lucas定理}
+当组合数的基数过大的时候进行这些操作但是注意，我们的操作也是要求那个模数为素数，且
+模数要小的情况下，素数的情况我们可以用扩展lucas定理来解决。一个工具，一个数论上的分支。
+\inputminted{c++}{../scoure/math/lucas.cpp}
+\subsection{线代}
+\subsubsection{矩阵快速幂}
+这类方法，很多是用在递推关系式的时候，像什么fib数列什么的。
+\inputminted{c++}{../scoure/math/ju_quick.cpp}
+\subsubsection{矩阵方面知识}
+就是用高斯消元法去解决一些问题，像什么秩和方阵的值。
+\subsection{计算几何}
+\subsubsection{几何基本知识}
+\emph{矢量}\\
+矢量的乘积有很多的作用，注意定义。
+适用点在于：1:面积 2：位置\\
+\emph{跨立实验与判断两线段是否相交}\\
+线段$P_1P_2,Q_1Q_2$,相交的条件为\\
+$P_1Q_1$x$P_1P_2$  *  $P_1P_2$x$P_1Q_2>=0$\\
+$Q_1P_1$x$Q_1Q_2$  *  $Q_1Q_2$x$Q_1P_2>=0$\\
+\emph{pick定理}\\
+线段上的是整数点的数的个数 求gcd;\\
+PICK定理 设以整数点为顶点的多边形的面积为S，多边形内部的整数点数为N，多边形边界上的整数点数为L，则 S=L/2 + N-1
+\\
+\subsubsection{判断点是否在多边形中}
 
+
+
+\section{状态转移 dp}
+dp的定义：
+1：记忆化搜索；2：状态转移
+所以我们的解决方案总是跟着这个来走，从定义出发。
+难点集中于两个方面，状态式的确定和状态转移方程的确定
+\subsection{背包}
+背包的问题主要以下几种：
+01背包，部分背包，完全背包;[相对来说比较简单] ，分组背包[个人感觉较难]
+背包难在如何， 确定维数，确定背包的容量是什么以及背包的价值是什么，还有背包的dp关系转移式。
+\subsection{树形dp}
+关键点在于找状态点间的关系，他一般只有三个关系，父亲节点
+，儿子节点，还有兄弟节点，去找他们之间的关系，所以一般是两遍dfs
+找父亲与儿子的关系，找儿子与父亲的关系。
+\subsection{数位dp}
+这个dp的精髓在于记忆化搜索，也就是在最高位不是被限定的情况下进行记录，这样的话省掉很多多余的步骤。
+所有的出发点都处于这个目的。
+\subsection{状压dp}
+这个dp的精髓在于状态转移，不过能压缩的情况也是很限定的。
+像什么每个点的状态在于都是能用两个状态来描述，且这些点不多，但是组合的方式很多。
+一些状压dp经常用的上的公式。
+\inputminted{c++}{../scoure/dp/zhuangtai.cpp}
+\subsection{一些常见的dp}
+\subsubsection{LIS 最长上升子序列}
+\inputminted{c++}{../scoure/dp/longerxuelie.cpp}
+
+\section{The end}
 
 
 \end{CJK}

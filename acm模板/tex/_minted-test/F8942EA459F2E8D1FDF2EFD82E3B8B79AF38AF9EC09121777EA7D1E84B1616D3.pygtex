@@ -1,0 +1,43 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kt}{int} \PYG{n}{n}\PYG{p}{;}
+\PYG{n}{ll} \PYG{n}{a}\PYG{p}{[}\PYG{n}{maxn}\PYG{p}{],}\PYG{n}{m}\PYG{p}{[}\PYG{n}{maxn}\PYG{p}{];}\PYG{c+c1}{//a余数 m除数}
+\PYG{n}{ll} \PYG{n+nf}{gcd}\PYG{p}{(}\PYG{n}{ll} \PYG{n}{a}\PYG{p}{,}\PYG{n}{ll} \PYG{n}{b}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{k}{return} \PYG{o}{!}\PYG{n}{b}\PYG{o}{?}\PYG{n+nl}{a}\PYG{p}{:}\PYG{n}{gcd}\PYG{p}{(}\PYG{n}{b}\PYG{p}{,}\PYG{n}{a}\PYG{o}{\PYGZpc{}}\PYG{n}{b}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\PYG{n}{ll} \PYG{n+nf}{exgcd}\PYG{p}{(}\PYG{n}{ll} \PYG{n}{a}\PYG{p}{,}\PYG{n}{ll} \PYG{n}{b}\PYG{p}{,}\PYG{n}{ll} \PYG{o}{\PYGZam{}}\PYG{n}{x}\PYG{p}{,}\PYG{n}{ll} \PYG{o}{\PYGZam{}}\PYG{n}{y}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{k}{if} \PYG{p}{(}\PYG{o}{!}\PYG{n}{b}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{x}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{n}{y}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;}
+        \PYG{k}{return} \PYG{n}{a}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{n}{ll} \PYG{n}{d}\PYG{o}{=}\PYG{n}{exgcd}\PYG{p}{(}\PYG{n}{b}\PYG{p}{,}\PYG{n}{a}\PYG{o}{\PYGZpc{}}\PYG{n}{b}\PYG{p}{,}\PYG{n}{y}\PYG{p}{,}\PYG{n}{x}\PYG{p}{);}
+    \PYG{n}{y}\PYG{o}{\PYGZhy{}=}\PYG{p}{(}\PYG{n}{a}\PYG{o}{/}\PYG{n}{b}\PYG{p}{)}\PYG{o}{*}\PYG{n}{x}\PYG{p}{;}
+    \PYG{k}{return} \PYG{n}{d}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{n}{ll} \PYG{n+nf}{inv}\PYG{p}{(}\PYG{n}{ll} \PYG{n}{a}\PYG{p}{,}\PYG{n}{ll} \PYG{n}{m}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{n}{ll} \PYG{n}{x}\PYG{p}{,}\PYG{n}{y}\PYG{p}{;}
+    \PYG{n}{ll} \PYG{n}{d}\PYG{o}{=}\PYG{n}{exgcd}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,}\PYG{n}{m}\PYG{p}{,}\PYG{n}{x}\PYG{p}{,}\PYG{n}{y}\PYG{p}{);}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{d}\PYG{o}{==\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{)} \PYG{k}{return} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{;}
+    \PYG{k}{return} \PYG{p}{(}\PYG{n}{x}\PYG{o}{\PYGZpc{}}\PYG{n}{m}\PYG{o}{+}\PYG{n}{m}\PYG{p}{)}\PYG{o}{\PYGZpc{}}\PYG{n}{m}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{bool} \PYG{n+nf}{merge}\PYG{p}{(}\PYG{n}{ll} \PYG{n}{a1}\PYG{p}{,}\PYG{n}{ll} \PYG{n}{m1}\PYG{p}{,}\PYG{n}{ll} \PYG{n}{a2}\PYG{p}{,}\PYG{n}{ll} \PYG{n}{m2}\PYG{p}{,}\PYG{n}{ll} \PYG{o}{\PYGZam{}}\PYG{n}{a3}\PYG{p}{,}\PYG{n}{ll} \PYG{o}{\PYGZam{}}\PYG{n}{m3}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{n}{ll} \PYG{n}{d}\PYG{o}{=}\PYG{n}{gcd}\PYG{p}{(}\PYG{n}{m1}\PYG{p}{,}\PYG{n}{m2}\PYG{p}{),}\PYG{n}{c}\PYG{o}{=}\PYG{n}{a2}\PYG{o}{\PYGZhy{}}\PYG{n}{a1}\PYG{p}{;}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{c}\PYG{o}{\PYGZpc{}}\PYG{n}{d}\PYG{p}{)} \PYG{k}{return} \PYG{n+nb}{false}\PYG{p}{;}
+    \PYG{n}{c}\PYG{o}{=}\PYG{p}{(}\PYG{n}{c}\PYG{o}{\PYGZpc{}}\PYG{n}{m2}\PYG{o}{+}\PYG{n}{m2}\PYG{p}{)}\PYG{o}{\PYGZpc{}}\PYG{n}{m2}\PYG{p}{,}
+    \PYG{n}{c}\PYG{o}{/=}\PYG{n}{d}\PYG{p}{,}\PYG{n}{m1}\PYG{o}{/=}\PYG{n}{d}\PYG{p}{,}\PYG{n}{m2}\PYG{o}{/=}\PYG{n}{d}\PYG{p}{,}
+    \PYG{n}{c}\PYG{o}{*=}\PYG{n}{inv}\PYG{p}{(}\PYG{n}{m1}\PYG{p}{,}\PYG{n}{m2}\PYG{p}{),}
+    \PYG{n}{c}\PYG{o}{=}\PYG{p}{(}\PYG{n}{c}\PYG{o}{\PYGZpc{}}\PYG{n}{m2}\PYG{o}{+}\PYG{n}{m2}\PYG{p}{)}\PYG{o}{\PYGZpc{}}\PYG{n}{m2}\PYG{p}{,}
+    \PYG{n}{c}\PYG{o}{=}\PYG{p}{(}\PYG{n}{c}\PYG{o}{*}\PYG{n}{m1}\PYG{o}{*}\PYG{n}{d}\PYG{p}{)}\PYG{o}{+}\PYG{n}{a1}\PYG{p}{;}
+    \PYG{n}{m3}\PYG{o}{=}\PYG{n}{m1}\PYG{o}{*}\PYG{n}{m2}\PYG{o}{*}\PYG{n}{d}\PYG{p}{;}
+    \PYG{n}{a3}\PYG{o}{=}\PYG{p}{(}\PYG{n}{c}\PYG{o}{\PYGZpc{}}\PYG{n}{m3}\PYG{o}{+}\PYG{n}{m3}\PYG{p}{)}\PYG{o}{\PYGZpc{}}\PYG{n}{m3}\PYG{p}{;}
+    \PYG{k}{return} \PYG{n+nb}{true}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{n}{ll} \PYG{n+nf}{crt}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+    \PYG{n}{ll} \PYG{n}{a1}\PYG{o}{=}\PYG{n}{a}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{],}\PYG{n}{m1}\PYG{o}{=}\PYG{n}{m}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{];}
+    \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZlt{}=}\PYG{n}{n}\PYG{p}{;}\PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{ll} \PYG{n}{aa}\PYG{p}{,}\PYG{n}{mm}\PYG{p}{;}
+        \PYG{k}{if} \PYG{p}{(}\PYG{o}{!}\PYG{n}{merge}\PYG{p}{(}\PYG{n}{a1}\PYG{p}{,}\PYG{n}{m1}\PYG{p}{,}\PYG{n}{a}\PYG{p}{[}\PYG{n}{i}\PYG{p}{],}\PYG{n}{m}\PYG{p}{[}\PYG{n}{i}\PYG{p}{],}\PYG{n}{aa}\PYG{p}{,}\PYG{n}{mm}\PYG{p}{))} \PYG{k}{return} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{;}
+        \PYG{n}{a1}\PYG{o}{=}\PYG{n}{aa}\PYG{p}{,}\PYG{n}{m1}\PYG{o}{=}\PYG{n}{mm}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{return} \PYG{p}{(}\PYG{n}{a1}\PYG{o}{\PYGZpc{}}\PYG{n}{m1}\PYG{o}{+}\PYG{n}{m1}\PYG{p}{)}\PYG{o}{\PYGZpc{}}\PYG{n}{m1}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

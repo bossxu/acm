@@ -2,22 +2,13 @@
 \usepackage{listings}
 \usepackage{CJKutf8}
 \usepackage{minted}
-\usepackage{picinpar,graphicx}
 \usepackage{CJK}
 \author{langman}
-\title{ACM-template}
+\title{acm-template}
 
 \begin{document}
 \maketitle
-\vspace{3cm}
 \begin{CJK}{UTF8}{gbsn}
-    \begin{figure}[!htb]
-      \begin{center}
-        \includegraphics[width=0.80\linewidth]{../scoure/tupian.jpg}
-        \caption{stay hungry stay foolish}
-      \end{center}
-    \end{figure}
-\newpage
 \tableofcontents
 \newpage
 \section{头文件}
@@ -50,20 +41,6 @@
 板子先存着,坑定用的着
 \inputminted{c++}{../scoure/Graph_theory/dinic.cpp}
 \newpage
-\section{常用数据结构}
-\subsection{STL}
-\inputminted{c++}{../scoure/date/duilie.cpp}
-\subsection{树状数组}
-适用于的方面是，单点更新，多次查询。
-\inputminted{c++}{../scoure/date/treevector.cpp}
-\subsection{前缀和}
-适用于多次区间更新，一次查询，代码就不搞上去了。
-\subsection{线段树}
-现在的我对于这方面还不够熟悉，先留个板子
-\inputminted{c++}{../scoure/date/treexian.cpp}
-\subsection{高精度}
-我个人习惯使用Java。
-\inputminted{java}{../scoure/date/bigjing.java}
 \section{数学方面}
 \subsection{三个特别的数}
 \subsubsection{Fib 数列}
@@ -80,9 +57,6 @@ $$ \sqrt{2*PI*n} * (\frac{n}{e})^n = n!$$
 都已经经过验证，但是不好说对吧。简单题我们可以通过
 一些模板直接得出答案，但是怎么说，这些对于难题
 估计只能算工具，重要的是如何转换。
-\subsubsection{素数}
-素数筛法
-\inputminted{c++}{../scoure/math/shai.cpp}
 \subsubsection{欧几里得}
 \inputminted{c++}{../scoure/math/GCD.cpp}
 然后是基于这个定理得出的一个定理，中国剩余定理
@@ -176,9 +150,6 @@ dp的定义：
 背包的问题主要以下几种：
 01背包，部分背包，完全背包;[相对来说比较简单] ，分组背包[个人感觉较难]
 背包难在如何， 确定维数，确定背包的容量是什么以及背包的价值是什么，还有背包的dp关系转移式。
-\subsection{一些常见的dp}
-\subsubsection{LIS 最长上升子序列}
-\inputminted{c++}{../scoure/dp/longerxuelie.cpp}
 \subsection{树形dp}
 关键点在于找状态点间的关系，他一般只有三个关系，父亲节点
 ，儿子节点，还有兄弟节点，去找他们之间的关系，所以一般是两遍dfs
@@ -191,6 +162,15 @@ dp的定义：
 像什么每个点的状态在于都是能用两个状态来描述，且这些点不多，但是组合的方式很多。
 一些状压dp经常用的上的公式。
 \inputminted{c++}{../scoure/dp/zhuangtai.cpp}
-\subsection{the end}
+\subsection{一些常见的dp}
+\subsubsection{LIS 最长上升子序列}
+\inputminted{c++}{../scoure/dp/longerxuelie.cpp}
+
+
+
+
 \end{CJK}
+
+
+
 \end{document}

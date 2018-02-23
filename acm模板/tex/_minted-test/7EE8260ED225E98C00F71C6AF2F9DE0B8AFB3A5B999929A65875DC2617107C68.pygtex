@@ -1,0 +1,36 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZsh{}define N 202}
+\PYG{k+kt}{int} \PYG{n}{useif}\PYG{p}{[}\PYG{n}{N}\PYG{p}{];}   \PYG{c+c1}{//记录y中节点是否使用 0表示没有访问过，1为访问过}
+\PYG{k+kt}{int} \PYG{n}{link}\PYG{p}{[}\PYG{n}{N}\PYG{p}{];}   \PYG{c+c1}{//记录当前与y节点相连的x的节点}
+\PYG{k+kt}{int} \PYG{n}{mat}\PYG{p}{[}\PYG{n}{N}\PYG{p}{][}\PYG{n}{N}\PYG{p}{];} \PYG{c+c1}{//记录连接x和y的边，如果i和j之间有边则为1，否则为0}
+\PYG{k+kt}{int} \PYG{n}{gn}\PYG{p}{,}\PYG{n}{gm}\PYG{p}{;}    \PYG{c+c1}{//二分图中x和y中点的数目}
+\PYG{k+kt}{int} \PYG{n+nf}{can}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{t}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{k+kt}{int} \PYG{n}{i}\PYG{p}{;}
+    \PYG{k}{for}\PYG{p}{(}\PYG{n}{i}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZlt{}=}\PYG{n}{gm}\PYG{p}{;}\PYG{n}{i}\PYG{o}{++}\PYG{p}{)}
+    \PYG{p}{\PYGZob{}}
+       \PYG{k}{if}\PYG{p}{(}\PYG{n}{useif}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{o}{==}\PYG{l+m+mi}{0} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{mat}\PYG{p}{[}\PYG{n}{t}\PYG{p}{][}\PYG{n}{i}\PYG{p}{])}
+       \PYG{p}{\PYGZob{}}
+           \PYG{n}{useif}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{;}
+           \PYG{k}{if}\PYG{p}{(}\PYG{n}{link}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{o}{==\PYGZhy{}}\PYG{l+m+mi}{1} \PYG{o}{||} \PYG{n}{can}\PYG{p}{(}\PYG{n}{link}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]))}
+           \PYG{p}{\PYGZob{}}
+              \PYG{n}{link}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{o}{=}\PYG{n}{t}\PYG{p}{;}
+              \PYG{k}{return} \PYG{l+m+mi}{1}\PYG{p}{;}  
+           \PYG{p}{\PYGZcb{}}
+       \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{return} \PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{int} \PYG{n+nf}{MaxMatch}\PYG{p}{()}
+\PYG{p}{\PYGZob{}}
+    \PYG{k+kt}{int} \PYG{n}{i}\PYG{p}{,}\PYG{n}{num}\PYG{p}{;}
+    \PYG{n}{num}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;}
+    \PYG{n}{memset}\PYG{p}{(}\PYG{n}{link}\PYG{p}{,}\PYG{l+m+mh}{0xff}\PYG{p}{,}\PYG{k}{sizeof}\PYG{p}{(}\PYG{n}{link}\PYG{p}{));}
+    \PYG{k}{for}\PYG{p}{(}\PYG{n}{i}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZlt{}=}\PYG{n}{gn}\PYG{p}{;}\PYG{n}{i}\PYG{o}{++}\PYG{p}{)}
+    \PYG{p}{\PYGZob{}}
+      \PYG{n}{memset}\PYG{p}{(}\PYG{n}{useif}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{k}{sizeof}\PYG{p}{(}\PYG{n}{useif}\PYG{p}{));}
+       \PYG{k}{if}\PYG{p}{(}\PYG{n}{can}\PYG{p}{(}\PYG{n}{i}\PYG{p}{))} \PYG{n}{num}\PYG{o}{++}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{return} \PYG{n}{num}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

@@ -1,0 +1,41 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{struct} \PYG{n}{node}
+\PYG{p}{\PYGZob{}}
+    \PYG{k+kt}{int} \PYG{n}{x}\PYG{p}{,}\PYG{n}{y}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}} \PYG{n}{a}\PYG{p}{[}\PYG{l+m+mi}{105}\PYG{p}{],}\PYG{n}{p}\PYG{p}{[}\PYG{l+m+mi}{105}\PYG{p}{];}
+\PYG{k+kt}{int} \PYG{n}{top}\PYG{p}{,}\PYG{n}{n}\PYG{p}{;}
+\PYG{k+kt}{double} \PYG{n+nf}{cross}\PYG{p}{(}\PYG{n}{node} \PYG{n}{p0}\PYG{p}{,}\PYG{n}{node} \PYG{n}{p1}\PYG{p}{,}\PYG{n}{node} \PYG{n}{p2}\PYG{p}{)}\PYG{c+c1}{//计算叉乘，注意p0,p1,p2的位置，这个决定了方向}
+\PYG{p}{\PYGZob{}}
+    \PYG{k}{return} \PYG{p}{(}\PYG{n}{p1}\PYG{p}{.}\PYG{n}{x}\PYG{o}{\PYGZhy{}}\PYG{n}{p0}\PYG{p}{.}\PYG{n}{x}\PYG{p}{)}\PYG{o}{*}\PYG{p}{(}\PYG{n}{p2}\PYG{p}{.}\PYG{n}{y}\PYG{o}{\PYGZhy{}}\PYG{n}{p0}\PYG{p}{.}\PYG{n}{y}\PYG{p}{)}\PYG{o}{\PYGZhy{}}\PYG{p}{(}\PYG{n}{p1}\PYG{p}{.}\PYG{n}{y}\PYG{o}{\PYGZhy{}}\PYG{n}{p0}\PYG{p}{.}\PYG{n}{y}\PYG{p}{)}\PYG{o}{*}\PYG{p}{(}\PYG{n}{p2}\PYG{p}{.}\PYG{n}{x}\PYG{o}{\PYGZhy{}}\PYG{n}{p0}\PYG{p}{.}\PYG{n}{x}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{double} \PYG{n+nf}{dis}\PYG{p}{(}\PYG{n}{node} \PYG{n}{a}\PYG{p}{,}\PYG{n}{node} \PYG{n}{b}\PYG{p}{)}\PYG{c+c1}{//计算距离，这个用在了当两个点在一条直线上}
+\PYG{p}{\PYGZob{}}
+    \PYG{k}{return} \PYG{n}{sqrt}\PYG{p}{((}\PYG{n}{a}\PYG{p}{.}\PYG{n}{x}\PYG{o}{\PYGZhy{}}\PYG{n}{b}\PYG{p}{.}\PYG{n}{x}\PYG{p}{)}\PYG{o}{*}\PYG{p}{(}\PYG{n}{a}\PYG{p}{.}\PYG{n}{x}\PYG{o}{\PYGZhy{}}\PYG{n}{b}\PYG{p}{.}\PYG{n}{x}\PYG{p}{)}\PYG{o}{+}\PYG{p}{(}\PYG{n}{a}\PYG{p}{.}\PYG{n}{y}\PYG{o}{\PYGZhy{}}\PYG{n}{b}\PYG{p}{.}\PYG{n}{y}\PYG{p}{)}\PYG{o}{*}\PYG{p}{(}\PYG{n}{a}\PYG{p}{.}\PYG{n}{y}\PYG{o}{\PYGZhy{}}\PYG{n}{b}\PYG{p}{.}\PYG{n}{y}\PYG{p}{));}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{bool} \PYG{n+nf}{cmp}\PYG{p}{(}\PYG{n}{node} \PYG{n}{p1}\PYG{p}{,}\PYG{n}{node} \PYG{n}{p2}\PYG{p}{)}\PYG{c+c1}{//极角排序}
+\PYG{p}{\PYGZob{}}
+    \PYG{k+kt}{double} \PYG{n}{z}\PYG{o}{=}\PYG{n}{cross}\PYG{p}{(}\PYG{n}{a}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{],}\PYG{n}{p1}\PYG{p}{,}\PYG{n}{p2}\PYG{p}{);}
+    \PYG{k}{if}\PYG{p}{(}\PYG{n}{z}\PYG{o}{\PYGZgt{}}\PYG{l+m+mi}{0}\PYG{o}{||}\PYG{p}{(}\PYG{n}{z}\PYG{o}{==}\PYG{l+m+mi}{0}\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{n}{dis}\PYG{p}{(}\PYG{n}{a}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{],}\PYG{n}{p1}\PYG{p}{)}\PYG{o}{\PYGZlt{}}\PYG{n}{dis}\PYG{p}{(}\PYG{n}{a}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{],}\PYG{n}{p2}\PYG{p}{)))}
+        \PYG{k}{return} \PYG{l+m+mi}{1}\PYG{p}{;}
+    \PYG{k}{return} \PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{void} \PYG{n+nf}{Graham}\PYG{p}{()}\PYG{c+c1}{//p是凸包的点}
+\PYG{p}{\PYGZob{}}
+    \PYG{k+kt}{int} \PYG{n}{k}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;}
+    \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i}\PYG{o}{\PYGZlt{}}\PYG{n}{n}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)}
+        \PYG{k}{if}\PYG{p}{(}\PYG{n}{a}\PYG{p}{[}\PYG{n}{i}\PYG{p}{].}\PYG{n}{y}\PYG{o}{\PYGZlt{}}\PYG{n}{a}\PYG{p}{[}\PYG{n}{k}\PYG{p}{].}\PYG{n}{y}\PYG{o}{||}\PYG{p}{(}\PYG{n}{a}\PYG{p}{[}\PYG{n}{i}\PYG{p}{].}\PYG{n}{y}\PYG{o}{==}\PYG{n}{a}\PYG{p}{[}\PYG{n}{k}\PYG{p}{].}\PYG{n}{y}\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{n}{a}\PYG{p}{[}\PYG{n}{i}\PYG{p}{].}\PYG{n}{x}\PYG{o}{\PYGZlt{}}\PYG{n}{a}\PYG{p}{[}\PYG{n}{k}\PYG{p}{].}\PYG{n}{x}\PYG{p}{))}
+            \PYG{n}{k}\PYG{o}{=}\PYG{n}{i}\PYG{p}{;}
+        \PYG{n}{swap}\PYG{p}{(}\PYG{n}{a}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{],}\PYG{n}{a}\PYG{p}{[}\PYG{n}{k}\PYG{p}{]);}\PYG{c+c1}{//找p[0]}
+        \PYG{n}{sort}\PYG{p}{(}\PYG{n}{a}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{n}{a}\PYG{o}{+}\PYG{n}{n}\PYG{p}{,}\PYG{n}{cmp}\PYG{p}{);}
+        \PYG{n}{top}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{;}
+        \PYG{n}{p}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{=}\PYG{n}{a}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{];}
+        \PYG{n}{p}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{=}\PYG{n}{a}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{];}
+        \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{;} \PYG{n}{i}\PYG{o}{\PYGZlt{}}\PYG{n}{n}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)}\PYG{c+c1}{//控制进栈出栈}
+        \PYG{p}{\PYGZob{}}
+            \PYG{k}{while}\PYG{p}{(}\PYG{n}{cross}\PYG{p}{(}\PYG{n}{p}\PYG{p}{[}\PYG{n}{top}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{],}\PYG{n}{p}\PYG{p}{[}\PYG{n}{top}\PYG{p}{],}\PYG{n}{a}\PYG{p}{[}\PYG{n}{i}\PYG{p}{])}\PYG{o}{\PYGZlt{}}\PYG{l+m+mi}{0}\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{n}{top}\PYG{p}{)}
+                \PYG{n}{top}\PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{p}{;}
+            \PYG{n}{top}\PYG{o}{++}\PYG{p}{;}
+            \PYG{n}{p}\PYG{p}{[}\PYG{n}{top}\PYG{p}{]}\PYG{o}{=}\PYG{n}{a}\PYG{p}{[}\PYG{n}{i}\PYG{p}{];}
+        \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

@@ -1,8 +1,3 @@
-#include<stdio.h>
-#include<math.h>
-#include<string.h>
-#include<algorithm>
-using namespace std;
 struct node
 {
     int x,y;
@@ -23,7 +18,7 @@ bool cmp(node p1,node p2)//极角排序
         return 1;
     return 0;
 }
-void Graham()
+void Graham()//p是凸包的点
 {
     int k=0;
     for(int i=0; i<n; i++)
@@ -41,23 +36,4 @@ void Graham()
             top++;
             p[top]=a[i];
         }
-}
-int main()
-{
-    int m;
-    scanf("%d",&m);
-    while(m--)
-    {
-        scanf("%d",&n);
-            for(int i=0; i<n; i++)
-            {
-                scanf("%d%d",&a[i].x,&a[i].y);
-            }
-            Graham();
-            for(int i=0; i<=top; i++)
-            {
-                printf("%d %d\n",p[i].x,p[i].y);
-            }
-    }
-    return 0;
 }

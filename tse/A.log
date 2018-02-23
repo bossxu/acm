@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.2.8)  20 FEB 2018 23:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.2.8)  23 FEB 2018 15:32
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -575,15 +575,69 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 runsystem(if not exist _minted-A mkdir _minted-A)...executed.
 
- (e:/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
+ (e:/texlive/2017/texmf-dist/tex/latex/picinpar/picinpar.sty
+Pictures in Paragraphs. Version 1.2a, July 13, 1993
+\br=\count126
+\bl=\count127
+\na=\count128
+\nb=\count129
+\tcdsav=\count130
+\tcl=\count131
+\tcd=\count132
+\tcn=\count133
+\cumtcl=\count134
+\cumpartcl=\count135
+\lftside=\dimen123
+\rtside=\dimen124
+\hpic=\dimen125
+\vpic=\dimen126
+\strutilg=\dimen127
+\picwd=\dimen128
+\topheight=\dimen129
+\ilg=\dimen130
+\lpic=\dimen131
+\lwindowsep=\dimen132
+\rwindowsep=\dimen133
+\cumpar=\dimen134
+\twa=\toks22
+\la=\toks23
+\ra=\toks24
+\ha=\toks25
+\pictoc=\toks26
+\rawtext=\box38
+\holder=\box39
+\windowbox=\box40
+\wartext=\box41
+\finaltext=\box42
+\aslice=\box43
+\bslice=\box44
+\wbox=\box45
+\wstrutbox=\box46
+\picbox=\box47
+\waslice=\box48
+\wbslice=\box49
+\fslice=\box50
+) (e:/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+ (e:/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+ (e:/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (e:/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+ (e:/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen135
+\Gin@req@width=\dimen136
+) (e:/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
  (e:/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
- (e:/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
-)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -601,82 +655,82 @@ runsystem(del A.aex)...executed.
  (./A.aux)
 \openout1 = `A.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
  (e:/texlive/2017/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
@@ -830,104 +884,92 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
-\c@lstlisting=\count126
+\c@lstlisting=\count136
  (e:/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count127
-\scratchdimen=\dimen123
-\scratchbox=\box38
-\nofMPsegments=\count128
-\nofMParguments=\count129
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count130
-\MPscratchDim=\dimen124
-\MPnumerator=\count131
-\makeMPintoPDFobject=\count132
-\everyMPtoPDFconversion=\toks23
-) (e:/texlive/2017/texmf-dist/tex/latex/cjk/texinput/utf8/UTF8.bdg
+\scratchcounter=\count137
+\scratchdimen=\dimen137
+\scratchbox=\box51
+\nofMPsegments=\count138
+\nofMParguments=\count139
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count140
+\MPscratchDim=\dimen138
+\MPnumerator=\count141
+\makeMPintoPDFobject=\count142
+\everyMPtoPDFconversion=\toks28
+) (e:/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+ (e:/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+ (e:/texlive/2017/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+ (e:/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 11.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 11.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 11.
+ (e:/texlive/2017/texmf-dist/tex/latex/cjk/texinput/utf8/UTF8.bdg
 File: UTF8.bdg 2015/04/18 4.8.4
 ) (e:/texlive/2017/texmf-dist/tex/latex/cjk/texinput/utf8/UTF8.enc
 File: UTF8.enc 2015/04/18 4.8.4
 ) (e:/texlive/2017/texmf-dist/tex/latex/cjk/texinput/utf8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
+
+LaTeX Warning: File `../scoure/tupian.jpg' not found on input line 15.
+
+
+./A.tex:15: Package pdftex.def Error: File `../scoure/tupian.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...idth=0.80\linewidth]{../scoure/tupian.jpg}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 12.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 12.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 12.
-LaTeX Font Info:    Try loading font information for C70+gbsn on input line 22.
+(Font)              <10.95> on input line 19.
+[1
+
+{e:/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Try loading font information for C70+gbsn on input line 29.
  (e:/texlive/2017/texmf-dist/tex/latex/cjk/texinput/utf8/c70gbsn.fd
 File: c70gbsn.fd 2015/04/18 4.8.4
 ) (e:/texlive/2017/texmf-dist/tex/latex/cjk/texinput/utf8/c70gbsn.fdx
 File: c70gbsn.fdx 2015/04/18 4.8.4
 )
-./A.tex:24: Undefined control sequence.
-l.24 $F = \ver
-              {OA}$ x $ \ver{OB}\qquad F>0\quad $$\ver{OB}$ Âú® $\ver{OA}$ Á...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+Overfull \hbox (14.18416pt too wide) in paragraph at lines 28--31
+$\OML/cmm/m/it/10.95 OA$\OT1/cmr/m/n/10.95 x$\OML/cmm/m/it/10.95 OB  \OT1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 OA\OMS/cmsy/m/n/10.95 j ^^C j\OML/cmm/m/it/10.95 OB\OMS/cmsy/m/n/10.95 j ^^C [] []$\C70/gbsn/m/n/10.95/8b ∞ \C70/gbsn/m/n/10.95/4f O \C70/gbsn/m/n/10.95/5b ö \C70/gbsn/m/n/10.95/4e I \C70/gbsn/m/n/10.95/5c 1 \C70/gbsn/m/n/10.95/53 Ô \C70/gbsn/m/n/10.95/4e Â $\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 a[]; b[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; a[] \OT1/cmr/m/n/10.95 = []\OML/cmm/m/it/10.95 ; b[] \OT1/cmr/m/n/10.95 =
+ []
 
-./A.tex:24: Undefined control sequence.
-l.24 $F = \ver{OA}$ x $ \ver
-                            {OB}\qquad F>0\quad $$\ver{OB}$ Âú® $\ver{OA}$ Á...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./A.tex:24: Undefined control sequence.
-<recently read> \ver 
-                     
-l.24 ...er{OA}$ x $ \ver{OB}\qquad F>0\quad $$\ver
-                                                  {OB}$ Âú® $\ver{OA}$ ÁöÑÈÄ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./A.tex:24: Undefined control sequence.
-<recently read> \ver 
-                     
-l.24 ...r{OB}\qquad F>0\quad $$\ver{OB}$ Âú® $\ver
-                                                  {OA}$ ÁöÑÈÄÜÊó∂ÈíàÊñπÂêëÔº...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./A.tex:25: Missing $ inserted.
-<inserted text> 
-                $
-l.25 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-[1
-
-{e:/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./A.aux) ) 
+[2] (./A.aux) ) 
 Here is how much of TeX's memory you used:
- 7766 strings out of 492980
- 118573 string characters out of 6136208
- 230170 words of memory out of 5000000
- 11177 multiletter control sequences out of 15000+600000
- 10706 words of font info for 38 fonts, out of 8000000 for 9000
+ 8113 strings out of 492980
+ 123302 string characters out of 6136208
+ 241060 words of memory out of 5000000
+ 11508 multiletter control sequences out of 15000+600000
+ 9522 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,5n,35p,834b,692s stack positions out of 5000i,500n,10000p,200000b,80000s
-<e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu4e.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu4f.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu51.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu53.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu54.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic
-/gbsnu/gbsnu57.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5b.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5c.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu65.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu74.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu76.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu8b.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu90.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu94.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnuff.pfb>
-Output written on A.pdf (1 page, 109313 bytes).
+ 37i,6n,35p,834b,881s stack positions out of 5000i,500n,10000p,200000b,80000s
+<e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu4e.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu4f.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu53.pfb><e:/texlive/2017/texmf-dist/
+fonts/type1/arphic/gbsnu/gbsnu5b.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5c.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu8b.pfb>
+Output written on A.pdf (2 pages, 119438 bytes).
 PDF statistics:
- 115 PDF objects out of 1000 (max. 8388607)
- 73 compressed objects within 1 object stream
+ 85 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 25 words of extra memory for PDF output out of 10000 (max. 10000000)
 

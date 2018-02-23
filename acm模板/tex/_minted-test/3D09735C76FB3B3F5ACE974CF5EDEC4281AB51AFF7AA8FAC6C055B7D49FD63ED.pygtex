@@ -1,0 +1,40 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{const} \PYG{k+kt}{double} \PYG{n}{eps}\PYG{o}{=}\PYG{l+m+mf}{1e\PYGZhy{}8}\PYG{p}{;}\PYG{c+c1}{//解析几何中有时并不能保证等于0，在误差范围就行}
+\PYG{k}{struct} \PYG{n}{CPoint}\PYG{c+c1}{//点的存法}
+\PYG{p}{\PYGZob{}}
+    \PYG{k+kt}{double} \PYG{n}{x}\PYG{p}{,}\PYG{n}{y}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}\PYG{n}{point}\PYG{p}{[}\PYG{l+m+mi}{103}\PYG{p}{];}
+\PYG{k+kt}{int} \PYG{n+nf}{dcmp}\PYG{p}{(}\PYG{k+kt}{double} \PYG{n}{x}\PYG{p}{)}\PYG{c+c1}{//不晓得干啥}
+\PYG{p}{\PYGZob{}}
+    \PYG{k}{if}\PYG{p}{(}\PYG{n}{x}\PYG{o}{\PYGZlt{}\PYGZhy{}}\PYG{n}{eps}\PYG{p}{)} \PYG{k}{return} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{;}
+    \PYG{k}{else}   \PYG{k}{return} \PYG{p}{(}\PYG{n}{x}\PYG{o}{\PYGZgt{}}\PYG{n}{eps}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{double} \PYG{n+nf}{cross}\PYG{p}{(}\PYG{n}{CPoint} \PYG{n}{p0}\PYG{p}{,}\PYG{n}{CPoint} \PYG{n}{p1}\PYG{p}{,}\PYG{n}{CPoint} \PYG{n}{p2}\PYG{p}{)}\PYG{c+c1}{//点乘}
+\PYG{p}{\PYGZob{}}
+    \PYG{k}{return} \PYG{p}{(}\PYG{n}{p1}\PYG{p}{.}\PYG{n}{x}\PYG{o}{\PYGZhy{}}\PYG{n}{p0}\PYG{p}{.}\PYG{n}{x}\PYG{p}{)}\PYG{o}{*}\PYG{p}{(}\PYG{n}{p2}\PYG{p}{.}\PYG{n}{y}\PYG{o}{\PYGZhy{}}\PYG{n}{p0}\PYG{p}{.}\PYG{n}{y}\PYG{p}{)}\PYG{o}{\PYGZhy{}}\PYG{p}{(}\PYG{n}{p2}\PYG{p}{.}\PYG{n}{x}\PYG{o}{\PYGZhy{}}\PYG{n}{p0}\PYG{p}{.}\PYG{n}{x}\PYG{p}{)}\PYG{o}{*}\PYG{p}{(}\PYG{n}{p1}\PYG{p}{.}\PYG{n}{y}\PYG{o}{\PYGZhy{}}\PYG{n}{p0}\PYG{p}{.}\PYG{n}{y}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{double} \PYG{n+nf}{dot}\PYG{p}{(}\PYG{n}{CPoint} \PYG{n}{p0}\PYG{p}{,}\PYG{n}{CPoint} \PYG{n}{p1}\PYG{p}{,}\PYG{n}{CPoint} \PYG{n}{p2}\PYG{p}{)}\PYG{c+c1}{//叉乘}
+\PYG{p}{\PYGZob{}}
+    \PYG{k}{return} \PYG{p}{(}\PYG{n}{p1}\PYG{p}{.}\PYG{n}{x}\PYG{o}{\PYGZhy{}}\PYG{n}{p0}\PYG{p}{.}\PYG{n}{x}\PYG{p}{)}\PYG{o}{*}\PYG{p}{(}\PYG{n}{p2}\PYG{p}{.}\PYG{n}{x}\PYG{o}{\PYGZhy{}}\PYG{n}{p0}\PYG{p}{.}\PYG{n}{x}\PYG{p}{)}\PYG{o}{+}\PYG{p}{(}\PYG{n}{p1}\PYG{p}{.}\PYG{n}{y}\PYG{o}{\PYGZhy{}}\PYG{n}{p0}\PYG{p}{.}\PYG{n}{y}\PYG{p}{)}\PYG{o}{*}\PYG{p}{(}\PYG{n}{p2}\PYG{p}{.}\PYG{n}{y}\PYG{o}{\PYGZhy{}}\PYG{n}{p0}\PYG{p}{.}\PYG{n}{y}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{int} \PYG{n+nf}{PointOnSegment}\PYG{p}{(}\PYG{n}{CPoint} \PYG{n}{p0}\PYG{p}{,}\PYG{n}{CPoint} \PYG{n}{p1}\PYG{p}{,}\PYG{n}{CPoint} \PYG{n}{p2}\PYG{p}{)}\PYG{c+c1}{//判断点是否在线段上}
+\PYG{p}{\PYGZob{}}
+    \PYG{k}{return} \PYG{n}{dcmp}\PYG{p}{(}\PYG{n}{cross}\PYG{p}{(}\PYG{n}{p0}\PYG{p}{,}\PYG{n}{p1}\PYG{p}{,}\PYG{n}{p2}\PYG{p}{))}\PYG{o}{==}\PYG{l+m+mi}{0}\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{n}{dcmp}\PYG{p}{(}\PYG{n}{dot}\PYG{p}{(}\PYG{n}{p0}\PYG{p}{,}\PYG{n}{p1}\PYG{p}{,}\PYG{n}{p2}\PYG{p}{))}\PYG{o}{\PYGZlt{}=}\PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{int} \PYG{n+nf}{PointInPolygon}\PYG{p}{(}\PYG{n}{CPoint} \PYG{n}{cp}\PYG{p}{,}\PYG{n}{CPoint} \PYG{n}{p}\PYG{p}{[],}\PYG{k+kt}{int} \PYG{n}{n}\PYG{p}{)}\PYG{c+c1}{//判断点是否在多边形中}
+\PYG{p}{\PYGZob{}}
+    \PYG{k+kt}{int} \PYG{n}{i}\PYG{p}{,}\PYG{n}{k}\PYG{p}{,}\PYG{n}{d1}\PYG{p}{,}\PYG{n}{d2}\PYG{p}{,}\PYG{n}{wn}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;}
+  \PYG{c+c1}{//  double sum=0;}
+    \PYG{n}{p}\PYG{p}{[}\PYG{n}{n}\PYG{p}{]}\PYG{o}{=}\PYG{n}{p}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{];}
+    \PYG{k}{for}\PYG{p}{(} \PYG{n}{i}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZlt{}}\PYG{n}{n}\PYG{p}{;}\PYG{n}{i}\PYG{o}{++}\PYG{p}{)}
+    \PYG{p}{\PYGZob{}}
+        \PYG{k}{if}\PYG{p}{(}\PYG{n}{PointOnSegment}\PYG{p}{(}\PYG{n}{cp}\PYG{p}{,}\PYG{n}{p}\PYG{p}{[}\PYG{n}{i}\PYG{p}{],}\PYG{n}{p}\PYG{p}{[}\PYG{n}{i}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{]))} \PYG{k}{return} \PYG{l+m+mi}{2}\PYG{p}{;}
+        \PYG{n}{k}\PYG{o}{=}\PYG{n}{dcmp}\PYG{p}{(}\PYG{n}{cross}\PYG{p}{(}\PYG{n}{p}\PYG{p}{[}\PYG{n}{i}\PYG{p}{],}\PYG{n}{p}\PYG{p}{[}\PYG{n}{i}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{],}\PYG{n}{cp}\PYG{p}{));}
+        \PYG{n}{d1}\PYG{o}{=}\PYG{n}{dcmp}\PYG{p}{(}\PYG{n}{p}\PYG{p}{[}\PYG{n}{i}\PYG{o}{+}\PYG{l+m+mi}{0}\PYG{p}{].}\PYG{n}{y}\PYG{o}{\PYGZhy{}}\PYG{n}{cp}\PYG{p}{.}\PYG{n}{y}\PYG{p}{);}
+        \PYG{n}{d2}\PYG{o}{=}\PYG{n}{dcmp}\PYG{p}{(}\PYG{n}{p}\PYG{p}{[}\PYG{n}{i}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{].}\PYG{n}{y}\PYG{o}{\PYGZhy{}}\PYG{n}{cp}\PYG{p}{.}\PYG{n}{y}\PYG{p}{);}
+        \PYG{k}{if}\PYG{p}{(}\PYG{n}{k}\PYG{o}{\PYGZgt{}}\PYG{l+m+mi}{0}\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{n}{d1}\PYG{o}{\PYGZlt{}=}\PYG{l+m+mi}{0}\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{n}{d2}\PYG{o}{\PYGZgt{}}\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{n}{wn}\PYG{o}{++}\PYG{p}{;}
+        \PYG{k}{if}\PYG{p}{(}\PYG{n}{k}\PYG{o}{\PYGZlt{}}\PYG{l+m+mi}{0}\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{n}{d2}\PYG{o}{\PYGZlt{}=}\PYG{l+m+mi}{0}\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{n}{d1}\PYG{o}{\PYGZgt{}}\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{n}{wn}\PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{return} \PYG{n}{wn}\PYG{o}{!=}\PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

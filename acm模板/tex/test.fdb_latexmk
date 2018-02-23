@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1519371453 "test.tex" "test.pdf" "test" 1519371456
+["pdflatex"] 1519371453 "test.tex" "test.pdf" "test" 1519371487
   "../scoure/Graph_theory/2fentu.cpp" 1519217616 799 d1adc226410a41d650ffb884367edf2c ""
   "../scoure/Graph_theory/bingchick.cpp" 1516807170 201 182ea93d908d8097ba6b2b13bf66b198 ""
   "../scoure/Graph_theory/dijkstra.cpp" 1516807170 579 808ab96de42ebffa83139b2406201b48 ""
@@ -293,16 +293,16 @@
   "nul:.tex" 0 -1 0 ""
   "test.aex" 0 -1 0 ""
   "test.aux" 1519371456 6351 9448045ae1bf224aa5a4fb27bdd735d3 ""
-  "test.tex" 1519371452 10284 d439b2cc953d3224c6072d4437de03da ""
+  "test.tex" 1519371486 10284 d439b2cc953d3224c6072d4437de03da ""
   "test.toc" 1519371456 3277 78375ce285fc8ef65b2768b7b553308a ""
   (generated)
-  "test.pdf"
-  "/home/langman/桌面/acm/acm模板/tex文件/test.pdf"
-  "test.aux"
-  "/home/langman/桌面/acm/acm模板/test.log"
-  "/home/langman/桌面/acm/acm模板/test.pdf"
-  "test.log"
-  "/home/langman/桌面/acm/acm模板/tex文件/test.log"
-  "test.toc"
-  "/home/langman/桌面/acm/acm模板/tex/test.pdf"
   "/home/langman/桌面/acm/acm模板/tex/test.log"
+  "/home/langman/桌面/acm/acm模板/test.pdf"
+  "test.toc"
+  "test.aux"
+  "test.pdf"
+  "/home/langman/桌面/acm/acm模板/tex文件/test.log"
+  "/home/langman/桌面/acm/acm模板/tex/test.pdf"
+  "/home/langman/桌面/acm/acm模板/tex文件/test.pdf"
+  "test.log"
+  "/home/langman/桌面/acm/acm模板/test.log"

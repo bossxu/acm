@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.2.8)  23 FEB 2018 15:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.2.8)  28 FEB 2018 14:54
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -957,19 +957,19 @@ $\OML/cmm/m/it/10.95 OA$\OT1/cmr/m/n/10.95 x$\OML/cmm/m/it/10.95 OB  \OT1/cmr/m/
 
 [2] (./A.aux) ) 
 Here is how much of TeX's memory you used:
- 8113 strings out of 492980
- 123302 string characters out of 6136208
+ 8151 strings out of 492980
+ 123820 string characters out of 6136208
  241060 words of memory out of 5000000
- 11508 multiletter control sequences out of 15000+600000
- 9522 words of font info for 34 fonts, out of 8000000 for 9000
+ 11536 multiletter control sequences out of 15000+600000
+ 10852 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,6n,35p,834b,881s stack positions out of 5000i,500n,10000p,200000b,80000s
-<e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu4e.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu4f.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu53.pfb><e:/texlive/2017/texmf-dist/
-fonts/type1/arphic/gbsnu/gbsnu5b.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5c.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu8b.pfb>
-Output written on A.pdf (2 pages, 119438 bytes).
+<e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu4e.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu4f.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu50.pfb><e:/texlive/2017/texmf-dist/
+fonts/type1/arphic/gbsnu/gbsnu53.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5b.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5c.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu65.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu76.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7d.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu8b.pfb><e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu8d.pfb>
+Output written on A.pdf (2 pages, 136195 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
+ 110 PDF objects out of 1000 (max. 8388607)
+ 72 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 25 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 45 words of extra memory for PDF output out of 10000 (max. 10000000)
 

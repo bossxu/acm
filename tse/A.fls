@@ -149,6 +149,11 @@ INPUT e:/texlive/2017/texmf-dist/fonts/tfm/arphic/gbsnu/gbsnu5b.tfm
 INPUT e:/texlive/2017/texmf-dist/fonts/tfm/arphic/gbsnu/gbsnu4e.tfm
 INPUT e:/texlive/2017/texmf-dist/fonts/tfm/arphic/gbsnu/gbsnu5c.tfm
 INPUT e:/texlive/2017/texmf-dist/fonts/tfm/arphic/gbsnu/gbsnu53.tfm
+INPUT e:/texlive/2017/texmf-dist/fonts/tfm/arphic/gbsnu/gbsnu7d.tfm
+INPUT e:/texlive/2017/texmf-dist/fonts/tfm/arphic/gbsnu/gbsnu65.tfm
+INPUT e:/texlive/2017/texmf-dist/fonts/tfm/arphic/gbsnu/gbsnu8d.tfm
+INPUT e:/texlive/2017/texmf-dist/fonts/tfm/arphic/gbsnu/gbsnu76.tfm
+INPUT e:/texlive/2017/texmf-dist/fonts/tfm/arphic/gbsnu/gbsnu50.tfm
 INPUT A.aux
 INPUT e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
@@ -163,7 +168,12 @@ INPUT e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT e:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 INPUT e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu4e.pfb
 INPUT e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu4f.pfb
+INPUT e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu50.pfb
 INPUT e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu53.pfb
 INPUT e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5b.pfb
 INPUT e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5c.pfb
+INPUT e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu65.pfb
+INPUT e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu76.pfb
+INPUT e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7d.pfb
 INPUT e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu8b.pfb
+INPUT e:/texlive/2017/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu8d.pfb

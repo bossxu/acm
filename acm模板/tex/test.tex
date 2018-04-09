@@ -83,6 +83,14 @@ $$ \sqrt{2*PI*n} * (\frac{n}{e})^n = n!$$
 \subsubsection{素数}
 素数筛法
 \inputminted{c++}{../scoure/math/shai.cpp}
+\subsubsection{梅森素数}
+一个知识点吧，m是一个正整数，且$2^m-1$为素数，那么m一定为素数。\\
+如果m是一个素数，$M_p = 2^p-1$是梅森数\\
+如果p是一个素数，并且$M_p = 2^p-1$也是素数，那么称$M_p$为梅森素数\\
+对梅森素数的判定是一个算法：\\
+Lucas-Lehmer:
+$r_k \equiv r_{k-1} -2$\quad mod$M_p$\quad $r_1 = 4$
+当且仅当 $r_{p-1} \equiv 0$\quad mod$M_p$
 \subsubsection{欧几里得}
 \inputminted{c++}{../scoure/math/GCD.cpp}
 然后是基于这个定理得出的一个定理，中国剩余定理
@@ -92,6 +100,10 @@ $$ \sqrt{2*PI*n} * (\frac{n}{e})^n = n!$$
 还能用费马小定理来解
 \inputminted{c++}{../scoure/math/niyuan.cpp}
 \subsubsection{欧拉函数}
+p为素数时$\phi(p) = p-1 $\\
+a与n互质的时候 $a^{\phi(n)}\equiv 1$ mod $ n$\\
+m,n互质$\phi(mn) = \phi(m) * \phi(n)$\\
+
 这个东西好呀，他求的是比n小的，并且和n互质的数的个数
 \inputminted{c++}{../scoure/math/oula.cpp}
 更多的来说我觉得这个东西是一个工具，他对解一些题有很重要的作用，起到一个工具的作用
@@ -139,6 +151,11 @@ $$ f_i = \sum_{d|n} u(d)*f(\frac{d}{n}) $$
 设G={p1，p2，…，pt}是X={a1,a2,…,an}上一个置换群，用m种颜色对X中的元素进行涂色，那么不同的涂色方案数为
 $$\frac{1}{G}\sum_{k=1}^t m^{Cyc(p_k)}$$
 $Cyc(p_k)$是置换$p_k$的循环节个数
+\subsubsection{Pell方程}
+$$x^2-dy^2=1$$
+当d不为平方数时，有无穷多的解。接下来是通项的推导
+$$ x_{n+1} = x_1*x_n+d*y_1*y_n,y_{n+1} = x_1*y_n + y_1*x_n $$
+暴力求$x_1,y_1$然后矩阵快速幂
 \subsubsection{lucas定理}
 当组合数的基数过大的时候进行这些操作但是注意，我们的操作也是要求那个模数为素数，且
 模数要小的情况下，素数的情况我们可以用扩展lucas定理来解决。一个工具，一个数论上的分支。

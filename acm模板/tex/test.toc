@@ -39,17 +39,17 @@
 \contentsline {subsubsection}{\numberline {4.4.4}lucas定理}{23}
 \contentsline {subsection}{\numberline {4.5}线代}{25}
 \contentsline {subsubsection}{\numberline {4.5.1}fft优化多项式乘法法}{25}
-\contentsline {subsubsection}{\numberline {4.5.2}矩阵快速幂}{25}
-\contentsline {subsubsection}{\numberline {4.5.3}矩阵方面知识}{26}
-\contentsline {subsection}{\numberline {4.6}计算几何}{26}
-\contentsline {subsubsection}{\numberline {4.6.1}几何基本知识}{26}
-\contentsline {subsubsection}{\numberline {4.6.2}判断点是否在多边形中}{27}
-\contentsline {subsubsection}{\numberline {4.6.3}凸包问题}{28}
-\contentsline {section}{\numberline {5}状态转移 dp}{29}
-\contentsline {subsection}{\numberline {5.1}背包}{29}
-\contentsline {subsection}{\numberline {5.2}一些常见的dp}{29}
-\contentsline {subsubsection}{\numberline {5.2.1}LIS 最长上升子序列}{29}
-\contentsline {subsection}{\numberline {5.3}树形dp}{29}
-\contentsline {subsection}{\numberline {5.4}\GenericError {(inputenc) }{Package inputenc Error: Unicode char 数 (U+6570)\MessageBreak not set up for use with LaTeX}{See the inputenc package documentation for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.}\GenericError {(inputenc) }{Package inputenc Error: Unicode char 位 (U+4F4D)\MessageBreak not set up for use with LaTeX}{See the inputenc package documentation for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.}dp}{30}
-\contentsline {subsection}{\numberline {5.5}\GenericError {(inputenc) }{Package inputenc Error: Unicode char 状 (U+72B6)\MessageBreak not set up for use with LaTeX}{See the inputenc package documentation for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.}\GenericError {(inputenc) }{Package inputenc Error: Unicode char 压 (U+538B)\MessageBreak not set up for use with LaTeX}{See the inputenc package documentation for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.}dp}{30}
-\contentsline {subsection}{\numberline {5.6}the end}{30}
+\contentsline {subsubsection}{\numberline {4.5.2}矩阵快速幂}{28}
+\contentsline {subsubsection}{\numberline {4.5.3}矩阵方面知识}{29}
+\contentsline {subsection}{\numberline {4.6}计算几何}{29}
+\contentsline {subsubsection}{\numberline {4.6.1}几何基本知识}{29}
+\contentsline {subsubsection}{\numberline {4.6.2}判断点是否在多边形中}{29}
+\contentsline {subsubsection}{\numberline {4.6.3}凸包问题}{30}
+\contentsline {section}{\numberline {5}状态转移 dp}{31}
+\contentsline {subsection}{\numberline {5.1}背包}{31}
+\contentsline {subsection}{\numberline {5.2}一些常见的dp}{31}
+\contentsline {subsubsection}{\numberline {5.2.1}LIS 最长上升子序列}{31}
+\contentsline {subsection}{\numberline {5.3}树形dp}{32}
+\contentsline {subsection}{\numberline {5.4}数位dp}{32}
+\contentsline {subsection}{\numberline {5.5}状压dp}{32}
+\contentsline {subsection}{\numberline {5.6}the end}{33}

@@ -40,11 +40,12 @@ int main()
      int sum = 0;
      for(int i = n;i>=1;i--)
      {
+
        if(sum+map[i] > k)
        {
-         st[i]=1;
          sum = map[i];
          dp[i] = dp[i+1]+1;
+         st[]
        }
        else
        {

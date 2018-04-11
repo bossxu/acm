@@ -4,6 +4,7 @@
 \usepackage{minted}
 \usepackage{picinpar,graphicx}
 \usepackage{CJK}
+\usepackage[cache=false, outputdir=build]{minted}
 \author{langman}
 \title{ACM-template}
 
@@ -161,6 +162,10 @@ $$ x_{n+1} = x_1*x_n+d*y_1*y_n,y_{n+1} = x_1*y_n + y_1*x_n $$
 模数要小的情况下，素数的情况我们可以用扩展lucas定理来解决。一个工具，一个数论上的分支。
 \inputminted{c++}{../scoure/math/lucas.cpp}
 \subsection{线代}
+\subsubsection{fft优化多项式乘法法}
+这个是一个工具，他的作用是加速多项式得乘法。这个点得难处还是在于多项式的构建，其实也不是
+非常复杂得东西，当然他的原理，不敢去碰。关键词：多项式乘法，并且复杂度为1e5左右。
+\inputminted{c++}{../scoure/math/fft.cpp}
 \subsubsection{矩阵快速幂}
 这类方法，很多是用在递推关系式的时候，像什么fib数列什么的。
 \inputminted{c++}{../scoure/math/ju_quick.cpp}

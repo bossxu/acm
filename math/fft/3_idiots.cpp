@@ -16,7 +16,9 @@
 using namespace std;
 typedef long long ll;
 #define INF 0x3f3f3f3f
-const int mod = 1e9+7 ;
+#define mod 1e9+7
+#define PI acos(-1)
+#define loge exp(1)
 #define clr(a,x) memset(a,x,sizeof(a))
 #define cle(a,n) for(int i=1;i<=n;i++) a.clear();
 const double eps = 1e-6;
@@ -40,23 +42,17 @@ struct complex
         return complex(r*b.r-i*b.i,r*b.i+i*b.r);
     }
 };
-const int MAXN = 200010;
-complex x1[MAXN],x2[MAXN];//这一个是第一个多项式的系数，第二个是第二个多项式的系数
-int shu[MAXN*2];
-int sum[MAXN];//这是答案所放的位置
-/*
- * 进行FFT和IFFT前的反转变换。
- * 位置i和 （i二进制反转后位置）互换
- * len必须去2的幂
- */
+const int MAXN = 300010;
+complex x1[MAXN];//这一个是第一个多项式的系数，第二个是第二个多项式的系数
+ll shu[MAXN/2];//这是未处理的输入字符
+ll sum[MAXN];//这是答案所放的位置
+ll dp[MAXN];
 void change(complex y[],int len)
 {
     int i,j,k;
     for(i = 1, j = len/2;i < len-1; i++)
     {
         if(i < j)swap(y[i],y[j]);
-        //交换互为小标反转的元素，i<j保证交换一次
-        //i做正常的+1，j左反转类型的+1,始终保持i和j是反转的
         k = len/2;
         while( j >= k)
         {
@@ -66,17 +62,12 @@ void change(complex y[],int len)
         if(j < k) j += k;
     }
 }
-/*
- * 做FFT
- * len必须为2^k形式，
- * on==1时是DFT，on==-1时是IDFT
- */
 void fft(complex y[],int len,int on)
 {
     change(y,len);
     for(int h = 2; h <= len; h <<= 1)
     {
-        complex wn(cos(-on*2*M_PI/h),sin(-on*2*M_PI/h));
+        complex wn(cos(-on*2*PI/h),sin(-on*2*PI/h));
         for(int j = 0;j < len;j+=h)
         {
             complex w(1,0);
@@ -94,55 +85,65 @@ void fft(complex y[],int len,int on)
         for(int i = 0;i < len;i++)
             y[i].r /= len;
 }
-void ans()
-{
-	//step 1
-	int len = 1;
-	int len1 = strlen(str1),len2 = strlen(str2);
-	while(len<2*len1 || len<2*len2)	len<<=1;//第一步确定len相当于在确定那个最高能达到什么程度。
-	//step 2
-  for(int i = 0;i<len1;i++)	//第二膊就是把系数表示用点来表示，挺复杂的，首先就是前补0，变成len位的数，然后反向放入那个存储的数组中
-   x1[i] = complex(str1[len1-1-i]-'0',0);
- for(int i = len1;i<len;i++)
-   x1[i] = complex(0,0);
- for(int i = 0;i<len2;i++)
-   x2[i] = complex(str2[len2-1-i]-'0',0);
- for(int i = len2;i<len;i++)
-   x2[i] = complex(0,0);
-	//step 3
-	fft(x1,len,1);fft(x2,len,1);//第三步反正就是这意思，我也不懂这个是啥原理
-	for(int i = 0;i<len;i++)
-	{
-		x1[i] = x1[i]*x2[i];
-	}
-	fft(x1,len,-1);
-	for(int i = 0;i<len;i++)
-	{
-		sum[i] = (int)(x1[i].r+0.5);
-	}
-	//step 4
-	//这就是自己加工了，这里面存的是答案，不过这也是倒着存的，注意去前导0，因为这里len是在最坏情况下的一个解决方案，有可能达不到。
-}
 int main()
 {
-  //freopen("in.txt","r",stdin);
-  //freopen("out.txt","w",stdout);
   int t;
   cin>>t;
   while(t--)
   {
     int n;
-    cin>>n;
-    int a;
+    scanf("%d",&n);
+    int a,maxn = 0;
     clr(shu,0);
-    for(int i = 0;i<n;i++)
+    clr(dp,0);
+    for(int i = 1;i<=n;i++)
     {
       scanf("%d",&a);
       shu[a]++;
+      maxn = max(maxn,a);
     }
     int len = 1;
-    while(len<n*2) len<<=1;
+    while(len < 2*maxn) len<<=1;
+    for(int i = 0;i<=maxn;i++)
+    {
+      x1[i] = complex(shu[i],0);
+    }
+    for(int i = maxn+1;i<len;i++)
+    {
+      x1[i] = complex(0,0);
+    }
+    fft(x1,len,1);
+    for(int i = 0;i<len;i++)
+    x1[i] = x1[i]*x1[i];
+    fft(x1,len,-1);
+    for(int i = 1;i<=maxn;i++)
+    {
+      sum[i] = (ll)(x1[i].r+0.5);
+    }
+    for(int i = 2;i<=maxn;i++)
+    {
+      if(i%2 == 0)
+      {
+        sum[i] -= shu[i/2];
+      }
+      sum[i]/=2;
+      //cout<<i<<"->"<<sum[i]<<endl;
+    }
+    for(int i = maxn;i>=1;i--)
+    {
+      dp[i] = dp[i+1]+shu[i];
+    }
+    ll num = 0;
+    for(int i = 2;i<=maxn;i++)
+    {
+      if(sum[i]>0)
+      {
+        num += sum[i]*(dp[i]);
+      }
+    }
+    ll fenmu = (ll)n*(n-1)*(n-2)/6;
 
+    printf("%.7lf\n",(double)(fenmu-num)/fenmu);
   }
   return 0;
 }

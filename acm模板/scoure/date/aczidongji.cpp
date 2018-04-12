@@ -1,32 +1,21 @@
-### 理解
-
-> ac自动机是基于，字典树和kmp算法的一种看起来更高级的数据结构。它的主要原理感觉与kmp相似，用一个数组来记录再当前失配的情况下，他会跳转到哪个结点上。然后它用一颗树去记录那个玩意。也就是字典树。
-
-### 能用的方面
-
->哪个啥，kmp算法主要是针对一个模板串，多个匹配串，ac自动机好像是针对多模匹配算法,如同给你一段字符串,问你多少个单词在这个字符串中出现过.
-
-### 代码 <kuangbing板子>
-
-```cpp
-
 struct Trie
 {
     int next[500010][26],fail[500010],end[500010];
+    //第一个是他的边,第二个是那个失配数组,第三个是每个结点的权,字典树里面的东西
     int root,L;
-    int newnode()
+    int newnode()//建新结点
     {
         for(int i = 0;i < 26;i++)
             next[L][i] = -1;
         end[L++] = 0;
         return L-1;
     }
-    void init()
+    void init()//初始化这颗树
     {
         L = 0;
         root = newnode();
     }
-    void insert(char buf[])
+    void insert(char buf[]) //在字典树中插入单词
     {
         int len = strlen(buf);
         int now = root;
@@ -38,7 +27,7 @@ struct Trie
         }
         end[now]++;
     }
-    void build()
+    void build()//这里就是在做那个啥失配数组
     {
         queue<int>Q;
         fail[root] = root;
@@ -83,6 +72,3 @@ struct Trie
         return res;
     }
 };
-```
-
->>一些看法：这里的字典树它每个节点的哪个val权表示的是以这个为节点结尾的词的个数  

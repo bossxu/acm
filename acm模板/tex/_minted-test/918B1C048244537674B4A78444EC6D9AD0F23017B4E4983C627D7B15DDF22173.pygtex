@@ -1,0 +1,30 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kt}{int} \PYG{n}{f}\PYG{p}{[} \PYG{l+m+mi}{15000}\PYG{p}{];}
+\PYG{k+kt}{void} \PYG{n+nf}{getfill}\PYG{p}{(}\PYG{n}{string} \PYG{n}{s}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{n}{memset}\PYG{p}{(}\PYG{n}{f}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{k}{sizeof}\PYG{p}{(}\PYG{n}{f}\PYG{p}{));}  \PYG{c+c1}{//根据其前一个字母得到}
+    \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZlt{}}\PYG{n}{s}\PYG{p}{.}\PYG{n}{size}\PYG{p}{();}\PYG{n}{i}\PYG{o}{++}\PYG{p}{)}
+    \PYG{p}{\PYGZob{}}
+        \PYG{k+kt}{int} \PYG{n}{j}\PYG{o}{=}\PYG{n}{f}\PYG{p}{[}\PYG{n}{i}\PYG{p}{];}
+        \PYG{k}{while}\PYG{p}{(}\PYG{n}{j} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{s}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{o}{!=}\PYG{n}{s}\PYG{p}{[}\PYG{n}{j}\PYG{p}{])}
+            \PYG{n}{j}\PYG{o}{=}\PYG{n}{f}\PYG{p}{[}\PYG{n}{j}\PYG{p}{];}
+        \PYG{n}{f}\PYG{p}{[}\PYG{n}{i}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{=}\PYG{p}{(}\PYG{n}{s}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{o}{==}\PYG{n}{s}\PYG{p}{[}\PYG{n}{j}\PYG{p}{])}\PYG{o}{?}\PYG{n}{j}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{o}{:}\PYG{l+m+mi}{0}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{int} \PYG{n+nf}{find}\PYG{p}{(}\PYG{n}{string} \PYG{n}{a}\PYG{p}{,}\PYG{n}{string} \PYG{n}{s}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{k+kt}{int} \PYG{n}{ans}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;}
+    \PYG{n}{getfill}\PYG{p}{(}\PYG{n}{s}\PYG{p}{);}\PYG{k+kt}{int} \PYG{n}{j}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;}
+    \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZlt{}}\PYG{n}{a}\PYG{p}{.}\PYG{n}{size}\PYG{p}{();}\PYG{n}{i}\PYG{o}{++}\PYG{p}{)}
+    \PYG{p}{\PYGZob{}}
+        \PYG{k}{while}\PYG{p}{(}\PYG{n}{j} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{a}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{o}{!=}\PYG{n}{s}\PYG{p}{[}\PYG{n}{j}\PYG{p}{])}
+            \PYG{n}{j}\PYG{o}{=}\PYG{n}{f}\PYG{p}{[}\PYG{n}{j}\PYG{p}{];}
+        \PYG{k}{if}\PYG{p}{(}\PYG{n}{a}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{o}{==}\PYG{n}{s}\PYG{p}{[}\PYG{n}{j}\PYG{p}{])}
+            \PYG{n}{j}\PYG{o}{++}\PYG{p}{;}
+        \PYG{k}{if}\PYG{p}{(}\PYG{n}{j}\PYG{o}{==}\PYG{n}{s}\PYG{p}{.}\PYG{n}{size}\PYG{p}{())\PYGZob{}}
+            \PYG{n}{ans}\PYG{o}{++}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{return} \PYG{n}{ans}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}  
+\end{Verbatim}

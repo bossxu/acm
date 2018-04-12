@@ -1,0 +1,45 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{//字典树的板子其实比较简单}
+\PYG{c+c1}{//主要就是存一些简单的关系，而且好像可以开的挺大的，但是必须开全局才行}
+\PYG{c+c1}{//不过这只是一种数据结构，他的操作还有很多其他的用处，算法也是要靠自己去实现的}
+\PYG{c+c1}{//很多题型应该是对那个val进行操作}
+\PYG{k}{const} \PYG{k+kt}{int} \PYG{n}{maxnode} \PYG{o}{=} \PYG{l+m+mi}{1000100}\PYG{p}{,}\PYG{n}{sigma\PYGZus{}size} \PYG{o}{=} \PYG{l+m+mi}{26}\PYG{p}{;}
+\PYG{k+kt}{int} \PYG{n}{trie}\PYG{p}{[}\PYG{n}{maxnode}\PYG{p}{][}\PYG{n}{sigma\PYGZus{}size}\PYG{p}{];}
+\PYG{k+kt}{int} \PYG{n}{val}\PYG{p}{[}\PYG{n}{maxnode}\PYG{p}{];}\PYG{c+c1}{//这里最简单的意义在于记录那个点是否是单词结尾节点。}
+\PYG{k+kt}{int} \PYG{n}{sz}\PYG{p}{;}
+\PYG{k+kr}{inline} \PYG{k+kt}{int} \PYG{n+nf}{idx}\PYG{p}{(}\PYG{k+kt}{char} \PYG{n}{c}\PYG{p}{)} \PYG{p}{\PYGZob{}} \PYG{k}{return} \PYG{n}{c}\PYG{o}{\PYGZhy{}}\PYG{l+s+sc}{\PYGZsq{}a\PYGZsq{}}\PYG{p}{;} \PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{void} \PYG{n+nf}{init}\PYG{p}{()}
+\PYG{p}{\PYGZob{}}
+  \PYG{n}{clr}\PYG{p}{(}\PYG{n}{trie}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{],}\PYG{l+m+mi}{0}\PYG{p}{);}
+  \PYG{n}{clr}\PYG{p}{(}\PYG{n}{val}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{);}
+  \PYG{n}{sz} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{void} \PYG{n+nf}{insert}\PYG{p}{(}\PYG{k+kt}{char} \PYG{o}{*}\PYG{n}{s}\PYG{p}{,}\PYG{k+kt}{int} \PYG{n}{value}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{k+kt}{int} \PYG{n}{u}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{n}\PYG{o}{=}\PYG{n}{strlen}\PYG{p}{(}\PYG{n}{s}\PYG{p}{);}
+    \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i}\PYG{o}{\PYGZlt{}}\PYG{n}{n}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)}
+    \PYG{p}{\PYGZob{}}
+        \PYG{k+kt}{int} \PYG{n}{c}\PYG{o}{=}\PYG{n}{idx}\PYG{p}{(}\PYG{n}{s}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]);}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{trie}\PYG{p}{[}\PYG{n}{u}\PYG{p}{][}\PYG{n}{c}\PYG{p}{]}\PYG{o}{==}\PYG{l+m+mi}{0}\PYG{p}{)} \PYG{c+c1}{//empty}
+        \PYG{p}{\PYGZob{}}
+            \PYG{n}{clr}\PYG{p}{(}\PYG{n}{trie}\PYG{p}{[}\PYG{n}{sz}\PYG{p}{],}\PYG{l+m+mi}{0}\PYG{p}{);}
+            \PYG{n}{val}\PYG{p}{[}\PYG{n}{sz}\PYG{p}{]}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;} \PYG{c+c1}{//not a word}
+            \PYG{n}{trie}\PYG{p}{[}\PYG{n}{u}\PYG{p}{][}\PYG{n}{c}\PYG{p}{]}\PYG{o}{=}\PYG{n}{sz}\PYG{o}{++}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+        \PYG{n}{u}\PYG{o}{=}\PYG{n}{trie}\PYG{p}{[}\PYG{n}{u}\PYG{p}{][}\PYG{n}{c}\PYG{p}{];}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{n}{val}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{=} \PYG{n}{value}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{int} \PYG{n+nf}{search}\PYG{p}{(}\PYG{k+kt}{char} \PYG{o}{*}\PYG{n}{s}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{k+kt}{int} \PYG{n}{u}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{n}\PYG{o}{=}\PYG{n}{strlen}\PYG{p}{(}\PYG{n}{s}\PYG{p}{);}
+    \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i}\PYG{o}{\PYGZlt{}}\PYG{n}{n}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)}
+    \PYG{p}{\PYGZob{}}
+        \PYG{k+kt}{int} \PYG{n}{c}\PYG{o}{=}\PYG{n}{idx}\PYG{p}{(}\PYG{n}{s}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]);}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{trie}\PYG{p}{[}\PYG{n}{u}\PYG{p}{][}\PYG{n}{c}\PYG{p}{]}\PYG{o}{==}\PYG{l+m+mi}{0}\PYG{p}{)}
+            \PYG{k}{return} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{;}
+        \PYG{n}{u}\PYG{o}{=}\PYG{n}{trie}\PYG{p}{[}\PYG{n}{u}\PYG{p}{][}\PYG{n}{c}\PYG{p}{];}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{return} \PYG{n}{val}\PYG{p}{[}\PYG{n}{u}\PYG{p}{];}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

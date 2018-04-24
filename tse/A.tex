@@ -7,32 +7,22 @@
 \author{langman}
 \title{acm-template}
 
+\usepackage{lastpage}%获得总页数
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+%以下命令中L--左侧 R--右侧 C--中间 O--奇数页 E--偶数页
+\fancyhead[LO,RE]{SHU--langman}%奇数页左侧，偶数页右侧显示页眉
+\fancyfoot[CO,RE]{practice making surprise}%奇数页中间，偶数页右侧页脚为空
+\fancyfoot[LO,CE]{}%奇数页左侧，偶数页中间页脚为空
+\fancyfoot[RO,LE]{\thepage\ of
+\pageref{LastPage}}%奇数页右侧，偶数页左侧显示 当前页 of 总页数
+\renewcommand{\headrulewidth}{0.4pt}%改为0pt即可去掉页眉下面的横线
+\renewcommand{\footrulewidth}{0.4pt}%改为0pt即可去掉页脚上面的横线
 \begin{document}
-\maketitle
-\begin{CJK}{UTF8}{gbsn}
-  \begin{figure}[!htb]
-    \begin{center}
-      \includegraphics[width=0.80\linewidth]{../scoure/tupian.jpg}
-      \caption{stay hungry stay foolish}
-    \end{center}
-  \end{figure}
-$$\sum_{i=1}^n f_i*f_{n-i}=F_n$$
-$$f(x)=x^{x^x}$$
-$$f(x) = f(x-1)+f(x-2)$$
-$$f(0) = 0,f(1) = 1$$
-$$h(n) = C_{2n}^n - C_{2n-1}^{2n}$$
-
-$$ \sqrt{2*PI*n} * (\frac{n}{e})^n = n!$$
-
-$$ F_n = \sum_{i=1}^n f_i $$
-$$ f_i = \sum_{d|n} u(d)*f(\frac{d}{n}) $$
-$OA$x$OB\quad = |OA|*|OB|*\sin{BOA}$记住定义就可以
-$( a_k,b_k),a_k=\frac{k*(\sqrt{5}+1)}{2} , b_k=a_k+k$
-$$ a \land{b \land c} $$
-p为素数时$\phi(p) = p-1 $\\
-a与n互质的时候 $a^{\phi(m)}\equiv1$
-\end{CJK}
-
-
-
+This short code shows how to use fancy package in the caseof
+twoside format.
+\newpage
+adada
+\newpage
+adada
 \end{document}

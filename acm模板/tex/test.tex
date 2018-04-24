@@ -4,9 +4,20 @@
 \usepackage{minted}
 \usepackage{picinpar,graphicx}
 \usepackage{CJK}
+
 \author{langman}
 \title{ACM-template}
-
+\usepackage{lastpage}%获得总页数
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+%以下命令中L--左侧 R--右侧 C--中间 O--奇数页 E--偶数页
+\fancyhead[LO,RE]{SHU--langman}%奇数页左侧，偶数页右侧显示页眉
+\fancyfoot[CO,RE]{practice making surprise}%奇数页中间，偶数页右侧页脚为空
+\fancyfoot[LO,CE]{}%奇数页左侧，偶数页中间页脚为空
+\fancyfoot[RO,LE]{\thepage\ of
+\pageref{LastPage}}%奇数页右侧，偶数页左侧显示 当前页 of 总页数
+\renewcommand{\headrulewidth}{0.4pt}%改为0pt即可去掉页眉下面的横线
+\renewcommand{\footrulewidth}{0.4pt}
 \begin{document}
 \maketitle
 \vspace{3cm}
@@ -74,7 +85,8 @@
 现在的我对于这方面还不够熟悉，先留个板子
 \inputminted{c++}{../scoure/date/treexian.cpp}
 \subsection{高精度}
-我个人习惯使用Java。
+我个人习惯使用Java。就是怎么说呢,感觉要学会用自动补全以及几个常用的加减乘除
+加add减sub乘mul除div模mod就很ok,然后那个大叔据都是从字符串转过来的,要熟悉一下字符串的一些常用函数.
 \inputminted{java}{../scoure/date/bigjing.java}
 \section{数学方面}
 \subsection{三个特别的数}
@@ -103,6 +115,8 @@ $$ \sqrt{2*PI*n} * (\frac{n}{e})^n = n!$$
 Lucas-Lehmer:
 $r_k \equiv r_{k-1} -2$\quad mod$M_p$\quad $r_1 = 4$
 当且仅当 $r_{p-1} \equiv 0$\quad mod$M_p$
+\subsubsection{miller-robin快速判素数}
+\inputminted{c++}{../scoure/math/miller_robin.cpp}
 \subsubsection{欧几里得}
 \inputminted{c++}{../scoure/math/GCD.cpp}
 然后是基于这个定理得出的一个定理，中国剩余定理

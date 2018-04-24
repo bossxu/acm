@@ -1,0 +1,45 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{//快速判素数的一个随机算法。他能处理很大的数字用那个飞马小定理}
+\PYG{c+c1}{//其中要注意的点就是 一个别抱longlong 的精度，还有就是乘法也需要经行处理不过都是板子}
+\PYG{c+c1}{//第三点就是经量预处理，还有这个算法是随机的所以还是有可能不行的。}
+\PYG{k}{const} \PYG{k+kt}{int} \PYG{n}{MAXN} \PYG{o}{=} \PYG{l+m+mi}{65}\PYG{p}{;}
+\PYG{n}{ll} \PYG{n}{x}\PYG{p}{[}\PYG{n}{MAXN}\PYG{p}{];}\PYG{c+c1}{//这我也不晓得用来干啥的}
+\PYG{k+kt}{int} \PYG{n}{flag} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{n}{ll} \PYG{n+nf}{multi}\PYG{p}{(}\PYG{n}{ll} \PYG{n}{a}\PYG{p}{,} \PYG{n}{ll} \PYG{n}{b}\PYG{p}{,} \PYG{n}{ll} \PYG{n}{p}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{n}{ll} \PYG{n}{ans} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+    \PYG{k}{while}\PYG{p}{(}\PYG{n}{b}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k}{if}\PYG{p}{(}\PYG{n}{b}\PYG{o}{\PYGZam{}}\PYG{l+m+mi}{1LL}\PYG{p}{)} \PYG{n}{ans} \PYG{o}{=} \PYG{p}{(}\PYG{n}{ans}\PYG{o}{+}\PYG{n}{a}\PYG{p}{)}\PYG{o}{\PYGZpc{}}\PYG{n}{p}\PYG{p}{;}
+        \PYG{n}{a} \PYG{o}{=} \PYG{p}{(}\PYG{n}{a}\PYG{o}{+}\PYG{n}{a}\PYG{p}{)}\PYG{o}{\PYGZpc{}}\PYG{n}{p}\PYG{p}{;}
+        \PYG{n}{b} \PYG{o}{\PYGZgt{}\PYGZgt{}=} \PYG{l+m+mi}{1}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{return} \PYG{n}{ans}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{n}{ll} \PYG{n+nf}{qpow}\PYG{p}{(}\PYG{n}{ll} \PYG{n}{a}\PYG{p}{,} \PYG{n}{ll} \PYG{n}{b}\PYG{p}{,} \PYG{n}{ll} \PYG{n}{p}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{n}{ll} \PYG{n}{ans} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;}
+    \PYG{k}{while}\PYG{p}{(}\PYG{n}{b}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k}{if}\PYG{p}{(}\PYG{n}{b}\PYG{o}{\PYGZam{}}\PYG{l+m+mi}{1LL}\PYG{p}{)} \PYG{n}{ans} \PYG{o}{=} \PYG{n}{multi}\PYG{p}{(}\PYG{n}{ans}\PYG{p}{,} \PYG{n}{a}\PYG{p}{,} \PYG{n}{p}\PYG{p}{);}
+        \PYG{n}{a} \PYG{o}{=} \PYG{n}{multi}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,} \PYG{n}{a}\PYG{p}{,} \PYG{n}{p}\PYG{p}{);}
+        \PYG{n}{b} \PYG{o}{\PYGZgt{}\PYGZgt{}=} \PYG{l+m+mi}{1}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{return} \PYG{n}{ans}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{bool} \PYG{n+nf}{Miller\PYGZus{}Rabin}\PYG{p}{(}\PYG{n}{ll} \PYG{n}{n}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{k}{if}\PYG{p}{(}\PYG{n}{n} \PYG{o}{==} \PYG{l+m+mi}{2}\PYG{p}{)} \PYG{k}{return} \PYG{n+nb}{true}\PYG{p}{;}
+    \PYG{k+kt}{int} \PYG{n}{s} \PYG{o}{=} \PYG{l+m+mi}{5}\PYG{p}{,} \PYG{n}{i}\PYG{p}{,} \PYG{n}{t} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{c+c1}{//s是随机函数}
+    \PYG{n}{ll} \PYG{n}{u} \PYG{o}{=} \PYG{n}{n}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{;}
+    \PYG{k}{while}\PYG{p}{(}\PYG{o}{!}\PYG{p}{(}\PYG{n}{u} \PYG{o}{\PYGZam{}} \PYG{l+m+mi}{1}\PYG{p}{))} \PYG{p}{\PYGZob{}}
+        \PYG{n}{t}\PYG{o}{++}\PYG{p}{;}
+        \PYG{n}{u} \PYG{o}{\PYGZgt{}\PYGZgt{}=} \PYG{l+m+mi}{1}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{while}\PYG{p}{(}\PYG{n}{s}\PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{ll} \PYG{n}{a} \PYG{o}{=} \PYG{n}{rand}\PYG{p}{()}\PYG{o}{\PYGZpc{}}\PYG{p}{(}\PYG{n}{n}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{2}\PYG{p}{)}\PYG{o}{+}\PYG{l+m+mi}{2}\PYG{p}{;}
+        \PYG{n}{x}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]} \PYG{o}{=} \PYG{n}{qpow}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,} \PYG{n}{u}\PYG{p}{,} \PYG{n}{n}\PYG{p}{);}
+        \PYG{k}{for}\PYG{p}{(}\PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}=} \PYG{n}{t}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{x}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{=} \PYG{n}{multi}\PYG{p}{(}\PYG{n}{x}\PYG{p}{[}\PYG{n}{i}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{],} \PYG{n}{x}\PYG{p}{[}\PYG{n}{i}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{],} \PYG{n}{n}\PYG{p}{);}
+            \PYG{k}{if}\PYG{p}{(}\PYG{n}{x}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{==} \PYG{l+m+mi}{1} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{x}\PYG{p}{[}\PYG{n}{i}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{!=} \PYG{l+m+mi}{1} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{x}\PYG{p}{[}\PYG{n}{i}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{!=} \PYG{n}{n}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{)} \PYG{k}{return} \PYG{n+nb}{false}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+        \PYG{k}{if}\PYG{p}{(}\PYG{n}{x}\PYG{p}{[}\PYG{n}{t}\PYG{p}{]} \PYG{o}{!=} \PYG{l+m+mi}{1}\PYG{p}{)} \PYG{k}{return} \PYG{n+nb}{false}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{return} \PYG{n+nb}{true}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

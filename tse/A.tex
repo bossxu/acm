@@ -19,10 +19,34 @@
 \renewcommand{\headrulewidth}{0.4pt}%改为0pt即可去掉页眉下面的横线
 \renewcommand{\footrulewidth}{0.4pt}%改为0pt即可去掉页脚上面的横线
 \begin{document}
-This short code shows how to use fancy package in the caseof
-twoside format.
-\newpage
-adada
+BaoBao is a big fan of the game and likes Sayori the most, so he decides to write a poem to please Sayori. A poem of $m$ words $s_1, s_2, \dots, s_m$ is nothing more than a sequence of $m$ strings, and the happiness of Sayori after reading the poem is calculated by the formula
+where $H$ is the happiness and $f(s_i)$ is Sayori's preference to the word $s_i$.
+
+Given a list of $n$ words and Sayori's preference to each word, please help BaoBao select $m$ words from the list and finish the poem with these $m$ words to maximize the happiness of Sayori.
+
+Please note that each word can be used at most once!
+
+Input
+
+There are multiple test cases. The first line of input contains an integer $T$ (about 100), indicating the number of test cases. For each test case:
+
+The first line contains two integers $n$ and $m$ ($1 \le m \le n \le 100$), indicating the number of words and the length of the poem.
+
+For the following $n$ lines, the $i$-th line contains a string consisting of lowercased English letters $w_i$ ($1 \le |w_i| \le 15$) and an integer $f(w_i)$ ($-10^9 \le f(w_i) \le 10^9$), indicating the $i$-th word and Sayori's preference to this word. It's guaranteed that $w_i \ne w_j$ for all $i \ne j$.
+
+Output
+
+For each test case output one line containing an integer $H$ and $m$ strings $s_1, s_2, \dots, s_m$ separated by one space, indicating the maximum possible happiness and the corresponding poem. If there are multiple poems which can achieve the maximum happiness, print the lexicographically smallest one.
+
+Please, DO NOT output extra spaces at the end of each line, or your answer may be considered incorrect!
+
+A sequence of $m$ strings $a_1, a_2, \dots, a_m$ is lexicographically smaller than another sequence of $m$ strings $b_1, b_2, \dots, b_m$, if there exists a $k$ ($1 \le k \le m$) such that $a_i = b_i$ for all $1 \le i < k$ and $a_k$ is lexicographically smaller than $b_k$.
+
+A string $s_1 = a_1a_2\dots a_x$ is lexicographically smaller than another string $s_2 = b_1b_2\dots b_y$, if there exists a $k$ ($1 \le k \le \min(x, y)$) such that $a_i = b_i$ for all $1 \le i < k$ and $a_k < b_k$, or $a_i = b_i$ for all $1 \le i \le \min(x, y)$ and $x < y$.
+
+
+
+
 \newpage
 adada
 \end{document}

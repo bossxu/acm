@@ -36,6 +36,7 @@ vector<Edge>G[MAXN];
 int son[MAXN],maxson[MAXN];
 bool check[MAXN];
 int dis[MAXN];
+int k;
 void getroot(int v,int pa)
 {
   son[v] = 1;maxson[v] = 0;
@@ -57,7 +58,7 @@ void getdis(int tr,int pa,int dist)
   {
     int t = G[tr][i].to;
     int va = G[tr][i].val;
-    if(t == pa) continue;
+    if(t == pa || check[t]) continue;
     getdis(t,tr,dist+va);
   }
 }
@@ -66,16 +67,44 @@ int slove(int tr,int dist)//这里是获取以这个点为根结点的,所有满
 {
     now = 0;
     clr(dis,0);
+    getdis(tr,-1,dist);
+    sort(dis,dis+now);
+    int l = 1,r = now-1,tep = 0;
+    while(l<=r)
+    {
+      if(dis[l]+dis[r]<=k) {tep += r-l;l++;}
+      else r--;
+    }
+    return tep;
+
 }
 void Divide(int tr) //分治的关键代码
 {
   ans += slove(tr,0);
+  check[tr] = true;
+  for(int i = 0;i<G[tr].size();i++)
+  {
+    int t = G[tr][i].to;
+    int va = G[tr][i].val;
+    if(check[t]) continue;
+    ans-=slove(t,va);
+    N = son[t];root = 0;
+    maxson[root] = INF;
+    getroot(t,0);
+    Divide(t);
+  }
 
 }
 int main()
 {
   freopen("in.txt","r",stdin);
   freopen("out.txt","w",stdout);
+  int n;
+  while(cin>>n>>k)
+  {
+    if(!n && !k) break;
+    
+  }
 
   return 0;
 }

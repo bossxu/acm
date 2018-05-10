@@ -1,5 +1,1 @@
-Case 1:
-Query
-13
-Add
-Query
+4

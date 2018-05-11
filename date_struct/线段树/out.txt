@@ -1,5 +1,4 @@
 Case 1:
-Query
-13
-Add
-Query
+6
+33
+59

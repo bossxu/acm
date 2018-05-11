@@ -20,7 +20,7 @@ const int mod = 1e9+7 ;
 #define clr(a,x) memset(a,x,sizeof(a))
 #define cle(a,n) for(int i=1;i<=n;i++) a.clear();
 const double eps = 1e-6;
-const int maxn = 10005;
+const int maxn = 20005;
 #define lson rt<<1
 #define rson rt<<1|1
 //区间加,离散化

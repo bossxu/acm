@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.12.23)  24 APR 2018 22:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.12.23)  21 JUN 2018 11:02
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -905,49 +905,70 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/2DFDFAA01B5CFA03C811A99C871D71078116133CCB283121ACF2E7157C22B7C2.pygtex
+[16]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/6831F8C03B163A661A6635DD637D80A68116133CCB283121ACF2E7157C22B7C2.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/F3ECC775BDFF57F15C35F5CC29599DBA35599511B530B58181108B50E30518D2.pygtex
+[17]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/E3F2307DFF02E3F05C5A9F5F8AA66B37F139BAE2B4442D04C6652EC8C846AD0B.pygtex
+[18]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/24277664E896D334F18764C7F32D0F0F852D88CB4F784D47D77765466FF00AA5.pygtex
+[19]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/3B3AB4718B68B6ABBC9C4AD9EAABC6ABB6611DA64BA47828EB2586BCFC5CF71B.pygtex
+[20]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/F3ECC775BDFF57F15C35F5CC29599DBA35599511B530B58181108B50E30518D2.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/7853309F51D08B6430144C817575FD92427B1768C7F4545648DE1FCB98C19717.pygtex
+[21]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/E3F2307DFF02E3F05C5A9F5F8AA66B37F139BAE2B4442D04C6652EC8C846AD0B.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/1DDEC778A036E0CFFA7A4D1DE7DB9DA4E2A1FD936A8BF0EF2B7F611FA178F0E6.pygtex)
+[22]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/24277664E896D334F18764C7F32D0F0F852D88CB4F784D47D77765466FF00AA5.pygtex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[23]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/3B3AB4718B68B6ABBC9C4AD9EAABC6ABB6611DA64BA47828EB2586BCFC5CF71B.pygtex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/7853309F51D08B6430144C817575FD92427B1768C7F4545648DE1FCB98C19717.pygtex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/1DDEC778A036E0CFFA7A4D1DE7DB9DA4E2A1FD936A8BF0EF2B7F611FA178F0E6.pygtex)
 Underfull \hbox (badness 10000) in paragraph at lines 129--132
 
  []
@@ -959,29 +980,29 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/317A4CBE45F946DFFB00AF94736E88254BCEC8841412BBC30C19C2D366964F9D.pygtex
+[26]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/317A4CBE45F946DFFB00AF94736E88254BCEC8841412BBC30C19C2D366964F9D.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24])
+[27])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25] (/home/langman/桌面/acm/acm模板/tex/_minted-test/1318FC15F0430CA26B51B09A9ECC1B30A169358A93F7817E1764339948E48BC8.pygtex
+[28] (/home/langman/桌面/acm/acm模板/tex/_minted-test/1318FC15F0430CA26B51B09A9ECC1B30A169358A93F7817E1764339948E48BC8.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26])
-Underfull \hbox (badness 10000) in paragraph at lines 168--171
+[29])
+Underfull \hbox (badness 10000) in paragraph at lines 170--173
 
  []
 
@@ -992,28 +1013,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[27] (/home/langman/桌面/acm/acm模板/tex/_minted-test/7EFB08EE0C56F1894915D25525CA8263BA3DECA65086A2E2ABD4260F0F406D27.pygtex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[28]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[29]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/BD455B3F3F9AA859CCD7B81711AFDC2032BC302107C6504AA4DBAD950BAE2C15.pygtex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[30]
+[30] (/home/langman/桌面/acm/acm模板/tex/_minted-test/7EFB08EE0C56F1894915D25525CA8263BA3DECA65086A2E2ABD4260F0F406D27.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1027,94 +1027,115 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[32]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/23B50B08431BAF5C0079AA810B4F1639732A4B6A3D3667E99FF5F207C3953201.pygtex
+[32]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/BD455B3F3F9AA859CCD7B81711AFDC2032BC302107C6504AA4DBAD950BAE2C15.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[33]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/5B48CC3DC88966898607B9E5F6E3A55E3F5E0665793104D8A8EB9F8060C64890.pygtex
+[33]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[34]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/62282462998C131A3AEA53D672A467D6A1DA1349FA4293162F5CBB7162F6E836.pygtex
+[34]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[35]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/984D29947775A7EE4D62F0AF71FFCCA7CABAB91F4A5A2C5D56F1EDDEE9813847.pygtex
+[35]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/23B50B08431BAF5C0079AA810B4F1639732A4B6A3D3667E99FF5F207C3953201.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[36]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/7A84418D3960D18FD5FDE1F711C0599E4E6CFF185C299373B763AF89F33DF54C.pygtex
+[36]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/5B48CC3DC88966898607B9E5F6E3A55E3F5E0665793104D8A8EB9F8060C64890.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[37]) 
+[37]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/62282462998C131A3AEA53D672A467D6A1DA1349FA4293162F5CBB7162F6E836.pygtex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[38]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/984D29947775A7EE4D62F0AF71FFCCA7CABAB91F4A5A2C5D56F1EDDEE9813847.pygtex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[39]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/7A84418D3960D18FD5FDE1F711C0599E4E6CFF185C299373B763AF89F33DF54C.pygtex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[40]) 
 AED: lastpage setting LastPage
 
-/home/langman/桌面/acm/acm模板/tex/test.tex:243: PACKAGE INPUTENC ERROR: UNICODE CHAR Ǌ� (U+72B6)
+/home/langman/桌面/acm/acm模板/tex/test.tex:245: PACKAGE INPUTENC ERROR: UNICODE CHAR Ǌ� (U+72B6)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.243 \end{document}
+l.245 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
 OR  <RETURN>  TO CONTINUE WITHOUT IT.
 
 
-/home/langman/桌面/acm/acm模板/tex/test.tex:243: PACKAGE INPUTENC ERROR: UNICODE CHAR ƀ� (U+6001)
+/home/langman/桌面/acm/acm模板/tex/test.tex:245: PACKAGE INPUTENC ERROR: UNICODE CHAR ƀ� (U+6001)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.243 \end{document}
+l.245 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
 OR  <RETURN>  TO CONTINUE WITHOUT IT.
 
 
-/home/langman/桌面/acm/acm模板/tex/test.tex:243: PACKAGE INPUTENC ERROR: UNICODE CHAR Ƚ� (U+8F6C)
+/home/langman/桌面/acm/acm模板/tex/test.tex:245: PACKAGE INPUTENC ERROR: UNICODE CHAR Ƚ� (U+8F6C)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.243 \end{document}
+l.245 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
 OR  <RETURN>  TO CONTINUE WITHOUT IT.
 
 
-/home/langman/桌面/acm/acm模板/tex/test.tex:243: PACKAGE INPUTENC ERROR: UNICODE CHAR Ǉ� (U+79FB)
+/home/langman/桌面/acm/acm模板/tex/test.tex:245: PACKAGE INPUTENC ERROR: UNICODE CHAR Ǉ� (U+79FB)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.243 \end{document}
+l.245 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
@@ -1126,16 +1147,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38] (/home/langman/桌面/acm/acm模板/tex/test.aux)
+[41] (/home/langman/桌面/acm/acm模板/tex/test.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 9871 strings out of 493029
- 157753 string characters out of 6136233
+ 9864 strings out of 493029
+ 157667 string characters out of 6136233
  245826 words of memory out of 5000000
- 12830 multiletter control sequences out of 15000+600000
+ 12823 multiletter control sequences out of 15000+600000
  43398 words of font info for 154 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,12n,43p,824b,1557s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1145,10 +1166,10 @@ texmf/fonts/type1/arphic/gbsnu/gbsnu5c.pfb></usr/share/texmf/fonts/type1/arphic/
 s/type1/arphic/gbsnu/gbsnu70.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu71.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu72.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu73.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu74.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu75.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu76.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu77.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu78.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu79.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7a.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7d.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7f.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu80.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu81.pfb></usr/share/texmf/fonts/type1/ar
 phic/gbsnu/gbsnu82.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu83.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu88.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu89.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8d.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8f.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu90.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu91.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu94.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu95.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu96.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu97.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu98.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu99.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu9a.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu9e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu
 /gbsnuff.pfb>
-Output written on /home/langman/桌面/acm/acm模板/tex/test.pdf (38 pages, 748478 bytes).
+Output written on /home/langman/桌面/acm/acm模板/tex/test.pdf (41 pages, 749354 bytes).
 PDF statistics:
- 546 PDF objects out of 1000 (max. 8388607)
- 345 compressed objects within 4 object streams
+ 555 PDF objects out of 1000 (max. 8388607)
+ 351 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  286 words of extra memory for PDF output out of 10000 (max. 10000000)
 

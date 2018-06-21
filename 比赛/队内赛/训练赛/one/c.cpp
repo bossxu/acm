@@ -36,6 +36,7 @@ int main()
     //freopen("in.txt","r",stdin);
     //freopen("out.txt","w",stdout);
   // std::ios::sync_with_stdio(false);
+  ///caonima
   int t;
   scanf("%d",&t);
   while(t--)

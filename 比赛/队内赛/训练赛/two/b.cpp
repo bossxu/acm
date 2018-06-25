@@ -21,6 +21,20 @@ const int mod = 1e9+7 ;
 #define cle(a,n) for(int i=1;i<=n;i++) a.clear();
 const double eps = 1e-6;
 ll shu[30];
+ll C[505][505];
+void init()
+{
+  C[0][0] = 1;
+  for(int i = 1;i<=500;i++)
+  {
+    C[i][0] = 1;
+    C[i][i] = 1;
+    for(int j = 1;j<i;j++)
+    {
+      C[i][j] = (C[i][j-1]+C[i-1][j])%mod;
+    }
+  }
+}
 int main()
 {
   //freopen("in.txt","r",stdin);

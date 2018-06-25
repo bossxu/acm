@@ -20,37 +20,33 @@ const int mod = 1e9+7 ;
 #define clr(a,x) memset(a,x,sizeof(a))
 #define cle(a,n) for(int i=1;i<=n;i++) a.clear();
 const double eps = 1e-6;
-//置换群的概念
-int gcd(int a,int b)
-{
-  return a%b==0?b:gcd(b,a%b);
-}
 int main()
 {
-  //freopen("in.txt","r",stdin);
-  //freopen("out.txt","w",stdout);
-  int a,b;
-  ll dp[52];
-  while(cin>>a>>b)
-  {
-    dp[0] = 1;
-    for(int i = 1;i<=a+1;i++)
+  // freopen("in.txt","r",stdin);
+  // freopen("out.txt","w",stdout);
+  std::ios::sync_with_stdio(false);
+   int t;
+   cin>>t;
+   ll n,k;
+   while(t--)
+   {
+    cin>>n>>k;
+    if(k == 0)
     {
-      dp[i] = dp[i-1] * b;
+      cout<<n<<endl;
+      continue;
     }
-    ll ans=0,sum=0;
-    for(int i = 0;i<a;i++)
+    ll ans = 0;
+    for(int i = 1;i<=n;i++)
     {
-      ans += dp[gcd(i,a)];
-      sum += dp[gcd(i,a)];
+      ll num = 1;
+      for(int j = 1;j<=k;j++)
+      {
+        num = num*i%mod;
+      }
+      ans = (ans+num)%mod;
     }
-    if(a%2 == 1)
-    sum += a*dp[(a-1)/2+1];
-    else
-    sum += a/2*(dp[(a/2)]+dp[a/2+1]);
-    //cout<<ans/a<<" ";
-    cout<<sum/a/2<<endl;
-  }
-
+    cout<<ans<<endl;
+   }
   return 0;
 }

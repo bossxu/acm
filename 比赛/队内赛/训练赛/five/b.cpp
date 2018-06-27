@@ -27,8 +27,8 @@ ll dp3[1005][1005];
 ll dp4[1005][1005];
 int main()
 {
-  freopen("in.txt","r",stdin);
-  freopen("out.txt","w",stdout);
+  //freopen("in.txt","r",stdin);
+  //freopen("out.txt","w",stdout);
   std::ios::sync_with_stdio(false);
   int n,m;
   while(cin>>n>>m)
@@ -62,31 +62,24 @@ int main()
     {
       for(int j = m;j>=1;j--)
       {
-        dp4[i][j] = max(dp4[i+1][j],dp4[i][j+1])+map[i][j];
+        dp3[i][j] = max(dp3[i+1][j],dp3[i][j+1])+map[i][j];
       }
     }
     for(int i = 1;i<=n;i++)
     {
       for(int j = m;j>=1;j--)
       {
-        dp3[i][j] = max(dp3[i-1][j],dp3[i][j+1])+map[i][j];
+        dp4[i][j] = max(dp4[i-1][j],dp4[i][j+1])+map[i][j];
       }
     }
-    // for(int i = 1;i<=n;i++)
-    // {
-    //   for(int j = 1;j<=m;j++)
-    //   {
-    //     cout<<dp3[i][j]<<" ";
-    //   }
-    //   cout<<endl;
-    // }
     ll ans = 0;
 
     for(int i = 2;i<n;i++)
     {
-      for(int j = 2;j<=m;j++)
+      for(int j = 2;j<m;j++)
       {
-         ll be = max(dp1[i-1][j]+dp2[i][j-1],dp1[i]
+         ll be = max(dp1[i-1][j]+dp3[i+1][j]+dp2[i][j-1]+dp4[i][j+1],dp2[i+1][j]+dp4[i-1][j]+dp1[i][j-1]+dp3[i][j+1]);
+         ans = max(be,ans);
       }
     }
     cout<<ans<<endl;

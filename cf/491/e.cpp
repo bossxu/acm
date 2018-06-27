@@ -21,11 +21,7 @@ void dfs(int len,int k)
 {
   int flag = 1;
   ll num = 0;
-<<<<<<< HEAD
-  for(int i = 0;i<=shu[0];i++)
-=======
   for(int i = 0;i<=min(shu[0],1);i++)
->>>>>>> 98ee60cb8fa74a6f38f6e2f1a80875f751b74c08
   {
       ll o = dp[len-i];
       for(int j = 0;j<=9;j++)
@@ -38,11 +34,7 @@ void dfs(int len,int k)
       else num-=o;
       flag^=1;
   }
-<<<<<<< HEAD
-//  cout<<num<<" --- "<<len<<endl;
-=======
   //cout<<num<<" --- "<<len<<endl;
->>>>>>> 98ee60cb8fa74a6f38f6e2f1a80875f751b74c08
   ans+=num;
   for(int i = k;i<=9;i++)
   {

@@ -20,6 +20,15 @@
   \PYG{c+c1}{//容器}
   \PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}}\PYG{n}{q2}\PYG{p}{;}\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}} \PYG{n}{q2\PYGZus{}1}\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{,}\PYG{l+m+mi}{4}\PYG{p}{\PYGZcb{};}
   \PYG{n}{q2}\PYG{p}{.}\PYG{n}{push\PYGZus{}back}\PYG{p}{(}\PYG{n}{i}\PYG{p}{);}\PYG{n}{q2}\PYG{p}{.}\PYG{n}{top}\PYG{p}{();}\PYG{n}{q2}\PYG{p}{.}\PYG{n}{pop}\PYG{p}{();}\PYG{n}{q2}\PYG{p}{.}\PYG{n}{empty}\PYG{p}{();}\PYG{n}{q2}\PYG{p}{.}\PYG{n}{clear}\PYG{p}{();}\PYG{n}{q2}\PYG{p}{.}\PYG{n}{size}\PYG{p}{();}
+  \PYG{c+c1}{//map的一些常见用法}
+  \PYG{n}{map}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{p}{,}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}}\PYG{n}{q}\PYG{p}{;}\PYG{c+c1}{//前面是key,后面val,这是一个映射的过程}
+  \PYG{n}{q}\PYG{p}{.}\PYG{n}{insert}\PYG{p}{(}\PYG{n}{make\PYGZus{}pair}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,}\PYG{n}{b}\PYG{p}{));} \PYG{n}{q}\PYG{p}{[}\PYG{n}{a}\PYG{p}{]} \PYG{o}{=} \PYG{n}{b}\PYG{p}{,}\PYG{n}{q}\PYG{p}{.}\PYG{n}{size}\PYG{p}{()}\PYG{c+c1}{//这个是赋值的方法}
+  \PYG{k}{for}\PYG{p}{(}\PYG{n}{map}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{p}{,}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}::}\PYG{n}{iterator} \PYG{n}{i} \PYG{o}{=} \PYG{n}{q}\PYG{p}{.}\PYG{n}{begin}\PYG{p}{();}\PYG{n}{i} \PYG{o}{!=} \PYG{n}{q}\PYG{p}{,}\PYG{n}{end}\PYG{p}{();}\PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}\PYG{n}{cout}\PYG{o}{\PYGZlt{}\PYGZlt{}}\PYG{p}{(}\PYG{n}{i}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{first}\PYG{p}{)}\PYG{o}{\PYGZlt{}\PYGZlt{}}\PYG{p}{(}\PYG{n}{i}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{second}\PYG{p}{);\PYGZcb{}} \PYG{c+c1}{//这个是遍历的用法first是key,second是val}
+  \PYG{n}{q}\PYG{p}{.}\PYG{n}{count}\PYG{p}{(}\PYG{n}{a}\PYG{p}{),}\PYG{n}{q}\PYG{p}{.}\PYG{n}{find}\PYG{p}{(}\PYG{n}{a}\PYG{p}{),}\PYG{n}{q}\PYG{p}{.}\PYG{n}{clear}\PYG{p}{();}\PYG{c+c1}{//这个是查key a是否出现过,前面的返回的是是否,后面的返回的是迭代器,返回的是只想那个地址的指针}
+  \PYG{c+c1}{//set的用法}
+  \PYG{n}{set}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}}\PYG{n}{q}\PYG{p}{;}
+  \PYG{n}{q}\PYG{p}{.}\PYG{n}{insert}\PYG{p}{(}\PYG{n}{a}\PYG{p}{);}\PYG{n}{q}\PYG{p}{.}\PYG{n}{size}\PYG{p}{();}\PYG{n}{q}\PYG{p}{.}\PYG{n}{clear}\PYG{p}{();}
+  \PYG{k}{for}\PYG{p}{(}\PYG{n}{set}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}::}\PYG{n}{iterator} \PYG{n}{j} \PYG{o}{=} \PYG{n}{q}\PYG{p}{.}\PYG{n}{begin}\PYG{p}{();}\PYG{n}{j}\PYG{o}{!=}\PYG{n}{q}\PYG{p}{.}\PYG{n}{end}\PYG{p}{();}\PYG{n}{j}\PYG{o}{++}\PYG{p}{)} \PYG{n}{cout}\PYG{o}{\PYGZlt{}\PYGZlt{}*}\PYG{n}{j}\PYG{o}{\PYGZlt{}\PYGZlt{}}\PYG{n}{endl}\PYG{p}{;} \PYG{c+c1}{//插入,遍历啥的操作}
   \PYG{c+c1}{//string一些初始化方法}
   \PYG{k+kt}{char} \PYG{n}{shu}\PYG{p}{[}\PYG{l+m+mi}{100}\PYG{p}{];}
   \PYG{k+kt}{char} \PYG{n}{s1}\PYG{p}{[]} \PYG{o}{=} \PYG{p}{\PYGZob{}}\PYG{l+s}{\PYGZdq{}dadaa\PYGZdq{}}\PYG{p}{\PYGZcb{};}

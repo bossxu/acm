@@ -26,7 +26,7 @@
 \contentsline {subsubsection}{\numberline {5.1.2}卡特兰 数}{22}
 \contentsline {subsubsection}{\numberline {5.1.3}斯大林公式}{22}
 \contentsline {subsection}{\numberline {5.2}数论}{22}
-\contentsline {subsubsection}{\numberline {5.2.1}素数}{22}
+\contentsline {subsubsection}{\numberline {5.2.1}素数}{23}
 \contentsline {subsubsection}{\numberline {5.2.2}梅森素数}{23}
 \contentsline {subsubsection}{\numberline {5.2.3}miller-robin快速判素数}{23}
 \contentsline {subsubsection}{\numberline {5.2.4}欧几里得}{24}

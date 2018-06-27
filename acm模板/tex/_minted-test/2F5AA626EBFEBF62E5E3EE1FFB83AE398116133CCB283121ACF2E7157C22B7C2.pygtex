@@ -23,7 +23,6 @@
   \PYG{n}{build}\PYG{p}{(}\PYG{n}{rson}\PYG{p}{,}\PYG{n}{mid}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{n}{r}\PYG{p}{);}
   \PYG{n}{tree}\PYG{p}{[}\PYG{n}{rt}\PYG{p}{].}\PYG{n}{sum} \PYG{o}{=} \PYG{n}{tree}\PYG{p}{[}\PYG{n}{lson}\PYG{p}{].}\PYG{n}{sum}\PYG{o}{+}\PYG{n}{tree}\PYG{p}{[}\PYG{n}{rson}\PYG{p}{].}\PYG{n}{sum}\PYG{p}{;}
 \PYG{p}{\PYGZcb{}}
-
 \PYG{k+kt}{void} \PYG{n+nf}{update\PYGZus{}dian}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{rt}\PYG{p}{,}\PYG{k+kt}{int} \PYG{n}{a}\PYG{p}{,}\PYG{k+kt}{int} \PYG{n}{val}\PYG{p}{)}
 \PYG{p}{\PYGZob{}}
   \PYG{k}{if}\PYG{p}{(}\PYG{n}{tree}\PYG{p}{[}\PYG{n}{rt}\PYG{p}{].}\PYG{n}{l} \PYG{o}{==} \PYG{n}{a} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{tree}\PYG{p}{[}\PYG{n}{rt}\PYG{p}{].}\PYG{n}{r} \PYG{o}{==} \PYG{n}{a}\PYG{p}{)}

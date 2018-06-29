@@ -34,11 +34,11 @@ int op[20][20];
 void bfs(int x,int y)
 {
   vis[x][y] = 1;
-  queue<Node>st;
+  queue<Node> st;
   Node a;a.x = x,a.y = y;
   a.flag = 0;
   st.push(a);
-  op[x][y] = 0;
+  step[x][y] = 0;
   while(!st.empty())
   {
     Node p = st.front();st.pop();
@@ -68,8 +68,6 @@ int main()
    while(cin>>n>>m)
    {
      //clr(map,0);
-     clr(step,0);
-     clr(op,0);
      clr(dp,INF);
      for(int i = 0;i<n;i++)
      {
@@ -83,34 +81,27 @@ int main()
      {
        clr(vis,0);
        clr(step,INF);
-       bfs(en[i].x,en[i].y);
+       bfs(en[i].x-1,en[i].y-1);
+       //cout<<"---"<<endl;
        for(int j = 1;j<=m;j++)
        {
-         op[i][j] = step[st[j].x][st[j].y];
+         op[i][j] = step[st[j].x-1][st[j].y-1];
        }
      }
-     for(int i = 1;i<=m;i++)
+     for(int j = 0;j<m;j++)
      {
-       for(int j = 1;j<=m;j++)
-       {
-         cout<<op[i][j]<<" ";
-       }
-       cout<<endl;
+       dp[1<<j][j+1] = 0;
      }
-     for(int i = 1;i<=m;i++)
-      dp[0][i] = 0;
      for(int i = 0;i<(1<<m);i++)
      {
        for(int k = 0;k<m;k++)
        {
          //cout<<(1<<k)<<endl;
-         if(i&(1<<k))
+         if(dp[i][k+1] == INF) continue;
+         for(int j = 0;j<m;j++)
          {
-           continue;
-         }
-         for(int j = 1;j<=m;j++)
-         {
-           dp[i|(1<<k)][k+1] = min(dp[i|(1<<k)][k+1],dp[i][j]+op[j][k+1]);
+           if((i&(1<<j)) || op[k+1][j+1] == INF) continue;
+           dp[i|(1<<j)][j+1] = min(dp[i|(1<<j)][j+1],dp[i][k+1]+op[k+1][j+1]);
          }
        }
 
@@ -120,6 +111,8 @@ int main()
      {
        ans = min(ans,dp[(1<<m)-1][i]);
      }
+     if(ans == INF) cout<<-1<<endl;
+     else
      cout<<ans<<endl;
    }
   return 0;

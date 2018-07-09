@@ -48,14 +48,16 @@
 \contentsline {subsubsection}{\numberline {5.5.2}矩阵快速幂}{36}
 \contentsline {subsubsection}{\numberline {5.5.3}矩阵方面知识}{37}
 \contentsline {subsection}{\numberline {5.6}计算几何}{37}
-\contentsline {subsubsection}{\numberline {5.6.1}几何基本知识}{37}
-\contentsline {subsubsection}{\numberline {5.6.2}判断点是否在多边形中}{37}
-\contentsline {subsubsection}{\numberline {5.6.3}凸包问题}{38}
-\contentsline {section}{\numberline {6}状态转移 dp}{39}
-\contentsline {subsection}{\numberline {6.1}背包}{39}
-\contentsline {subsection}{\numberline {6.2}一些常见的dp}{39}
-\contentsline {subsubsection}{\numberline {6.2.1}LIS 最长上升子序列}{39}
+\contentsline {subsubsection}{\numberline {5.6.1}一些定理}{37}
+\contentsline {subsubsection}{\numberline {5.6.2}几何基本知识}{37}
+\contentsline {subsubsection}{\numberline {5.6.3}判断点是否在多边形中}{37}
+\contentsline {subsubsection}{\numberline {5.6.4}凸包问题}{38}
+\contentsline {subsection}{\numberline {5.7}概率论}{39}
+\contentsline {section}{\numberline {6}状态转移 dp}{40}
+\contentsline {subsection}{\numberline {6.1}背包}{40}
+\contentsline {subsection}{\numberline {6.2}一些常见的dp}{40}
+\contentsline {subsubsection}{\numberline {6.2.1}LIS 最长上升子序列}{40}
 \contentsline {subsection}{\numberline {6.3}树形dp}{40}
 \contentsline {subsection}{\numberline {6.4}数位dp}{40}
-\contentsline {subsection}{\numberline {6.5}状压dp}{40}
+\contentsline {subsection}{\numberline {6.5}\GenericError {(inputenc) }{Package inputenc Error: Unicode char 状 (U+72B6)\MessageBreak not set up for use with LaTeX}{See the inputenc package documentation for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.}\GenericError {(inputenc) }{Package inputenc Error: Unicode char 压 (U+538B)\MessageBreak not set up for use with LaTeX}{See the inputenc package documentation for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.}dp}{41}
 \contentsline {subsection}{\numberline {6.6}the end}{41}

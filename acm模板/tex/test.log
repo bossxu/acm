@@ -1,10 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.12.23)  27 JUN 2018 16:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.12.23)  4 JUL 2018 21:41
 entering extended mode
- \write18 enabled.
- file:line:error style messages enabled.
+ restricted \write18 enabled.
  %&-line parsing enabled.
 **test.tex
-(/home/langman/桌面/acm/acm模板/tex/test.tex
+(./test.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -23,7 +22,9 @@ File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
@@ -39,31 +40,38 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \lst@newlines=\count91
 \lst@lineno=\count92
 \lst@maxwidth=\dimen106
- (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count93
 \lst@skipnumbers=\count94
 \lst@framebox=\box27
-) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
- (/usr/share/texmf/tex/latex/CJK/CJKutf8.sty
+
+(/usr/share/texmf/tex/latex/CJK/CJKutf8.sty
 Package: CJKutf8 2015/04/18 4.8.4
- (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
-) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
- (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2015/12/03 v1.1r UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
- (/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
 File: t1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -295,7 +303,8 @@ File: t1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
 )
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
- (/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
 File: ot1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -335,7 +344,8 @@ File: ot1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
 )
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
- (/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
 File: omsenc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -358,11 +368,14 @@ Now handling font encoding U ...
    defining Unicode char U+2026 (decimal 8230)
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
-)) (/usr/share/texmf/tex/latex/CJK/CJK.sty
+))
+(/usr/share/texmf/tex/latex/CJK/CJK.sty
 Package: CJK 2015/04/18 4.8.4
- (/usr/share/texmf/tex/latex/CJK/mule/MULEenc.sty
+
+(/usr/share/texmf/tex/latex/CJK/mule/MULEenc.sty
 Package: MULEenc 2015/04/18 4.8.4
-) (/usr/share/texmf/tex/latex/CJK/CJK.enc
+)
+(/usr/share/texmf/tex/latex/CJK/CJK.enc
 File: CJK.enc 2015/04/18 4.8.4
 Now handling font encoding C00 ...
 ... no UTF-8 mapping file for font encoding C00
@@ -431,22 +444,29 @@ Now handling font encoding C62 ...
 )
 LaTeX Info: Redefining \selectfont on input line 755.
 \CJK@indent=\box28
-) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
-)) (/usr/share/texlive/texmf-dist/tex/latex/minted/minted.sty
+))
+(/usr/share/texlive/texmf-dist/tex/latex/minted/minted.sty
 Package: minted 2015/09/09 v2.1 Yet another Pygments shim for LaTeX
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -454,9 +474,12 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
-))) (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2008/02/07
- Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix <2008/02/07> (tvz)
+
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz)
 \FV@CodeLineNo=\count95
 \FV@InFile=\read1
 \FV@TabBox=\box29
@@ -470,9 +493,11 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box30
 \@float@everytoks=\toks19
 \@floatcapt=\box31
-) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count99
 \calc@Bcount=\count100
@@ -484,33 +509,38 @@ LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count101
 \calc@Cskip=\skip45
-) (/usr/share/texlive/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/ifplatform/ifplatform.sty
 Package: ifplatform 2010/10/22 v0.4 Testing for the operating system
- (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/catchfile.sty
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/catchfile.sty
 Package: catchfile 2011/03/01 v1.6 Catch the contents of a file (HO)
 )
-runsystem(uname -s > "test.w18")...executed.
 
- (/home/langman/桌面/acm/acm模板/tex/test.w18)
-runsystem(rm -- "test.w18")...executed.
+Package ifplatform Warning: 
+    shell escape is disabled, so I can only detect \ifwindows.
 
-)
-(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count102
-) (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write4
 \integerpart=\count103
 \decimalpart=\count104
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
-) (/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \linenopenalty=\count105
 \output=\toks20
@@ -543,9 +573,23 @@ LaTeX Info: Redefining \\ on input line 3056.
 \@float@every@listing=\toks21
 \c@listing=\count114
 )
-runsystem(mkdir -p "_minted-test")...executed.
+runsystem(mkdir -p "_minted-test")...disabled (restricted).
 
- (/home/langman/桌面/acm/acm模板/tex/_minted-test/default.pygstyle) (/usr/share/texlive/texmf-dist/tex/latex/picinpar/picinpar.sty
+
+
+! Package minted Error: You must invoke LaTeX with the -shell-escape flag.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \usepackage
+               {picinpar,graphicx}
+Pass the -shell-escape flag to LaTeX. Refer to the minted.sty documentation for
+ more information.
+
+(./_minted-test/default.pygstyle)
+(/usr/share/texlive/texmf-dist/tex/latex/picinpar/picinpar.sty
 Pictures in Paragraphs. Version 1.2a, July 13, 1993
 \br=\count115
 \bl=\count116
@@ -589,23 +633,29 @@ Pictures in Paragraphs. Version 1.2a, July 13, 1993
 \fslice=\box48
 ) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 95.
- (/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 \Gread@gobject=\count125
 ))
 \Gin@req@height=\dimen131
 \Gin@req@width=\dimen132
-) (/usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpage.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
-) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip46
 \f@ncyO@elh=\skip47
 \f@ncyO@erh=\skip48
@@ -617,22 +667,37 @@ Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 \f@ncyO@orf=\skip54
 )
 
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 14.
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 14.
 
 
-Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 15.
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 15.
 
 
-Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 16.
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 16.
 
 
-Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 18.
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 18.
 
-runsystem(which "pygmentize" && touch "test.aex")...executed.
+runsystem(which "pygmentize" && touch "test.aex")...disabled (restricted).
 
-runsystem(rm "test.aex")...executed.
 
-(/home/langman/桌面/acm/acm模板/tex/test.aux)
+! Package minted Error: You must have `pygmentize' installed to use this packag
+e.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 \begin{document}
+                     
+Refer to the installation instructions in the minted documentation for more inf
+ormation.
+
+(./test.aux)
 \openout1 = `test.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -714,7 +779,8 @@ LaTeX Font Info:    ... okay on input line 21.
 \c@lstlisting=\count126
  (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
- (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -727,7 +793,9 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
-) (/home/langman/桌面/acm/acm模板/tex/_minted-test/default-pyg-prefix.pygstyle) (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+)
+(./_minted-test/default-pyg-prefix.pygstyle)
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count127
 \scratchdimen=\dimen133
@@ -742,16 +810,21 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 \everyMPtoPDFconversion=\toks28
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
- (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
 ))
 Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
- (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
 ))
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
@@ -762,24 +835,32 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 22.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 22.
- (/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.bdg
+
+(/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.bdg
 File: UTF8.bdg 2015/04/18 4.8.4
-) (/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.enc
+)
+(/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.enc
 File: UTF8.enc 2015/04/18 4.8.4
-) (/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.chr
+)
+(/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
-) <../scoure/tupian.jpg, id=1, 501.875pt x 500.87125pt>
+)
+<../scoure/tupian.jpg, id=1, 501.875pt x 500.87125pt>
 File: ../scoure/tupian.jpg Graphic file (type jpg)
- <use ../scoure/tupian.jpg>
+
+<use ../scoure/tupian.jpg>
 Package pdftex.def Info: ../scoure/tupian.jpg used on input line 27.
 (pdftex.def)             Requested size: 288.0011pt x 287.44081pt.
  [1
 
-{/home/langman/.texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../scoure/tupian.jpg>] (/home/langman/桌面/acm/acm模板/tex/test.toc
+{/home/langman/.texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../scoure/tupian
+.jpg>] (./test.toc
 LaTeX Font Info:    Try loading font information for C70+gbsn on input line 1.
- (/usr/share/texmf/tex/latex/CJK/UTF8/c70gbsn.fd
+
+(/usr/share/texmf/tex/latex/CJK/UTF8/c70gbsn.fd
 File: c70gbsn.fd 2008/10/03 4.8.1
-) (/usr/share/texmf/tex/latex/CJK/UTF8/c70gbsn.fdx
+)
+(/usr/share/texmf/tex/latex/CJK/UTF8/c70gbsn.fdx
 File: c70gbsn.fdx 2012/05/07 4.8.3
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -791,7 +872,36 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2])
+[2]
+
+! Package inputenc Error: Unicode char 状 (U+72B6)
+(inputenc) not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 ...r <return> to continue without it.}dp}{41}
+                                                  
+Your command was ignored.
+Type I <command> <return> to replace it with another command,
+or <return> to continue without it.
+
+
+! Package inputenc Error: Unicode char 压 (U+538B)
+(inputenc) not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 ...r <return> to continue without it.}dp}{41}
+                                                  
+Your command was ignored.
+Type I <command> <return> to replace it with another command,
+or <return> to continue without it.
+
+)
 \tf@toc=\write6
 \openout6 = `test.toc'.
 
@@ -802,15 +912,27 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[3] (/home/langman/桌面/acm/acm模板/tex/_minted-test/D865A285E5FF1FA7F8580364E4F0B5C304165DC9D3EE7525605DE7E9151046F3.pygtex
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 17.
+[3]
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o "_mi
+nted-test/C23068AA164C39E5E5504DFDC24F28D504165DC9D3EE7525605DE7E9151046F3.pygt
+ex" "../scoure/head.cpp" )...disabled (restricted).
 
 
-LaTeX Font Warning: Font shape `C70/gbsn/m/it' undefined
-(Font)              using `C70/gbsn/m/n' instead on input line 28.
 
-)
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 \inputminted{c++}{../scoure/head.cpp}
+                                          
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect.
+
 
 LaTeX Font Warning: Font shape `C70/gbsn/m/sl' undefined
 (Font)              using `C70/gbsn/m/n' instead on input line 36.
@@ -821,21 +943,39 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[4] (/home/langman/桌面/acm/acm模板/tex/_minted-test/A80332F2393FB3E93E7C8884B95BBCE2FF3DA25DCD1045237A86B3FABE0E5ECC.pygtex) (/home/langman/桌面/acm/acm模板/tex/_minted-test/D1ADC226410A41D650FFB884367EDF2C58B95C5C49AB38EC0B3F0C5BEBAAF060.pygtex
+[4]
+(./_minted-test/A80332F2393FB3E93E7C8884B95BBCE2FF3DA25DCD1045237A86B3FABE0E5EC
+C.pygtex
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 2.
+
+
+LaTeX Font Warning: Font shape `C70/gbsn/m/it' undefined
+(Font)              using `C70/gbsn/m/n' instead on input line 4.
+
+)
+(./_minted-test/D1ADC226410A41D650FFB884367EDF2C58B95C5C49AB38EC0B3F0C5BEBAAF06
+0.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/182EA93D908D8097BA6B2B13BF66B198B1BAA5A9FE20C5E3A17B4490F2A9C91B.pygtex)
+[5])
+(./_minted-test/182EA93D908D8097BA6B2B13BF66B198B1BAA5A9FE20C5E3A17B4490F2A9C91
+B.pygtex)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6] (/home/langman/桌面/acm/acm模板/tex/_minted-test/808AB96DE42EBFFA83139B2406201B48275682DFCF11FD51A2DCF85C64392416.pygtex) (/home/langman/桌面/acm/acm模板/tex/_minted-test/FD912E9DF69C11B23CE4305104537396046F620FF158E482CEB9E644D81286B6.pygtex
+[6]
+(./_minted-test/808AB96DE42EBFFA83139B2406201B48275682DFCF11FD51A2DCF85C6439241
+6.pygtex)
+(./_minted-test/FD912E9DF69C11B23CE4305104537396046F620FF158E482CEB9E644D81286B
+6.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -849,7 +989,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/4D93D55B0FA6C157BF32AB192B5E146AEF62265B00EA990D60B5641673E31552.pygtex) (/home/langman/桌面/acm/acm模板/tex/_minted-test/5EFDDCCD59E29BAD2E8F176B5C0140DFE75CBB65A722E17B5789E94F7FFFC899.pygtex
+[8])
+(./_minted-test/4D93D55B0FA6C157BF32AB192B5E146AEF62265B00EA990D60B5641673E3155
+2.pygtex)
+(./_minted-test/5EFDDCCD59E29BAD2E8F176B5C0140DFE75CBB65A722E17B5789E94F7FFFC89
+9.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -870,14 +1014,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11] (/home/langman/桌面/acm/acm模板/tex/_minted-test/918B1C048244537674B4A78444EC6D9AD0F23017B4E4983C627D7B15DDF22173.pygtex) (/home/langman/桌面/acm/acm模板/tex/_minted-test/94F5B92EC243ED726DB0A0302CEFA8309DCA291C8A9BC78487822A85178BAE13.pygtex
+[11]
+(./_minted-test/918B1C048244537674B4A78444EC6D9AD0F23017B4E4983C627D7B15DDF2217
+3.pygtex)
+(./_minted-test/94F5B92EC243ED726DB0A0302CEFA8309DCA291C8A9BC78487822A85178BAE1
+3.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/B26F280A7825B3E70F129A9EC77BF368D39B15A9A1D6222B067E54DAC89267D4.pygtex
+[12])
+(./_minted-test/B26F280A7825B3E70F129A9EC77BF368D39B15A9A1D6222B067E54DAC89267D
+4.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -891,21 +1041,27 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/B3A5F64B17038D029B15F901CD60FF0B8BDB16A1DB4F67CD562A73E864F432C1.pygtex
+[14])
+(./_minted-test/B3A5F64B17038D029B15F901CD60FF0B8BDB16A1DB4F67CD562A73E864F432C
+1.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/AE6D6F78552CC6483E30CDCFBE0A10A0D8903A196A54D8B3EDC4AF2EB5E4922A.pygtex
+[15])
+(./_minted-test/AE6D6F78552CC6483E30CDCFBE0A10A0D8903A196A54D8B3EDC4AF2EB5E4922
+A.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/2F5AA626EBFEBF62E5E3EE1FFB83AE398116133CCB283121ACF2E7157C22B7C2.pygtex
+[16])
+(./_minted-test/2F5AA626EBFEBF62E5E3EE1FFB83AE398116133CCB283121ACF2E7157C22B7C
+2.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -933,54 +1089,70 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/F3ECC775BDFF57F15C35F5CC29599DBA35599511B530B58181108B50E30518D2.pygtex
+[20])
+(./_minted-test/F3ECC775BDFF57F15C35F5CC29599DBA35599511B530B58181108B50E30518D
+2.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/E3F2307DFF02E3F05C5A9F5F8AA66B37F139BAE2B4442D04C6652EC8C846AD0B.pygtex
+[21])
+(./_minted-test/E3F2307DFF02E3F05C5A9F5F8AA66B37F139BAE2B4442D04C6652EC8C846AD0
+B.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/24277664E896D334F18764C7F32D0F0F852D88CB4F784D47D77765466FF00AA5.pygtex
+[22])
+(./_minted-test/24277664E896D334F18764C7F32D0F0F852D88CB4F784D47D77765466FF00AA
+5.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/3B3AB4718B68B6ABBC9C4AD9EAABC6ABB6611DA64BA47828EB2586BCFC5CF71B.pygtex
+[23])
+(./_minted-test/3B3AB4718B68B6ABBC9C4AD9EAABC6ABB6611DA64BA47828EB2586BCFC5CF71
+B.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/7853309F51D08B6430144C817575FD92427B1768C7F4545648DE1FCB98C19717.pygtex
+[24])
+(./_minted-test/7853309F51D08B6430144C817575FD92427B1768C7F4545648DE1FCB98C1971
+7.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/1DDEC778A036E0CFFA7A4D1DE7DB9DA4E2A1FD936A8BF0EF2B7F611FA178F0E6.pygtex)
+[25])
+(./_minted-test/1DDEC778A036E0CFFA7A4D1DE7DB9DA4E2A1FD936A8BF0EF2B7F611FA178F0E
+6.pygtex)
 Underfull \hbox (badness 10000) in paragraph at lines 129--132
 
  []
 
-(/home/langman/桌面/acm/acm模板/tex/_minted-test/48F6AD9FA6F784102ABFD3337BD3CF541D04C1887EEEB82A95E96ABA0DB33599.pygtex
+
+(./_minted-test/48F6AD9FA6F784102ABFD3337BD3CF541D04C1887EEEB82A95E96ABA0DB3359
+9.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/F2BEBF65E60D22111DC87E4A39AFF2144BCEC8841412BBC30C19C2D366964F9D.pygtex
+[26])
+(./_minted-test/F2BEBF65E60D22111DC87E4A39AFF2144BCEC8841412BBC30C19C2D366964F9
+D.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -994,7 +1166,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28] (/home/langman/桌面/acm/acm模板/tex/_minted-test/1318FC15F0430CA26B51B09A9ECC1B30A169358A93F7817E1764339948E48BC8.pygtex
+[28]
+(./_minted-test/1318FC15F0430CA26B51B09A9ECC1B30A169358A93F7817E1764339948E48BC
+8.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1002,18 +1176,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [29])
-Underfull \hbox (badness 10000) in paragraph at lines 170--173
+Underfull \hbox (badness 10000) in paragraph at lines 171--174
 
  []
 
-(/home/langman/桌面/acm/acm模板/tex/_minted-test/74BC01128A261B012980D6BEAD88FD915F939CE39C435A4A5F79ED28ED066CA2.pygtex)
+
+(./_minted-test/74BC01128A261B012980D6BEAD88FD915F939CE39C435A4A5F79ED28ED066CA
+2.pygtex)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30] (/home/langman/桌面/acm/acm模板/tex/_minted-test/7EFB08EE0C56F1894915D25525CA8263BA3DECA65086A2E2ABD4260F0F406D27.pygtex
+[30]
+(./_minted-test/7EFB08EE0C56F1894915D25525CA8263BA3DECA65086A2E2ABD4260F0F406D2
+7.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1027,7 +1205,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[32]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/BD455B3F3F9AA859CCD7B81711AFDC2032BC302107C6504AA4DBAD950BAE2C15.pygtex
+[32])
+(./_minted-test/BD455B3F3F9AA859CCD7B81711AFDC2032BC302107C6504AA4DBAD950BAE2C1
+5.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1048,35 +1228,45 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[35]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/23B50B08431BAF5C0079AA810B4F1639732A4B6A3D3667E99FF5F207C3953201.pygtex
+[35])
+(./_minted-test/23B50B08431BAF5C0079AA810B4F1639732A4B6A3D3667E99FF5F207C395320
+1.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[36]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/5B48CC3DC88966898607B9E5F6E3A55E3F5E0665793104D8A8EB9F8060C64890.pygtex
+[36])
+(./_minted-test/5B48CC3DC88966898607B9E5F6E3A55E3F5E0665793104D8A8EB9F8060C6489
+0.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[37]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/62282462998C131A3AEA53D672A467D6A1DA1349FA4293162F5CBB7162F6E836.pygtex
+[37])
+(./_minted-test/62282462998C131A3AEA53D672A467D6A1DA1349FA4293162F5CBB7162F6E83
+6.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/984D29947775A7EE4D62F0AF71FFCCA7CABAB91F4A5A2C5D56F1EDDEE9813847.pygtex
+[38])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/7A84418D3960D18FD5FDE1F711C0599E4E6CFF185C299373B763AF89F33DF54C.pygtex
+[39]
+(./_minted-test/984D29947775A7EE4D62F0AF71FFCCA7CABAB91F4A5A2C5D56F1EDDEE981384
+7.pygtex)
+(./_minted-test/7A84418D3960D18FD5FDE1F711C0599E4E6CFF185C299373B763AF89F33DF54
+C.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1086,56 +1276,56 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [40]) 
 AED: lastpage setting LastPage
 
-/home/langman/桌面/acm/acm模板/tex/test.tex:246: PACKAGE INPUTENC ERROR: UNICODE CHAR Ǌ� (U+72B6)
+! PACKAGE INPUTENC ERROR: UNICODE CHAR Ǌ� (U+72B6)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.246 \end{document}
+l.256 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
 OR  <RETURN>  TO CONTINUE WITHOUT IT.
 
 
-/home/langman/桌面/acm/acm模板/tex/test.tex:246: PACKAGE INPUTENC ERROR: UNICODE CHAR ƀ� (U+6001)
+! PACKAGE INPUTENC ERROR: UNICODE CHAR ƀ� (U+6001)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.246 \end{document}
+l.256 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
 OR  <RETURN>  TO CONTINUE WITHOUT IT.
 
 
-/home/langman/桌面/acm/acm模板/tex/test.tex:246: PACKAGE INPUTENC ERROR: UNICODE CHAR Ƚ� (U+8F6C)
+! PACKAGE INPUTENC ERROR: UNICODE CHAR Ƚ� (U+8F6C)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.246 \end{document}
+l.256 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
 OR  <RETURN>  TO CONTINUE WITHOUT IT.
 
 
-/home/langman/桌面/acm/acm模板/tex/test.tex:246: PACKAGE INPUTENC ERROR: UNICODE CHAR Ǉ� (U+79FB)
+! PACKAGE INPUTENC ERROR: UNICODE CHAR Ǉ� (U+79FB)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.246 \end{document}
+l.256 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
@@ -1147,29 +1337,88 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[41] (/home/langman/桌面/acm/acm模板/tex/test.aux)
+[41] (./test.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 9887 strings out of 493029
- 158005 string characters out of 6136233
- 245826 words of memory out of 5000000
- 12846 multiletter control sequences out of 15000+600000
- 43398 words of font info for 154 fonts, out of 8000000 for 9000
+ 9942 strings out of 493029
+ 155674 string characters out of 6136233
+ 247811 words of memory out of 5000000
+ 12904 multiletter control sequences out of 15000+600000
+ 44276 words of font info for 157 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,12n,43p,824b,1557s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu30.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu4e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu4f.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu50.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu51.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu52.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu53.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu54.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu55.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu56.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu57.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu58.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu59.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu5a.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu5b.pfb></usr/share/
-texmf/fonts/type1/arphic/gbsnu/gbsnu5c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu5d.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu5e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu5f.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu60.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu61.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu62.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu63.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu64.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu65.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu66.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu67.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu68.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6a.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6d.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6e.pfb></usr/share/texmf/font
-s/type1/arphic/gbsnu/gbsnu70.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu71.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu72.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu73.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu74.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu75.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu76.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu77.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu78.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu79.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7a.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7d.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7f.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu80.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu81.pfb></usr/share/texmf/fonts/type1/ar
-phic/gbsnu/gbsnu82.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu83.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu88.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu89.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8d.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8f.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu90.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu91.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu94.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu95.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu96.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu97.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu98.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu99.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu9a.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu9e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu
-/gbsnuff.pfb>
-Output written on /home/langman/桌面/acm/acm模板/tex/test.pdf (41 pages, 756175 bytes).
+ 41i,12n,43p,824b,1548s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf/font
+s/type1/arphic/gbsnu/gbsnu30.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbs
+nu4e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu4f.pfb></usr/share/tex
+mf/fonts/type1/arphic/gbsnu/gbsnu50.pfb></usr/share/texmf/fonts/type1/arphic/gb
+snu/gbsnu51.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu52.pfb></usr/sh
+are/texmf/fonts/type1/arphic/gbsnu/gbsnu53.pfb></usr/share/texmf/fonts/type1/ar
+phic/gbsnu/gbsnu54.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu55.pfb><
+/usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu56.pfb></usr/share/texmf/fonts/t
+ype1/arphic/gbsnu/gbsnu57.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu5
+8.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu59.pfb></usr/share/texmf/
+fonts/type1/arphic/gbsnu/gbsnu5a.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu
+/gbsnu5b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu5c.pfb></usr/share
+/texmf/fonts/type1/arphic/gbsnu/gbsnu5d.pfb></usr/share/texmf/fonts/type1/arphi
+c/gbsnu/gbsnu5e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu5f.pfb></us
+r/share/texmf/fonts/type1/arphic/gbsnu/gbsnu60.pfb></usr/share/texmf/fonts/type
+1/arphic/gbsnu/gbsnu61.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu62.p
+fb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu63.pfb></usr/share/texmf/fon
+ts/type1/arphic/gbsnu/gbsnu64.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gb
+snu65.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu66.pfb></usr/share/te
+xmf/fonts/type1/arphic/gbsnu/gbsnu67.pfb></usr/share/texmf/fonts/type1/arphic/g
+bsnu/gbsnu68.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu69.pfb></usr/s
+hare/texmf/fonts/type1/arphic/gbsnu/gbsnu6a.pfb></usr/share/texmf/fonts/type1/a
+rphic/gbsnu/gbsnu6b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6c.pfb>
+</usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6d.pfb></usr/share/texmf/fonts/
+type1/arphic/gbsnu/gbsnu6e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu
+70.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu71.pfb></usr/share/texmf
+/fonts/type1/arphic/gbsnu/gbsnu72.pfb></usr/share/texmf/fonts/type1/arphic/gbsn
+u/gbsnu73.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu74.pfb></usr/shar
+e/texmf/fonts/type1/arphic/gbsnu/gbsnu75.pfb></usr/share/texmf/fonts/type1/arph
+ic/gbsnu/gbsnu76.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu77.pfb></u
+sr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu78.pfb></usr/share/texmf/fonts/typ
+e1/arphic/gbsnu/gbsnu79.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7a.
+pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7b.pfb></usr/share/texmf/fo
+nts/type1/arphic/gbsnu/gbsnu7c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/g
+bsnu7d.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7e.pfb></usr/share/t
+exmf/fonts/type1/arphic/gbsnu/gbsnu7f.pfb></usr/share/texmf/fonts/type1/arphic/
+gbsnu/gbsnu80.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu81.pfb></usr/
+share/texmf/fonts/type1/arphic/gbsnu/gbsnu82.pfb></usr/share/texmf/fonts/type1/
+arphic/gbsnu/gbsnu83.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu88.pfb
+></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu89.pfb></usr/share/texmf/fonts
+/type1/arphic/gbsnu/gbsnu8b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsn
+u8c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8d.pfb></usr/share/texm
+f/fonts/type1/arphic/gbsnu/gbsnu8f.pfb></usr/share/texmf/fonts/type1/arphic/gbs
+nu/gbsnu90.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu91.pfb></usr/sha
+re/texmf/fonts/type1/arphic/gbsnu/gbsnu94.pfb></usr/share/texmf/fonts/type1/arp
+hic/gbsnu/gbsnu95.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu96.pfb></
+usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu97.pfb></usr/share/texmf/fonts/ty
+pe1/arphic/gbsnu/gbsnu98.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu99
+.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu9a.pfb></usr/share/texmf/f
+onts/type1/arphic/gbsnu/gbsnu9e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/
+gbsnuff.pfb>
+Output written on test.pdf (41 pages, 772215 bytes).
 PDF statistics:
- 555 PDF objects out of 1000 (max. 8388607)
- 351 compressed objects within 4 object streams
+ 560 PDF objects out of 1000 (max. 8388607)
+ 354 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 286 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 290 words of extra memory for PDF output out of 10000 (max. 10000000)
 

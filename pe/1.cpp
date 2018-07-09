@@ -22,10 +22,18 @@ const int mod = 1e9+7 ;
 const double eps = 1e-6;
 int main()
 {
-  freopen("in.txt","r",stdin);
+  // freopen("in.txt","r",stdin);
   freopen("out.txt","w",stdout);
   std::ios::sync_with_stdio(false);
   cin.tie(0);
-  //舒服了
+   int sum = 0;
+   for(int i = 3;i<1000;i++)
+   {
+     if(i%3 == 0 || i%5 == 0)
+     {
+       sum+=i;
+     }
+   }
+   cout<<sum<<endl;
   return 0;
 }

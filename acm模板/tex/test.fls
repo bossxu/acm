@@ -200,6 +200,8 @@ INPUT /usr/share/texmf/fonts/tfm/arphic/gbsnu/gbsnu70.tfm
 INPUT /usr/share/texmf/fonts/tfm/arphic/gbsnu/gbsnu66.tfm
 INPUT /usr/share/texmf/fonts/tfm/arphic/gbsnu/gbsnu8f.tfm
 INPUT /usr/share/texmf/fonts/tfm/arphic/gbsnu/gbsnu95.tfm
+INPUT /usr/share/texmf/fonts/tfm/arphic/gbsnu/gbsnu69.tfm
+INPUT /usr/share/texmf/fonts/tfm/arphic/gbsnu/gbsnu73.tfm
 INPUT /usr/share/texmf/fonts/tfm/arphic/gbsnu/gbsnu79.tfm
 INPUT /usr/share/texmf/fonts/tfm/arphic/gbsnu/gbsnu80.tfm
 OUTPUT /home/langman/桌面/acm/acm模板/tex/test.toc
@@ -207,10 +209,10 @@ INPUT /usr/share/texmf/fonts/tfm/arphic/gbsnu/gbsnu59.tfm
 INPUT /usr/share/texmf/fonts/tfm/arphic/gbsnu/gbsnu65.tfm
 INPUT /usr/share/texmf/fonts/tfm/arphic/gbsnu/gbsnu4e.tfm
 INPUT ../scoure/head.cpp
-INPUT /home/langman/桌面/acm/acm模板/tex/_minted-test/D865A285E5FF1FA7F8580364E4F0B5C304165DC9D3EE7525605DE7E9151046F3.pygtex
-INPUT /home/langman/桌面/acm/acm模板/tex/_minted-test/D865A285E5FF1FA7F8580364E4F0B5C304165DC9D3EE7525605DE7E9151046F3.pygtex
-INPUT /home/langman/桌面/acm/acm模板/tex/_minted-test/D865A285E5FF1FA7F8580364E4F0B5C304165DC9D3EE7525605DE7E9151046F3.pygtex
-INPUT /home/langman/桌面/acm/acm模板/tex/_minted-test/D865A285E5FF1FA7F8580364E4F0B5C304165DC9D3EE7525605DE7E9151046F3.pygtex
+INPUT /home/langman/桌面/acm/acm模板/tex/_minted-test/C23068AA164C39E5E5504DFDC24F28D504165DC9D3EE7525605DE7E9151046F3.pygtex
+INPUT /home/langman/桌面/acm/acm模板/tex/_minted-test/C23068AA164C39E5E5504DFDC24F28D504165DC9D3EE7525605DE7E9151046F3.pygtex
+INPUT /home/langman/桌面/acm/acm模板/tex/_minted-test/C23068AA164C39E5E5504DFDC24F28D504165DC9D3EE7525605DE7E9151046F3.pygtex
+INPUT /home/langman/桌面/acm/acm模板/tex/_minted-test/C23068AA164C39E5E5504DFDC24F28D504165DC9D3EE7525605DE7E9151046F3.pygtex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmitt10.tfm
 INPUT /usr/share/texmf/fonts/tfm/arphic/gbsnu/gbsnu82.tfm
 INPUT /usr/share/texmf/fonts/tfm/arphic/gbsnu/gbsnu56.tfm
@@ -255,7 +257,6 @@ INPUT /home/langman/桌面/acm/acm模板/tex/_minted-test/FD912E9DF69C11B23CE430
 INPUT /home/langman/桌面/acm/acm模板/tex/_minted-test/FD912E9DF69C11B23CE4305104537396046F620FF158E482CEB9E644D81286B6.pygtex
 INPUT /home/langman/桌面/acm/acm模板/tex/_minted-test/FD912E9DF69C11B23CE4305104537396046F620FF158E482CEB9E644D81286B6.pygtex
 INPUT /usr/share/texmf/fonts/tfm/arphic/gbsnu/gbsnu78.tfm
-INPUT /usr/share/texmf/fonts/tfm/arphic/gbsnu/gbsnu73.tfm
 INPUT /usr/share/texmf/fonts/tfm/arphic/gbsnu/gbsnu5c.tfm
 INPUT /usr/share/texmf/fonts/tfm/arphic/gbsnu/gbsnu75.tfm
 INPUT /usr/share/texmf/fonts/tfm/arphic/gbsnu/gbsnu62.tfm
@@ -389,6 +390,11 @@ INPUT /home/langman/桌面/acm/acm模板/tex/_minted-test/7EFB08EE0C56F1894915D2
 INPUT /home/langman/桌面/acm/acm模板/tex/_minted-test/7EFB08EE0C56F1894915D25525CA8263BA3DECA65086A2E2ABD4260F0F406D27.pygtex
 INPUT /home/langman/桌面/acm/acm模板/tex/_minted-test/7EFB08EE0C56F1894915D25525CA8263BA3DECA65086A2E2ABD4260F0F406D27.pygtex
 INPUT /home/langman/桌面/acm/acm模板/tex/_minted-test/7EFB08EE0C56F1894915D25525CA8263BA3DECA65086A2E2ABD4260F0F406D27.pygtex
+INPUT ../scoure/math/bm.cpp
+INPUT /home/langman/桌面/acm/acm模板/tex/_minted-test/7DC718C488A4A7D1BE3D1CB56E638E67377C4544FDAFF41BA8C2B9A5BDBC1EBC.pygtex
+INPUT /home/langman/桌面/acm/acm模板/tex/_minted-test/7DC718C488A4A7D1BE3D1CB56E638E67377C4544FDAFF41BA8C2B9A5BDBC1EBC.pygtex
+INPUT /home/langman/桌面/acm/acm模板/tex/_minted-test/7DC718C488A4A7D1BE3D1CB56E638E67377C4544FDAFF41BA8C2B9A5BDBC1EBC.pygtex
+INPUT /home/langman/桌面/acm/acm模板/tex/_minted-test/7DC718C488A4A7D1BE3D1CB56E638E67377C4544FDAFF41BA8C2B9A5BDBC1EBC.pygtex
 INPUT ../scoure/math/fft.cpp
 INPUT /home/langman/桌面/acm/acm模板/tex/_minted-test/BD455B3F3F9AA859CCD7B81711AFDC2032BC302107C6504AA4DBAD950BAE2C15.pygtex
 INPUT /home/langman/桌面/acm/acm模板/tex/_minted-test/BD455B3F3F9AA859CCD7B81711AFDC2032BC302107C6504AA4DBAD950BAE2C15.pygtex
@@ -414,6 +420,8 @@ INPUT /home/langman/桌面/acm/acm模板/tex/_minted-test/62282462998C131A3AEA53
 INPUT /home/langman/桌面/acm/acm模板/tex/_minted-test/62282462998C131A3AEA53D672A467D6A1DA1349FA4293162F5CBB7162F6E836.pygtex
 INPUT /home/langman/桌面/acm/acm模板/tex/_minted-test/62282462998C131A3AEA53D672A467D6A1DA1349FA4293162F5CBB7162F6E836.pygtex
 INPUT /home/langman/桌面/acm/acm模板/tex/_minted-test/62282462998C131A3AEA53D672A467D6A1DA1349FA4293162F5CBB7162F6E836.pygtex
+INPUT /usr/share/texmf/fonts/tfm/arphic/gbsnu/gbsnu69.tfm
+INPUT /usr/share/texmf/fonts/tfm/arphic/gbsnu/gbsnu73.tfm
 INPUT /usr/share/texmf/fonts/tfm/arphic/gbsnu/gbsnu72.tfm
 INPUT /usr/share/texmf/fonts/tfm/arphic/gbsnu/gbsnu60.tfm
 INPUT /usr/share/texmf/fonts/tfm/arphic/gbsnu/gbsnu8f.tfm
@@ -475,6 +483,7 @@ INPUT /usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu65.pfb
 INPUT /usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu66.pfb
 INPUT /usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu67.pfb
 INPUT /usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu68.pfb
+INPUT /usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu69.pfb
 INPUT /usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6a.pfb
 INPUT /usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6b.pfb
 INPUT /usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6c.pfb

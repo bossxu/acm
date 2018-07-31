@@ -8,14 +8,9 @@
 %中文断行
 \begin{document}
 \begin{CJK}{UTF8}{gbsn}
-
-拉格朗日插值法\\
-这个是对于一个n次函数,我用n+1个点去确定的一种方法,相当于对于直线来说,我是两个点去确定这个玩意,但是现在我们是通过n+1个点去确定这个曲线
-$$ L_n(x) = \sum_{i = 1}^n(\prod_{j=1,j \neq i}\frac{x-x_j}{x-x_i})*y_i$$
-牛顿插值法\\
-\inputminted{c++}{../scoure/math/lang.cpp}
-这怎么说了,这个的好处在于我们不断对于一个函数进行加点的时候,不会导致之前的重新计算,好像也没什么用处
-$$N_n(x) = f(x_0) + f(x_0,x_1)(x-x_0)+  .... +f(x_0,x_1,....,x_n)(x-x_0)(x-x_1)....(x - x_n)$$
-$$ f(x_0,x_1...x_n) = \sum_{j = 0}^n(\frac{f_j}{\prod_{i =0,i \neq j}^n(x_j-x_i)} )$$
+伯努利数\\
+这个数的定义来自于，之前人们对自然数幂的求解的过程中，出现的一种操作，感觉这个的主要目的在于求有关自然数幂和的问题上，所有的问题都不是直接给出的，多点见识。\\
+$\sum_{i=1}^n i^k = \frac{1}{k+1}*\sum_{i = 1}^{k+1}C_{k+1}^i*B_{k+1-i}*(n+1)^i$ \qquad $B_0 = 1,\sum^n_{k = 0}C_{n+1}^k*B_k = 0$ \qquad $B_n = -\frac{1}{n+1}\sum_{i=1}^{n-1}C_{n+1}^i*B_i$
+\inputminted{c++}{../scoure/math/bo.cpp}
 \end{CJK}
 \end{document}

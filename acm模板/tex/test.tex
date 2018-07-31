@@ -94,14 +94,18 @@
 \section{数学方面}
 \subsection{三个特别的数}
 \subsubsection{Fib 数列}
-$$f(x) = f(x-1)+f(x-2)$$
-$$f(0) = 0,f(1) = 1$$
+$f(x) = f(x-1)+f(x-2)$ \qquad $f(0) = 0,f(1) = 1$
 \subsubsection{卡特兰 数}
-$$\sum_{i=1}^n f_i*f_{n-i}=f_n$$
-$$h(n) = C_{2n}^n - C_{2n-1}^{n}$$
+$\sum_{i=1}^n f_i*f_{n-i}=f_n$ \qquad
+$h(n) = C_{2n}^n - C_{2n-1}^{n}$
 注意它这个数字来自于什么情况。
-\subsubsection{斯大林公式}
-$$\sqrt{2*PI*n} * (\frac{n}{e})^n = n!$$
+\subsubsection{斯特林公式}
+$\sqrt{2*PI*n} * (\frac{n}{e})^n = n!$
+\subsubsection{伯努力数}
+这个数的定义来自于，之前人们对自然数幂的求解的过程中，出现的一种操作，感觉这个的主要目的在于求有关自然数幂和的问题上，所有的问题都不是直接给出的，多点见识。\\
+$\sum_{i=1}^n i^k = \frac{1}{k+1}*\sum_{i = 1}^{k+1}C_{k+1}^i*B_{k+1-i}*(n+1)^i$ \qquad $B_0 = 1,\sum^n_{k = 0}C_{n+1}^k*B_k = 0$ \\ $B_n = -\frac{1}{n+1}\sum_{i=1}^{n-1}C_{n+1}^i*B_i$
+下面是一个求自然数幂和的板子
+\inputminted{c++}{../scoure/math/bo.cpp}
 \subsection{数论}
 第一个自然是最基础的欧几里得算法，欧几里得算法的用处有很多，求最大公倍数，解方程，很多。在后面的过程会把一些常见的板子列出来，一般来说这些板子
 都已经经过验证，但是不好说对吧。简单题我们可以通过
@@ -136,7 +140,8 @@ m,n互质$\phi(mn) = \phi(m) * \phi(n)$\\
 这个东西好呀，他求的是比n小的，并且和n互质的数的个数
 \inputminted{c++}{../scoure/math/oula.cpp}
 更多的来说我觉得这个东西是一个工具，他对解一些题有很重要的作用，起到一个工具的作用
-我目前学的比较浅，对他的优化作用没有很深的了解。
+我目前学的比较浅，对他的优化作用没有很深的了解。几个定理\\
+$\sum_{d|n}\phi(d) = n$ \qquad $\sum_{i=1}^n k_{gcd(k,n) = 1} = \frac{n*\phi(n)}{2}$
 \subsubsection{莫比乌斯函数}
 $F_n = \sum_{d|n}^n f_d$
 $f_n = \sum_{d|n} u(d)*F(\frac{n}{d})$\\

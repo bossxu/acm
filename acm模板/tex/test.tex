@@ -4,6 +4,7 @@
 \usepackage{minted}
 \usepackage{picinpar,graphicx}
 \usepackage{CJK}
+\usepackage{geometry}
 \author{langman}
 \title{ACM-template}
 \usepackage{lastpage}%获得总页数
@@ -17,6 +18,7 @@
 \pageref{LastPage}}%奇数页右侧，偶数页左侧显示 当前页 of 总页数
 \renewcommand{\headrulewidth}{0.4pt}%改为0pt即可去掉页眉下面的横线
 \renewcommand{\footrulewidth}{0.4pt}
+\geometry{left = 2.5cm,right = 2.5cm,top = 2.5cm,botton = 2.5cm}
 \begin{document}
 \maketitle
 \vspace{3cm}
@@ -75,6 +77,8 @@
 \section{常用数据结构}
 \subsection{STL}
 \inputminted{c++}{../scoure/date/duilie.cpp}
+\subsection{单调栈}
+\inputminted{c++}{../scoure/date/dandianzhan.cpp}
 \subsection{树状数组}
 适用于的方面是，单点更新，多次查询。
 \inputminted{c++}{../scoure/date/treevector.cpp}
@@ -227,6 +231,15 @@ PICK定理 设以整数点为顶点的多边形的面积为S，多边形内部�
 \inputminted{c++}{../scoure/math/tubao.cpp}
 \subsection{概率论}
 目前做的题目比较少,有次做到过一题,他的解决方法是,对于期望问题,我们是先对子状态进行分析,再去求每个子状态的概率,和期望.思想在这个地方,要不然就是找规律.
+\subsection{插值法}
+拉格朗日插值法\\
+这个是对于一个n次函数,我用n+1个点去确定的一种方法,相当于对于直线来说,我是两个点去确定这个玩意,但是现在我们是通过n+1个点去确定这个曲线
+$$ L_n(x) = \sum_{i = 1}^n(\prod_{j=1,j \neq i}\frac{x-x_j}{x-x_i})*y_i$$
+\inputminted{c++}{../scoure/math/lang.cpp}
+牛顿插值法\\
+这怎么说了,这个的好处在于我们不断对于一个函数进行加点的时候,不会导致之前的重新计算,好像也没什么用处
+$$N_n(x) = f(x_0) + f(x_0,x_1)(x-x_0)+  .... +f(x_0,x_1,....,x_n)(x-x_0)(x-x_1)....(x - x_n)$$
+$$ f(x_0,x_1...x_n) = \sum_{j = 0}^n(\frac{f_j}{\prod_{i =0,i \neq j}^n(x_j-x_i)} )$$
 \section{状态转移 dp}
 dp的定义：
 1：记忆化搜索；2：状态转移

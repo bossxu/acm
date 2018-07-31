@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.12.23)  18 JUL 2018 16:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.12.23)  31 JUL 2018 12:07
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -603,6 +603,26 @@ File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 ))
 \Gin@req@height=\dimen131
 \Gin@req@width=\dimen132
+) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+) (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count126
+\Gm@cntv=\count127
+\c@Gm@tempcnt=\count128
+\Gm@bindingoffset=\dimen133
+\Gm@wd@mp=\dimen134
+\Gm@odd@mp=\dimen135
+\Gm@even@mp=\dimen136
+\Gm@layoutwidth=\dimen137
+\Gm@layoutheight=\dimen138
+\Gm@layouthoffset=\dimen139
+\Gm@layoutvoffset=\dimen140
+\Gm@dimlist=\toks27
 ) (/usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 ) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
@@ -617,16 +637,28 @@ Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 \f@ncyO@orf=\skip54
 )
 
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 13.
-
-
-Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 14.
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 14.
 
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 15.
 
 
-Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 17.
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 16.
+
+
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 18.
+
+
+/home/langman/桌面/acm/acm模板/tex/test.tex:21: Package keyval Error: botton undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 ...,right = 2.5cm,top = 2.5cm,botton = 2.5cm}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 runsystem(which "pygmentize" && touch "test.aex")...executed.
 
@@ -635,83 +667,83 @@ runsystem(rm "test.aex")...executed.
 (/home/langman/桌面/acm/acm模板/tex/test.aux)
 \openout1 = `test.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-\c@lstlisting=\count126
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+\c@lstlisting=\count129
  (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
@@ -729,17 +761,17 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 ) (/home/langman/桌面/acm/acm模板/tex/_minted-test/default-pyg-prefix.pygstyle) (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count127
-\scratchdimen=\dimen133
+\scratchcounter=\count130
+\scratchdimen=\dimen141
 \scratchbox=\box49
-\nofMPsegments=\count128
-\nofMParguments=\count129
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count130
-\MPscratchDim=\dimen134
-\MPnumerator=\count131
-\makeMPintoPDFobject=\count132
-\everyMPtoPDFconversion=\toks28
+\nofMPsegments=\count131
+\nofMParguments=\count132
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count133
+\MPscratchDim=\dimen142
+\MPnumerator=\count134
+\makeMPintoPDFobject=\count135
+\everyMPtoPDFconversion=\toks29
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
  (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -753,16 +785,50 @@ Package grfext Info: Graphics extension search list:
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 672.50832pt, 101.40665pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=672.50832pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-38.1381pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=50.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 20.
+(lastpage)             ! on input line 22.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 21.
+(Font)              <12> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 21.
+(Font)              <8> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 21.
- (/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.bdg
+(Font)              <6> on input line 23.
+(/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.bdg
 File: UTF8.bdg 2015/04/18 4.8.4
 ) (/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.enc
 File: UTF8.enc 2015/04/18 4.8.4
@@ -771,8 +837,8 @@ File: UTF8.chr 2015/04/18 4.8.4
 ) <../scoure/tupian.jpg, id=1, 501.875pt x 500.87125pt>
 File: ../scoure/tupian.jpg Graphic file (type jpg)
  <use ../scoure/tupian.jpg>
-Package pdftex.def Info: ../scoure/tupian.jpg used on input line 26.
-(pdftex.def)             Requested size: 288.0011pt x 287.44081pt.
+Package pdftex.def Info: ../scoure/tupian.jpg used on input line 28.
+(pdftex.def)             Requested size: 364.19667pt x 363.48537pt.
  [1
 
 {/home/langman/.texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../scoure/tupian.jpg>] (/home/langman/桌面/acm/acm模板/tex/test.toc
@@ -813,7 +879,7 @@ LaTeX Font Warning: Font shape `C70/gbsn/m/it' undefined
 )
 
 LaTeX Font Warning: Font shape `C70/gbsn/m/sl' undefined
-(Font)              using `C70/gbsn/m/n' instead on input line 35.
+(Font)              using `C70/gbsn/m/n' instead on input line 37.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -842,14 +908,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7]
+[7]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/4D93D55B0FA6C157BF32AB192B5E146AEF62265B00EA990D60B5641673E31552.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/4D93D55B0FA6C157BF32AB192B5E146AEF62265B00EA990D60B5641673E31552.pygtex) (/home/langman/桌面/acm/acm模板/tex/_minted-test/5EFDDCCD59E29BAD2E8F176B5C0140DFE75CBB65A722E17B5789E94F7FFFC899.pygtex
+[8]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/5EFDDCCD59E29BAD2E8F176B5C0140DFE75CBB65A722E17B5789E94F7FFFC899.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -898,7 +964,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/AE6D6F78552CC6483E30CDCFBE0A10A0D8903A196A54D8B3EDC4AF2EB5E4922A.pygtex
+[15]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/B2E5F15631B8B0895BF042AB6292934C3584A07D8482D424F417C46020C89255.pygtex) (/home/langman/桌面/acm/acm模板/tex/_minted-test/AE6D6F78552CC6483E30CDCFBE0A10A0D8903A196A54D8B3EDC4AF2EB5E4922A.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -934,42 +1000,41 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [20]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/F3ECC775BDFF57F15C35F5CC29599DBA35599511B530B58181108B50E30518D2.pygtex
+Overfull \hbox (108.58966pt too wide) in paragraph at lines 91--1
+\C70/gbsn/m/it/10.95/62 ^^Q \C70/gbsn/m/sl/10.95/4e * � ` \C70/gbsn/m/it/10.95/60 � \C70/gbsn/m/it/10.95/4f ^^? \C70/gbsn/m/sl/10.95/75 (\OT1/cmr/m/n/10.95 Java\C70/gbsn/m/n/10.95/30 ^^B \C70/gbsn/m/it/10.95/5c 1 \C70/gbsn/m/it/10.95/66 / \C70/gbsn/m/it/10.95/60 ^^N \C70/gbsn/m/sl/10.95/4e H \C70/gbsn/m/sl/10.95/8b � \C70/gbsn/m/it/10.95/54 b\OT1/cmr/m/n/10.95 ,\C70/gbsn/m/it/10.95/61 ^^_ \C70/gbsn/m/it/10.95/89 � � \C70/gbsn/m/sl/10.95/5b f \C70/gbsn/m/it/10.95/4f ^^Z \C70/gbsn/m/sl/10.95/75 ( \C70/gbsn/bx/n/10.95/81 � \C70/gbsn/bx/n/10.95/52 � \C70/gbsn/m/n/10.95/88 e \C70/gbsn/bx/n/10.95/51 h \C70/gbsn/m/sl/10.95/4e � \C70/gbsn/m/it/10.95/53 � \C70/gbsn/bx/n/10.95/51 � \C70/gbsn/m/sl/10.95/4e * \C70/gbsn/m/sl/10.95/5e 8 \C70/gbsn/m/sl/10.95/75 ( \C70/gbsn/m/it/10.95/76 � \C70/gbsn/bx/n/10.95/52 � \C70/gbsn/bx/n/10.95/51 � \C70/gbsn/m/sl/10.95/4e X \C70/gbsn/m/it/10.95/96 d \C70/gbsn/bx/n/10.95/52 �\OT1/cmr/m/n/10.95 add\C70/gbsn/bx/n/10.95/51 �\OT1/cmr/m/n/10.95 sub\C70/gbsn/m/sl/10
+.95/4e X\OT1/cmr/m/n/10.95 mul\C70/gbsn/m/it/10.95/96 d\OT1/cmr/m/n/10.95 div\C70/gbsn/m/it/10.95/6a !\OT1/cmr/m/n/10.95 mod\C70/gbsn/m/it/10.95/5c 1
+ []
+
+)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/E3F2307DFF02E3F05C5A9F5F8AA66B37F139BAE2B4442D04C6652EC8C846AD0B.pygtex
+[21] (/home/langman/桌面/acm/acm模板/tex/_minted-test/E3F2307DFF02E3F05C5A9F5F8AA66B37F139BAE2B4442D04C6652EC8C846AD0B.pygtex) (/home/langman/桌面/acm/acm模板/tex/_minted-test/24277664E896D334F18764C7F32D0F0F852D88CB4F784D47D77765466FF00AA5.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/24277664E896D334F18764C7F32D0F0F852D88CB4F784D47D77765466FF00AA5.pygtex
+[22]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/3B3AB4718B68B6ABBC9C4AD9EAABC6ABB6611DA64BA47828EB2586BCFC5CF71B.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/3B3AB4718B68B6ABBC9C4AD9EAABC6ABB6611DA64BA47828EB2586BCFC5CF71B.pygtex
+[23]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/7853309F51D08B6430144C817575FD92427B1768C7F4545648DE1FCB98C19717.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/7853309F51D08B6430144C817575FD92427B1768C7F4545648DE1FCB98C19717.pygtex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[25]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/1DDEC778A036E0CFFA7A4D1DE7DB9DA4E2A1FD936A8BF0EF2B7F611FA178F0E6.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 128--131
+[24]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/1DDEC778A036E0CFFA7A4D1DE7DB9DA4E2A1FD936A8BF0EF2B7F611FA178F0E6.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 132--135
 
  []
 
@@ -980,54 +1045,60 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/F2BEBF65E60D22111DC87E4A39AFF2144BCEC8841412BBC30C19C2D366964F9D.pygtex
+[25]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/F2BEBF65E60D22111DC87E4A39AFF2144BCEC8841412BBC30C19C2D366964F9D.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[27])
+[26])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28] (/home/langman/桌面/acm/acm模板/tex/_minted-test/1318FC15F0430CA26B51B09A9ECC1B30A169358A93F7817E1764339948E48BC8.pygtex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[29])
-Underfull \hbox (badness 10000) in paragraph at lines 170--173
+[27] (/home/langman/桌面/acm/acm模板/tex/_minted-test/1318FC15F0430CA26B51B09A9ECC1B30A169358A93F7817E1764339948E48BC8.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 174--177
 
  []
 
-(/home/langman/桌面/acm/acm模板/tex/_minted-test/74BC01128A261B012980D6BEAD88FD915F939CE39C435A4A5F79ED28ED066CA2.pygtex)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30] (/home/langman/桌面/acm/acm模板/tex/_minted-test/7EFB08EE0C56F1894915D25525CA8263BA3DECA65086A2E2ABD4260F0F406D27.pygtex
+[28] (/home/langman/桌面/acm/acm模板/tex/_minted-test/74BC01128A261B012980D6BEAD88FD915F939CE39C435A4A5F79ED28ED066CA2.pygtex) (/home/langman/桌面/acm/acm模板/tex/_minted-test/7EFB08EE0C56F1894915D25525CA8263BA3DECA65086A2E2ABD4260F0F406D27.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[31]
+[29]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[32]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/7DC718C488A4A7D1BE3D1CB56E638E67377C4544FDAFF41BA8C2B9A5BDBC1EBC.pygtex
+[30]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[31]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/7DC718C488A4A7D1BE3D1CB56E638E67377C4544FDAFF41BA8C2B9A5BDBC1EBC.pygtex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[32]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/BD455B3F3F9AA859CCD7B81711AFDC2032BC302107C6504AA4DBAD950BAE2C15.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1041,115 +1112,108 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[34]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/BD455B3F3F9AA859CCD7B81711AFDC2032BC302107C6504AA4DBAD950BAE2C15.pygtex
+[34]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[35]
+[35]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/23B50B08431BAF5C0079AA810B4F1639732A4B6A3D3667E99FF5F207C3953201.pygtex)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[36]
+[36] (/home/langman/桌面/acm/acm模板/tex/_minted-test/5B48CC3DC88966898607B9E5F6E3A55E3F5E0665793104D8A8EB9F8060C64890.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[37]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/23B50B08431BAF5C0079AA810B4F1639732A4B6A3D3667E99FF5F207C3953201.pygtex
+[37]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/62282462998C131A3AEA53D672A467D6A1DA1349FA4293162F5CBB7162F6E836.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/5B48CC3DC88966898607B9E5F6E3A55E3F5E0665793104D8A8EB9F8060C64890.pygtex
+[38]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/64F6E39EDF946EBECBA6424EDB5606111673D31EA026EE3FC1C17652734E8FEB.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/62282462998C131A3AEA53D672A467D6A1DA1349FA4293162F5CBB7162F6E836.pygtex
+[39]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/984D29947775A7EE4D62F0AF71FFCCA7CABAB91F4A5A2C5D56F1EDDEE9813847.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[40]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/984D29947775A7EE4D62F0AF71FFCCA7CABAB91F4A5A2C5D56F1EDDEE9813847.pygtex
+[40]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/7A84418D3960D18FD5FDE1F711C0599E4E6CFF185C299373B763AF89F33DF54C.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[41]) (/home/langman/桌面/acm/acm模板/tex/_minted-test/7A84418D3960D18FD5FDE1F711C0599E4E6CFF185C299373B763AF89F33DF54C.pygtex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[42]) 
+[41]) 
 AED: lastpage setting LastPage
 
-/home/langman/桌面/acm/acm模板/tex/test.tex:257: PACKAGE INPUTENC ERROR: UNICODE CHAR Ǌ� (U+72B6)
+/home/langman/桌面/acm/acm模板/tex/test.tex:270: PACKAGE INPUTENC ERROR: UNICODE CHAR Ǌ� (U+72B6)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.257 \end{document}
+l.270 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
 OR  <RETURN>  TO CONTINUE WITHOUT IT.
 
 
-/home/langman/桌面/acm/acm模板/tex/test.tex:257: PACKAGE INPUTENC ERROR: UNICODE CHAR ƀ� (U+6001)
+/home/langman/桌面/acm/acm模板/tex/test.tex:270: PACKAGE INPUTENC ERROR: UNICODE CHAR ƀ� (U+6001)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.257 \end{document}
+l.270 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
 OR  <RETURN>  TO CONTINUE WITHOUT IT.
 
 
-/home/langman/桌面/acm/acm模板/tex/test.tex:257: PACKAGE INPUTENC ERROR: UNICODE CHAR Ƚ� (U+8F6C)
+/home/langman/桌面/acm/acm模板/tex/test.tex:270: PACKAGE INPUTENC ERROR: UNICODE CHAR Ƚ� (U+8F6C)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.257 \end{document}
+l.270 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
 OR  <RETURN>  TO CONTINUE WITHOUT IT.
 
 
-/home/langman/桌面/acm/acm模板/tex/test.tex:257: PACKAGE INPUTENC ERROR: UNICODE CHAR Ǉ� (U+79FB)
+/home/langman/桌面/acm/acm模板/tex/test.tex:270: PACKAGE INPUTENC ERROR: UNICODE CHAR Ǉ� (U+79FB)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.257 \end{document}
+l.270 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
@@ -1161,29 +1225,29 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[43] (/home/langman/桌面/acm/acm模板/tex/test.aux)
+[42] (/home/langman/桌面/acm/acm模板/tex/test.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 9958 strings out of 493029
- 159409 string characters out of 6136233
- 248679 words of memory out of 5000000
- 12910 multiletter control sequences out of 15000+600000
- 44276 words of font info for 157 fonts, out of 8000000 for 9000
+ 10477 strings out of 493029
+ 167779 string characters out of 6136233
+ 265012 words of memory out of 5000000
+ 13407 multiletter control sequences out of 15000+600000
+ 45342 words of font info for 161 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,12n,43p,824b,1579s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,12n,43p,1144b,1591s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu30.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu4e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu4f.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu50.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu51.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu52.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu53.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu54.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu55.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu56.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu57.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu58.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu59.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu5a.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu5b.pfb></usr/share/
 texmf/fonts/type1/arphic/gbsnu/gbsnu5c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu5d.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu5e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu5f.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu60.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu61.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu62.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu63.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu64.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu65.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu66.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu67.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu68.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu69.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6a.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6d.pfb></usr/share/texmf/font
 s/type1/arphic/gbsnu/gbsnu6e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu70.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu71.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu72.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu73.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu74.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu75.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu76.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu77.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu78.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu79.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7a.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7d.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7f.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu80.pfb></usr/share/texmf/fonts/type1/ar
 phic/gbsnu/gbsnu81.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu82.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu83.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu88.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu89.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8d.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8f.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu90.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu91.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu94.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu95.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu96.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu97.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu98.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu99.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu9a.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu
 /gbsnu9e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnuff.pfb>
-Output written on /home/langman/桌面/acm/acm模板/tex/test.pdf (43 pages, 776660 bytes).
+Output written on /home/langman/桌面/acm/acm模板/tex/test.pdf (42 pages, 782951 bytes).
 PDF statistics:
- 567 PDF objects out of 1000 (max. 8388607)
- 359 compressed objects within 4 object streams
+ 563 PDF objects out of 1000 (max. 8388607)
+ 356 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  290 words of extra memory for PDF output out of 10000 (max. 10000000)
 

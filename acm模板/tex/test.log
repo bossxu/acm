@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.7.31)  31 JUL 2018 20:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.7.31)  1 AUG 2018 21:25
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -8,8 +8,8 @@ LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -682,6 +682,13 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@height=\dimen135
 \Gin@req@width=\dimen136
 )
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
@@ -723,19 +730,19 @@ s
 )
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 14.
-
-
-Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 15.
-
-
-Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
 less on input line 16.
 
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 17.
+
+
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
 less on input line 18.
+
+
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 20.
 
 
 ! Package keyval Error: botton undefined.
@@ -744,111 +751,10 @@ See the keyval package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.21 ...,right = 2.5cm,top = 2.5cm,botton = 2.5cm}
+l.23 ...,right = 2.5cm,top = 2.5cm,botton = 2.5cm}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
-
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-)
-runsystem(which pygmentize && touch test.aex)...executed.
-
-runsystem(rm test.aex)...executed.
-
- (./test.aux)
-\openout1 = `test.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
@@ -1006,6 +912,117 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+runsystem(which pygmentize && touch test.aex)...executed.
+
+runsystem(rm test.aex)...executed.
+
+
+
+LaTeX Warning: Unused global option(s):
+    [13.6pt].
+
+(./test.aux)
+\openout1 = `test.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 24.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 24.
 \c@lstlisting=\count139
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -1060,12 +1077,12 @@ e
 * \topmargin=-38.1381pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=11.0pt
+* \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=50.0pt
-* \marginparsep=10.0pt
+* \marginparwidth=57.0pt
+* \marginparsep=11.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1077,13 +1094,13 @@ e
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 22.
+(lastpage)             ! on input line 24.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 23.
+(Font)              <12> on input line 25.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 23.
+(Font)              <8> on input line 25.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 23.
+(Font)              <6> on input line 25.
 (/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.bdg
 File: UTF8.bdg 2015/04/18 4.8.4
 )
@@ -1096,7 +1113,7 @@ File: UTF8.chr 2015/04/18 4.8.4
 <../scoure/tupian.jpg, id=1, 501.875pt x 500.87125pt>
 File: ../scoure/tupian.jpg Graphic file (type jpg)
 <use ../scoure/tupian.jpg>
-Package pdftex.def Info: ../scoure/tupian.jpg  used on input line 28.
+Package pdftex.def Info: ../scoure/tupian.jpg  used on input line 30.
 (pdftex.def)             Requested size: 364.19667pt x 363.48537pt.
  [1
 
@@ -1111,31 +1128,234 @@ File: c70gbsn.fd 2008/10/03 4.8.1
 File: c70gbsn.fdx 2012/05/07 4.8.3
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 3.
+(Font)              <7> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 3.
+ [2]
+
+! Package inputenc Error: Unicode char Ê†ë (U+6811)
+(inputenc) not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65 ...r <return> to continue without it.}dp}{41}
+                                                  
+Your command was ignored.
+Type I <command> <return> to replace it with another command,
+or <return> to continue without it.
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+! Package inputenc Error: Unicode char ÂΩ¢ (U+5F62)
+(inputenc) not set up for use with LaTeX.
 
-[2])
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65 ...r <return> to continue without it.}dp}{41}
+                                                  
+Your command was ignored.
+Type I <command> <return> to replace it with another command,
+or <return> to continue without it.
+
+
+! Package inputenc Error: Unicode char Êï∞ (U+6570)
+(inputenc) not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 ...r <return> to continue without it.}dp}{41}
+                                                  
+Your command was ignored.
+Type I <command> <return> to replace it with another command,
+or <return> to continue without it.
+
+
+! Package inputenc Error: Unicode char ‰Ωç (U+4F4D)
+(inputenc) not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 ...r <return> to continue without it.}dp}{41}
+                                                  
+Your command was ignored.
+Type I <command> <return> to replace it with another command,
+or <return> to continue without it.
+
+
+! Package inputenc Error: Unicode char Áä∂ (U+72B6)
+(inputenc) not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 ...r <return> to continue without it.}dp}{41}
+                                                  
+Your command was ignored.
+Type I <command> <return> to replace it with another command,
+or <return> to continue without it.
+
+
+! Package inputenc Error: Unicode char Âéã (U+538B)
+(inputenc) not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 ...r <return> to continue without it.}dp}{41}
+                                                  
+Your command was ignored.
+Type I <command> <return> to replace it with another command,
+or <return> to continue without it.
+
+
+! Package inputenc Error: Unicode char Áªì (U+7ED3)
+(inputenc) not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 ... or <return> to continue without it.}}{41}
+                                                  
+Your command was ignored.
+Type I <command> <return> to replace it with another command,
+or <return> to continue without it.
+
+
+! Package inputenc Error: Unicode char Êùü (U+675F)
+(inputenc) not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 ... or <return> to continue without it.}}{41}
+                                                  
+Your command was ignored.
+Type I <command> <return> to replace it with another command,
+or <return> to continue without it.
+
+
+! Package inputenc Error: Unicode char ÊØç (U+6BCD)
+(inputenc) not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69 ... or <return> to continue without it.}}{41}
+                                                  
+Your command was ignored.
+Type I <command> <return> to replace it with another command,
+or <return> to continue without it.
+
+
+! Package inputenc Error: Unicode char È∏° (U+9E21)
+(inputenc) not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69 ... or <return> to continue without it.}}{41}
+                                                  
+Your command was ignored.
+Type I <command> <return> to replace it with another command,
+or <return> to continue without it.
+
+
+! Package inputenc Error: Unicode char Âïä (U+554A)
+(inputenc) not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69 ... or <return> to continue without it.}}{41}
+                                                  
+Your command was ignored.
+Type I <command> <return> to replace it with another command,
+or <return> to continue without it.
+
+
+! Package inputenc Error: Unicode char ÁéÑ (U+7384)
+(inputenc) not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 ... or <return> to continue without it.}}{42}
+                                                  
+Your command was ignored.
+Type I <command> <return> to replace it with another command,
+or <return> to continue without it.
+
+
+! Package inputenc Error: Unicode char Â≠¶ (U+5B66)
+(inputenc) not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 ... or <return> to continue without it.}}{42}
+                                                  
+Your command was ignored.
+Type I <command> <return> to replace it with another command,
+or <return> to continue without it.
+
+
+! Package inputenc Error: Unicode char Ëß£ (U+89E3)
+(inputenc) not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 ... or <return> to continue without it.}}{42}
+                                                  
+Your command was ignored.
+Type I <command> <return> to replace it with another command,
+or <return> to continue without it.
+
+
+! Package inputenc Error: Unicode char ÂÜ≥ (U+51B3)
+(inputenc) not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 ... or <return> to continue without it.}}{42}
+                                                  
+Your command was ignored.
+Type I <command> <return> to replace it with another command,
+or <return> to continue without it.
+
+)
 \tf@toc=\write6
 \openout6 = `test.toc'.
 
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[3] (./_minted-test/default-pyg-prefix.pygstyle)
+ [3] (./_minted-test/default-pyg-prefix.pygstyle)
 (./_minted-test/default.pygstyle)
 (./_minted-test/C23068AA164C39E5E5504DFDC24F28D5CDB3F614EBC75CFF7B609E32B356A45
 F.pygtex
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 17.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 1.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 17.
 
 
 LaTeX Font Warning: Font shape `C70/gbsn/m/it' undefined
@@ -1144,11 +1364,11 @@ LaTeX Font Warning: Font shape `C70/gbsn/m/it' undefined
 )
 
 LaTeX Font Warning: Font shape `C70/gbsn/m/sl' undefined
-(Font)              using `C70/gbsn/m/n' instead on input line 37.
+(Font)              using `C70/gbsn/m/n' instead on input line 40.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 12.05934pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
@@ -1159,7 +1379,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 8.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 12.02824pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
@@ -1168,7 +1388,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 5.pygtex)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 12.02824pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
@@ -1179,7 +1399,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 3.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 12.02824pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
@@ -1188,7 +1408,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 2.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 12.02824pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
@@ -1197,68 +1417,75 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 8.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 12.02824pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9]
+[9])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 12.02824pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10])
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[11]
+[10]
 (./_minted-test/918B1C048244537674B4A78444EC6D9AC40562DBD482B20932AB14046E99404
 8.pygtex)
 (./_minted-test/94F5B92EC243ED726DB0A0302CEFA8309E0EEF2CB71841E2AB65EEB5CFF45B6
 C.pygtex
+LaTeX Font Info:    Try loading font information for TS1+cmtt on input line 10.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
+File: ts1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 12.10033pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12])
+[11])
 (./_minted-test/B26F280A7825B3E70F129A9EC77BF36817A89100F9B48995D4EB8552CFE030C
 7.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 12.10033pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[14])
+[12])
 (./_minted-test/B3A5F64B17038D029B15F901CD60FF0BEE16852BA0B13B2A595E08168AEF239
 E.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 12.10033pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13])
+(./_minted-test/B2E5F15631B8B0895BF042AB6292934C4CD70C69F0E4A797042DADCA7C18587
+3.pygtex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.0785pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14])
+(./_minted-test/D5AD082007408BA47810EECC65388A44896BAB70007FF426170B1611A436DF2
+F.pygtex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.0785pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [15])
-(./_minted-test/B2E5F15631B8B0895BF042AB6292934C4CD70C69F0E4A797042DADCA7C18587
-3.pygtex)
 (./_minted-test/AE6D6F78552CC6483E30CDCFBE0A10A0B104228A3C88F496EB403C7C1E167A4
 E.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 12.0785pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
@@ -1267,101 +1494,91 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 F.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 12.0785pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [17]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 12.0785pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [18]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 12.0785pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19]
+[19])
+(./_minted-test/F3ECC775BDFF57F15C35F5CC29599DBA6AA8E705EB5B1CF4FDA2D111D5E62B3
+2.pygtex
+Overfull \hbox (59.64693pt too wide) in paragraph at lines 97--1
+\C70/gbsn/m/it/10/62 ^^Q \C70/gbsn/m/sl/10/4e * ∫ ` \C70/gbsn/m/it/10/60 Ô \C70
+/gbsn/m/it/10/4f ^^? \C70/gbsn/m/sl/10/75 (\T1/cmr/m/n/10 Java\C70/gbsn/m/n/10/
+30 ^^B \C70/gbsn/m/it/10/5c 1 \C70/gbsn/m/it/10/66 / \C70/gbsn/m/it/10/60 ^^N \
+C70/gbsn/m/sl/10/4e H \C70/gbsn/m/sl/10/8b Ù \C70/gbsn/m/it/10/54 b\T1/cmr/m/n/
+10 ,\C70/gbsn/m/it/10/61 ^^_ \C70/gbsn/m/it/10/89 … Å \C70/gbsn/m/sl/10/5b f \C
+70/gbsn/m/it/10/4f ^^Z \C70/gbsn/m/sl/10/75 ( \C70/gbsn/m/it/10/81 Í \C70/gbsn/
+m/it/10/52 ® \C70/gbsn/m/n/10/88 e \C70/gbsn/m/it/10/51 h \C70/gbsn/m/sl/10/4e 
+Â \C70/gbsn/m/it/10/53   \C70/gbsn/m/it/10/51 ‡ \C70/gbsn/m/sl/10/4e * \C70/gbs
+n/m/sl/10/5e 8 \C70/gbsn/m/sl/10/75 ( \C70/gbsn/m/it/10/76 Ñ \C70/gbsn/m/it/10/
+52 † \C70/gbsn/m/it/10/51 œ \C70/gbsn/m/sl/10/4e X \C70/gbsn/m/it/10/96 d \C70/
+gbsn/m/it/10/52 †\T1/cmr/m/n/10 add\C70/gbsn/m/it/10/51 œ\T1/cmr/m/n/10 sub\C70
+/gbsn/m/sl/10/4e X\T1/cmr/m/n/10 mul\C70/gbsn/m/it/10/96 d\T1/cmr/m/n/10 div\C7
+0/gbsn/m/it/10/6a !\T1/cmr/m/n/10 mod\C70/gbsn/m/it/10/5c 1
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 12.0785pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [20])
-(./_minted-test/F3ECC775BDFF57F15C35F5CC29599DBA6AA8E705EB5B1CF4FDA2D111D5E62B3
-2.pygtex
-Overfull \hbox (108.58966pt too wide) in paragraph at lines 91--1
-\C70/gbsn/m/it/10.95/62 ^^Q \C70/gbsn/m/sl/10.95/4e * ∫ ` \C70/gbsn/m/it/10.95/
-60 Ô \C70/gbsn/m/it/10.95/4f ^^? \C70/gbsn/m/sl/10.95/75 (\OT1/cmr/m/n/10.95 Ja
-va\C70/gbsn/m/n/10.95/30 ^^B \C70/gbsn/m/it/10.95/5c 1 \C70/gbsn/m/it/10.95/66 
-/ \C70/gbsn/m/it/10.95/60 ^^N \C70/gbsn/m/sl/10.95/4e H \C70/gbsn/m/sl/10.95/8b
- Ù \C70/gbsn/m/it/10.95/54 b\OT1/cmr/m/n/10.95 ,\C70/gbsn/m/it/10.95/61 ^^_ \C7
-0/gbsn/m/it/10.95/89 … Å \C70/gbsn/m/sl/10.95/5b f \C70/gbsn/m/it/10.95/4f ^^Z 
-\C70/gbsn/m/sl/10.95/75 ( \C70/gbsn/bx/n/10.95/81 Í \C70/gbsn/bx/n/10.95/52 ® \
-C70/gbsn/m/n/10.95/88 e \C70/gbsn/bx/n/10.95/51 h \C70/gbsn/m/sl/10.95/4e Â \C7
-0/gbsn/m/it/10.95/53   \C70/gbsn/bx/n/10.95/51 ‡ \C70/gbsn/m/sl/10.95/4e * \C70
-/gbsn/m/sl/10.95/5e 8 \C70/gbsn/m/sl/10.95/75 ( \C70/gbsn/m/it/10.95/76 Ñ \C70/
-gbsn/bx/n/10.95/52 † \C70/gbsn/bx/n/10.95/51 œ \C70/gbsn/m/sl/10.95/4e X \C70/g
-bsn/m/it/10.95/96 d \C70/gbsn/bx/n/10.95/52 †\OT1/cmr/m/n/10.95 add\C70/gbsn/bx
-/n/10.95/51 œ\OT1/cmr/m/n/10.95 sub\C70/gbsn/m/sl/10.95/4e X\OT1/cmr/m/n/10.95 
-mul\C70/gbsn/m/it/10.95/96 d\OT1/cmr/m/n/10.95 div\C70/gbsn/m/it/10.95/6a !\OT1
-/cmr/m/n/10.95 mod\C70/gbsn/m/it/10.95/5c 1
- []
-
-)
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[21]
 (./_minted-test/07ADD33AE37089BF64475316EC962F189AF72765BE95B33D1F5BA05AC8F2177
-A.pygtex)
+A.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 12.05934pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22]
+[21])
 (./_minted-test/E3F2307DFF02E3F05C5A9F5F8AA66B3792CDAE98A67207097AE1C1BAC7985CA
 A.pygtex)
 (./_minted-test/24277664E896D334F18764C7F32D0F0F72DFAC3A8979B2B0AEB6CD4D5FC310F
 6.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 12.05934pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23])
+[22])
 (./_minted-test/3B3AB4718B68B6ABBC9C4AD9EAABC6AB46C5E1E5F35EA399E210DD728460DC1
 A.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 12.05934pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24])
+[23])
 (./_minted-test/7853309F51D08B6430144C817575FD92AF38AF9EC09121777EA7D1E84B1616D
 3.pygtex)
 (./_minted-test/1DDEC778A036E0CFFA7A4D1DE7DB9DA4B3F33F45299876B849F898072FB99E9
 5.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 12.05934pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25])
-Underfull \hbox (badness 10000) in paragraph at lines 136--139
+[24])
+Underfull \hbox (badness 10000) in paragraph at lines 142--145
 
  []
 
@@ -1370,296 +1587,289 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--139
 1.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 12.05934pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26])
+[25])
 (./_minted-test/F2BEBF65E60D22111DC87E4A39AFF214AE3A7020A22C2D2EC1BF66481AE8474
-D.pygtex
+D.pygtex)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 12.05934pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[27])
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[28]
+[26]
 (./_minted-test/1318FC15F0430CA26B51B09A9ECC1B30678CF6B23EB978173F697C979BD50AD
 0.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 179--182
+Underfull \hbox (badness 10000) in paragraph at lines 185--188
 
  []
 
 
+(./_minted-test/74BC01128A261B012980D6BEAD88FD91480E0C56A8006A31D3526E3FBF6E15E
+9.pygtex
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 12.05934pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29]
-(./_minted-test/74BC01128A261B012980D6BEAD88FD91480E0C56A8006A31D3526E3FBF6E15E
-9.pygtex)
+[27])
 (./_minted-test/7EFB08EE0C56F1894915D25525CA82631B49155ACA8BBD0A80DA52241EA693F
 C.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 12.05934pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[28]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.05934pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[29])
+(./_minted-test/7DC718C488A4A7D1BE3D1CB56E638E67A3529563FBBC2172F79DDDEF3A85849
+2.pygtex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.05934pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [30]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 12.05934pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[31]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[32])
-(./_minted-test/7DC718C488A4A7D1BE3D1CB56E638E67A3529563FBBC2172F79DDDEF3A85849
-2.pygtex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[33])
+[31])
 (./_minted-test/BD455B3F3F9AA859CCD7B81711AFDC2075BF6EF465B6CC16C89C363CF6EE4BF
 F.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 12.05934pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[32]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.05934pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[33])
+(./_minted-test/E0BA66CEEB1583268E15FF9497B564E533086640675E89DE1E3E1673A222E78
+E.pygtex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.05934pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [34]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 12.05934pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[35]
+[35])
+(./_minted-test/23B50B08431BAF5C0079AA810B4F1639E8537A2A7F139049E3C7B428C26B94E
+7.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 12.05934pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [36])
-(./_minted-test/23B50B08431BAF5C0079AA810B4F1639E8537A2A7F139049E3C7B428C26B94E
-7.pygtex)
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[37]
 (./_minted-test/5B48CC3DC88966898607B9E5F6E3A55E81AB51AFF7AA8FAC6C055B7D49FD63E
 D.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 12.05934pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38])
+[37])
 (./_minted-test/62282462998C131A3AEA53D672A467D6173E05A26AE052D26F53F162878053F
 0.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 12.05934pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39])
+[38])
 (./_minted-test/64F6E39EDF946EBECBA6424EDB56061103E114E88A365E54F3154C239DEF02D
 9.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 12.05934pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[40])
+[39])
 (./_minted-test/984D29947775A7EE4D62F0AF71FFCCA7210A01644555B11DD9F62FB4947CA50
 6.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 12.0966pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[41])
+[40])
 (./_minted-test/7A84418D3960D18FD5FDE1F711C0599EF6D73B29CBEDC5DCDE19D93D1DB6C16
-E.pygtex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[42]) 
+E.pygtex) 
 AED: lastpage setting LastPage
 
-! PACKAGE INPUTENC ERROR: UNICODE CHAR «äñ (U+72B6)
+! PACKAGE INPUTENC ERROR: UNICODE CHAR «õì (U+7ED3)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.275 \end{document}
+l.287 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
 OR  <RETURN>  TO CONTINUE WITHOUT IT.
 
 
-! PACKAGE INPUTENC ERROR: UNICODE CHAR ∆ÄÅ (U+6001)
+! PACKAGE INPUTENC ERROR: UNICODE CHAR ∆ùü (U+675F)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.275 \end{document}
+l.287 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
 OR  <RETURN>  TO CONTINUE WITHOUT IT.
 
+[41]
 
-! PACKAGE INPUTENC ERROR: UNICODE CHAR »Ωå (U+8F6C)
+! PACKAGE INPUTENC ERROR: UNICODE CHAR «õì (U+7ED3)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.275 \end{document}
+l.287 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
 OR  <RETURN>  TO CONTINUE WITHOUT IT.
 
 
-! PACKAGE INPUTENC ERROR: UNICODE CHAR «áõ (U+79FB)
+! PACKAGE INPUTENC ERROR: UNICODE CHAR ∆ùü (U+675F)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.275 \end{document}
+l.287 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
 OR  <RETURN>  TO CONTINUE WITHOUT IT.
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[43] (./test.aux)
+[42] (./test.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 11451 strings out of 492982
- 184198 string characters out of 6134896
- 291303 words of memory out of 5000000
- 14385 multiletter control sequences out of 15000+600000
- 45342 words of font info for 161 fonts, out of 8000000 for 9000
+ 11576 strings out of 492982
+ 187288 string characters out of 6134896
+ 294403 words of memory out of 5000000
+ 14486 multiletter control sequences out of 15000+600000
+ 50834 words of font info for 165 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,12n,45p,1144b,1598s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf/font
-s/type1/arphic/gbsnu/gbsnu30.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbs
-nu4e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu4f.pfb></usr/share/tex
-mf/fonts/type1/arphic/gbsnu/gbsnu50.pfb></usr/share/texmf/fonts/type1/arphic/gb
-snu/gbsnu51.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu52.pfb></usr/sh
-are/texmf/fonts/type1/arphic/gbsnu/gbsnu53.pfb></usr/share/texmf/fonts/type1/ar
-phic/gbsnu/gbsnu54.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu55.pfb><
-/usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu56.pfb></usr/share/texmf/fonts/t
-ype1/arphic/gbsnu/gbsnu57.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu5
-8.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu59.pfb></usr/share/texmf/
-fonts/type1/arphic/gbsnu/gbsnu5a.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu
-/gbsnu5b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu5c.pfb></usr/share
-/texmf/fonts/type1/arphic/gbsnu/gbsnu5d.pfb></usr/share/texmf/fonts/type1/arphi
-c/gbsnu/gbsnu5e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu5f.pfb></us
-r/share/texmf/fonts/type1/arphic/gbsnu/gbsnu60.pfb></usr/share/texmf/fonts/type
-1/arphic/gbsnu/gbsnu61.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu62.p
-fb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu63.pfb></usr/share/texmf/fon
-ts/type1/arphic/gbsnu/gbsnu64.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gb
-snu65.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu66.pfb></usr/share/te
-xmf/fonts/type1/arphic/gbsnu/gbsnu67.pfb></usr/share/texmf/fonts/type1/arphic/g
-bsnu/gbsnu68.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu69.pfb></usr/s
-hare/texmf/fonts/type1/arphic/gbsnu/gbsnu6a.pfb></usr/share/texmf/fonts/type1/a
-rphic/gbsnu/gbsnu6b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6c.pfb>
-</usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6d.pfb></usr/share/texmf/fonts/
-type1/arphic/gbsnu/gbsnu6e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu
-70.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu71.pfb></usr/share/texmf
-/fonts/type1/arphic/gbsnu/gbsnu72.pfb></usr/share/texmf/fonts/type1/arphic/gbsn
-u/gbsnu73.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu74.pfb></usr/shar
-e/texmf/fonts/type1/arphic/gbsnu/gbsnu75.pfb></usr/share/texmf/fonts/type1/arph
-ic/gbsnu/gbsnu76.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu77.pfb></u
-sr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu78.pfb></usr/share/texmf/fonts/typ
-e1/arphic/gbsnu/gbsnu79.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7a.
-pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7b.pfb></usr/share/texmf/fo
-nts/type1/arphic/gbsnu/gbsnu7c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/g
-bsnu7d.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7e.pfb></usr/share/t
-exmf/fonts/type1/arphic/gbsnu/gbsnu7f.pfb></usr/share/texmf/fonts/type1/arphic/
-gbsnu/gbsnu80.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu81.pfb></usr/
-share/texmf/fonts/type1/arphic/gbsnu/gbsnu82.pfb></usr/share/texmf/fonts/type1/
-arphic/gbsnu/gbsnu83.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu88.pfb
-></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu89.pfb></usr/share/texmf/fonts
-/type1/arphic/gbsnu/gbsnu8b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsn
-u8c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8d.pfb></usr/share/texm
-f/fonts/type1/arphic/gbsnu/gbsnu8f.pfb></usr/share/texmf/fonts/type1/arphic/gbs
-nu/gbsnu90.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu91.pfb></usr/sha
-re/texmf/fonts/type1/arphic/gbsnu/gbsnu94.pfb></usr/share/texmf/fonts/type1/arp
-hic/gbsnu/gbsnu95.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu96.pfb></
-usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu97.pfb></usr/share/texmf/fonts/ty
-pe1/arphic/gbsnu/gbsnu98.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu99
-.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu9a.pfb></usr/share/texmf/f
-onts/type1/arphic/gbsnu/gbsnu9e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/
-gbsnuff.pfb>
-Output written on test.pdf (43 pages, 787293 bytes).
+ 40i,12n,43p,1496b,1612s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/
+fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fo
+nts/type1/arphic/gbsnu/gbsnu30.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/g
+bsnu4e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu4f.pfb></usr/share/t
+exmf/fonts/type1/arphic/gbsnu/gbsnu50.pfb></usr/share/texmf/fonts/type1/arphic/
+gbsnu/gbsnu51.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu52.pfb></usr/
+share/texmf/fonts/type1/arphic/gbsnu/gbsnu53.pfb></usr/share/texmf/fonts/type1/
+arphic/gbsnu/gbsnu54.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu55.pfb
+></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu56.pfb></usr/share/texmf/fonts
+/type1/arphic/gbsnu/gbsnu57.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsn
+u58.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu59.pfb></usr/share/texm
+f/fonts/type1/arphic/gbsnu/gbsnu5a.pfb></usr/share/texmf/fonts/type1/arphic/gbs
+nu/gbsnu5b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu5c.pfb></usr/sha
+re/texmf/fonts/type1/arphic/gbsnu/gbsnu5d.pfb></usr/share/texmf/fonts/type1/arp
+hic/gbsnu/gbsnu5e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu5f.pfb></
+usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu60.pfb></usr/share/texmf/fonts/ty
+pe1/arphic/gbsnu/gbsnu61.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu62
+.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu63.pfb></usr/share/texmf/f
+onts/type1/arphic/gbsnu/gbsnu64.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/
+gbsnu65.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu66.pfb></usr/share/
+texmf/fonts/type1/arphic/gbsnu/gbsnu67.pfb></usr/share/texmf/fonts/type1/arphic
+/gbsnu/gbsnu68.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu69.pfb></usr
+/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6a.pfb></usr/share/texmf/fonts/type1
+/arphic/gbsnu/gbsnu6b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6c.pf
+b></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6d.pfb></usr/share/texmf/font
+s/type1/arphic/gbsnu/gbsnu6e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbs
+nu70.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu71.pfb></usr/share/tex
+mf/fonts/type1/arphic/gbsnu/gbsnu72.pfb></usr/share/texmf/fonts/type1/arphic/gb
+snu/gbsnu73.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu74.pfb></usr/sh
+are/texmf/fonts/type1/arphic/gbsnu/gbsnu75.pfb></usr/share/texmf/fonts/type1/ar
+phic/gbsnu/gbsnu76.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu77.pfb><
+/usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu78.pfb></usr/share/texmf/fonts/t
+ype1/arphic/gbsnu/gbsnu79.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7
+a.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7b.pfb></usr/share/texmf/
+fonts/type1/arphic/gbsnu/gbsnu7c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu
+/gbsnu7d.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7e.pfb></usr/share
+/texmf/fonts/type1/arphic/gbsnu/gbsnu7f.pfb></usr/share/texmf/fonts/type1/arphi
+c/gbsnu/gbsnu80.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu81.pfb></us
+r/share/texmf/fonts/type1/arphic/gbsnu/gbsnu82.pfb></usr/share/texmf/fonts/type
+1/arphic/gbsnu/gbsnu83.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu88.p
+fb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu89.pfb></usr/share/texmf/fon
+ts/type1/arphic/gbsnu/gbsnu8b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gb
+snu8c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8d.pfb></usr/share/te
+xmf/fonts/type1/arphic/gbsnu/gbsnu8f.pfb></usr/share/texmf/fonts/type1/arphic/g
+bsnu/gbsnu90.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu91.pfb></usr/s
+hare/texmf/fonts/type1/arphic/gbsnu/gbsnu94.pfb></usr/share/texmf/fonts/type1/a
+rphic/gbsnu/gbsnu95.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu96.pfb>
+</usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu97.pfb></usr/share/texmf/fonts/
+type1/arphic/gbsnu/gbsnu98.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu
+99.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu9a.pfb></usr/share/texmf
+/fonts/type1/arphic/gbsnu/gbsnu9e.pfb></usr/share/texmf/fonts/type1/arphic/gbsn
+u/gbsnuff.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/
+share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/ty
+pe1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/
+sfit1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/s
+hare/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/typ
+e1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
+fsl1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/sh
+are/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on test.pdf (42 pages, 882860 bytes).
 PDF statistics:
- 567 PDF objects out of 1000 (max. 8388607)
- 359 compressed objects within 4 object streams
+ 579 PDF objects out of 1000 (max. 8388607)
+ 369 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  290 words of extra memory for PDF output out of 10000 (max. 10000000)
 

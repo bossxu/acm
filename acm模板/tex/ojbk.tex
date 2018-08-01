@@ -8,9 +8,9 @@
 %中文断行
 \begin{document}
 \begin{CJK}{UTF8}{gbsn}
-伯努利数\\
-这个数的定义来自于，之前人们对自然数幂的求解的过程中，出现的一种操作，感觉这个的主要目的在于求有关自然数幂和的问题上，所有的问题都不是直接给出的，多点见识。\\
-$\sum_{i=1}^n i^k = \frac{1}{k+1}*\sum_{i = 1}^{k+1}C_{k+1}^i*B_{k+1-i}*(n+1)^i$ \qquad $B_0 = 1,\sum^n_{k = 0}C_{n+1}^k*B_k = 0$ \qquad $B_n = -\frac{1}{n+1}\sum_{i=1}^{n-1}C_{n+1}^i*B_i$
-\inputminted{c++}{../scoure/math/bo.cpp}
+\subsubsection{莫队算法}
+处理的东西主要是在于区间，这里的区间不是单纯区间，而是你可以向上向下走的问题，并且有O(1)的递推式就可以
+走，这里的关键在于玄学把复杂度降到$N^{\frac{3}{2}}$然后需要处理的就是你走所带来的一个权值变化，这个是关键的问题
+\inputminted{c++}{../scoure/date/mudui.cpp}
 \end{CJK}
 \end{document}

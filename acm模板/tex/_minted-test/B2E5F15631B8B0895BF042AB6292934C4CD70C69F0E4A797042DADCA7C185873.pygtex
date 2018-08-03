@@ -1,0 +1,29 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{//这个是单调栈,用来处理的是右边第一个比他大的}
+\PYG{k+kt}{int} \PYG{n}{tot}  \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{n}{st}\PYG{p}{[}\PYG{o}{++}\PYG{n}{tot}\PYG{p}{]} \PYG{o}{=} \PYG{n}{n}\PYG{p}{;}
+\PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{n}{n}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZgt{}=}\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+  \PYG{k}{if}\PYG{p}{(}\PYG{n}{shu}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{o}{\PYGZgt{}}\PYG{n}{shu}\PYG{p}{[}\PYG{n}{st}\PYG{p}{[}\PYG{n}{tot}\PYG{p}{]])}
+  \PYG{p}{\PYGZob{}}
+    \PYG{k}{while}\PYG{p}{(}\PYG{n}{tot}\PYG{o}{\PYGZgt{}=}\PYG{l+m+mi}{0} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{shu}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{o}{\PYGZgt{}}\PYG{n}{shu}\PYG{p}{[}\PYG{n}{st}\PYG{p}{[}\PYG{n}{tot}\PYG{p}{]])}
+    \PYG{p}{\PYGZob{}}
+      \PYG{n}{tot}\PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{if}\PYG{p}{(}\PYG{n}{tot} \PYG{o}{==} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{)}
+    \PYG{p}{\PYGZob{}}
+      \PYG{n}{nextmax}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{c+c1}{//表示它最大}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{else}
+    \PYG{p}{\PYGZob{}}
+      \PYG{n}{nextmax}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{=} \PYG{n}{st}\PYG{p}{[}\PYG{n}{tot}\PYG{p}{];}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{n}{st}\PYG{p}{[}\PYG{o}{++}\PYG{n}{tot}\PYG{p}{]} \PYG{o}{=} \PYG{n}{i}\PYG{p}{;}
+  \PYG{p}{\PYGZcb{}}
+  \PYG{k}{else}
+  \PYG{p}{\PYGZob{}}
+    \PYG{n}{nextmax}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{=} \PYG{n}{st}\PYG{p}{[}\PYG{n}{tot}\PYG{p}{];}
+    \PYG{n}{st}\PYG{p}{[}\PYG{o}{++}\PYG{n}{tot}\PYG{p}{]} \PYG{o}{=} \PYG{n}{i}\PYG{p}{;}
+  \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

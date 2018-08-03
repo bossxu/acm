@@ -9,10 +9,10 @@ ll phi(ll n) //直接实现
       rea = rea - rea/i;
       while(n%i == 0) n/=i;
     }
-    if(n>1)
-    rea = rea - rea/n;
-    return rea;
   }
+  if(n>1)
+  rea = rea - rea/n;
+  return rea;
 }
 //欧拉打表
 for(int i = 1;i<=maxn;i++) phi[i] = i;

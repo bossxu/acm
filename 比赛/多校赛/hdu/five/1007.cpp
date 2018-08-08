@@ -40,6 +40,7 @@ int main()
     for(int i = 1 ;i<=n;i++)
     {
       int st = s[i]-'0';
+      for(int j = st;)
     }
 
   }

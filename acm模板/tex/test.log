@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.7.31)  1 AUG 2018 21:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.7.31)  9 AUG 2018 17:57
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1131,223 +1131,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 3.
- [2]
-
-! Package inputenc Error: Unicode char Ê†ë (U+6811)
-(inputenc) not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.65 ...r <return> to continue without it.}dp}{41}
-                                                  
-Your command was ignored.
-Type I <command> <return> to replace it with another command,
-or <return> to continue without it.
-
-
-! Package inputenc Error: Unicode char ÂΩ¢ (U+5F62)
-(inputenc) not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.65 ...r <return> to continue without it.}dp}{41}
-                                                  
-Your command was ignored.
-Type I <command> <return> to replace it with another command,
-or <return> to continue without it.
-
-
-! Package inputenc Error: Unicode char Êï∞ (U+6570)
-(inputenc) not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.66 ...r <return> to continue without it.}dp}{41}
-                                                  
-Your command was ignored.
-Type I <command> <return> to replace it with another command,
-or <return> to continue without it.
-
-
-! Package inputenc Error: Unicode char ‰Ωç (U+4F4D)
-(inputenc) not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.66 ...r <return> to continue without it.}dp}{41}
-                                                  
-Your command was ignored.
-Type I <command> <return> to replace it with another command,
-or <return> to continue without it.
-
-
-! Package inputenc Error: Unicode char Áä∂ (U+72B6)
-(inputenc) not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.67 ...r <return> to continue without it.}dp}{41}
-                                                  
-Your command was ignored.
-Type I <command> <return> to replace it with another command,
-or <return> to continue without it.
-
-
-! Package inputenc Error: Unicode char Âéã (U+538B)
-(inputenc) not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.67 ...r <return> to continue without it.}dp}{41}
-                                                  
-Your command was ignored.
-Type I <command> <return> to replace it with another command,
-or <return> to continue without it.
-
-
-! Package inputenc Error: Unicode char Áªì (U+7ED3)
-(inputenc) not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.68 ... or <return> to continue without it.}}{41}
-                                                  
-Your command was ignored.
-Type I <command> <return> to replace it with another command,
-or <return> to continue without it.
-
-
-! Package inputenc Error: Unicode char Êùü (U+675F)
-(inputenc) not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.68 ... or <return> to continue without it.}}{41}
-                                                  
-Your command was ignored.
-Type I <command> <return> to replace it with another command,
-or <return> to continue without it.
-
-
-! Package inputenc Error: Unicode char ÊØç (U+6BCD)
-(inputenc) not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.69 ... or <return> to continue without it.}}{41}
-                                                  
-Your command was ignored.
-Type I <command> <return> to replace it with another command,
-or <return> to continue without it.
-
-
-! Package inputenc Error: Unicode char È∏° (U+9E21)
-(inputenc) not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.69 ... or <return> to continue without it.}}{41}
-                                                  
-Your command was ignored.
-Type I <command> <return> to replace it with another command,
-or <return> to continue without it.
-
-
-! Package inputenc Error: Unicode char Âïä (U+554A)
-(inputenc) not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.69 ... or <return> to continue without it.}}{41}
-                                                  
-Your command was ignored.
-Type I <command> <return> to replace it with another command,
-or <return> to continue without it.
-
-
-! Package inputenc Error: Unicode char ÁéÑ (U+7384)
-(inputenc) not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.70 ... or <return> to continue without it.}}{42}
-                                                  
-Your command was ignored.
-Type I <command> <return> to replace it with another command,
-or <return> to continue without it.
-
-
-! Package inputenc Error: Unicode char Â≠¶ (U+5B66)
-(inputenc) not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.70 ... or <return> to continue without it.}}{42}
-                                                  
-Your command was ignored.
-Type I <command> <return> to replace it with another command,
-or <return> to continue without it.
-
-
-! Package inputenc Error: Unicode char Ëß£ (U+89E3)
-(inputenc) not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.70 ... or <return> to continue without it.}}{42}
-                                                  
-Your command was ignored.
-Type I <command> <return> to replace it with another command,
-or <return> to continue without it.
-
-
-! Package inputenc Error: Unicode char ÂÜ≥ (U+51B3)
-(inputenc) not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.70 ... or <return> to continue without it.}}{42}
-                                                  
-Your command was ignored.
-Type I <command> <return> to replace it with another command,
-or <return> to continue without it.
-
-)
+ [2])
 \tf@toc=\write6
 \openout6 = `test.toc'.
 
- [3] (./_minted-test/default-pyg-prefix.pygstyle)
-(./_minted-test/default.pygstyle)
+ [3]
+(./_minted-test/default-pyg-prefix.pygstyle) (./_minted-test/default.pygstyle)
 (./_minted-test/C23068AA164C39E5E5504DFDC24F28D5CDB3F614EBC75CFF7B609E32B356A45
 F.pygtex
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 1.
@@ -1538,6 +1327,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [20])
+Missing character: There is no ≈ in font cmr10!
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.05934pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[21]
 (./_minted-test/07ADD33AE37089BF64475316EC962F189AF72765BE95B33D1F5BA05AC8F2177
 A.pygtex
 
@@ -1546,19 +1344,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21])
-(./_minted-test/E3F2307DFF02E3F05C5A9F5F8AA66B3792CDAE98A67207097AE1C1BAC7985CA
-A.pygtex)
-(./_minted-test/24277664E896D334F18764C7F32D0F0F72DFAC3A8979B2B0AEB6CD4D5FC310F
-6.pygtex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.05934pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
 [22])
-(./_minted-test/3B3AB4718B68B6ABBC9C4AD9EAABC6AB46C5E1E5F35EA399E210DD728460DC1
+(./_minted-test/E3F2307DFF02E3F05C5A9F5F8AA66B3792CDAE98A67207097AE1C1BAC7985CA
 A.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1567,10 +1354,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [23])
-(./_minted-test/7853309F51D08B6430144C817575FD92AF38AF9EC09121777EA7D1E84B1616D
-3.pygtex)
-(./_minted-test/1DDEC778A036E0CFFA7A4D1DE7DB9DA4B3F33F45299876B849F898072FB99E9
-5.pygtex
+(./_minted-test/24277664E896D334F18764C7F32D0F0F72DFAC3A8979B2B0AEB6CD4D5FC310F
+6.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 12.05934pt.
@@ -1578,7 +1363,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [24])
-Underfull \hbox (badness 10000) in paragraph at lines 142--145
+(./_minted-test/3B3AB4718B68B6ABBC9C4AD9EAABC6AB46C5E1E5F35EA399E210DD728460DC1
+A.pygtex)
+(./_minted-test/7853309F51D08B6430144C817575FD92AF38AF9EC09121777EA7D1E84B1616D
+3.pygtex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.05934pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25])
+(./_minted-test/1DDEC778A036E0CFFA7A4D1DE7DB9DA4B3F33F45299876B849F898072FB99E9
+5.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 235--238
 
  []
 
@@ -1591,19 +1389,26 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25])
+[26])
 (./_minted-test/F2BEBF65E60D22111DC87E4A39AFF214AE3A7020A22C2D2EC1BF66481AE8474
-D.pygtex)
+D.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 12.05934pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26]
+[27])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.05934pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[28]
 (./_minted-test/1318FC15F0430CA26B51B09A9ECC1B30678CF6B23EB978173F697C979BD50AD
 0.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 185--188
+Underfull \hbox (badness 10000) in paragraph at lines 278--281
 
  []
 
@@ -1616,25 +1421,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[27])
+[29])
 (./_minted-test/7EFB08EE0C56F1894915D25525CA82631B49155ACA8BBD0A80DA52241EA693F
 C.pygtex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.05934pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[28]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.05934pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[29])
-(./_minted-test/7DC718C488A4A7D1BE3D1CB56E638E67A3529563FBBC2172F79DDDEF3A85849
-2.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 12.05934pt.
@@ -1649,8 +1438,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [31])
-(./_minted-test/BD455B3F3F9AA859CCD7B81711AFDC2075BF6EF465B6CC16C89C363CF6EE4BF
-F.pygtex
+(./_minted-test/7DC718C488A4A7D1BE3D1CB56E638E67A3529563FBBC2172F79DDDEF3A85849
+2.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 12.05934pt.
@@ -1665,8 +1454,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [33])
-(./_minted-test/E0BA66CEEB1583268E15FF9497B564E533086640675E89DE1E3E1673A222E78
-E.pygtex
+(./_minted-test/BD455B3F3F9AA859CCD7B81711AFDC2075BF6EF465B6CC16C89C363CF6EE4BF
+F.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 12.05934pt.
@@ -1681,6 +1470,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [35])
+(./_minted-test/E0BA66CEEB1583268E15FF9497B564E533086640675E89DE1E3E1673A222E78
+E.pygtex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.05934pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[36]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.05934pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[37])
 (./_minted-test/23B50B08431BAF5C0079AA810B4F1639E8537A2A7F139049E3C7B428C26B94E
 7.pygtex
 
@@ -1689,7 +1494,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[36])
+[38])
 (./_minted-test/5B48CC3DC88966898607B9E5F6E3A55E81AB51AFF7AA8FAC6C055B7D49FD63E
 D.pygtex
 
@@ -1698,7 +1503,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[37])
+[39])
 (./_minted-test/62282462998C131A3AEA53D672A467D6173E05A26AE052D26F53F162878053F
 0.pygtex
 
@@ -1707,7 +1512,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38])
+[40])
 (./_minted-test/64F6E39EDF946EBECBA6424EDB56061103E114E88A365E54F3154C239DEF02D
 9.pygtex
 
@@ -1716,7 +1521,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39])
+[41])
 (./_minted-test/984D29947775A7EE4D62F0AF71FFCCA7210A01644555B11DD9F62FB4947CA50
 6.pygtex
 
@@ -1725,80 +1530,246 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[40])
+[42])
 (./_minted-test/7A84418D3960D18FD5FDE1F711C0599EF6D73B29CBEDC5DCDE19D93D1DB6C16
-E.pygtex) 
+E.pygtex)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.0966pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[43]
+<../scoure/1.png, id=303, 889.3225pt x 357.335pt>
+File: ../scoure/1.png Graphic file (type png)
+<use ../scoure/1.png>
+Package pdftex.def Info: ../scoure/1.png  used on input line 389.
+(pdftex.def)             Requested size: 227.62206pt x 91.45999pt.
+<../scoure/3.png, id=305, 566.115pt x 397.485pt>
+File: ../scoure/3.png Graphic file (type png)
+<use ../scoure/3.png>
+Package pdftex.def Info: ../scoure/3.png  used on input line 394.
+(pdftex.def)             Requested size: 136.57462pt x 95.88962pt.
+<../scoure/5.png, id=306, 953.5625pt x 1156.32pt>
+File: ../scoure/5.png Graphic file (type png)
+<use ../scoure/5.png>
+Package pdftex.def Info: ../scoure/5.png  used on input line 399.
+(pdftex.def)             Requested size: 227.62206pt x 276.02274pt.
+<../scoure/6.png, id=307, 813.0375pt x 511.9125pt>
+File: ../scoure/6.png Graphic file (type png)
+<use ../scoure/6.png>
+Package pdftex.def Info: ../scoure/6.png  used on input line 404.
+(pdftex.def)             Requested size: 227.62206pt x 143.31108pt.
+<../scoure/7.png, id=308, 829.0975pt x 1057.9525pt>
+File: ../scoure/7.png Graphic file (type png)
+<use ../scoure/7.png>
+Package pdftex.def Info: ../scoure/7.png  used on input line 409.
+(pdftex.def)             Requested size: 227.62206pt x 290.44547pt.
+<../scoure/10.png, id=309, 995.72pt x 1092.08pt>
+File: ../scoure/10.png Graphic file (type png)
+<use ../scoure/10.png>
+Package pdftex.def Info: ../scoure/10.png  used on input line 414.
+(pdftex.def)             Requested size: 227.62206pt x 249.64005pt.
+<../scoure/11.png, id=310, 963.6pt x 933.4875pt>
+File: ../scoure/11.png Graphic file (type png)
+<use ../scoure/11.png>
+Package pdftex.def Info: ../scoure/11.png  used on input line 419.
+(pdftex.def)             Requested size: 227.62206pt x 220.5091pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.0142pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[44 <../scoure/1.png> <../scoure/3.png>] 
 AED: lastpage setting LastPage
 
-! PACKAGE INPUTENC ERROR: UNICODE CHAR «õì (U+7ED3)
+! PACKAGE INPUTENC ERROR: UNICODE CHAR ≈òò (U+5E38)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.287 \end{document}
+l.425 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
 OR  <RETURN>  TO CONTINUE WITHOUT IT.
 
 
-! PACKAGE INPUTENC ERROR: UNICODE CHAR ∆ùü (U+675F)
+! PACKAGE INPUTENC ERROR: UNICODE CHAR «îà (U+7528)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.287 \end{document}
+l.425 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
 OR  <RETURN>  TO CONTINUE WITHOUT IT.
 
-[41]
 
-! PACKAGE INPUTENC ERROR: UNICODE CHAR «õì (U+7ED3)
+! PACKAGE INPUTENC ERROR: UNICODE CHAR ≈Öå (U+516C)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.287 \end{document}
+l.425 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
 OR  <RETURN>  TO CONTINUE WITHOUT IT.
 
 
-! PACKAGE INPUTENC ERROR: UNICODE CHAR ∆ùü (U+675F)
+! PACKAGE INPUTENC ERROR: UNICODE CHAR ≈úè (U+5F0F)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.287 \end{document}
+l.425 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
 OR  <RETURN>  TO CONTINUE WITHOUT IT.
 
-[42] (./test.aux)
+[45 <../scoure/5.png> <../scoure/6.png>]
+
+! PACKAGE INPUTENC ERROR: UNICODE CHAR ≈òò (U+5E38)
+(INPUTENC)                NOT SET UP FOR USE WITH LATEX.
+
+SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.425 \end{document}
+                    
+YOUR COMMAND WAS IGNORED.
+TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
+OR  <RETURN>  TO CONTINUE WITHOUT IT.
+
+
+! PACKAGE INPUTENC ERROR: UNICODE CHAR «îà (U+7528)
+(INPUTENC)                NOT SET UP FOR USE WITH LATEX.
+
+SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.425 \end{document}
+                    
+YOUR COMMAND WAS IGNORED.
+TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
+OR  <RETURN>  TO CONTINUE WITHOUT IT.
+
+
+! PACKAGE INPUTENC ERROR: UNICODE CHAR ≈Öå (U+516C)
+(INPUTENC)                NOT SET UP FOR USE WITH LATEX.
+
+SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.425 \end{document}
+                    
+YOUR COMMAND WAS IGNORED.
+TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
+OR  <RETURN>  TO CONTINUE WITHOUT IT.
+
+
+! PACKAGE INPUTENC ERROR: UNICODE CHAR ≈úè (U+5F0F)
+(INPUTENC)                NOT SET UP FOR USE WITH LATEX.
+
+SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.425 \end{document}
+                    
+YOUR COMMAND WAS IGNORED.
+TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
+OR  <RETURN>  TO CONTINUE WITHOUT IT.
+
+[46 <../scoure/7.png> <../scoure/10.png>]
+
+! PACKAGE INPUTENC ERROR: UNICODE CHAR ≈òò (U+5E38)
+(INPUTENC)                NOT SET UP FOR USE WITH LATEX.
+
+SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.425 \end{document}
+                    
+YOUR COMMAND WAS IGNORED.
+TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
+OR  <RETURN>  TO CONTINUE WITHOUT IT.
+
+
+! PACKAGE INPUTENC ERROR: UNICODE CHAR «îà (U+7528)
+(INPUTENC)                NOT SET UP FOR USE WITH LATEX.
+
+SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.425 \end{document}
+                    
+YOUR COMMAND WAS IGNORED.
+TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
+OR  <RETURN>  TO CONTINUE WITHOUT IT.
+
+
+! PACKAGE INPUTENC ERROR: UNICODE CHAR ≈Öå (U+516C)
+(INPUTENC)                NOT SET UP FOR USE WITH LATEX.
+
+SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.425 \end{document}
+                    
+YOUR COMMAND WAS IGNORED.
+TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
+OR  <RETURN>  TO CONTINUE WITHOUT IT.
+
+
+! PACKAGE INPUTENC ERROR: UNICODE CHAR ≈úè (U+5F0F)
+(INPUTENC)                NOT SET UP FOR USE WITH LATEX.
+
+SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.425 \end{document}
+                    
+YOUR COMMAND WAS IGNORED.
+TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
+OR  <RETURN>  TO CONTINUE WITHOUT IT.
+
+[47 <../scoure/11.png>] (./test.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 11576 strings out of 492982
- 187288 string characters out of 6134896
- 294403 words of memory out of 5000000
- 14486 multiletter control sequences out of 15000+600000
- 50834 words of font info for 165 fonts, out of 8000000 for 9000
+ 11898 strings out of 492982
+ 190301 string characters out of 6134896
+ 294445 words of memory out of 5000000
+ 14795 multiletter control sequences out of 15000+600000
+ 51346 words of font info for 167 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,12n,43p,1496b,1612s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,12n,43p,1139b,2087s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/
 fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
@@ -1866,10 +1837,10 @@ hare/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/typ
 e1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
 fsl1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/sh
 are/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on test.pdf (42 pages, 882860 bytes).
+Output written on test.pdf (47 pages, 2573426 bytes).
 PDF statistics:
- 579 PDF objects out of 1000 (max. 8388607)
- 369 compressed objects within 4 object streams
+ 611 PDF objects out of 1000 (max. 8388607)
+ 381 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 290 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 329 words of extra memory for PDF output out of 10000 (max. 10000000)
 

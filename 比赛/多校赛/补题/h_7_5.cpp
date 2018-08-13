@@ -11,37 +11,6 @@ using namespace std;
 int mod,n,m;
 const double eps = 1e-6;
 const int MAXN = 1000005;
-bool check[MAXN+10];
-int prime[MAXN+10];
-int mu[MAXN+10];
-void Moblus()
-{
-    clr(check,0);
-    mu[1] = 1;
-    int tot = 0;
-    for(int i = 2; i <= MAXN; i++)
-    {
-        if( !check[i] )
-        {
-            prime[tot++] = i;
-            mu[i] = -1;
-        }
-        for(int j = 0; j < tot; j++)
-        {
-            if(i * prime[j] > MAXN) break;
-            check[i * prime[j]] = true;
-            if( i % prime[j] == 0)
-            {
-                mu[i * prime[j]] = 0;
-                break;
-            }
-            else
-            {
-                mu[i * prime[j]] = -mu[i];
-            }
-        }
-    }
-}
 ll phi[MAXN];
 ll inv[MAXN];
 ll dp[MAXN];
@@ -71,31 +40,28 @@ void dell()
     dp[i] = inv[i]*phi[i]%mod;
   }
 }
-ll slove(int n,int m)
-{
-  ll res = 0;
-  int len = min(n,m);
-  for(int i = 1;i<=len;i++)
-  {
-    res += mu[i]*(n/i)*(m/i);
-  }
-  return res%mod;
-}
+ll csl[MAXN];
 int main()
 {
   ios_close;
-  Moblus();
   init();
   int t;
   cin>>t;
   while(t--)
   {
+    clr(csl,0);
     cin>>n>>m>>mod;
+    if(n>m) swap(n,m);
     dell();
     ll ans = 0;
-    for(int i = 1;i<=n;i++)
+    for(int i = n;i>=1;i--)
     {
-      ans += dp[i]*slove(n/i,m/i);
+      csl[i] = (m/i)*(n/i);
+      for(int j = i+i;j<=n;j+=i)
+      {
+        csl[i]-=csl[j];
+      }
+      ans = (ans+(csl[i]%mod)*dp[i]%mod)%mod;
     }
     cout<<ans%mod<<endl;
   }

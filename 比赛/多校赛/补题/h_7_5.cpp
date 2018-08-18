@@ -11,6 +11,9 @@ using namespace std;
 int mod,n,m;
 const double eps = 1e-6;
 const int MAXN = 1000005;
+// 这题的核心在于计两个区间的所有gcd为任何数的数的总个数，我之前的局限太小了，没想过反过来思考，这里要算的是所有的情况，
+// 我直接从屁股后面去操作就完事了。
+//清华强。
 ll phi[MAXN];
 ll inv[MAXN];
 ll dp[MAXN];
@@ -37,7 +40,7 @@ void dell()
       inv[i]=(mod-mod/i)*inv[mod%i]%mod;
   for(int i = 1;i<=n;i++)
   {
-    dp[i] = inv[i]*phi[i]%mod;
+    dp[i] = inv[phi[i]]*i%mod;
   }
 }
 ll csl[MAXN];
@@ -56,7 +59,7 @@ int main()
     ll ans = 0;
     for(int i = n;i>=1;i--)
     {
-      csl[i] = (m/i)*(n/i);
+      csl[i] = 1LL*(m/i)*(n/i);
       for(int j = i+i;j<=n;j+=i)
       {
         csl[i]-=csl[j];

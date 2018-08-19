@@ -1,0 +1,38 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{//注意的是因为我们处理的是fwt下的多项式，所以我们这里在乘积的时候去做取模运算。}
+
+\PYG{k+kt}{void} \PYG{n+nf}{FWT}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{a}\PYG{p}{[],}\PYG{k+kt}{int} \PYG{n}{n}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{d}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{n}{d}\PYG{o}{\PYGZlt{}}\PYG{n}{n}\PYG{p}{;}\PYG{n}{d}\PYG{o}{\PYGZlt{}\PYGZlt{}=}\PYG{l+m+mi}{1}\PYG{p}{)}
+        \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{m}\PYG{o}{=}\PYG{n}{d}\PYG{o}{\PYGZlt{}\PYGZlt{}}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{n}{i}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZlt{}}\PYG{n}{n}\PYG{p}{;}\PYG{n}{i}\PYG{o}{+=}\PYG{n}{m}\PYG{p}{)}
+            \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{j}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{n}{j}\PYG{o}{\PYGZlt{}}\PYG{n}{d}\PYG{p}{;}\PYG{n}{j}\PYG{o}{++}\PYG{p}{)}
+            \PYG{p}{\PYGZob{}}
+                \PYG{k+kt}{int} \PYG{n}{x}\PYG{o}{=}\PYG{n}{a}\PYG{p}{[}\PYG{n}{i}\PYG{o}{+}\PYG{n}{j}\PYG{p}{],}\PYG{n}{y}\PYG{o}{=}\PYG{n}{a}\PYG{p}{[}\PYG{n}{i}\PYG{o}{+}\PYG{n}{j}\PYG{o}{+}\PYG{n}{d}\PYG{p}{];}
+                \PYG{n}{a}\PYG{p}{[}\PYG{n}{i}\PYG{o}{+}\PYG{n}{j}\PYG{p}{]}\PYG{o}{=}\PYG{p}{(}\PYG{n}{x}\PYG{o}{+}\PYG{n}{y}\PYG{p}{)}\PYG{o}{\PYGZpc{}}\PYG{n}{mod}\PYG{p}{,}\PYG{n}{a}\PYG{p}{[}\PYG{n}{i}\PYG{o}{+}\PYG{n}{j}\PYG{o}{+}\PYG{n}{d}\PYG{p}{]}\PYG{o}{=}\PYG{p}{(}\PYG{n}{x}\PYG{o}{\PYGZhy{}}\PYG{n}{y}\PYG{o}{+}\PYG{n}{mod}\PYG{p}{)}\PYG{o}{\PYGZpc{}}\PYG{n}{mod}\PYG{p}{;}
+                \PYG{c+c1}{//xor:a[i+j]=x+y,a[i+j+d]=x\PYGZhy{}y;}
+                \PYG{c+c1}{//and:a[i+j]=x+y;}
+                \PYG{c+c1}{//or:a[i+j+d]=x+y;}
+            \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kt}{void} \PYG{n+nf}{UFWT}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{a}\PYG{p}{[],}\PYG{k+kt}{int} \PYG{n}{n}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{d}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{n}{d}\PYG{o}{\PYGZlt{}}\PYG{n}{n}\PYG{p}{;}\PYG{n}{d}\PYG{o}{\PYGZlt{}\PYGZlt{}=}\PYG{l+m+mi}{1}\PYG{p}{)}
+        \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{m}\PYG{o}{=}\PYG{n}{d}\PYG{o}{\PYGZlt{}\PYGZlt{}}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{n}{i}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZlt{}}\PYG{n}{n}\PYG{p}{;}\PYG{n}{i}\PYG{o}{+=}\PYG{n}{m}\PYG{p}{)}
+            \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{j}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{n}{j}\PYG{o}{\PYGZlt{}}\PYG{n}{d}\PYG{p}{;}\PYG{n}{j}\PYG{o}{++}\PYG{p}{)}
+            \PYG{p}{\PYGZob{}}
+                \PYG{k+kt}{int} \PYG{n}{x}\PYG{o}{=}\PYG{n}{a}\PYG{p}{[}\PYG{n}{i}\PYG{o}{+}\PYG{n}{j}\PYG{p}{],}\PYG{n}{y}\PYG{o}{=}\PYG{n}{a}\PYG{p}{[}\PYG{n}{i}\PYG{o}{+}\PYG{n}{j}\PYG{o}{+}\PYG{n}{d}\PYG{p}{];}
+                \PYG{n}{a}\PYG{p}{[}\PYG{n}{i}\PYG{o}{+}\PYG{n}{j}\PYG{p}{]}\PYG{o}{=}\PYG{l+m+mi}{1LL}\PYG{o}{*}\PYG{p}{(}\PYG{n}{x}\PYG{o}{+}\PYG{n}{y}\PYG{p}{)}\PYG{o}{*}\PYG{n}{rev}\PYG{o}{\PYGZpc{}}\PYG{n}{mod}\PYG{p}{,}\PYG{n}{a}\PYG{p}{[}\PYG{n}{i}\PYG{o}{+}\PYG{n}{j}\PYG{o}{+}\PYG{n}{d}\PYG{p}{]}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{1LL}\PYG{o}{*}\PYG{p}{(}\PYG{n}{x}\PYG{o}{\PYGZhy{}}\PYG{n}{y}\PYG{p}{)}\PYG{o}{*}\PYG{n}{rev}\PYG{o}{\PYGZpc{}}\PYG{n}{mod}\PYG{o}{+}\PYG{n}{mod}\PYG{p}{)}\PYG{o}{\PYGZpc{}}\PYG{n}{mod}\PYG{p}{;}
+                \PYG{c+c1}{//xor:a[i+j]=(x+y)/2,a[i+j+d]=(x\PYGZhy{}y)/2;}
+                \PYG{c+c1}{//and:a[i+j]=x\PYGZhy{}y;}
+                \PYG{c+c1}{//or:a[i+j+d]=y\PYGZhy{}x;}
+            \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{void} \PYG{n+nf}{solve}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{a}\PYG{p}{[],}\PYG{k+kt}{int} \PYG{n}{b}\PYG{p}{[],}\PYG{k+kt}{int} \PYG{n}{n}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{n}{FWT}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,}\PYG{n}{n}\PYG{p}{);}
+    \PYG{n}{FWT}\PYG{p}{(}\PYG{n}{b}\PYG{p}{,}\PYG{n}{n}\PYG{p}{);}
+    \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZlt{}}\PYG{n}{n}\PYG{p}{;}\PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{n}{a}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{o}{=}\PYG{l+m+mi}{1LL}\PYG{o}{*}\PYG{n}{a}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{o}{*}\PYG{n}{b}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{o}{\PYGZpc{}}\PYG{n}{mod}\PYG{p}{;}
+    \PYG{n}{UFWT}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,}\PYG{n}{n}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

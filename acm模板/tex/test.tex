@@ -229,7 +229,7 @@ $r_k \equiv r_{k-1} -2$\quad mod$M_p$\quad $r_1 = 4$
 \inputminted{c++}{../scoure/math/chineseshengyu.cpp}
 \subsubsection{乘法逆元}
 思想是通过扩展欧几里得来得出，如果缘分到了，那么
-还能用费马小定理来解
+还能用费马小定理来解，上面还有一个打表的方法O(n).
 \inputminted{c++}{../scoure/math/niyuan.cpp}
 \subsubsection{欧拉函数}
 p为素数时$\phi(p) = p-1 $\\
@@ -249,6 +249,9 @@ $f_n = \sum_{n|d} u(\frac{d}{n})*F(d)$\\
 和欧拉函数一样很重要的一个函数他的定义我就不说了，毕竟我latex学的还不好，公式的
 插入对我来说用处不大。
 \inputminted{c++}{../scoure/math/mobius.cpp}
+\subsubsection{二项式反演}
+$f(n) = \sum_{k=0}^n C_n^k g(k)$
+$g(n) = \sum_{k=0}^n (-1)^{n-k} C_n^k f(k)$
 \newpage
 \subsection{博弈}
 \subsubsection{主要的解题思想}
@@ -300,6 +303,10 @@ $$ x_{n+1} = x_1*x_n+d*y_1*y_n,y_{n+1} = x_1*y_n + y_1*x_n $$
 \subsection{线代}
 \subsubsection{bm求解n阶递推式}
 \inputminted{c++}{../scoure/math/bm.cpp}
+\subsubsection{fwt优化多项式乘法}
+fft用的方面在于$f_n = \sum_{i+j=n}g_i*g_j$
+fwt用的就是在于$f_n = \sum_{i^|&j ==n} g_i*g_j$
+\inputminted{c++}{../scoure/math/fwt_ban.cpp}
 \subsubsection{fft优化多项式乘法法}
 这个是一个工具，他的作用是加速多项式得乘法。这个点得难处还是在于多项式的构建，其实也不是
 非常复杂得东西，当然他的原理，不敢去碰。关键词：多项式乘法，并且复杂度为1e5左右。

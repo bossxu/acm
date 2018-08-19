@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.7.31)  9 AUG 2018 17:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.7.31)  15 AUG 2018 20:56
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1408,7 +1408,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [28]
 (./_minted-test/1318FC15F0430CA26B51B09A9ECC1B30678CF6B23EB978173F697C979BD50AD
 0.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 278--281
+Underfull \hbox (badness 10000) in paragraph at lines 281--284
 
  []
 
@@ -1454,6 +1454,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [33])
+! Misplaced alignment tab character &.
+l.308 fwt用的就是在于$f_n = \sum_{i^|&
+                                            j ==n} g_i*g_j$
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+(./_minted-test/FBEBE497EC54D3282B583B6A299C9D597EC51D195D6906B36EACA46D03131FF
+0.pygtex)
 (./_minted-test/BD455B3F3F9AA859CCD7B81711AFDC2075BF6EF465B6CC16C89C363CF6EE4BF
 F.pygtex
 
@@ -1485,9 +1498,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[37])
-(./_minted-test/23B50B08431BAF5C0079AA810B4F1639E8537A2A7F139049E3C7B428C26B94E
-7.pygtex
+[37]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 12.05934pt.
@@ -1495,6 +1506,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [38])
+(./_minted-test/23B50B08431BAF5C0079AA810B4F1639E8537A2A7F139049E3C7B428C26B94E
+7.pygtex)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.05934pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[39]
 (./_minted-test/5B48CC3DC88966898607B9E5F6E3A55E81AB51AFF7AA8FAC6C055B7D49FD63E
 D.pygtex
 
@@ -1503,16 +1523,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39])
+[40])
 (./_minted-test/62282462998C131A3AEA53D672A467D6173E05A26AE052D26F53F162878053F
-0.pygtex
+0.pygtex)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 12.05934pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[40])
+[41]
 (./_minted-test/64F6E39EDF946EBECBA6424EDB56061103E114E88A365E54F3154C239DEF02D
 9.pygtex
 
@@ -1521,18 +1541,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[41])
-(./_minted-test/984D29947775A7EE4D62F0AF71FFCCA7210A01644555B11DD9F62FB4947CA50
-6.pygtex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.0966pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
 [42])
-(./_minted-test/7A84418D3960D18FD5FDE1F711C0599EF6D73B29CBEDC5DCDE19D93D1DB6C16
-E.pygtex)
+(./_minted-test/984D29947775A7EE4D62F0AF71FFCCA7210A01644555B11DD9F62FB4947CA50
+6.pygtex)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 12.0966pt.
@@ -1540,40 +1551,42 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [43]
-<../scoure/1.png, id=303, 889.3225pt x 357.335pt>
+(./_minted-test/7A84418D3960D18FD5FDE1F711C0599EF6D73B29CBEDC5DCDE19D93D1DB6C16
+E.pygtex)
+<../scoure/1.png, id=306, 889.3225pt x 357.335pt>
 File: ../scoure/1.png Graphic file (type png)
 <use ../scoure/1.png>
-Package pdftex.def Info: ../scoure/1.png  used on input line 389.
+Package pdftex.def Info: ../scoure/1.png  used on input line 396.
 (pdftex.def)             Requested size: 227.62206pt x 91.45999pt.
-<../scoure/3.png, id=305, 566.115pt x 397.485pt>
+<../scoure/3.png, id=308, 566.115pt x 397.485pt>
 File: ../scoure/3.png Graphic file (type png)
 <use ../scoure/3.png>
-Package pdftex.def Info: ../scoure/3.png  used on input line 394.
+Package pdftex.def Info: ../scoure/3.png  used on input line 401.
 (pdftex.def)             Requested size: 136.57462pt x 95.88962pt.
-<../scoure/5.png, id=306, 953.5625pt x 1156.32pt>
+<../scoure/5.png, id=309, 953.5625pt x 1156.32pt>
 File: ../scoure/5.png Graphic file (type png)
 <use ../scoure/5.png>
-Package pdftex.def Info: ../scoure/5.png  used on input line 399.
+Package pdftex.def Info: ../scoure/5.png  used on input line 406.
 (pdftex.def)             Requested size: 227.62206pt x 276.02274pt.
-<../scoure/6.png, id=307, 813.0375pt x 511.9125pt>
+<../scoure/6.png, id=310, 813.0375pt x 511.9125pt>
 File: ../scoure/6.png Graphic file (type png)
 <use ../scoure/6.png>
-Package pdftex.def Info: ../scoure/6.png  used on input line 404.
+Package pdftex.def Info: ../scoure/6.png  used on input line 411.
 (pdftex.def)             Requested size: 227.62206pt x 143.31108pt.
-<../scoure/7.png, id=308, 829.0975pt x 1057.9525pt>
+<../scoure/7.png, id=311, 829.0975pt x 1057.9525pt>
 File: ../scoure/7.png Graphic file (type png)
 <use ../scoure/7.png>
-Package pdftex.def Info: ../scoure/7.png  used on input line 409.
+Package pdftex.def Info: ../scoure/7.png  used on input line 416.
 (pdftex.def)             Requested size: 227.62206pt x 290.44547pt.
-<../scoure/10.png, id=309, 995.72pt x 1092.08pt>
+<../scoure/10.png, id=312, 995.72pt x 1092.08pt>
 File: ../scoure/10.png Graphic file (type png)
 <use ../scoure/10.png>
-Package pdftex.def Info: ../scoure/10.png  used on input line 414.
+Package pdftex.def Info: ../scoure/10.png  used on input line 421.
 (pdftex.def)             Requested size: 227.62206pt x 249.64005pt.
-<../scoure/11.png, id=310, 963.6pt x 933.4875pt>
+<../scoure/11.png, id=313, 963.6pt x 933.4875pt>
 File: ../scoure/11.png Graphic file (type png)
 <use ../scoure/11.png>
-Package pdftex.def Info: ../scoure/11.png  used on input line 419.
+Package pdftex.def Info: ../scoure/11.png  used on input line 426.
 (pdftex.def)             Requested size: 227.62206pt x 220.5091pt.
 
 
@@ -1582,7 +1595,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[44 <../scoure/1.png> <../scoure/3.png>] 
+[44] 
 AED: lastpage setting LastPage
 
 ! PACKAGE INPUTENC ERROR: UNICODE CHAR Ř� (U+5E38)
@@ -1592,7 +1605,7 @@ SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.425 \end{document}
+l.432 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
@@ -1606,7 +1619,7 @@ SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.425 \end{document}
+l.432 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
@@ -1620,7 +1633,7 @@ SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.425 \end{document}
+l.432 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
@@ -1634,13 +1647,13 @@ SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.425 \end{document}
+l.432 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
 OR  <RETURN>  TO CONTINUE WITHOUT IT.
 
-[45 <../scoure/5.png> <../scoure/6.png>]
+[45 <../scoure/1.png> <../scoure/3.png> <../scoure/5.png>]
 
 ! PACKAGE INPUTENC ERROR: UNICODE CHAR Ř� (U+5E38)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
@@ -1649,7 +1662,7 @@ SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.425 \end{document}
+l.432 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
@@ -1663,7 +1676,7 @@ SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.425 \end{document}
+l.432 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
@@ -1677,7 +1690,7 @@ SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.425 \end{document}
+l.432 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
@@ -1691,13 +1704,13 @@ SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.425 \end{document}
+l.432 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
 OR  <RETURN>  TO CONTINUE WITHOUT IT.
 
-[46 <../scoure/7.png> <../scoure/10.png>]
+[46 <../scoure/6.png> <../scoure/7.png>]
 
 ! PACKAGE INPUTENC ERROR: UNICODE CHAR Ř� (U+5E38)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
@@ -1706,7 +1719,7 @@ SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.425 \end{document}
+l.432 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
@@ -1720,7 +1733,7 @@ SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.425 \end{document}
+l.432 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
@@ -1734,7 +1747,7 @@ SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.425 \end{document}
+l.432 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
@@ -1748,28 +1761,25 @@ SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.425 \end{document}
+l.432 \end{document}
                     
 YOUR COMMAND WAS IGNORED.
 TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
 OR  <RETURN>  TO CONTINUE WITHOUT IT.
 
-[47 <../scoure/11.png>] (./test.aux)
+[47 <../scoure/10.png> <../scoure/11.png>] (./test.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 11898 strings out of 492982
- 190301 string characters out of 6134896
- 294445 words of memory out of 5000000
- 14795 multiletter control sequences out of 15000+600000
- 51346 words of font info for 167 fonts, out of 8000000 for 9000
+ 11914 strings out of 492982
+ 190821 string characters out of 6134896
+ 294099 words of memory out of 5000000
+ 14805 multiletter control sequences out of 15000+600000
+ 51626 words of font info for 168 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,12n,43p,1139b,2087s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,12n,45p,1139b,2087s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/
 fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
@@ -1779,68 +1789,70 @@ ts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fo
-nts/type1/arphic/gbsnu/gbsnu30.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/g
-bsnu4e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu4f.pfb></usr/share/t
-exmf/fonts/type1/arphic/gbsnu/gbsnu50.pfb></usr/share/texmf/fonts/type1/arphic/
-gbsnu/gbsnu51.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu52.pfb></usr/
-share/texmf/fonts/type1/arphic/gbsnu/gbsnu53.pfb></usr/share/texmf/fonts/type1/
-arphic/gbsnu/gbsnu54.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu55.pfb
-></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu56.pfb></usr/share/texmf/fonts
-/type1/arphic/gbsnu/gbsnu57.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsn
-u58.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu59.pfb></usr/share/texm
-f/fonts/type1/arphic/gbsnu/gbsnu5a.pfb></usr/share/texmf/fonts/type1/arphic/gbs
-nu/gbsnu5b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu5c.pfb></usr/sha
-re/texmf/fonts/type1/arphic/gbsnu/gbsnu5d.pfb></usr/share/texmf/fonts/type1/arp
-hic/gbsnu/gbsnu5e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu5f.pfb></
-usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu60.pfb></usr/share/texmf/fonts/ty
-pe1/arphic/gbsnu/gbsnu61.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu62
-.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu63.pfb></usr/share/texmf/f
-onts/type1/arphic/gbsnu/gbsnu64.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/
-gbsnu65.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu66.pfb></usr/share/
-texmf/fonts/type1/arphic/gbsnu/gbsnu67.pfb></usr/share/texmf/fonts/type1/arphic
-/gbsnu/gbsnu68.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu69.pfb></usr
-/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6a.pfb></usr/share/texmf/fonts/type1
-/arphic/gbsnu/gbsnu6b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6c.pf
-b></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6d.pfb></usr/share/texmf/font
-s/type1/arphic/gbsnu/gbsnu6e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbs
-nu70.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu71.pfb></usr/share/tex
-mf/fonts/type1/arphic/gbsnu/gbsnu72.pfb></usr/share/texmf/fonts/type1/arphic/gb
-snu/gbsnu73.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu74.pfb></usr/sh
-are/texmf/fonts/type1/arphic/gbsnu/gbsnu75.pfb></usr/share/texmf/fonts/type1/ar
-phic/gbsnu/gbsnu76.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu77.pfb><
-/usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu78.pfb></usr/share/texmf/fonts/t
-ype1/arphic/gbsnu/gbsnu79.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7
-a.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7b.pfb></usr/share/texmf/
-fonts/type1/arphic/gbsnu/gbsnu7c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu
-/gbsnu7d.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7e.pfb></usr/share
-/texmf/fonts/type1/arphic/gbsnu/gbsnu7f.pfb></usr/share/texmf/fonts/type1/arphi
-c/gbsnu/gbsnu80.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu81.pfb></us
-r/share/texmf/fonts/type1/arphic/gbsnu/gbsnu82.pfb></usr/share/texmf/fonts/type
-1/arphic/gbsnu/gbsnu83.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu88.p
-fb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu89.pfb></usr/share/texmf/fon
-ts/type1/arphic/gbsnu/gbsnu8b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gb
-snu8c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8d.pfb></usr/share/te
-xmf/fonts/type1/arphic/gbsnu/gbsnu8f.pfb></usr/share/texmf/fonts/type1/arphic/g
-bsnu/gbsnu90.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu91.pfb></usr/s
-hare/texmf/fonts/type1/arphic/gbsnu/gbsnu94.pfb></usr/share/texmf/fonts/type1/a
-rphic/gbsnu/gbsnu95.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu96.pfb>
-</usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu97.pfb></usr/share/texmf/fonts/
-type1/arphic/gbsnu/gbsnu98.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu
-99.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu9a.pfb></usr/share/texmf
-/fonts/type1/arphic/gbsnu/gbsnu9e.pfb></usr/share/texmf/fonts/type1/arphic/gbsn
-u/gbsnuff.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/
-share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/ty
-pe1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/
-sfit1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/s
-hare/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/typ
-e1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
-fsl1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/sh
-are/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on test.pdf (47 pages, 2573426 bytes).
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/typ
+e1/arphic/gbsnu/gbsnu30.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu4e.
+pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu4f.pfb></usr/share/texmf/fo
+nts/type1/arphic/gbsnu/gbsnu50.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/g
+bsnu51.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu52.pfb></usr/share/t
+exmf/fonts/type1/arphic/gbsnu/gbsnu53.pfb></usr/share/texmf/fonts/type1/arphic/
+gbsnu/gbsnu54.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu55.pfb></usr/
+share/texmf/fonts/type1/arphic/gbsnu/gbsnu56.pfb></usr/share/texmf/fonts/type1/
+arphic/gbsnu/gbsnu57.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu58.pfb
+></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu59.pfb></usr/share/texmf/fonts
+/type1/arphic/gbsnu/gbsnu5a.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsn
+u5b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu5c.pfb></usr/share/texm
+f/fonts/type1/arphic/gbsnu/gbsnu5d.pfb></usr/share/texmf/fonts/type1/arphic/gbs
+nu/gbsnu5e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu5f.pfb></usr/sha
+re/texmf/fonts/type1/arphic/gbsnu/gbsnu60.pfb></usr/share/texmf/fonts/type1/arp
+hic/gbsnu/gbsnu61.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu62.pfb></
+usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu63.pfb></usr/share/texmf/fonts/ty
+pe1/arphic/gbsnu/gbsnu64.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu65
+.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu66.pfb></usr/share/texmf/f
+onts/type1/arphic/gbsnu/gbsnu67.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/
+gbsnu68.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu69.pfb></usr/share/
+texmf/fonts/type1/arphic/gbsnu/gbsnu6a.pfb></usr/share/texmf/fonts/type1/arphic
+/gbsnu/gbsnu6b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6c.pfb></usr
+/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6d.pfb></usr/share/texmf/fonts/type1
+/arphic/gbsnu/gbsnu6e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6f.pf
+b></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu70.pfb></usr/share/texmf/font
+s/type1/arphic/gbsnu/gbsnu71.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbs
+nu72.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu73.pfb></usr/share/tex
+mf/fonts/type1/arphic/gbsnu/gbsnu74.pfb></usr/share/texmf/fonts/type1/arphic/gb
+snu/gbsnu75.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu76.pfb></usr/sh
+are/texmf/fonts/type1/arphic/gbsnu/gbsnu77.pfb></usr/share/texmf/fonts/type1/ar
+phic/gbsnu/gbsnu78.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu79.pfb><
+/usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7a.pfb></usr/share/texmf/fonts/t
+ype1/arphic/gbsnu/gbsnu7b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7
+c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7d.pfb></usr/share/texmf/
+fonts/type1/arphic/gbsnu/gbsnu7e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu
+/gbsnu7f.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu80.pfb></usr/share
+/texmf/fonts/type1/arphic/gbsnu/gbsnu81.pfb></usr/share/texmf/fonts/type1/arphi
+c/gbsnu/gbsnu82.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu83.pfb></us
+r/share/texmf/fonts/type1/arphic/gbsnu/gbsnu88.pfb></usr/share/texmf/fonts/type
+1/arphic/gbsnu/gbsnu89.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8b.p
+fb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8c.pfb></usr/share/texmf/fon
+ts/type1/arphic/gbsnu/gbsnu8d.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gb
+snu8f.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu90.pfb></usr/share/te
+xmf/fonts/type1/arphic/gbsnu/gbsnu91.pfb></usr/share/texmf/fonts/type1/arphic/g
+bsnu/gbsnu94.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu95.pfb></usr/s
+hare/texmf/fonts/type1/arphic/gbsnu/gbsnu96.pfb></usr/share/texmf/fonts/type1/a
+rphic/gbsnu/gbsnu97.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu98.pfb>
+</usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu99.pfb></usr/share/texmf/fonts/
+type1/arphic/gbsnu/gbsnu9a.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu
+9e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnuff.pfb></usr/share/texmf
+/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/
+cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pf
+b></usr/share/texmf/fonts/type1/public/cm-super/sfit1000.pfb></usr/share/texmf/
+fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/c
+m-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb
+></usr/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm
+-super/sftt1000.pfb>
+Output written on test.pdf (47 pages, 2586221 bytes).
 PDF statistics:
- 611 PDF objects out of 1000 (max. 8388607)
- 381 compressed objects within 4 object streams
+ 620 PDF objects out of 1000 (max. 8388607)
+ 387 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 329 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 333 words of extra memory for PDF output out of 10000 (max. 10000000)
 

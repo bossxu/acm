@@ -1,388 +1,74 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.7.31)  15 AUG 2018 20:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.8.19)  19 AUG 2018 22:16
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
 **test.tex
 (./test.tex
-LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+LaTeX2e <2018-04-01> patch level 5
+(e:/texlive/2018/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+(e:/texlive/2018/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
-\c@part=\count79
-\c@section=\count80
-\c@subsection=\count81
-\c@subsubsection=\count82
-\c@paragraph=\count83
-\c@subparagraph=\count84
-\c@figure=\count85
-\c@table=\count86
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+(e:/texlive/2018/texmf-dist/tex/latex/listings/listings.sty
+(e:/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-\lst@mode=\count87
+\lst@mode=\count88
 \lst@gtempboxa=\box26
 \lst@token=\toks15
-\lst@length=\count88
+\lst@length=\count89
 \lst@currlwidth=\dimen103
-\lst@column=\count89
-\lst@pos=\count90
+\lst@column=\count90
+\lst@pos=\count91
 \lst@lostspace=\dimen104
 \lst@width=\dimen105
-\lst@newlines=\count91
-\lst@lineno=\count92
+\lst@newlines=\count92
+\lst@lineno=\count93
 \lst@maxwidth=\dimen106
 
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+(e:/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count93
-\lst@skipnumbers=\count94
+\c@lstnumber=\count94
+\lst@skipnumbers=\count95
 \lst@framebox=\box27
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+(e:/texlive/2018/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-(/usr/share/texmf/tex/latex/CJK/CJKutf8.sty
+(e:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/CJKutf8.sty
 Package: CJKutf8 2015/04/18 4.8.4
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(e:/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2015/03/17 v1.2c Input encoding file
+(e:/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/04/06 v1.3b Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-Now handling font encoding OML ...
-... no UTF-8 mapping file for font encoding OML
-Now handling font encoding T1 ...
-... processing UTF-8 mapping file for font encoding T1
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
-File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
-   defining Unicode char U+00A0 (decimal 160)
-   defining Unicode char U+00A1 (decimal 161)
-   defining Unicode char U+00A3 (decimal 163)
-   defining Unicode char U+00AB (decimal 171)
-   defining Unicode char U+00AD (decimal 173)
-   defining Unicode char U+00BB (decimal 187)
-   defining Unicode char U+00BF (decimal 191)
-   defining Unicode char U+00C0 (decimal 192)
-   defining Unicode char U+00C1 (decimal 193)
-   defining Unicode char U+00C2 (decimal 194)
-   defining Unicode char U+00C3 (decimal 195)
-   defining Unicode char U+00C4 (decimal 196)
-   defining Unicode char U+00C5 (decimal 197)
-   defining Unicode char U+00C6 (decimal 198)
-   defining Unicode char U+00C7 (decimal 199)
-   defining Unicode char U+00C8 (decimal 200)
-   defining Unicode char U+00C9 (decimal 201)
-   defining Unicode char U+00CA (decimal 202)
-   defining Unicode char U+00CB (decimal 203)
-   defining Unicode char U+00CC (decimal 204)
-   defining Unicode char U+00CD (decimal 205)
-   defining Unicode char U+00CE (decimal 206)
-   defining Unicode char U+00CF (decimal 207)
-   defining Unicode char U+00D0 (decimal 208)
-   defining Unicode char U+00D1 (decimal 209)
-   defining Unicode char U+00D2 (decimal 210)
-   defining Unicode char U+00D3 (decimal 211)
-   defining Unicode char U+00D4 (decimal 212)
-   defining Unicode char U+00D5 (decimal 213)
-   defining Unicode char U+00D6 (decimal 214)
-   defining Unicode char U+00D8 (decimal 216)
-   defining Unicode char U+00D9 (decimal 217)
-   defining Unicode char U+00DA (decimal 218)
-   defining Unicode char U+00DB (decimal 219)
-   defining Unicode char U+00DC (decimal 220)
-   defining Unicode char U+00DD (decimal 221)
-   defining Unicode char U+00DE (decimal 222)
-   defining Unicode char U+00DF (decimal 223)
-   defining Unicode char U+00E0 (decimal 224)
-   defining Unicode char U+00E1 (decimal 225)
-   defining Unicode char U+00E2 (decimal 226)
-   defining Unicode char U+00E3 (decimal 227)
-   defining Unicode char U+00E4 (decimal 228)
-   defining Unicode char U+00E5 (decimal 229)
-   defining Unicode char U+00E6 (decimal 230)
-   defining Unicode char U+00E7 (decimal 231)
-   defining Unicode char U+00E8 (decimal 232)
-   defining Unicode char U+00E9 (decimal 233)
-   defining Unicode char U+00EA (decimal 234)
-   defining Unicode char U+00EB (decimal 235)
-   defining Unicode char U+00EC (decimal 236)
-   defining Unicode char U+00ED (decimal 237)
-   defining Unicode char U+00EE (decimal 238)
-   defining Unicode char U+00EF (decimal 239)
-   defining Unicode char U+00F0 (decimal 240)
-   defining Unicode char U+00F1 (decimal 241)
-   defining Unicode char U+00F2 (decimal 242)
-   defining Unicode char U+00F3 (decimal 243)
-   defining Unicode char U+00F4 (decimal 244)
-   defining Unicode char U+00F5 (decimal 245)
-   defining Unicode char U+00F6 (decimal 246)
-   defining Unicode char U+00F8 (decimal 248)
-   defining Unicode char U+00F9 (decimal 249)
-   defining Unicode char U+00FA (decimal 250)
-   defining Unicode char U+00FB (decimal 251)
-   defining Unicode char U+00FC (decimal 252)
-   defining Unicode char U+00FD (decimal 253)
-   defining Unicode char U+00FE (decimal 254)
-   defining Unicode char U+00FF (decimal 255)
-   defining Unicode char U+0100 (decimal 256)
-   defining Unicode char U+0101 (decimal 257)
-   defining Unicode char U+0102 (decimal 258)
-   defining Unicode char U+0103 (decimal 259)
-   defining Unicode char U+0104 (decimal 260)
-   defining Unicode char U+0105 (decimal 261)
-   defining Unicode char U+0106 (decimal 262)
-   defining Unicode char U+0107 (decimal 263)
-   defining Unicode char U+0108 (decimal 264)
-   defining Unicode char U+0109 (decimal 265)
-   defining Unicode char U+010A (decimal 266)
-   defining Unicode char U+010B (decimal 267)
-   defining Unicode char U+010C (decimal 268)
-   defining Unicode char U+010D (decimal 269)
-   defining Unicode char U+010E (decimal 270)
-   defining Unicode char U+010F (decimal 271)
-   defining Unicode char U+0110 (decimal 272)
-   defining Unicode char U+0111 (decimal 273)
-   defining Unicode char U+0112 (decimal 274)
-   defining Unicode char U+0113 (decimal 275)
-   defining Unicode char U+0114 (decimal 276)
-   defining Unicode char U+0115 (decimal 277)
-   defining Unicode char U+0116 (decimal 278)
-   defining Unicode char U+0117 (decimal 279)
-   defining Unicode char U+0118 (decimal 280)
-   defining Unicode char U+0119 (decimal 281)
-   defining Unicode char U+011A (decimal 282)
-   defining Unicode char U+011B (decimal 283)
-   defining Unicode char U+011C (decimal 284)
-   defining Unicode char U+011D (decimal 285)
-   defining Unicode char U+011E (decimal 286)
-   defining Unicode char U+011F (decimal 287)
-   defining Unicode char U+0120 (decimal 288)
-   defining Unicode char U+0121 (decimal 289)
-   defining Unicode char U+0122 (decimal 290)
-   defining Unicode char U+0123 (decimal 291)
-   defining Unicode char U+0124 (decimal 292)
-   defining Unicode char U+0125 (decimal 293)
-   defining Unicode char U+0128 (decimal 296)
-   defining Unicode char U+0129 (decimal 297)
-   defining Unicode char U+012A (decimal 298)
-   defining Unicode char U+012B (decimal 299)
-   defining Unicode char U+012C (decimal 300)
-   defining Unicode char U+012D (decimal 301)
-   defining Unicode char U+012E (decimal 302)
-   defining Unicode char U+012F (decimal 303)
-   defining Unicode char U+0130 (decimal 304)
-   defining Unicode char U+0131 (decimal 305)
-   defining Unicode char U+0132 (decimal 306)
-   defining Unicode char U+0133 (decimal 307)
-   defining Unicode char U+0134 (decimal 308)
-   defining Unicode char U+0135 (decimal 309)
-   defining Unicode char U+0136 (decimal 310)
-   defining Unicode char U+0137 (decimal 311)
-   defining Unicode char U+0139 (decimal 313)
-   defining Unicode char U+013A (decimal 314)
-   defining Unicode char U+013B (decimal 315)
-   defining Unicode char U+013C (decimal 316)
-   defining Unicode char U+013D (decimal 317)
-   defining Unicode char U+013E (decimal 318)
-   defining Unicode char U+0141 (decimal 321)
-   defining Unicode char U+0142 (decimal 322)
-   defining Unicode char U+0143 (decimal 323)
-   defining Unicode char U+0144 (decimal 324)
-   defining Unicode char U+0145 (decimal 325)
-   defining Unicode char U+0146 (decimal 326)
-   defining Unicode char U+0147 (decimal 327)
-   defining Unicode char U+0148 (decimal 328)
-   defining Unicode char U+014A (decimal 330)
-   defining Unicode char U+014B (decimal 331)
-   defining Unicode char U+014C (decimal 332)
-   defining Unicode char U+014D (decimal 333)
-   defining Unicode char U+014E (decimal 334)
-   defining Unicode char U+014F (decimal 335)
-   defining Unicode char U+0150 (decimal 336)
-   defining Unicode char U+0151 (decimal 337)
-   defining Unicode char U+0152 (decimal 338)
-   defining Unicode char U+0153 (decimal 339)
-   defining Unicode char U+0154 (decimal 340)
-   defining Unicode char U+0155 (decimal 341)
-   defining Unicode char U+0156 (decimal 342)
-   defining Unicode char U+0157 (decimal 343)
-   defining Unicode char U+0158 (decimal 344)
-   defining Unicode char U+0159 (decimal 345)
-   defining Unicode char U+015A (decimal 346)
-   defining Unicode char U+015B (decimal 347)
-   defining Unicode char U+015C (decimal 348)
-   defining Unicode char U+015D (decimal 349)
-   defining Unicode char U+015E (decimal 350)
-   defining Unicode char U+015F (decimal 351)
-   defining Unicode char U+0160 (decimal 352)
-   defining Unicode char U+0161 (decimal 353)
-   defining Unicode char U+0162 (decimal 354)
-   defining Unicode char U+0163 (decimal 355)
-   defining Unicode char U+0164 (decimal 356)
-   defining Unicode char U+0165 (decimal 357)
-   defining Unicode char U+0168 (decimal 360)
-   defining Unicode char U+0169 (decimal 361)
-   defining Unicode char U+016A (decimal 362)
-   defining Unicode char U+016B (decimal 363)
-   defining Unicode char U+016C (decimal 364)
-   defining Unicode char U+016D (decimal 365)
-   defining Unicode char U+016E (decimal 366)
-   defining Unicode char U+016F (decimal 367)
-   defining Unicode char U+0170 (decimal 368)
-   defining Unicode char U+0171 (decimal 369)
-   defining Unicode char U+0172 (decimal 370)
-   defining Unicode char U+0173 (decimal 371)
-   defining Unicode char U+0174 (decimal 372)
-   defining Unicode char U+0175 (decimal 373)
-   defining Unicode char U+0176 (decimal 374)
-   defining Unicode char U+0177 (decimal 375)
-   defining Unicode char U+0178 (decimal 376)
-   defining Unicode char U+0179 (decimal 377)
-   defining Unicode char U+017A (decimal 378)
-   defining Unicode char U+017B (decimal 379)
-   defining Unicode char U+017C (decimal 380)
-   defining Unicode char U+017D (decimal 381)
-   defining Unicode char U+017E (decimal 382)
-   defining Unicode char U+01CD (decimal 461)
-   defining Unicode char U+01CE (decimal 462)
-   defining Unicode char U+01CF (decimal 463)
-   defining Unicode char U+01D0 (decimal 464)
-   defining Unicode char U+01D1 (decimal 465)
-   defining Unicode char U+01D2 (decimal 466)
-   defining Unicode char U+01D3 (decimal 467)
-   defining Unicode char U+01D4 (decimal 468)
-   defining Unicode char U+01E2 (decimal 482)
-   defining Unicode char U+01E3 (decimal 483)
-   defining Unicode char U+01E6 (decimal 486)
-   defining Unicode char U+01E7 (decimal 487)
-   defining Unicode char U+01E8 (decimal 488)
-   defining Unicode char U+01E9 (decimal 489)
-   defining Unicode char U+01EA (decimal 490)
-   defining Unicode char U+01EB (decimal 491)
-   defining Unicode char U+01F0 (decimal 496)
-   defining Unicode char U+01F4 (decimal 500)
-   defining Unicode char U+01F5 (decimal 501)
-   defining Unicode char U+0218 (decimal 536)
-   defining Unicode char U+0219 (decimal 537)
-   defining Unicode char U+021A (decimal 538)
-   defining Unicode char U+021B (decimal 539)
-   defining Unicode char U+0232 (decimal 562)
-   defining Unicode char U+0233 (decimal 563)
-   defining Unicode char U+1E02 (decimal 7682)
-   defining Unicode char U+1E03 (decimal 7683)
-   defining Unicode char U+200C (decimal 8204)
-   defining Unicode char U+2010 (decimal 8208)
-   defining Unicode char U+2011 (decimal 8209)
-   defining Unicode char U+2012 (decimal 8210)
-   defining Unicode char U+2013 (decimal 8211)
-   defining Unicode char U+2014 (decimal 8212)
-   defining Unicode char U+2015 (decimal 8213)
-   defining Unicode char U+2018 (decimal 8216)
-   defining Unicode char U+2019 (decimal 8217)
-   defining Unicode char U+201A (decimal 8218)
-   defining Unicode char U+201C (decimal 8220)
-   defining Unicode char U+201D (decimal 8221)
-   defining Unicode char U+201E (decimal 8222)
-   defining Unicode char U+2030 (decimal 8240)
-   defining Unicode char U+2031 (decimal 8241)
-   defining Unicode char U+2039 (decimal 8249)
-   defining Unicode char U+203A (decimal 8250)
-   defining Unicode char U+2423 (decimal 9251)
-   defining Unicode char U+1E20 (decimal 7712)
-   defining Unicode char U+1E21 (decimal 7713)
 )
-Now handling font encoding OT1 ...
-... processing UTF-8 mapping file for font encoding OT1
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
-File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
-   defining Unicode char U+00A0 (decimal 160)
-   defining Unicode char U+00A1 (decimal 161)
-   defining Unicode char U+00A3 (decimal 163)
-   defining Unicode char U+00AD (decimal 173)
-   defining Unicode char U+00B8 (decimal 184)
-   defining Unicode char U+00BF (decimal 191)
-   defining Unicode char U+00C5 (decimal 197)
-   defining Unicode char U+00C6 (decimal 198)
-   defining Unicode char U+00D8 (decimal 216)
-   defining Unicode char U+00DF (decimal 223)
-   defining Unicode char U+00E6 (decimal 230)
-   defining Unicode char U+00EC (decimal 236)
-   defining Unicode char U+00ED (decimal 237)
-   defining Unicode char U+00EE (decimal 238)
-   defining Unicode char U+00EF (decimal 239)
-   defining Unicode char U+00F8 (decimal 248)
-   defining Unicode char U+0131 (decimal 305)
-   defining Unicode char U+0141 (decimal 321)
-   defining Unicode char U+0142 (decimal 322)
-   defining Unicode char U+0152 (decimal 338)
-   defining Unicode char U+0153 (decimal 339)
-   defining Unicode char U+0174 (decimal 372)
-   defining Unicode char U+0175 (decimal 373)
-   defining Unicode char U+0176 (decimal 374)
-   defining Unicode char U+0177 (decimal 375)
-   defining Unicode char U+0218 (decimal 536)
-   defining Unicode char U+0219 (decimal 537)
-   defining Unicode char U+021A (decimal 538)
-   defining Unicode char U+021B (decimal 539)
-   defining Unicode char U+2013 (decimal 8211)
-   defining Unicode char U+2014 (decimal 8212)
-   defining Unicode char U+2018 (decimal 8216)
-   defining Unicode char U+2019 (decimal 8217)
-   defining Unicode char U+201C (decimal 8220)
-   defining Unicode char U+201D (decimal 8221)
-)
-Now handling font encoding OMS ...
-... processing UTF-8 mapping file for font encoding OMS
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
-File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
-   defining Unicode char U+00A7 (decimal 167)
-   defining Unicode char U+00B6 (decimal 182)
-   defining Unicode char U+00B7 (decimal 183)
-   defining Unicode char U+2020 (decimal 8224)
-   defining Unicode char U+2021 (decimal 8225)
-   defining Unicode char U+2022 (decimal 8226)
-)
-Now handling font encoding OMX ...
-... no UTF-8 mapping file for font encoding OMX
-Now handling font encoding U ...
-... no UTF-8 mapping file for font encoding U
-   defining Unicode char U+00A9 (decimal 169)
-   defining Unicode char U+00AA (decimal 170)
-   defining Unicode char U+00AE (decimal 174)
-   defining Unicode char U+00BA (decimal 186)
-   defining Unicode char U+02C6 (decimal 710)
-   defining Unicode char U+02DC (decimal 732)
-   defining Unicode char U+200C (decimal 8204)
-   defining Unicode char U+2026 (decimal 8230)
-   defining Unicode char U+2122 (decimal 8482)
-   defining Unicode char U+2423 (decimal 9251)
-))
-(/usr/share/texmf/tex/latex/CJK/CJK.sty
+(e:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/CJK.sty
 Package: CJK 2015/04/18 4.8.4
 
-(/usr/share/texmf/tex/latex/CJK/mule/MULEenc.sty
+(e:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/mule/MULEenc.sty
 Package: MULEenc 2015/04/18 4.8.4
 )
-(/usr/share/texmf/tex/latex/CJK/CJK.enc
+(e:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/CJK.enc
 File: CJK.enc 2015/04/18 4.8.4
 Now handling font encoding C00 ...
 ... no UTF-8 mapping file for font encoding C00
@@ -452,28 +138,28 @@ Now handling font encoding C62 ...
 LaTeX Info: Redefining \selectfont on input line 755.
 \CJK@indent=\box28
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+(e:/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/minted/minted.sty
+(e:/texlive/2018/texmf-dist/tex/latex/minted/minted.sty
 Package: minted 2017/07/19 v2.5 Yet another Pygments shim for LaTeX
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(e:/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(e:/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(e:/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(e:/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(e:/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+(e:/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -482,118 +168,112 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-(/usr/share/texlive/texmf-dist/tex/latex/fvextra/fvextra.sty
+(e:/texlive/2018/texmf-dist/tex/latex/fvextra/fvextra.sty
 Package: fvextra 2017/07/08 v1.3.1 fvextra - extensions and patches for fancyvr
 b
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+(e:/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+(e:/texlive/2018/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count95
+\etb@tempcnta=\count96
 )
-(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+(e:/texlive/2018/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count96
+\FV@CodeLineNo=\count97
 \FV@InFile=\read1
 \FV@TabBox=\box29
-\c@FancyVerbLine=\count97
-\FV@StepNumber=\count98
+\c@FancyVerbLine=\count98
+\FV@StepNumber=\count99
 \FV@OutFile=\write3
-)
-(/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
+) (e:/texlive/2018/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 )
-(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+(e:/texlive/2018/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count99
+\linenopenalty=\count100
 \output=\toks18
-\linenoprevgraf=\count100
+\linenoprevgraf=\count101
 \linenumbersep=\dimen107
 \linenumberwidth=\dimen108
-\c@linenumber=\count101
-\c@pagewiselinenumber=\count102
-\c@LN@truepage=\count103
-\c@internallinenumber=\count104
-\c@internallinenumbers=\count105
+\c@linenumber=\count102
+\c@pagewiselinenumber=\count103
+\c@LN@truepage=\count104
+\c@internallinenumber=\count105
+\c@internallinenumbers=\count106
 \quotelinenumbersep=\dimen109
 \bframerule=\dimen110
 \bframesep=\dimen111
 \bframebox=\box30
 LaTeX Info: Redefining \\ on input line 3056.
 )
-\c@FV@TrueTabGroupLevel=\count106
-\c@FV@TrueTabCounter=\count107
+\c@FV@TrueTabGroupLevel=\count107
+\c@FV@TrueTabCounter=\count108
 \FV@TabBox@Group=\box31
 \FV@TmpLength=\skip43
-\c@FV@HighlightLinesStart=\count108
-\c@FV@HighlightLinesStop=\count109
-\FV@LoopCount=\count110
+\c@FV@HighlightLinesStart=\count109
+\c@FV@HighlightLinesStop=\count110
+\FV@LoopCount=\count111
 \FV@NCharsBox=\box32
 \FV@BreakIndent=\dimen112
-\FV@BreakIndentNChars=\count111
+\FV@BreakIndentNChars=\count112
 \FV@BreakSymbolSepLeft=\dimen113
-\FV@BreakSymbolSepLeftNChars=\count112
+\FV@BreakSymbolSepLeftNChars=\count113
 \FV@BreakSymbolSepRight=\dimen114
-\FV@BreakSymbolSepRightNChars=\count113
+\FV@BreakSymbolSepRightNChars=\count114
 \FV@BreakSymbolIndentLeft=\dimen115
-\FV@BreakSymbolIndentLeftNChars=\count114
+\FV@BreakSymbolIndentLeftNChars=\count115
 \FV@BreakSymbolIndentRight=\dimen116
-\FV@BreakSymbolIndentRightNChars=\count115
-\c@FancyVerbLineBreakLast=\count116
+\FV@BreakSymbolIndentRightNChars=\count116
+\c@FancyVerbLineBreakLast=\count117
 \FV@LineBox=\box33
 \FV@LineIndentBox=\box34
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count117
-\calc@Bcount=\count118
+(e:/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count118
+\calc@Bcount=\count119
 \calc@Adimen=\dimen117
 \calc@Bdimen=\dimen118
 \calc@Askip=\skip44
 \calc@Bskip=\skip45
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count119
+\calc@Ccount=\count120
 \calc@Cskip=\skip46
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
+(e:/texlive/2018/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
 Package shellesc Info: Unrestricted shell escape enabled on input line 67.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+(e:/texlive/2018/texmf-dist/tex/latex/ifplatform/ifplatform.sty
 Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+(e:/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/catchfile.sty
+(e:/texlive/2018/texmf-dist/tex/generic/oberdiek/catchfile.sty
 Package: catchfile 2016/05/16 v1.7 Catch the contents of a file (HO)
-)
-runsystem(uname -s > "test.w18")...executed.
-
- (./test.w18)
-runsystem(rm -- "test.w18")...executed.
-
-) (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
-(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
+))
+(e:/texlive/2018/texmf-dist/tex/generic/xstring/xstring.sty
+(e:/texlive/2018/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write4
-\integerpart=\count120
-\decimalpart=\count121
+\integerpart=\count121
+\decimalpart=\count122
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
+(e:/texlive/2018/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip47
 \fb@frw=\dimen119
@@ -601,9 +281,9 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \FrameRule=\dimen121
 \FrameSep=\dimen122
 )
-(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+(e:/texlive/2018/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count122
+\c@float@type=\count123
 \float@exts=\toks19
 \float@box=\box35
 \@float@everytoks=\toks20
@@ -612,26 +292,26 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \minted@appexistsfile=\read2
 \minted@bgbox=\box37
 \minted@code=\write5
-\c@minted@FancyVerbLineTemp=\count123
-\c@minted@pygmentizecounter=\count124
+\c@minted@FancyVerbLineTemp=\count124
+\c@minted@pygmentizecounter=\count125
 \@float@every@listing=\toks21
-\c@listing=\count125
+\c@listing=\count126
 )
-runsystem(mkdir -p _minted-test)...executed.
+runsystem(if not exist _minted-test mkdir _minted-test)...executed.
 
 
-(/usr/share/texlive/texmf-dist/tex/latex/picinpar/picinpar.sty
+(e:/texlive/2018/texmf-dist/tex/latex/picinpar/picinpar.sty
 Pictures in Paragraphs. Version 1.2a, July 13, 1993
-\br=\count126
-\bl=\count127
-\na=\count128
-\nb=\count129
-\tcdsav=\count130
-\tcl=\count131
-\tcd=\count132
-\tcn=\count133
-\cumtcl=\count134
-\cumpartcl=\count135
+\br=\count127
+\bl=\count128
+\na=\count129
+\nb=\count130
+\tcdsav=\count131
+\tcl=\count132
+\tcd=\count133
+\tcn=\count134
+\cumtcl=\count135
+\cumpartcl=\count136
 \lftside=\dimen123
 \rtside=\dimen124
 \hpic=\dimen125
@@ -662,46 +342,46 @@ Pictures in Paragraphs. Version 1.2a, July 13, 1993
 \waslice=\box48
 \wbslice=\box49
 \fslice=\box50
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+) (e:/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(e:/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+(e:/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(e:/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+(e:/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen135
 \Gin@req@width=\dimen136
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+(e:/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+(e:/texlive/2018/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2010/09/12 v5.6 Page Geometry
+(e:/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/04/16 v5.8 Page Geometry
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+(e:/texlive/2018/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(e:/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count136
-\Gm@cntv=\count137
-\c@Gm@tempcnt=\count138
+\Gm@cnth=\count137
+\Gm@cntv=\count138
+\c@Gm@tempcnt=\count139
 \Gm@bindingoffset=\dimen137
 \Gm@wd@mp=\dimen138
 \Gm@odd@mp=\dimen139
@@ -712,10 +392,10 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen144
 \Gm@dimlist=\toks27
 )
-(/usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpage.sty
+(e:/texlive/2018/texmf-dist/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+(e:/texlive/2018/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
 \f@nch@headwidth=\skip48
@@ -756,7 +436,7 @@ l.23 ...,right = 2.5cm,top = 2.5cm,botton = 2.5cm}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+(e:/texlive/2018/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -771,13 +451,13 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
+(e:/texlive/2018/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.dfu
-File: ts1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+(e:/texlive/2018/texmf-dist/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00A4 (decimal 164)
@@ -847,6 +527,7 @@ File: ts1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+25E6 (decimal 9702)
    defining Unicode char U+25EF (decimal 9711)
    defining Unicode char U+266A (decimal 9834)
+   defining Unicode char U+FEFF (decimal 65279)
 ))
 LaTeX Info: Redefining \oldstylenums on input line 334.
 Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
@@ -912,10 +593,10 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(e:/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(e:/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -929,9 +610,10 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-runsystem(which pygmentize && touch test.aex)...executed.
+runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > te
+st.aex <nul: /p x=^%~$PATH:i>> test.aex)...executed.
 
-runsystem(rm test.aex)...executed.
+runsystem(del test.aex)...executed.
 
 
 
@@ -1019,32 +701,32 @@ LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 24.
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+ (e:/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 24.
-\c@lstlisting=\count139
+\c@lstlisting=\count140
 
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(e:/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count140
+\scratchcounter=\count141
 \scratchdimen=\dimen145
 \scratchbox=\box51
-\nofMPsegments=\count141
-\nofMParguments=\count142
+\nofMPsegments=\count142
+\nofMParguments=\count143
 \everyMPshowfont=\toks28
-\MPscratchCnt=\count143
+\MPscratchCnt=\count144
 \MPscratchDim=\dimen146
-\MPnumerator=\count144
-\makeMPintoPDFobject=\count145
+\MPnumerator=\count145
+\makeMPintoPDFobject=\count146
 \everyMPtoPDFconversion=\toks29
-) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+) (e:/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+(e:/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+(e:/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 ))
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1054,7 +736,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(e:/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -1101,13 +783,13 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 25.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 25.
-(/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.bdg
+(e:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
 File: UTF8.bdg 2015/04/18 4.8.4
 )
-(/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.enc
+(e:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2015/04/18 4.8.4
 )
-(/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.chr
+(e:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
 <../scoure/tupian.jpg, id=1, 501.875pt x 500.87125pt>
@@ -1117,15 +799,14 @@ Package pdftex.def Info: ../scoure/tupian.jpg  used on input line 30.
 (pdftex.def)             Requested size: 364.19667pt x 363.48537pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../scoure/tupian.jpg>] (./
-test.toc
+{e:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../scoure/tupia
+n.jpg>]
+(./test.toc
 LaTeX Font Info:    Try loading font information for C70+gbsn on input line 1.
-
-(/usr/share/texmf/tex/latex/CJK/UTF8/c70gbsn.fd
-File: c70gbsn.fd 2008/10/03 4.8.1
-)
-(/usr/share/texmf/tex/latex/CJK/UTF8/c70gbsn.fdx
-File: c70gbsn.fdx 2012/05/07 4.8.3
+ (e:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/c70gbsn.fd
+File: c70gbsn.fd 2015/04/18 4.8.4
+) (e:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/c70gbsn.fdx
+File: c70gbsn.fdx 2015/04/18 4.8.4
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 3.
@@ -1135,12 +816,18 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write6
 \openout6 = `test.toc'.
 
- [3]
-(./_minted-test/default-pyg-prefix.pygstyle) (./_minted-test/default.pygstyle)
-(./_minted-test/C23068AA164C39E5E5504DFDC24F28D5CDB3F614EBC75CFF7B609E32B356A45
+
+[3] (./_minted-test/default-pyg-prefix.pygstyle)
+(./_minted-test/default.pygstyle)
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/D002809A24D992BF01BB4ECA4FEB52EBCDB3F614EBC75CFF7B609E32B356A45F.pygte
+x ../scoure/head.cpp)...executed.
+
+
+(./_minted-test/D002809A24D992BF01BB4ECA4FEB52EBCDB3F614EBC75CFF7B609E32B356A45
 F.pygtex
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 1.
- (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+ (e:/texlive/2018/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
@@ -1157,152 +844,232 @@ LaTeX Font Warning: Font shape `C70/gbsn/m/sl' undefined
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.05934pt.
+ Make it at least 12.06458pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [4]
-(./_minted-test/A80332F2393FB3E93E7C8884B95BBCE27351A5225F60D111454ADDD9EC4297F
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/3118F742AF2FA4DC30FBAA03C5C340A27351A5225F60D111454ADDD9EC4297F0.pygte
+x ../scoure/Graph_theory/pan2fen.cpp)...executed.
+
+
+(./_minted-test/3118F742AF2FA4DC30FBAA03C5C340A27351A5225F60D111454ADDD9EC4297F
 0.pygtex)
-(./_minted-test/D1ADC226410A41D650FFB884367EDF2C8AFB3A5B999929A65875DC2617107C6
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/7EE8260ED225E98C00F71C6AF2F9DE0B8AFB3A5B999929A65875DC2617107C68.pygte
+x ../scoure/Graph_theory/2fentu.cpp)...executed.
+
+
+(./_minted-test/7EE8260ED225E98C00F71C6AF2F9DE0B8AFB3A5B999929A65875DC2617107C6
 8.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.02824pt.
+ Make it at least 12.02599pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [5])
-(./_minted-test/182EA93D908D8097BA6B2B13BF66B1989C310E19EFF6A602E4B42B36A26DE3A
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/459AB23C631662E90076E68E68F25E999C310E19EFF6A602E4B42B36A26DE3A5.pygte
+x ../scoure/Graph_theory/bingchick.cpp)...executed.
+
+
+(./_minted-test/459AB23C631662E90076E68E68F25E999C310E19EFF6A602E4B42B36A26DE3A
 5.pygtex)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.02824pt.
+ Make it at least 12.02599pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [6]
-(./_minted-test/808AB96DE42EBFFA83139B2406201B48C84B366A6A204DE6FE5F6817FC9BA19
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/58AD3C9B1D1D9A9BBB51A19EB10A44D0C84B366A6A204DE6FE5F6817FC9BA199.pygte
+x ../scoure/Graph_theory/dijkstra.cpp)...executed.
+
+
+(./_minted-test/58AD3C9B1D1D9A9BBB51A19EB10A44D0C84B366A6A204DE6FE5F6817FC9BA19
 9.pygtex)
-(./_minted-test/FD912E9DF69C11B23CE430510453739637B49ED78DF41A92050499769E53E07
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/3A0B15B314FA6D6E5A945824DDED4B0737B49ED78DF41A92050499769E53E073.pygte
+x ../scoure/Graph_theory/spfa.cpp)...executed.
+
+
+(./_minted-test/3A0B15B314FA6D6E5A945824DDED4B0737B49ED78DF41A92050499769E53E07
 3.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.02824pt.
+ Make it at least 12.02599pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [7])
-(./_minted-test/4D93D55B0FA6C157BF32AB192B5E146A4A8796E8BD0452ACEFEF28E1D54F038
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/8EF8E742551E389D2FDCABBF0C15131E4A8796E8BD0452ACEFEF28E1D54F0382.pygte
+x ../scoure/Graph_theory/prime.cpp)...executed.
+
+
+(./_minted-test/8EF8E742551E389D2FDCABBF0C15131E4A8796E8BD0452ACEFEF28E1D54F038
 2.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.02824pt.
+ Make it at least 12.02599pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [8])
-(./_minted-test/5EFDDCCD59E29BAD2E8F176B5C0140DF8C38939F9775AA8D6B13EC9F7FF0FB3
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/EE20E311EED13764D5B369558F6DF89B8C38939F9775AA8D6B13EC9F7FF0FB38.pygte
+x ../scoure/Graph_theory/dinic.cpp)...executed.
+
+
+(./_minted-test/EE20E311EED13764D5B369558F6DF89B8C38939F9775AA8D6B13EC9F7FF0FB3
 8.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.02824pt.
+ Make it at least 12.02599pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [9])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.02824pt.
+ Make it at least 12.02599pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [10]
-(./_minted-test/918B1C048244537674B4A78444EC6D9AC40562DBD482B20932AB14046E99404
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/1545A41163CFDCA8394528EBFD1A1C90C40562DBD482B20932AB14046E994048.pygte
+x ../scoure/date/kmp.cpp)...executed.
+
+
+(./_minted-test/1545A41163CFDCA8394528EBFD1A1C90C40562DBD482B20932AB14046E99404
 8.pygtex)
-(./_minted-test/94F5B92EC243ED726DB0A0302CEFA8309E0EEF2CB71841E2AB65EEB5CFF45B6
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/12BAEB79FD085F4E04B85D4E800C70F09E0EEF2CB71841E2AB65EEB5CFF45B6C.pygte
+x ../scoure/date/Trie.cpp)...executed.
+
+
+(./_minted-test/12BAEB79FD085F4E04B85D4E800C70F09E0EEF2CB71841E2AB65EEB5CFF45B6
 C.pygtex
 LaTeX Font Info:    Try loading font information for TS1+cmtt on input line 10.
 
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
+ (e:/texlive/2018/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.10033pt.
+ Make it at least 12.1028pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [11])
-(./_minted-test/B26F280A7825B3E70F129A9EC77BF36817A89100F9B48995D4EB8552CFE030C
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/43F3F2050DEA793E7BAF3AAD1A168AC617A89100F9B48995D4EB8552CFE030C7.pygte
+x ../scoure/date/aczidongji.cpp)...executed.
+
+
+(./_minted-test/43F3F2050DEA793E7BAF3AAD1A168AC617A89100F9B48995D4EB8552CFE030C
 7.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.10033pt.
+ Make it at least 12.1028pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [12])
-(./_minted-test/B3A5F64B17038D029B15F901CD60FF0BEE16852BA0B13B2A595E08168AEF239
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/B68DCDFCC28059DC2DF57CBFDA0AEDB8EE16852BA0B13B2A595E08168AEF239E.pygte
+x ../scoure/date/duilie.cpp)...executed.
+
+
+(./_minted-test/B68DCDFCC28059DC2DF57CBFDA0AEDB8EE16852BA0B13B2A595E08168AEF239
 E.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.10033pt.
+ Make it at least 12.1028pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [13])
-(./_minted-test/B2E5F15631B8B0895BF042AB6292934C4CD70C69F0E4A797042DADCA7C18587
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/33AFA840047B5DC87807A197183EF7D64CD70C69F0E4A797042DADCA7C185873.pygte
+x ../scoure/date/dandianzhan.cpp)...executed.
+
+
+(./_minted-test/33AFA840047B5DC87807A197183EF7D64CD70C69F0E4A797042DADCA7C18587
 3.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.0785pt.
+ Make it at least 12.09084pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [14])
-(./_minted-test/D5AD082007408BA47810EECC65388A44896BAB70007FF426170B1611A436DF2
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/23F346CB9208B11509058282C5A4AA00896BAB70007FF426170B1611A436DF2F.pygte
+x ../scoure/date/mudui.cpp)...executed.
+
+
+(./_minted-test/23F346CB9208B11509058282C5A4AA00896BAB70007FF426170B1611A436DF2
 F.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.0785pt.
+ Make it at least 12.09084pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [15])
-(./_minted-test/AE6D6F78552CC6483E30CDCFBE0A10A0B104228A3C88F496EB403C7C1E167A4
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/13767BED9E2C4C258EA3D121C19EC3C8B104228A3C88F496EB403C7C1E167A4E.pygte
+x ../scoure/date/treevector.cpp)...executed.
+
+
+(./_minted-test/13767BED9E2C4C258EA3D121C19EC3C8B104228A3C88F496EB403C7C1E167A4
 E.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.0785pt.
+ Make it at least 12.09084pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [16])
-(./_minted-test/2F5AA626EBFEBF62E5E3EE1FFB83AE39126E99DD10A4B92A8C30B80D9A62E42
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/3873091D67932DC2A3E06318933E5677126E99DD10A4B92A8C30B80D9A62E42F.pygte
+x ../scoure/date/treexian.cpp)...executed.
+
+
+(./_minted-test/3873091D67932DC2A3E06318933E5677126E99DD10A4B92A8C30B80D9A62E42
 F.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.0785pt.
+ Make it at least 12.09084pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [17]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.0785pt.
+ Make it at least 12.09084pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [18]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.0785pt.
+ Make it at least 12.09084pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [19])
-(./_minted-test/F3ECC775BDFF57F15C35F5CC29599DBA6AA8E705EB5B1CF4FDA2D111D5E62B3
+runsystem(pygmentize -l java -f latex -P commandprefix=PYG -F tokenmerge -o _mi
+nted-test/83752E2A430986C7DDCEEA905E440D1A6AA8E705EB5B1CF4FDA2D111D5E62B32.pygt
+ex ../scoure/date/bigjing.java)...executed.
+
+
+(./_minted-test/83752E2A430986C7DDCEEA905E440D1A6AA8E705EB5B1CF4FDA2D111D5E62B3
 2.pygtex
 Overfull \hbox (59.64693pt too wide) in paragraph at lines 97--1
 \C70/gbsn/m/it/10/62 ^^Q \C70/gbsn/m/sl/10/4e * ∫ ` \C70/gbsn/m/it/10/60 Ô \C70
@@ -1322,7 +1089,7 @@ gbsn/m/it/10/52 †\T1/cmr/m/n/10 add\C70/gbsn/m/it/10/51 œ\T1/cmr/m/n/10 sub\C70
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.0785pt.
+ Make it at least 12.09084pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
@@ -1331,125 +1098,183 @@ Missing character: There is no ≈ in font cmr10!
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.05934pt.
+ Make it at least 12.06458pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [21]
-(./_minted-test/07ADD33AE37089BF64475316EC962F189AF72765BE95B33D1F5BA05AC8F2177
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/0039AEB379957BD079CAE3BB39E2B7199AF72765BE95B33D1F5BA05AC8F2177A.pygte
+x ../scoure/math/bo.cpp)...executed.
+
+
+(./_minted-test/0039AEB379957BD079CAE3BB39E2B7199AF72765BE95B33D1F5BA05AC8F2177
 A.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.05934pt.
+ Make it at least 12.06458pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [22])
-(./_minted-test/E3F2307DFF02E3F05C5A9F5F8AA66B3792CDAE98A67207097AE1C1BAC7985CA
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/3F433E7E7B6A776887D89F66A83110F892CDAE98A67207097AE1C1BAC7985CAA.pygte
+x ../scoure/math/shai.cpp)...executed.
+
+
+(./_minted-test/3F433E7E7B6A776887D89F66A83110F892CDAE98A67207097AE1C1BAC7985CA
 A.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.05934pt.
+ Make it at least 12.06458pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [23])
-(./_minted-test/24277664E896D334F18764C7F32D0F0F72DFAC3A8979B2B0AEB6CD4D5FC310F
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/62FFF0360EE9FC538B1E556A45B06E8E72DFAC3A8979B2B0AEB6CD4D5FC310F6.pygte
+x ../scoure/math/miller_robin.cpp)...executed.
+
+
+(./_minted-test/62FFF0360EE9FC538B1E556A45B06E8E72DFAC3A8979B2B0AEB6CD4D5FC310F
 6.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.05934pt.
+ Make it at least 12.06458pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [24])
-(./_minted-test/3B3AB4718B68B6ABBC9C4AD9EAABC6AB46C5E1E5F35EA399E210DD728460DC1
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/CAE8E83FAD059FB4669B97BECBE6574E46C5E1E5F35EA399E210DD728460DC1A.pygte
+x ../scoure/math/GCD.cpp)...executed.
+
+
+(./_minted-test/CAE8E83FAD059FB4669B97BECBE6574E46C5E1E5F35EA399E210DD728460DC1
 A.pygtex)
-(./_minted-test/7853309F51D08B6430144C817575FD92AF38AF9EC09121777EA7D1E84B1616D
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/F8942EA459F2E8D1FDF2EFD82E3B8B79AF38AF9EC09121777EA7D1E84B1616D3.pygte
+x ../scoure/math/chineseshengyu.cpp)...executed.
+
+
+(./_minted-test/F8942EA459F2E8D1FDF2EFD82E3B8B79AF38AF9EC09121777EA7D1E84B1616D
 3.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.05934pt.
+ Make it at least 12.06458pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [25])
-(./_minted-test/1DDEC778A036E0CFFA7A4D1DE7DB9DA4B3F33F45299876B849F898072FB99E9
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/C7C3AA4837B26590DC66523A9A410490B3F33F45299876B849F898072FB99E95.pygte
+x ../scoure/math/niyuan.cpp)...executed.
+
+
+(./_minted-test/C7C3AA4837B26590DC66523A9A410490B3F33F45299876B849F898072FB99E9
 5.pygtex)
 Underfull \hbox (badness 10000) in paragraph at lines 235--238
 
  []
 
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/0C322D2119461CD3F31BE99C3DD9AFDD38F6AD22BCC5FA7B45D7B6D6D695EED1.pygte
+x ../scoure/math/oula.cpp)...executed.
 
-(./_minted-test/BC904211F0EFBAE84E2E53AAF73C13C038F6AD22BCC5FA7B45D7B6D6D695EED
+
+(./_minted-test/0C322D2119461CD3F31BE99C3DD9AFDD38F6AD22BCC5FA7B45D7B6D6D695EED
 1.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.05934pt.
+ Make it at least 12.06458pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [26])
-(./_minted-test/F2BEBF65E60D22111DC87E4A39AFF214AE3A7020A22C2D2EC1BF66481AE8474
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/AAA25006E1BAA40904CC90877318E429AE3A7020A22C2D2EC1BF66481AE8474D.pygte
+x ../scoure/math/mobius.cpp)...executed.
+
+
+(./_minted-test/AAA25006E1BAA40904CC90877318E429AE3A7020A22C2D2EC1BF66481AE8474
 D.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.05934pt.
+ Make it at least 12.06458pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [27])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.05934pt.
+ Make it at least 12.06458pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [28]
-(./_minted-test/1318FC15F0430CA26B51B09A9ECC1B30678CF6B23EB978173F697C979BD50AD
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/C164FA2D41E109C8FC5B67A4C2967035678CF6B23EB978173F697C979BD50AD0.pygte
+x ../scoure/math/boyi.cpp)...executed.
+
+
+(./_minted-test/C164FA2D41E109C8FC5B67A4C2967035678CF6B23EB978173F697C979BD50AD
 0.pygtex)
 Underfull \hbox (badness 10000) in paragraph at lines 281--284
 
  []
 
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/60FB08998E2F0BE646533C8EAA9A4C72480E0C56A8006A31D3526E3FBF6E15E9.pygte
+x ../scoure/math/zuhe.cpp)...executed.
 
-(./_minted-test/74BC01128A261B012980D6BEAD88FD91480E0C56A8006A31D3526E3FBF6E15E
+
+(./_minted-test/60FB08998E2F0BE646533C8EAA9A4C72480E0C56A8006A31D3526E3FBF6E15E
 9.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.05934pt.
+ Make it at least 12.06458pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [29])
-(./_minted-test/7EFB08EE0C56F1894915D25525CA82631B49155ACA8BBD0A80DA52241EA693F
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/B4655A1CC31486CD780744AAE0C7A7051B49155ACA8BBD0A80DA52241EA693FC.pygte
+x ../scoure/math/lucas.cpp)...executed.
+
+
+(./_minted-test/B4655A1CC31486CD780744AAE0C7A7051B49155ACA8BBD0A80DA52241EA693F
 C.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.05934pt.
+ Make it at least 12.06458pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [30]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.05934pt.
+ Make it at least 12.06458pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [31])
-(./_minted-test/7DC718C488A4A7D1BE3D1CB56E638E67A3529563FBBC2172F79DDDEF3A85849
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/3BD58796892B905F3D560A568188E9B7A3529563FBBC2172F79DDDEF3A858492.pygte
+x ../scoure/math/bm.cpp)...executed.
+
+
+(./_minted-test/3BD58796892B905F3D560A568188E9B7A3529563FBBC2172F79DDDEF3A85849
 2.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.05934pt.
+ Make it at least 12.06458pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [32]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.05934pt.
+ Make it at least 12.06458pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
@@ -1464,94 +1289,138 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/0FFA5802599B2FB668378C82D02110AE7EC51D195D6906B36EACA46D03131FF0.pygte
+x ../scoure/math/fwt_ban.cpp)...executed.
 
-(./_minted-test/FBEBE497EC54D3282B583B6A299C9D597EC51D195D6906B36EACA46D03131FF
+
+(./_minted-test/0FFA5802599B2FB668378C82D02110AE7EC51D195D6906B36EACA46D03131FF
 0.pygtex)
-(./_minted-test/BD455B3F3F9AA859CCD7B81711AFDC2075BF6EF465B6CC16C89C363CF6EE4BF
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/98596AF48A7475A3FF938E617791573475BF6EF465B6CC16C89C363CF6EE4BFF.pygte
+x ../scoure/math/fft.cpp)...executed.
+
+
+(./_minted-test/98596AF48A7475A3FF938E617791573475BF6EF465B6CC16C89C363CF6EE4BF
 F.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.05934pt.
+ Make it at least 12.06458pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [34]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.05934pt.
+ Make it at least 12.06458pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [35])
-(./_minted-test/E0BA66CEEB1583268E15FF9497B564E533086640675E89DE1E3E1673A222E78
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/430F9E2C021471A6F3110923EEDDEE7E33086640675E89DE1E3E1673A222E78E.pygte
+x ../scoure/math/ntt.cpp)...executed.
+
+
+(./_minted-test/430F9E2C021471A6F3110923EEDDEE7E33086640675E89DE1E3E1673A222E78
 E.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.05934pt.
+ Make it at least 12.06458pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [36]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.05934pt.
+ Make it at least 12.06458pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [37]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.05934pt.
+ Make it at least 12.06458pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [38])
-(./_minted-test/23B50B08431BAF5C0079AA810B4F1639E8537A2A7F139049E3C7B428C26B94E
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/6BB8A55FE97458DE036217EFEAFFB2E4E8537A2A7F139049E3C7B428C26B94E7.pygte
+x ../scoure/math/ju_quick.cpp)...executed.
+
+
+(./_minted-test/6BB8A55FE97458DE036217EFEAFFB2E4E8537A2A7F139049E3C7B428C26B94E
 7.pygtex)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.05934pt.
+ Make it at least 12.06458pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [39]
-(./_minted-test/5B48CC3DC88966898607B9E5F6E3A55E81AB51AFF7AA8FAC6C055B7D49FD63E
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/3D09735C76FB3B3F5ACE974CF5EDEC4281AB51AFF7AA8FAC6C055B7D49FD63ED.pygte
+x ../scoure/math/jihe.cpp)...executed.
+
+
+(./_minted-test/3D09735C76FB3B3F5ACE974CF5EDEC4281AB51AFF7AA8FAC6C055B7D49FD63E
 D.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.05934pt.
+ Make it at least 12.06458pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [40])
-(./_minted-test/62282462998C131A3AEA53D672A467D6173E05A26AE052D26F53F162878053F
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/9BA720B2250F3F57D6D360032A2F2123173E05A26AE052D26F53F162878053F0.pygte
+x ../scoure/math/tubao.cpp)...executed.
+
+
+(./_minted-test/9BA720B2250F3F57D6D360032A2F2123173E05A26AE052D26F53F162878053F
 0.pygtex)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.05934pt.
+ Make it at least 12.06458pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [41]
-(./_minted-test/64F6E39EDF946EBECBA6424EDB56061103E114E88A365E54F3154C239DEF02D
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/541CBBD82B2F6B35A4537561418C8EE703E114E88A365E54F3154C239DEF02D9.pygte
+x ../scoure/math/lang.cpp)...executed.
+
+
+(./_minted-test/541CBBD82B2F6B35A4537561418C8EE703E114E88A365E54F3154C239DEF02D
 9.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.05934pt.
+ Make it at least 12.06458pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [42])
-(./_minted-test/984D29947775A7EE4D62F0AF71FFCCA7210A01644555B11DD9F62FB4947CA50
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/1E32307E201640D407BC170016036CC4210A01644555B11DD9F62FB4947CA506.pygte
+x ../scoure/dp/longerxuelie.cpp)...executed.
+
+
+(./_minted-test/1E32307E201640D407BC170016036CC4210A01644555B11DD9F62FB4947CA50
 6.pygtex)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.0966pt.
+ Make it at least 12.10014pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [43]
-(./_minted-test/7A84418D3960D18FD5FDE1F711C0599EF6D73B29CBEDC5DCDE19D93D1DB6C16
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/EE7E0036DB5D7B8FD69AB4E68BDF16F9F6D73B29CBEDC5DCDE19D93D1DB6C16E.pygte
+x ../scoure/dp/zhuangtai.cpp)...executed.
+
+
+(./_minted-test/EE7E0036DB5D7B8FD69AB4E68BDF16F9F6D73B29CBEDC5DCDE19D93D1DB6C16
 E.pygtex)
 <../scoure/1.png, id=306, 889.3225pt x 357.335pt>
 File: ../scoure/1.png Graphic file (type png)
@@ -1591,14 +1460,129 @@ Package pdftex.def Info: ../scoure/11.png  used on input line 426.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.0142pt.
+ Make it at least 12.0358pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[44] 
+[44]
+runsystem(del _minted-test\C23068AA164C39E5E5504DFDC24F28D5CDB3F614EBC75CFF7B60
+9E32B356A45F.pygtex)...executed.
+
+runsystem(del _minted-test\A80332F2393FB3E93E7C8884B95BBCE27351A5225F60D111454A
+DDD9EC4297F0.pygtex)...executed.
+
+runsystem(del _minted-test\D1ADC226410A41D650FFB884367EDF2C8AFB3A5B999929A65875
+DC2617107C68.pygtex)...executed.
+
+runsystem(del _minted-test\182EA93D908D8097BA6B2B13BF66B1989C310E19EFF6A602E4B4
+2B36A26DE3A5.pygtex)...executed.
+
+runsystem(del _minted-test\808AB96DE42EBFFA83139B2406201B48C84B366A6A204DE6FE5F
+6817FC9BA199.pygtex)...executed.
+
+runsystem(del _minted-test\FD912E9DF69C11B23CE430510453739637B49ED78DF41A920504
+99769E53E073.pygtex)...executed.
+
+runsystem(del _minted-test\4D93D55B0FA6C157BF32AB192B5E146A4A8796E8BD0452ACEFEF
+28E1D54F0382.pygtex)...executed.
+
+runsystem(del _minted-test\5EFDDCCD59E29BAD2E8F176B5C0140DF8C38939F9775AA8D6B13
+EC9F7FF0FB38.pygtex)...executed.
+
+runsystem(del _minted-test\918B1C048244537674B4A78444EC6D9AC40562DBD482B20932AB
+14046E994048.pygtex)...executed.
+
+runsystem(del _minted-test\94F5B92EC243ED726DB0A0302CEFA8309E0EEF2CB71841E2AB65
+EEB5CFF45B6C.pygtex)...executed.
+
+runsystem(del _minted-test\B26F280A7825B3E70F129A9EC77BF36817A89100F9B48995D4EB
+8552CFE030C7.pygtex)...executed.
+
+runsystem(del _minted-test\B3A5F64B17038D029B15F901CD60FF0BEE16852BA0B13B2A595E
+08168AEF239E.pygtex)...executed.
+
+runsystem(del _minted-test\B2E5F15631B8B0895BF042AB6292934C4CD70C69F0E4A797042D
+ADCA7C185873.pygtex)...executed.
+
+runsystem(del _minted-test\D5AD082007408BA47810EECC65388A44896BAB70007FF426170B
+1611A436DF2F.pygtex)...executed.
+
+runsystem(del _minted-test\AE6D6F78552CC6483E30CDCFBE0A10A0B104228A3C88F496EB40
+3C7C1E167A4E.pygtex)...executed.
+
+runsystem(del _minted-test\2F5AA626EBFEBF62E5E3EE1FFB83AE39126E99DD10A4B92A8C30
+B80D9A62E42F.pygtex)...executed.
+
+runsystem(del _minted-test\F3ECC775BDFF57F15C35F5CC29599DBA6AA8E705EB5B1CF4FDA2
+D111D5E62B32.pygtex)...executed.
+
+runsystem(del _minted-test\07ADD33AE37089BF64475316EC962F189AF72765BE95B33D1F5B
+A05AC8F2177A.pygtex)...executed.
+
+runsystem(del _minted-test\E3F2307DFF02E3F05C5A9F5F8AA66B3792CDAE98A67207097AE1
+C1BAC7985CAA.pygtex)...executed.
+
+runsystem(del _minted-test\24277664E896D334F18764C7F32D0F0F72DFAC3A8979B2B0AEB6
+CD4D5FC310F6.pygtex)...executed.
+
+runsystem(del _minted-test\3B3AB4718B68B6ABBC9C4AD9EAABC6AB46C5E1E5F35EA399E210
+DD728460DC1A.pygtex)...executed.
+
+runsystem(del _minted-test\7853309F51D08B6430144C817575FD92AF38AF9EC09121777EA7
+D1E84B1616D3.pygtex)...executed.
+
+runsystem(del _minted-test\1DDEC778A036E0CFFA7A4D1DE7DB9DA4B3F33F45299876B849F8
+98072FB99E95.pygtex)...executed.
+
+runsystem(del _minted-test\BC904211F0EFBAE84E2E53AAF73C13C038F6AD22BCC5FA7B45D7
+B6D6D695EED1.pygtex)...executed.
+
+runsystem(del _minted-test\F2BEBF65E60D22111DC87E4A39AFF214AE3A7020A22C2D2EC1BF
+66481AE8474D.pygtex)...executed.
+
+runsystem(del _minted-test\1318FC15F0430CA26B51B09A9ECC1B30678CF6B23EB978173F69
+7C979BD50AD0.pygtex)...executed.
+
+runsystem(del _minted-test\74BC01128A261B012980D6BEAD88FD91480E0C56A8006A31D352
+6E3FBF6E15E9.pygtex)...executed.
+
+runsystem(del _minted-test\7EFB08EE0C56F1894915D25525CA82631B49155ACA8BBD0A80DA
+52241EA693FC.pygtex)...executed.
+
+runsystem(del _minted-test\7DC718C488A4A7D1BE3D1CB56E638E67A3529563FBBC2172F79D
+DDEF3A858492.pygtex)...executed.
+
+runsystem(del _minted-test\FBEBE497EC54D3282B583B6A299C9D597EC51D195D6906B36EAC
+A46D03131FF0.pygtex)...executed.
+
+runsystem(del _minted-test\BD455B3F3F9AA859CCD7B81711AFDC2075BF6EF465B6CC16C89C
+363CF6EE4BFF.pygtex)...executed.
+
+runsystem(del _minted-test\E0BA66CEEB1583268E15FF9497B564E533086640675E89DE1E3E
+1673A222E78E.pygtex)...executed.
+
+runsystem(del _minted-test\23B50B08431BAF5C0079AA810B4F1639E8537A2A7F139049E3C7
+B428C26B94E7.pygtex)...executed.
+
+runsystem(del _minted-test\5B48CC3DC88966898607B9E5F6E3A55E81AB51AFF7AA8FAC6C05
+5B7D49FD63ED.pygtex)...executed.
+
+runsystem(del _minted-test\62282462998C131A3AEA53D672A467D6173E05A26AE052D26F53
+F162878053F0.pygtex)...executed.
+
+runsystem(del _minted-test\64F6E39EDF946EBECBA6424EDB56061103E114E88A365E54F315
+4C239DEF02D9.pygtex)...executed.
+
+runsystem(del _minted-test\984D29947775A7EE4D62F0AF71FFCCA7210A01644555B11DD9F6
+2FB4947CA506.pygtex)...executed.
+
+runsystem(del _minted-test\7A84418D3960D18FD5FDE1F711C0599EF6D73B29CBEDC5DCDE19
+D93D1DB6C16E.pygtex)...executed.
+
+ 
 AED: lastpage setting LastPage
 
-! PACKAGE INPUTENC ERROR: UNICODE CHAR ≈òò (U+5E38)
+! PACKAGE INPUTENC ERROR: UNICODE CHARACTER ≈òò (U+5E38)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
@@ -1607,12 +1591,15 @@ Type  H <return>  for immediate help.
                                                   
 l.432 \end{document}
                     
-YOUR COMMAND WAS IGNORED.
-TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
-OR  <RETURN>  TO CONTINUE WITHOUT IT.
+YOU MAY PROVIDE A DEFINITION WITH
+\GenericError {               }{LaTeX Error: Can be used only in preamble}{See 
+the LaTeX manual or LaTeX Companion for explanation.}{Your command was ignored.
+
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.}
 
 
-! PACKAGE INPUTENC ERROR: UNICODE CHAR «îà (U+7528)
+! PACKAGE INPUTENC ERROR: UNICODE CHARACTER «îà (U+7528)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
@@ -1621,12 +1608,15 @@ Type  H <return>  for immediate help.
                                                   
 l.432 \end{document}
                     
-YOUR COMMAND WAS IGNORED.
-TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
-OR  <RETURN>  TO CONTINUE WITHOUT IT.
+YOU MAY PROVIDE A DEFINITION WITH
+\GenericError {               }{LaTeX Error: Can be used only in preamble}{See 
+the LaTeX manual or LaTeX Companion for explanation.}{Your command was ignored.
+
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.}
 
 
-! PACKAGE INPUTENC ERROR: UNICODE CHAR ≈Öå (U+516C)
+! PACKAGE INPUTENC ERROR: UNICODE CHARACTER ≈Öå (U+516C)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
@@ -1635,12 +1625,15 @@ Type  H <return>  for immediate help.
                                                   
 l.432 \end{document}
                     
-YOUR COMMAND WAS IGNORED.
-TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
-OR  <RETURN>  TO CONTINUE WITHOUT IT.
+YOU MAY PROVIDE A DEFINITION WITH
+\GenericError {               }{LaTeX Error: Can be used only in preamble}{See 
+the LaTeX manual or LaTeX Companion for explanation.}{Your command was ignored.
+
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.}
 
 
-! PACKAGE INPUTENC ERROR: UNICODE CHAR ≈úè (U+5F0F)
+! PACKAGE INPUTENC ERROR: UNICODE CHARACTER ≈úè (U+5F0F)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
@@ -1649,13 +1642,16 @@ Type  H <return>  for immediate help.
                                                   
 l.432 \end{document}
                     
-YOUR COMMAND WAS IGNORED.
-TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
-OR  <RETURN>  TO CONTINUE WITHOUT IT.
+YOU MAY PROVIDE A DEFINITION WITH
+\GenericError {               }{LaTeX Error: Can be used only in preamble}{See 
+the LaTeX manual or LaTeX Companion for explanation.}{Your command was ignored.
+
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.}
 
 [45 <../scoure/1.png> <../scoure/3.png> <../scoure/5.png>]
 
-! PACKAGE INPUTENC ERROR: UNICODE CHAR ≈òò (U+5E38)
+! PACKAGE INPUTENC ERROR: UNICODE CHARACTER ≈òò (U+5E38)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
@@ -1664,12 +1660,15 @@ Type  H <return>  for immediate help.
                                                   
 l.432 \end{document}
                     
-YOUR COMMAND WAS IGNORED.
-TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
-OR  <RETURN>  TO CONTINUE WITHOUT IT.
+YOU MAY PROVIDE A DEFINITION WITH
+\GenericError {               }{LaTeX Error: Can be used only in preamble}{See 
+the LaTeX manual or LaTeX Companion for explanation.}{Your command was ignored.
+
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.}
 
 
-! PACKAGE INPUTENC ERROR: UNICODE CHAR «îà (U+7528)
+! PACKAGE INPUTENC ERROR: UNICODE CHARACTER «îà (U+7528)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
@@ -1678,12 +1677,15 @@ Type  H <return>  for immediate help.
                                                   
 l.432 \end{document}
                     
-YOUR COMMAND WAS IGNORED.
-TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
-OR  <RETURN>  TO CONTINUE WITHOUT IT.
+YOU MAY PROVIDE A DEFINITION WITH
+\GenericError {               }{LaTeX Error: Can be used only in preamble}{See 
+the LaTeX manual or LaTeX Companion for explanation.}{Your command was ignored.
+
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.}
 
 
-! PACKAGE INPUTENC ERROR: UNICODE CHAR ≈Öå (U+516C)
+! PACKAGE INPUTENC ERROR: UNICODE CHARACTER ≈Öå (U+516C)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
@@ -1692,12 +1694,15 @@ Type  H <return>  for immediate help.
                                                   
 l.432 \end{document}
                     
-YOUR COMMAND WAS IGNORED.
-TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
-OR  <RETURN>  TO CONTINUE WITHOUT IT.
+YOU MAY PROVIDE A DEFINITION WITH
+\GenericError {               }{LaTeX Error: Can be used only in preamble}{See 
+the LaTeX manual or LaTeX Companion for explanation.}{Your command was ignored.
+
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.}
 
 
-! PACKAGE INPUTENC ERROR: UNICODE CHAR ≈úè (U+5F0F)
+! PACKAGE INPUTENC ERROR: UNICODE CHARACTER ≈úè (U+5F0F)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
@@ -1706,13 +1711,16 @@ Type  H <return>  for immediate help.
                                                   
 l.432 \end{document}
                     
-YOUR COMMAND WAS IGNORED.
-TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
-OR  <RETURN>  TO CONTINUE WITHOUT IT.
+YOU MAY PROVIDE A DEFINITION WITH
+\GenericError {               }{LaTeX Error: Can be used only in preamble}{See 
+the LaTeX manual or LaTeX Companion for explanation.}{Your command was ignored.
+
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.}
 
 [46 <../scoure/6.png> <../scoure/7.png>]
 
-! PACKAGE INPUTENC ERROR: UNICODE CHAR ≈òò (U+5E38)
+! PACKAGE INPUTENC ERROR: UNICODE CHARACTER ≈òò (U+5E38)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
@@ -1721,12 +1729,15 @@ Type  H <return>  for immediate help.
                                                   
 l.432 \end{document}
                     
-YOUR COMMAND WAS IGNORED.
-TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
-OR  <RETURN>  TO CONTINUE WITHOUT IT.
+YOU MAY PROVIDE A DEFINITION WITH
+\GenericError {               }{LaTeX Error: Can be used only in preamble}{See 
+the LaTeX manual or LaTeX Companion for explanation.}{Your command was ignored.
+
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.}
 
 
-! PACKAGE INPUTENC ERROR: UNICODE CHAR «îà (U+7528)
+! PACKAGE INPUTENC ERROR: UNICODE CHARACTER «îà (U+7528)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
@@ -1735,12 +1746,15 @@ Type  H <return>  for immediate help.
                                                   
 l.432 \end{document}
                     
-YOUR COMMAND WAS IGNORED.
-TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
-OR  <RETURN>  TO CONTINUE WITHOUT IT.
+YOU MAY PROVIDE A DEFINITION WITH
+\GenericError {               }{LaTeX Error: Can be used only in preamble}{See 
+the LaTeX manual or LaTeX Companion for explanation.}{Your command was ignored.
+
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.}
 
 
-! PACKAGE INPUTENC ERROR: UNICODE CHAR ≈Öå (U+516C)
+! PACKAGE INPUTENC ERROR: UNICODE CHARACTER ≈Öå (U+516C)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
@@ -1749,12 +1763,15 @@ Type  H <return>  for immediate help.
                                                   
 l.432 \end{document}
                     
-YOUR COMMAND WAS IGNORED.
-TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
-OR  <RETURN>  TO CONTINUE WITHOUT IT.
+YOU MAY PROVIDE A DEFINITION WITH
+\GenericError {               }{LaTeX Error: Can be used only in preamble}{See 
+the LaTeX manual or LaTeX Companion for explanation.}{Your command was ignored.
+
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.}
 
 
-! PACKAGE INPUTENC ERROR: UNICODE CHAR ≈úè (U+5F0F)
+! PACKAGE INPUTENC ERROR: UNICODE CHARACTER ≈úè (U+5F0F)
 (INPUTENC)                NOT SET UP FOR USE WITH LATEX.
 
 SEE THE INPUTENC PACKAGE DOCUMENTATION FOR EXPLANATION.
@@ -1763,9 +1780,12 @@ Type  H <return>  for immediate help.
                                                   
 l.432 \end{document}
                     
-YOUR COMMAND WAS IGNORED.
-TYPE  I <COMMAND> <RETURN>  TO REPLACE IT WITH ANOTHER COMMAND,
-OR  <RETURN>  TO CONTINUE WITHOUT IT.
+YOU MAY PROVIDE A DEFINITION WITH
+\GenericError {               }{LaTeX Error: Can be used only in preamble}{See 
+the LaTeX manual or LaTeX Companion for explanation.}{Your command was ignored.
+
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.}
 
 [47 <../scoure/10.png> <../scoure/11.png>] (./test.aux)
 
@@ -1773,83 +1793,93 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 11914 strings out of 492982
- 190821 string characters out of 6134896
- 294099 words of memory out of 5000000
- 14805 multiletter control sequences out of 15000+600000
+ 11664 strings out of 492642
+ 191156 string characters out of 6133162
+ 297435 words of memory out of 5000000
+ 14853 multiletter control sequences out of 15000+600000
  51626 words of font info for 168 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,12n,45p,1139b,2087s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/
-fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/typ
-e1/arphic/gbsnu/gbsnu30.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu4e.
-pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu4f.pfb></usr/share/texmf/fo
-nts/type1/arphic/gbsnu/gbsnu50.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/g
-bsnu51.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu52.pfb></usr/share/t
-exmf/fonts/type1/arphic/gbsnu/gbsnu53.pfb></usr/share/texmf/fonts/type1/arphic/
-gbsnu/gbsnu54.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu55.pfb></usr/
-share/texmf/fonts/type1/arphic/gbsnu/gbsnu56.pfb></usr/share/texmf/fonts/type1/
-arphic/gbsnu/gbsnu57.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu58.pfb
-></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu59.pfb></usr/share/texmf/fonts
-/type1/arphic/gbsnu/gbsnu5a.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsn
-u5b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu5c.pfb></usr/share/texm
-f/fonts/type1/arphic/gbsnu/gbsnu5d.pfb></usr/share/texmf/fonts/type1/arphic/gbs
-nu/gbsnu5e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu5f.pfb></usr/sha
-re/texmf/fonts/type1/arphic/gbsnu/gbsnu60.pfb></usr/share/texmf/fonts/type1/arp
-hic/gbsnu/gbsnu61.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu62.pfb></
-usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu63.pfb></usr/share/texmf/fonts/ty
-pe1/arphic/gbsnu/gbsnu64.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu65
-.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu66.pfb></usr/share/texmf/f
-onts/type1/arphic/gbsnu/gbsnu67.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/
-gbsnu68.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu69.pfb></usr/share/
-texmf/fonts/type1/arphic/gbsnu/gbsnu6a.pfb></usr/share/texmf/fonts/type1/arphic
-/gbsnu/gbsnu6b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6c.pfb></usr
-/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6d.pfb></usr/share/texmf/fonts/type1
-/arphic/gbsnu/gbsnu6e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6f.pf
-b></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu70.pfb></usr/share/texmf/font
-s/type1/arphic/gbsnu/gbsnu71.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbs
-nu72.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu73.pfb></usr/share/tex
-mf/fonts/type1/arphic/gbsnu/gbsnu74.pfb></usr/share/texmf/fonts/type1/arphic/gb
-snu/gbsnu75.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu76.pfb></usr/sh
-are/texmf/fonts/type1/arphic/gbsnu/gbsnu77.pfb></usr/share/texmf/fonts/type1/ar
-phic/gbsnu/gbsnu78.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu79.pfb><
-/usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7a.pfb></usr/share/texmf/fonts/t
-ype1/arphic/gbsnu/gbsnu7b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7
-c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7d.pfb></usr/share/texmf/
-fonts/type1/arphic/gbsnu/gbsnu7e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu
-/gbsnu7f.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu80.pfb></usr/share
-/texmf/fonts/type1/arphic/gbsnu/gbsnu81.pfb></usr/share/texmf/fonts/type1/arphi
-c/gbsnu/gbsnu82.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu83.pfb></us
-r/share/texmf/fonts/type1/arphic/gbsnu/gbsnu88.pfb></usr/share/texmf/fonts/type
-1/arphic/gbsnu/gbsnu89.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8b.p
-fb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8c.pfb></usr/share/texmf/fon
-ts/type1/arphic/gbsnu/gbsnu8d.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gb
-snu8f.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu90.pfb></usr/share/te
-xmf/fonts/type1/arphic/gbsnu/gbsnu91.pfb></usr/share/texmf/fonts/type1/arphic/g
-bsnu/gbsnu94.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu95.pfb></usr/s
-hare/texmf/fonts/type1/arphic/gbsnu/gbsnu96.pfb></usr/share/texmf/fonts/type1/a
-rphic/gbsnu/gbsnu97.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu98.pfb>
-</usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu99.pfb></usr/share/texmf/fonts/
-type1/arphic/gbsnu/gbsnu9a.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu
-9e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnuff.pfb></usr/share/texmf
-/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/
-cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pf
-b></usr/share/texmf/fonts/type1/public/cm-super/sfit1000.pfb></usr/share/texmf/
-fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/c
-m-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb
-></usr/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf/f
-onts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm
--super/sftt1000.pfb>
-Output written on test.pdf (47 pages, 2586221 bytes).
+{e:/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{e:/texl
+ive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<e:/texlive/2018/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><e:/texlive/2018/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi10.pfb><e:/texlive/2018/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi5.pfb><e:/texlive/2018/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi7.pfb><e:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr10.pfb><e:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.p
+fb><e:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><e:/texl
+ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><e:/texlive/2018/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><e:/texlive/2018/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy7.pfb><e:/texlive/2018/texmf-dist/fonts/typ
+e1/arphic/gbsnu/gbsnu30.pfb><e:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsn
+u/gbsnu4e.pfb><e:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu4f.pfb>
+<e:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu50.pfb><e:/texlive/20
+18/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu51.pfb><e:/texlive/2018/texmf-dist/
+fonts/type1/arphic/gbsnu/gbsnu52.pfb><e:/texlive/2018/texmf-dist/fonts/type1/ar
+phic/gbsnu/gbsnu53.pfb><e:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbs
+nu54.pfb><e:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu55.pfb><e:/t
+exlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu56.pfb><e:/texlive/2018/te
+xmf-dist/fonts/type1/arphic/gbsnu/gbsnu57.pfb><e:/texlive/2018/texmf-dist/fonts
+/type1/arphic/gbsnu/gbsnu58.pfb><e:/texlive/2018/texmf-dist/fonts/type1/arphic/
+gbsnu/gbsnu59.pfb><e:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5a.
+pfb><e:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5b.pfb><e:/texliv
+e/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5c.pfb><e:/texlive/2018/texmf-d
+ist/fonts/type1/arphic/gbsnu/gbsnu5d.pfb><e:/texlive/2018/texmf-dist/fonts/type
+1/arphic/gbsnu/gbsnu5e.pfb><e:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu
+/gbsnu5f.pfb><e:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu60.pfb><
+e:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu61.pfb><e:/texlive/201
+8/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu62.pfb><e:/texlive/2018/texmf-dist/f
+onts/type1/arphic/gbsnu/gbsnu63.pfb><e:/texlive/2018/texmf-dist/fonts/type1/arp
+hic/gbsnu/gbsnu64.pfb><e:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsn
+u65.pfb><e:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu66.pfb><e:/te
+xlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu67.pfb><e:/texlive/2018/tex
+mf-dist/fonts/type1/arphic/gbsnu/gbsnu68.pfb><e:/texlive/2018/texmf-dist/fonts/
+type1/arphic/gbsnu/gbsnu69.pfb><e:/texlive/2018/texmf-dist/fonts/type1/arphic/g
+bsnu/gbsnu6a.pfb><e:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6b.p
+fb><e:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6c.pfb><e:/texlive
+/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6d.pfb><e:/texlive/2018/texmf-di
+st/fonts/type1/arphic/gbsnu/gbsnu6e.pfb><e:/texlive/2018/texmf-dist/fonts/type1
+/arphic/gbsnu/gbsnu6f.pfb><e:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/
+gbsnu70.pfb><e:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu71.pfb><e
+:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu72.pfb><e:/texlive/2018
+/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu73.pfb><e:/texlive/2018/texmf-dist/fo
+nts/type1/arphic/gbsnu/gbsnu74.pfb><e:/texlive/2018/texmf-dist/fonts/type1/arph
+ic/gbsnu/gbsnu75.pfb><e:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu
+76.pfb><e:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu77.pfb><e:/tex
+live/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu78.pfb><e:/texlive/2018/texm
+f-dist/fonts/type1/arphic/gbsnu/gbsnu79.pfb><e:/texlive/2018/texmf-dist/fonts/t
+ype1/arphic/gbsnu/gbsnu7a.pfb><e:/texlive/2018/texmf-dist/fonts/type1/arphic/gb
+snu/gbsnu7b.pfb><e:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7c.pf
+b><e:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7d.pfb><e:/texlive/
+2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7e.pfb><e:/texlive/2018/texmf-dis
+t/fonts/type1/arphic/gbsnu/gbsnu7f.pfb><e:/texlive/2018/texmf-dist/fonts/type1/
+arphic/gbsnu/gbsnu80.pfb><e:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/g
+bsnu81.pfb><e:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu82.pfb><e:
+/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu83.pfb><e:/texlive/2018/
+texmf-dist/fonts/type1/arphic/gbsnu/gbsnu88.pfb><e:/texlive/2018/texmf-dist/fon
+ts/type1/arphic/gbsnu/gbsnu89.pfb><e:/texlive/2018/texmf-dist/fonts/type1/arphi
+c/gbsnu/gbsnu8b.pfb><e:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu8
+c.pfb><e:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu8d.pfb><e:/texl
+ive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu8f.pfb><e:/texlive/2018/texmf
+-dist/fonts/type1/arphic/gbsnu/gbsnu90.pfb><e:/texlive/2018/texmf-dist/fonts/ty
+pe1/arphic/gbsnu/gbsnu91.pfb><e:/texlive/2018/texmf-dist/fonts/type1/arphic/gbs
+nu/gbsnu94.pfb><e:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu95.pfb
+><e:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu96.pfb><e:/texlive/2
+018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu97.pfb><e:/texlive/2018/texmf-dist
+/fonts/type1/arphic/gbsnu/gbsnu98.pfb><e:/texlive/2018/texmf-dist/fonts/type1/a
+rphic/gbsnu/gbsnu99.pfb><e:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gb
+snu9a.pfb><e:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu9e.pfb><e:/
+texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnuff.pfb><e:/texlive/2018/t
+exmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><e:/texlive/2018/texmf-dist/
+fonts/type1/public/cm-super/sfbx1200.pfb><e:/texlive/2018/texmf-dist/fonts/type
+1/public/cm-super/sfbx1440.pfb><e:/texlive/2018/texmf-dist/fonts/type1/public/c
+m-super/sfit1000.pfb><e:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sf
+rm1000.pfb><e:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb
+><e:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><e:/texli
+ve/2018/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb><e:/texlive/2018/te
+xmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><e:/texlive/2018/texmf-dist/f
+onts/type1/public/cm-super/sftt1000.pfb>
+Output written on test.pdf (47 pages, 2529749 bytes).
 PDF statistics:
  620 PDF objects out of 1000 (max. 8388607)
  387 compressed objects within 4 object streams

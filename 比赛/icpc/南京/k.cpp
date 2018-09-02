@@ -14,13 +14,8 @@ const double eps = 1e-6;
 char s[10000006];
 ll dp[4100][4100];
 ll shu[5000];
-int main()
+void init()
 {
-  scanf("%s",s);
-  ll k,x1;
-  ll a,b,c,d,e;
-  scanf("%lld%lld%lld%lld%lld%lld",&x1,&a,&b,&c,&d,&e,&k);
-  clr(dp,0);
   ll ans = 0;
   int len = strlen(s);
   for(int i = 0;i<len;i++)
@@ -66,5 +61,14 @@ int main()
     (st += a*x) %= k,pre = st;
     shu[st]+=1;
   }
+}
+int main()
+{
+  scanf("%s",s);
+  ll k,x1;
+  ll a,b,c,d,e;
+  scanf("%lld%lld%lld%lld%lld%lld",&x1,&a,&b,&c,&d,&e,&k);
+  clr(dp,0);
+  
   return 0;
 }

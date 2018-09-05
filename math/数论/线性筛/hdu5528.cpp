@@ -12,51 +12,54 @@ const int mod = 1e9+7;
 const double eps = 1e-6;
 const int N = 1e5+6;
 int num[N+5];
-int ans[N+5];
 int prim[N+6];
+int mark[N+6];
 int cnt;
-void initial()
+void init()
 {
-    cnt=1;
-    ans[1] = 0;
-    for (int i=2 ; i<N ; ++i)
-    {
-      if(!ans[i])
+  cnt=0;
+  for (int i=2 ; i<N ; ++i)
+  {
+      if (!mark[i])
+          prim[cnt++]=i;
+      for (int j=0 ; j<cnt && i*prim[j]<N ; ++j)
       {
-        ans[i] = 2;
-        num[i] = 1;
-        prim[cnt++] = i;
+          mark[i*prim[j]]=1;
+          if (!(i%prim[j]))
+              break;
       }
-        for(int j = 1;j<cnt && i*prim[j] < N;j++)
-        {
-          if(i%prim[j])
-          {
-            num[i*prim[j]] = 1;
-            ans[i*prim[j]] = ans[i]*2;
-          }
-          else
-          {
-             num[i*prim[j]] = num[prim[j]]+1;
-             ans[i*prim[j]] = ans[i]/(num[i]+1)*(num[i*prim[j]]+1);
-          }
-        }
-      }
-      for(int i = 2;i<N;i++)
-      {
-          ans[i] += ans[i-1]-2;
-      }
+  }
+  for(int i = 0;i<cnt;i++)
+  {
+    num[i] = (prim[i]-1)*(prim[i]-1);
+  }
 }
 int main()
 {
   ios_close;
   int t;
-  initial();
+  init();
   cin>>t;
   while(t--)
   {
     ll n;
     cin>>n;
-    cout<<ans[n]<<endl;
+    unsigned long long op = n;
+    unsigned long long ans = 1;
+    for(int i = 0;i<cnt;i++)
+    {
+      if(n < prim[i]) break;
+      while(n%prim[i] == 0)
+      {
+        ans = ans*num[i];
+        n/=prim[i];
+      }
+    }
+    if(n!=1)
+    {
+      ans = ans*(n-1)*(n-1);
+    }
+    cout<< (op-1)*(op-1)-ans<<endl;
   }
   return 0;
 }

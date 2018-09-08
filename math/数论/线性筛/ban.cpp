@@ -10,7 +10,7 @@ using namespace std;
 #define ios_close ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL)
 const int mod = 1e9+7;
 const double eps = 1e-6;
-const int N=1e5+5;
+const int N=1e4+5;
 bool mark[N];
 int prim[N];
 int cnt;
@@ -35,6 +35,8 @@ int main()
   ios_close;
   int n;
   initial();
+  int tot = 1;
+  cout<<cnt<<endl;
   while(cin>>n)
   {
     cout<<prim[n]<<endl;

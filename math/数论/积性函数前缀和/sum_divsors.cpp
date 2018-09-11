@@ -9,6 +9,7 @@ const double pi = acos(-1);
 const int INF = 0x3f3f3f3f;
 // 在低于线性的复杂度里求前n个正整数的约数之和
 // 主要解决方案在于分段加速，枚举因子
+// 这个分段加速怎么说呢，可以说是写的很优秀
 ll slove(ll n)
 {
   // i*floor(n/i)

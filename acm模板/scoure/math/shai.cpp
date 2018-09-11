@@ -12,6 +12,8 @@ void prime()
         for(long long j=1;j<cnt&&su[j]*i<MAX;j++)
         {
             isprime[su[j]*i]=0;//筛掉小于等于i的素数和i的积构成的合数
+            if (!(i%isprime[j]))
+                break;
         }
     }
-}  
+}

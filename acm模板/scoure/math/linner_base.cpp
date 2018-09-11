@@ -1,17 +1,8 @@
-<<<<<<< HEAD
 // 线性基的板子，线性基就是在一堆数中，我最少可以选取多少个数
 //作为基地去表示出所有的数
 struct Linear_Basis
 {
     LL b[63],nb[63],tot;
-=======
-// 线性基 ，具体多少东西就不细写了
-// 可以理解为用一些向量通过加减乘除来表示其他所有的点。
-struct Linear_Basis
-{
-    LL b[63],nb[63],tot;
-
->>>>>>> 34ebe2c4834c6ac7a1885daef961968cf543c62c
     void init()
     {
         tot=0;
@@ -57,8 +48,4 @@ struct Linear_Basis
             if (k&(1LL<<i)) res^=nb[i];
         return res;
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> 34ebe2c4834c6ac7a1885daef961968cf543c62c
 } LB;

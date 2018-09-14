@@ -6,6 +6,7 @@ using namespace std;
 #define pi acos(-1)
 #define loge exp(1)
 #define ll long long
+#define ull unsigned long long
 #define pb push_back
 #define ios_close ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL)
 const int mod = 1e9+7;
@@ -15,6 +16,7 @@ int num[N+5];
 int prim[N+6];
 int mark[N+6];
 int cnt;
+// 一道很纯粹的推公式的题，写起来很舒服
 void init()
 {
   cnt=0;
@@ -29,37 +31,39 @@ void init()
               break;
       }
   }
-  for(int i = 0;i<cnt;i++)
-  {
-    num[i] = (prim[i]-1)*(prim[i]-1);
-  }
 }
 int main()
 {
   ios_close;
   int t;
   init();
-  cin>>t;
+  scanf("%d",&t);
   while(t--)
   {
     ll n;
-    cin>>n;
-    unsigned long long op = n;
-    unsigned long long ans = 1;
-    for(int i = 0;i<cnt;i++)
+    scanf("%lld",&n);
+    ll op = n;
+    ll ans = 1;
+    for(int i = 0;prim[i]*prim[i]<=n;i++)
     {
-      if(n < prim[i]) break;
-      while(n%prim[i] == 0)
+      if(n%prim[i] == 0)
       {
-        ans = ans*num[i];
-        n/=prim[i];
+        int num = 0;
+        ll mu = 1;
+        ll chu = prim[i];
+        while(n%prim[i] == 0) mu = mu*prim[i], num++,n/=prim[i];
+        op = op*(num+1); mu = mu*prim[i]; //(mul^2-1) / (prim^2-1)
+        ll a = (mu-1)/(prim[i]-1),b = mu+1,c = prim[i]+1;
+        ans *=((a/c)*(b/c)*c) + a%c*(b/c) + b%c*(a/c);
       }
     }
     if(n!=1)
     {
-      ans = ans*(n-1)*(n-1);
+      ll chu = n;
+      op*=2;
+      ans*=chu*chu+1;
     }
-    cout<< (op-1)*(op-1)-ans<<endl;
+    printf("%lld\n",ans-op);
   }
   return 0;
 }

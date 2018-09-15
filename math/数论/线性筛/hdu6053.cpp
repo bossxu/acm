@@ -7,18 +7,11 @@ using namespace std;
 #define loge exp(1)
 #define ll long long
 #define pb push_back
-<<<<<<< HEAD
-#define ios_close ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL)
-const int mod = 1e9+7;
-const double eps = 1e-6;
-int shu[100005];
-=======
 #define c_fuck(x) cout<<"Case "<<x<<":"
 #define debug cout<<"is there bug?"<<endl
 const int mod = 1e9+7;
 const double eps = 1e-6;
 ll shu[100005];
->>>>>>> 00eea5a17a948c38f3b0702aea20bcd87a081730
 const int MAXN = 100005;
 bool check[MAXN+10];
 int prime[MAXN+10];
@@ -51,25 +44,17 @@ void Moblus()
         }
     }
 }
-<<<<<<< HEAD
-ll cal(int n,int k)
-{
-  ll op = 1;
-  for(int i = 1;i<=n;i++)
-  {
-    op = (shu[i]/k)*op%mod;
-    if(!op) break;
-=======
-const int N = 1e5+5;
+const int N = 2e5+5;
 int tree[N];
-int n;
+ll big;
 int lowbit(int t)
 {
   return t&(-t);
 }
 void add(int x,int y)
 {
-  for(int i=x;i<=n;i+=lowbit(i))
+  //cout<<"hello"<<endl;
+  for(int i=x;i<=big;i+=lowbit(i))
   tree[i]+=y;
 }
 int getsum(int x)
@@ -90,64 +75,44 @@ ll quick(ll a,ll b)
   }
   return res;
 }
-ll cal(int n,int k)
+ll cal(int k)
 {
   ll op = 1;
-  for(int i = k;i<=n;i+=k)
+  for(int i = k;i<=big;i+=k)
   {
-    op = op*quick(i,(getsum(i)-getsum(i-k))*(i/k-1));
->>>>>>> 00eea5a17a948c38f3b0702aea20bcd87a081730
+    op = op*quick(i/k,getsum(i+k-1)-getsum(i-1));
+    cout<<i<<" "<<getsum(i+k-1)<<" "<<getsum(i-1)<<endl;
   }
+  //cout<<k<<" "<<op<<endl;
   return op;
 }
 int main()
 {
-<<<<<<< HEAD
-    //ios_close;
-    int t;
-    int tot = 0;
-    Moblus();
-    scanf("%d",&t);
-    while(t--)
-    {
-      int n;
-      scanf("%d",&n);
-      for(int i = 1;i<=n;i++)
-      {
-        scanf("%d",&shu[i]);
-      }
-      sort(shu+1,shu+n+1);
-      ll ans = 0;
-      for(int i = 2                                                                                                                                                                                                        ;i<=shu[n];i++)
-      {
-        ans = (ans + mu[i]*cal(n,i))%mod;
-      }
-      ans = ans*(-1);
-      (ans += mod)%=mod;
-      printf("Case #%d: %lld\n",++tot,ans);
-    }
-    return 0;
-=======
   int t;
   scanf("%d",&t);
   int tot = 0;
+  int n;
   Moblus();
   while(t--)
   {
       cin>>n;
+      clr(tree,0);
+      ll minn = 1000005;
+      big = 0;
       for(int i = 1;i<=n;i++)
       {
         scanf("%lld",&shu[i]);
         add(shu[i],1);
+        minn = min(minn,shu[i]);
+        big = max(big,shu[i]);
       }
       ll ans = 0;
-      for(int i = 2;i<=shu[1];i++)
+      for(int i = 2;i<=minn;i++)
       {
-        ans = (ans+mu[i]*cal(n,i))%mod;
+        ans = (ans+mu[i]*cal(i))%mod;
       }
       ans*=-1;
       printf("Case #%d: %lld\n",++tot,ans);
   }
   return 0;
->>>>>>> 00eea5a17a948c38f3b0702aea20bcd87a081730
 }

@@ -46,14 +46,14 @@ void Moblus()
 }
 const int N = 2e5+5;
 int tree[N];
-int n;
+ll big;
 int lowbit(int t)
 {
   return t&(-t);
 }
 void add(int x,int y)
 {
-  for(int i=x;i<=n;i+=lowbit(i))
+  for(int i=x;i<=N;i+=lowbit(i))
   tree[i]+=y;
 }
 int getsum(int x)
@@ -74,12 +74,21 @@ ll quick(ll a,ll b)
   }
   return res;
 }
+<<<<<<< HEAD
 ll cal(int big,int k)
 {
   ll op = 1;
   for(int i = k,l = 1;i<=big;i+=k,l++)
   {
     op = op*quick(l,(getsum(i+k-1)-getsum(i)));
+=======
+ll cal(int k)
+{
+  ll op = 1;
+  for(int i = k;i<=big;i+=k)
+  {
+    op = (op*quick(i/k,getsum(i+k-1)-getsum(i-1)))%mod;
+>>>>>>> a4777e3c2a1667a08f388e12a2ae998bb55e0b7c
   }
   return op;
 }
@@ -88,21 +97,33 @@ int main()
   int t;
   scanf("%d",&t);
   int tot = 0;
+  int n;
   Moblus();
   while(t--)
   {
-      cin>>n;
+      scanf("%d",&n);
+      clr(tree,0);
+      ll minn = 1000005;
+      big = 0;
       for(int i = 1;i<=n;i++)
       {
         scanf("%lld",&shu[i]);
         add(shu[i],1);
+        minn = min(minn,shu[i]);
+        big = max(big,shu[i]);
       }
       ll ans = 0;
-      for(int i = 2;i<=shu[1];i++)
+      for(int i = 2;i<=minn;i++)
       {
+<<<<<<< HEAD
         ans = (ans+mu[i]*cal(shu[1],i))%mod;
+=======
+        if(mu[i] == 0) continue;
+        ans = (ans+mu[i]*cal(i))%mod;
+>>>>>>> a4777e3c2a1667a08f388e12a2ae998bb55e0b7c
       }
       ans*=-1;
+      (ans += mod)%=mod;
       printf("Case #%d: %lld\n",++tot,ans);
   }
   return 0;

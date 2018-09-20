@@ -44,7 +44,7 @@ void Moblus()
         }
     }
 }
-const int N = 1e5+5;
+const int N = 2e5+5;
 int tree[N];
 int n;
 int lowbit(int t)
@@ -74,12 +74,12 @@ ll quick(ll a,ll b)
   }
   return res;
 }
-ll cal(int n,int k)
+ll cal(int big,int k)
 {
   ll op = 1;
-  for(int i = k;i<=n;i+=k)
+  for(int i = k,l = 1;i<=big;i+=k,l++)
   {
-    op = op*quick(i,(getsum(i)-getsum(i-k))*(i/k-1));
+    op = op*quick(l,(getsum(i+k-1)-getsum(i)));
   }
   return op;
 }
@@ -100,7 +100,7 @@ int main()
       ll ans = 0;
       for(int i = 2;i<=shu[1];i++)
       {
-        ans = (ans+mu[i]*cal(n,i))%mod;
+        ans = (ans+mu[i]*cal(shu[1],i))%mod;
       }
       ans*=-1;
       printf("Case #%d: %lld\n",++tot,ans);

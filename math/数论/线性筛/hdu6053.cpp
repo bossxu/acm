@@ -53,8 +53,7 @@ int lowbit(int t)
 }
 void add(int x,int y)
 {
-  //cout<<"hello"<<endl;
-  for(int i=x;i<=big;i+=lowbit(i))
+  for(int i=x;i<=N;i+=lowbit(i))
   tree[i]+=y;
 }
 int getsum(int x)
@@ -80,10 +79,8 @@ ll cal(int k)
   ll op = 1;
   for(int i = k;i<=big;i+=k)
   {
-    op = op*quick(i/k,getsum(i+k-1)-getsum(i-1));
-    cout<<i<<" "<<getsum(i+k-1)<<" "<<getsum(i-1)<<endl;
+    op = (op*quick(i/k,getsum(i+k-1)-getsum(i-1)))%mod;
   }
-  //cout<<k<<" "<<op<<endl;
   return op;
 }
 int main()
@@ -95,7 +92,7 @@ int main()
   Moblus();
   while(t--)
   {
-      cin>>n;
+      scanf("%d",&n);
       clr(tree,0);
       ll minn = 1000005;
       big = 0;
@@ -109,9 +106,11 @@ int main()
       ll ans = 0;
       for(int i = 2;i<=minn;i++)
       {
+        if(mu[i] == 0) continue;
         ans = (ans+mu[i]*cal(i))%mod;
       }
       ans*=-1;
+      (ans += mod)%=mod;
       printf("Case #%d: %lld\n",++tot,ans);
   }
   return 0;

@@ -29,10 +29,6 @@ void init()
               break;
       }
   }
-  for(int i = 0;i<cnt;i++)
-  {
-    num[i] = (prim[i]-1)*(prim[i]-1);
-  }
 }
 int main()
 {
@@ -46,20 +42,7 @@ int main()
     cin>>n;
     unsigned long long op = n;
     unsigned long long ans = 1;
-    for(int i = 0;i<cnt;i++)
-    {
-      if(n < prim[i]) break;
-      while(n%prim[i] == 0)
-      {
-        ans = ans*num[i];
-        n/=prim[i];
-      }
-    }
-    if(n!=1)
-    {
-      ans = ans*(n-1)*(n-1);
-    }
-    cout<< (op-1)*(op-1)-ans<<endl;
+
   }
   return 0;
 }

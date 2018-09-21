@@ -41,12 +41,6 @@ int main()
   while(t--)
   {
     ll n;
-<<<<<<< HEAD
-    cin>>n;
-    unsigned long long op = n;
-    unsigned long long ans = 1;
-
-=======
     scanf("%lld",&n);
     ll op = n;
     ll ans = 1;
@@ -70,7 +64,6 @@ int main()
       ans*=chu*chu+1;
     }
     printf("%lld\n",ans-op);
->>>>>>> 4097e4d11d8b27552c4ceb073d585b6872807688
   }
   return 0;
 }

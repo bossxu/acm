@@ -1,17 +1,25 @@
 \begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{\PYGZlt{}\PYGZlt{}\PYGZlt{}\PYGZlt{}\PYGZlt{}\PYGZlt{}\PYGZlt{}} \PYG{n}{HEAD}
+\PYG{c+c1}{// 线性基的板子，线性基就是在一堆数中，我最少可以选取多少个数}
+\PYG{c+c1}{//作为基地去表示出所有的数}
+\PYG{k}{struct} \PYG{n}{Linear\PYGZus{}Basis}
+\PYG{p}{\PYGZob{}}
+    \PYG{n}{LL} \PYG{n}{b}\PYG{p}{[}\PYG{l+m+mi}{63}\PYG{p}{],}\PYG{n}{nb}\PYG{p}{[}\PYG{l+m+mi}{63}\PYG{p}{],}\PYG{n}{tot}\PYG{p}{;}
+\PYG{o}{=======}
 \PYG{c+c1}{// 线性基 ，具体多少东西就不细写了}
 \PYG{c+c1}{// 可以理解为用一些向量通过加减乘除来表示其他所有的点。}
 \PYG{k}{struct} \PYG{n}{Linear\PYGZus{}Basis}
 \PYG{p}{\PYGZob{}}
     \PYG{n}{LL} \PYG{n}{b}\PYG{p}{[}\PYG{l+m+mi}{63}\PYG{p}{],}\PYG{n}{nb}\PYG{p}{[}\PYG{l+m+mi}{63}\PYG{p}{],}\PYG{n}{tot}\PYG{p}{;}
 
-    \PYG{k+kt}{void} \PYG{n+nf}{init}\PYG{p}{()}
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}\PYGZgt{}\PYGZgt{}\PYGZgt{}\PYGZgt{}} \PYG{l+m+mi}{34}\PYG{n}{ebe2c4834c6ac7a1885daef961968cf543c62c}
+    \PYG{k+kt}{void} \PYG{n}{init}\PYG{p}{()}
     \PYG{p}{\PYGZob{}}
         \PYG{n}{tot}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;}
         \PYG{n}{memset}\PYG{p}{(}\PYG{n}{b}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{k}{sizeof}\PYG{p}{(}\PYG{n}{b}\PYG{p}{));}
         \PYG{n}{memset}\PYG{p}{(}\PYG{n}{nb}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{k}{sizeof}\PYG{p}{(}\PYG{n}{nb}\PYG{p}{));}
     \PYG{p}{\PYGZcb{}}
-    \PYG{k+kt}{bool} \PYG{n+nf}{ins}\PYG{p}{(}\PYG{n}{LL} \PYG{n}{x}\PYG{p}{)}
+    \PYG{k+kt}{bool} \PYG{n}{ins}\PYG{p}{(}\PYG{n}{LL} \PYG{n}{x}\PYG{p}{)}
     \PYG{p}{\PYGZob{}}
         \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i}\PYG{o}{=}\PYG{l+m+mi}{62}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZgt{}=}\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{p}{)}
             \PYG{k}{if} \PYG{p}{(}\PYG{n}{x}\PYG{o}{\PYGZam{}}\PYG{p}{(}\PYG{l+m+mi}{1LL}\PYG{o}{\PYGZlt{}\PYGZlt{}}\PYG{n}{i}\PYG{p}{))}
@@ -21,21 +29,21 @@
             \PYG{p}{\PYGZcb{}}
         \PYG{k}{return} \PYG{n}{x}\PYG{o}{\PYGZgt{}}\PYG{l+m+mi}{0}\PYG{p}{;}
     \PYG{p}{\PYGZcb{}}
-    \PYG{n}{LL} \PYG{n+nf}{Max}\PYG{p}{(}\PYG{n}{LL} \PYG{n}{x}\PYG{p}{)}
+    \PYG{n}{LL} \PYG{n}{Max}\PYG{p}{(}\PYG{n}{LL} \PYG{n}{x}\PYG{p}{)}
     \PYG{p}{\PYGZob{}}
         \PYG{n}{LL} \PYG{n}{res}\PYG{o}{=}\PYG{n}{x}\PYG{p}{;}
         \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i}\PYG{o}{=}\PYG{l+m+mi}{62}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZgt{}=}\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{p}{)}
             \PYG{n}{res}\PYG{o}{=}\PYG{n}{max}\PYG{p}{(}\PYG{n}{res}\PYG{p}{,}\PYG{n}{res}\PYG{o}{\PYGZca{}}\PYG{n}{b}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]);}
         \PYG{k}{return} \PYG{n}{res}\PYG{p}{;}
     \PYG{p}{\PYGZcb{}}
-    \PYG{n}{LL} \PYG{n+nf}{Min}\PYG{p}{(}\PYG{n}{LL} \PYG{n}{x}\PYG{p}{)}
+    \PYG{n}{LL} \PYG{n}{Min}\PYG{p}{(}\PYG{n}{LL} \PYG{n}{x}\PYG{p}{)}
     \PYG{p}{\PYGZob{}}
         \PYG{n}{LL} \PYG{n}{res}\PYG{o}{=}\PYG{n}{x}\PYG{p}{;}
         \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZlt{}=}\PYG{l+m+mi}{62}\PYG{p}{;}\PYG{n}{i}\PYG{o}{++}\PYG{p}{)}
             \PYG{k}{if} \PYG{p}{(}\PYG{n}{b}\PYG{p}{[}\PYG{n}{i}\PYG{p}{])} \PYG{n}{res}\PYG{o}{\PYGZca{}=}\PYG{n}{b}\PYG{p}{[}\PYG{n}{i}\PYG{p}{];}
         \PYG{k}{return} \PYG{n}{res}\PYG{p}{;}
     \PYG{p}{\PYGZcb{}}
-    \PYG{k+kt}{void} \PYG{n+nf}{rebuild}\PYG{p}{()}
+    \PYG{k+kt}{void} \PYG{n}{rebuild}\PYG{p}{()}
     \PYG{p}{\PYGZob{}}
         \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i}\PYG{o}{=}\PYG{l+m+mi}{62}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZgt{}=}\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{p}{)}
             \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{j}\PYG{o}{=}\PYG{n}{i}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{n}{j}\PYG{o}{\PYGZgt{}=}\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{n}{j}\PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{p}{)}
@@ -43,13 +51,16 @@
         \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZlt{}=}\PYG{l+m+mi}{62}\PYG{p}{;}\PYG{n}{i}\PYG{o}{++}\PYG{p}{)}
             \PYG{k}{if} \PYG{p}{(}\PYG{n}{b}\PYG{p}{[}\PYG{n}{i}\PYG{p}{])} \PYG{n}{nb}\PYG{p}{[}\PYG{n}{tot}\PYG{o}{++}\PYG{p}{]}\PYG{o}{=}\PYG{n}{b}\PYG{p}{[}\PYG{n}{i}\PYG{p}{];}
     \PYG{p}{\PYGZcb{}}
-    \PYG{n}{LL} \PYG{n+nf}{Kth\PYGZus{}Max}\PYG{p}{(}\PYG{n}{LL} \PYG{n}{k}\PYG{p}{)}
+    \PYG{n}{LL} \PYG{n}{Kth\PYGZus{}Max}\PYG{p}{(}\PYG{n}{LL} \PYG{n}{k}\PYG{p}{)}
     \PYG{p}{\PYGZob{}}
         \PYG{n}{LL} \PYG{n}{res}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;}
         \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i}\PYG{o}{=}\PYG{l+m+mi}{62}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZgt{}=}\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{p}{)}
             \PYG{k}{if} \PYG{p}{(}\PYG{n}{k}\PYG{o}{\PYGZam{}}\PYG{p}{(}\PYG{l+m+mi}{1LL}\PYG{o}{\PYGZlt{}\PYGZlt{}}\PYG{n}{i}\PYG{p}{))} \PYG{n}{res}\PYG{o}{\PYGZca{}=}\PYG{n}{nb}\PYG{p}{[}\PYG{n}{i}\PYG{p}{];}
         \PYG{k}{return} \PYG{n}{res}\PYG{p}{;}
     \PYG{p}{\PYGZcb{}}
+\PYG{o}{\PYGZlt{}\PYGZlt{}\PYGZlt{}\PYGZlt{}\PYGZlt{}\PYGZlt{}\PYGZlt{}} \PYG{n}{HEAD}
+\PYG{o}{=======}
 
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}\PYGZgt{}\PYGZgt{}\PYGZgt{}\PYGZgt{}} \PYG{l+m+mi}{34}\PYG{n}{ebe2c4834c6ac7a1885daef961968cf543c62c}
 \PYG{p}{\PYGZcb{}} \PYG{n}{LB}\PYG{p}{;}
 \end{Verbatim}

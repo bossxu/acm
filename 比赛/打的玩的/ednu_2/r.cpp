@@ -7,16 +7,25 @@ using namespace std;
 #define loge exp(1)
 #define ll long long
 #define pb push_back
-#define c_fuck(x) cout<<"Case "<<x<<":"
-#define debug cout<<"is there bug?"<<endl
+#define ios_close ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL)
 const int mod = 1e9+7;
 const double eps = 1e-6;
 
+
 int main()
 {
-  std::ios::sync_with_stdio(false);
-  cin.tie(0);
-  cout.tie(0);
-  
+  int a,b,c,d;
+  while(cin>>a>>b>>c>>d)
+  {
+    a+=b+c;
+    if(a>=d)
+    {
+      cout<<"Pooh out"<<endl;
+    }
+    else
+    {
+      cout<<"Stuck in the howse forever"<<endl;
+    }
+  }
   return 0;
 }

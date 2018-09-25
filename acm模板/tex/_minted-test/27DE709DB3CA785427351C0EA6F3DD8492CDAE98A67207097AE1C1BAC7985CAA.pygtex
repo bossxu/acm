@@ -13,7 +13,9 @@
         \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{long} \PYG{k+kt}{long} \PYG{n}{j}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{n}{j}\PYG{o}{\PYGZlt{}}\PYG{n}{cnt}\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{n}{su}\PYG{p}{[}\PYG{n}{j}\PYG{p}{]}\PYG{o}{*}\PYG{n}{i}\PYG{o}{\PYGZlt{}}\PYG{n}{MAX}\PYG{p}{;}\PYG{n}{j}\PYG{o}{++}\PYG{p}{)}
         \PYG{p}{\PYGZob{}}
             \PYG{n}{isprime}\PYG{p}{[}\PYG{n}{su}\PYG{p}{[}\PYG{n}{j}\PYG{p}{]}\PYG{o}{*}\PYG{n}{i}\PYG{p}{]}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{c+c1}{//筛掉小于等于i的素数和i的积构成的合数}
+            \PYG{k}{if} \PYG{p}{(}\PYG{o}{!}\PYG{p}{(}\PYG{n}{i}\PYG{o}{\PYGZpc{}}\PYG{n}{isprime}\PYG{p}{[}\PYG{n}{j}\PYG{p}{]))}
+                \PYG{k}{break}\PYG{p}{;}
         \PYG{p}{\PYGZcb{}}
     \PYG{p}{\PYGZcb{}}
-\PYG{p}{\PYGZcb{}}  
+\PYG{p}{\PYGZcb{}}
 \end{Verbatim}

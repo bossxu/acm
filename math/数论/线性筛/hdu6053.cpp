@@ -74,12 +74,12 @@ ll quick(ll a,ll b)
   }
   return res;
 }
-ll cal(int k)
+ll cal(int big,int k)
 {
   ll op = 1;
-  for(int i = k;i<=big;i+=k)
+  for(int i = k,l = 1;i<=big;i+=k,l++)
   {
-    op = (op*quick(i/k,getsum(i+k-1)-getsum(i-1)))%mod;
+    op = op*quick(l,(getsum(i+k-1)-getsum(i)));
   }
   return op;
 }

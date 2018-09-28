@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.7.31)  10 SEP 2018 12:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.7.31)  22 SEP 2018 16:12
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1345,7 +1345,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [22])
-(./_minted-test/B645681161FF74517E74257D8A4A3D62BFB1DC4D8289938BD95D5E60BB53360
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/D277CDCC21780021303132CC30E2D7CCBFB1DC4D8289938BD95D5E60BB533601.pygte
+x ../scoure/math/linner_base.cpp)...executed.
+
+
+(./_minted-test/D277CDCC21780021303132CC30E2D7CCBFB1DC4D8289938BD95D5E60BB53360
 1.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1353,7 +1358,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23]
+[23])
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-test/27DE709DB3CA785427351C0EA6F3DD8492CDAE98A67207097AE1C1BAC7985CAA.pygte
+x ../scoure/math/shai.cpp)...executed.
+
+
+(./_minted-test/27DE709DB3CA785427351C0EA6F3DD8492CDAE98A67207097AE1C1BAC7985CA
+A.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 12.05934pt.
@@ -1361,8 +1373,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [24])
-(./_minted-test/E3F2307DFF02E3F05C5A9F5F8AA66B3792CDAE98A67207097AE1C1BAC7985CA
-A.pygtex)
 (./_minted-test/24277664E896D334F18764C7F32D0F0F72DFAC3A8979B2B0AEB6CD4D5FC310F
 6.pygtex
 
@@ -1384,7 +1394,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [26])
 (./_minted-test/1DDEC778A036E0CFFA7A4D1DE7DB9DA4B3F33F45299876B849F898072FB99E9
-5.pygtex
+5.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 241--244
+
+ []
+
+
+(./_minted-test/BC904211F0EFBAE84E2E53AAF73C13C038F6AD22BCC5FA7B45D7B6D6D695EED
+1.pygtex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 12.05934pt.
@@ -1392,13 +1409,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [27])
-Underfull \hbox (badness 10000) in paragraph at lines 241--244
-
- []
-
-
-(./_minted-test/BC904211F0EFBAE84E2E53AAF73C13C038F6AD22BCC5FA7B45D7B6D6D695EED
-1.pygtex)
 (./_minted-test/F2BEBF65E60D22111DC87E4A39AFF214AE3A7020A22C2D2EC1BF66481AE8474
 D.pygtex
 
@@ -1604,7 +1614,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[45] 
+[45]
+runsystem(rm _minted-test/B645681161FF74517E74257D8A4A3D62BFB1DC4D8289938BD95D5
+E60BB533601.pygtex)...executed.
+
+runsystem(rm _minted-test/E3F2307DFF02E3F05C5A9F5F8AA66B3792CDAE98A67207097AE1C
+1BAC7985CAA.pygtex)...executed.
+
+ 
 AED: lastpage setting LastPage
 
 ! PACKAGE INPUTENC ERROR: UNICODE CHAR Å˜˜ (U+5E38)
@@ -1782,10 +1799,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 11932 strings out of 492982
- 191377 string characters out of 6134896
+ 11929 strings out of 492982
+ 191428 string characters out of 6134896
  294291 words of memory out of 5000000
- 14818 multiletter control sequences out of 15000+600000
+ 14813 multiletter control sequences out of 15000+600000
  52212 words of font info for 170 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,12n,45p,1139b,2088s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1858,7 +1875,7 @@ m-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb
 ></usr/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf/f
 onts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm
 -super/sftt1000.pfb>
-Output written on test.pdf (48 pages, 2592642 bytes).
+Output written on test.pdf (48 pages, 2590699 bytes).
 PDF statistics:
  623 PDF objects out of 1000 (max. 8388607)
  389 compressed objects within 4 object streams

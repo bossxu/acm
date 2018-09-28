@@ -30,12 +30,12 @@
 \contentsline {subsubsection}{\numberline {5.2.4}伯努力数}{23}
 \contentsline {subsection}{\numberline {5.3}数论}{23}
 \contentsline {subsection}{\numberline {5.4}线性基}{23}
-\contentsline {subsubsection}{\numberline {5.4.1}素数}{25}
+\contentsline {subsubsection}{\numberline {5.4.1}素数}{24}
 \contentsline {subsubsection}{\numberline {5.4.2}梅森素数}{25}
 \contentsline {subsubsection}{\numberline {5.4.3}miller-robin快速判素数}{25}
 \contentsline {subsubsection}{\numberline {5.4.4}欧几里得}{26}
 \contentsline {subsubsection}{\numberline {5.4.5}乘法逆元}{27}
-\contentsline {subsubsection}{\numberline {5.4.6}欧拉函数}{28}
+\contentsline {subsubsection}{\numberline {5.4.6}欧拉函数}{27}
 \contentsline {subsubsection}{\numberline {5.4.7}莫比乌斯函数}{28}
 \contentsline {subsubsection}{\numberline {5.4.8}二项式反演}{29}
 \contentsline {subsection}{\numberline {5.5}博弈}{30}

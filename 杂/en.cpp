@@ -1,62 +1,111 @@
-/*
-预处理出洗衣时间最早的l件衣服
-最迟洗完的衣服用最快的烘干机
-*/
-
 #include<bits/stdc++.h>
 #define ll long long
 using namespace std;
-typedef pair<ll,int>P;
-const int inf=0x3f3f3f3f;
-// set<P>mp;
-// set<P>::iterator it;
-vector<ll>vec;
-const int maxn=1e5+100;
-int d[maxn];
-int w[maxn];
-int l,n,m;
 
+
+const int maxn=1e5+100;
+int cnt;
+int root[maxn];
+int vis[maxn];
+vector<int>d[maxn];
+int nex[maxn*300][2];
+int v[maxn*300];
+int newnode()
+{
+  for(int i=0;i<2;i++)
+   nex[cnt][i]=-1;
+ v[cnt++]=0x3f3f3f3f;
+  return cnt-1;
+}
+void insert(int x)
+{
+for(int j=0;j<d[x].size();j++)
+{
+  // cout<<"*"<<d[x][j]<<endl;
+  int now=root[d[x][j]];
+  v[now]=min(v[now],x);
+  for(int i=20;i>=0;i--)
+  {
+    int id=((x>>i)&1);
+    if(nex[now][id]==-1) nex[now][id]=newnode();
+    now=nex[now][id];
+    v[now]=min(v[now],x);
+  }
+}
+}
+ll query(int bian,ll ma,ll x)
+{
+  // cout<<bian<<" "<<ma<<" "<<x<<endl;
+  int now=root[bian];
+  ll val=0;
+  for(int i=20;i>=0;i--)
+  {
+    int id=((x>>i)&1);
+    id^=1;
+    // cout<<nex[now][id]<<" "<<nex[now][id^1]<<endl;
+    if(nex[now][id]!=-1&&v[nex[now][id]]<=ma)
+       {
+         now=nex[now][id];
+         val+=(id<<i);
+       }
+    else if(nex[now][id^1]!=-1&&v[nex[now][id^1]]<=ma)
+    {
+       now=nex[now][id^1];
+       val+=((id^1)<<i);
+    }
+    else return -1;
+    // cout<<i<<" "<<val<<endl;
+  }
+  return val;
+}
+void Init()
+{
+  for(int i=1;i<maxn;i++)
+  {
+      for(int j=i;j<maxn;j+=i)
+        {
+          d[j].push_back(i);
+        }
+    }
+
+  cnt=0;
+  for(int i=1;i<maxn;i++)
+   root[i]=newnode();
+}
 
 int main()
 {
-  int t;
-  scanf("%d",&t);int cas=0;
-  while(t--)
+    // freopen("in.txt","r",stdin);
+    // freopen("out.txt","w",stdout);
+  int q;
+  while(scanf("%d",&q)==1)
   {
-     ll sum=0;
-     int x1=inf,x2=inf;
-      scanf("%d%d%d",&l,&n,&m);
-      for(int i=1;i<=n;i++)
-       scanf("%d",&w[i]),x1=min(x1,w[i]);
-      for(int i=1;i<=m;i++)
-        scanf("%d",&d[i]),x2=min(x2,d[i]);
-      sum=1LL*l*(x1+x2);
-
-      priority_queue<P,vector<P>,greater<P> > que;
-     vec.clear();
-      for(int i=1;i<=n;i++)
-       que.push(make_pair(w[i],w[i]));
-        int k=0;
-       while(k<l)
-       {
-           P t=que.top();
-           vec.push_back(t.first);
-           k++;
-           que.pop();
-           que.push(make_pair(t.first+t.second,t.second));
-       }
-      priority_queue<P,vector<P>,greater<P> >q2;
-    for(int i=1;i<=m;i++)
-      q2.push(make_pair(d[i],d[i]));
-      ll ans=0;
-     for(int i=l-1;i>=0;i--)
-     {
-       P t=q2.top();
-       q2.pop();
-       ans=max(ans,t.first+vec[i]);
-       q2.push(make_pair(t.first+t.second,t.second));
-     }
-       printf("Case #%d: %lld\n",++cas,ans);
+  Init();
+ memset(vis,0,sizeof(vis));
+  for(int i=1;i<=q;i++)
+  {
+    int op;
+    scanf("%d",&op);
+  //  cout<<op<<endl;
+    if(op==1)
+    {
+      int u;
+      scanf("%d",&u);
+      if(vis[u]) continue;
+      vis[u]=1;
+     insert(u);
+    }
+    else
+    {
+      int x,k,s;
+      scanf("%d%d%d",&x,&k,&s);
+      if(x%k)
+        {
+          printf("-1\n");
+          continue;
+        }
+      printf("%lld\n",query(k,s-x,x));
+    }
   }
-
+}
 }

@@ -21,11 +21,12 @@ struct node
   double val;
 }Q[N];
 double dp[N];
+int n,r;
 bool check(double st)
 {
   for(int i = 1;i<=n;i++)
   {
-
+    Q[i].val = Q[i].a-Q[i].b*st;
   }
 }
 int cmp(node k,node p)
@@ -34,6 +35,8 @@ int cmp(node k,node p)
   {
     return k.r<p.r;
   }
+  else
+  return k.l<p.l;
 }
 int main()
 {
@@ -41,7 +44,6 @@ int main()
   int t;cin>>t;
   while(t--)
   {
-    int n,r;
     cin>>n>>r;
     double li = 0,ri = 1000;
     for(int i = 1;i<=n;i++)

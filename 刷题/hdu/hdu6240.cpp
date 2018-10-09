@@ -20,29 +20,13 @@ struct node
   double a,b;
   double val;
 }Q[N];
+double dp[N];
 int n,r;
-double tree[N];
-int lowbit(int t)
-{
-  return t&(-t);
-}
-void add(int x,double y)
-{
-  for(int i=x;i<=r;i+=lowbit(i))
-    tree[i]=max(tree[i],y);
-}
-double getmax(int x)
-{
-  double ans=0;
-  for(int i=x;i>0;i-=lowbit(i))
-    ans = max(ans,tree[i]);
-  return ans;
-}
 bool check(double st)
 {
   for(int i = 1;i<=n;i++)
   {
-    Q[i].val = Q[i].a - Q[i].b*st;
+    Q[i].val = Q[i].a-Q[i].b*st;
   }
   clr(tree,-INF);
   tree[0] = 0;
@@ -62,6 +46,7 @@ int cmp(node k,node p)
   {
     return k.r<p.r;
   }
+  else
   return k.l<p.l;
 }
 int main()

@@ -85,6 +85,9 @@
 \subsection{莫队算法}
 处理的东西主要是在于区间，这里的区间不是单纯区间，而是你可以向上向下走的问题，并且有O(1)的递推式就可以走，这里的关键在于玄学把复杂度降到$N^{\frac{3}{2}}$然后需要处理的就是你走所带来的一个权值变化，这个是关键的问题
 \inputminted{c++}{../scoure/date/mudui.cpp}
+\subsection{点分治}
+现在还不是很熟，所以放了一道例题，就是给你这个树让你去算这棵树上点对的距离小于等于k。
+\inputminted{c++}{../scoure/date/dian_fen.cpp}
 \subsection{树状数组}
 适用于的方面是，单点更新，多次查询。
 \inputminted{c++}{../scoure/date/treevector.cpp}
@@ -214,7 +217,9 @@ $\sum_{i=1}^n i^k = \frac{1}{k+1}*\sum_{i = 1}^{k+1}C_{k+1}^i*B_{k+1-i}*(n+1)^i$
 都已经经过验证，但是不好说对吧。简单题我们可以通过
 一些模板直接得出答案，但是怎么说，这些对于难题
 估计只能算工具，重要的是如何转换。
-\subsection{线性基}
+\subsubsection{高斯消元}
+\inputminted{c++}{../scoure/math/guess.cpp}
+\subsubsection{线性基}
 \inputminted{c++}{../scoure/math/linner_base.cpp}
 \subsubsection{素数}
 素数筛法，线性筛

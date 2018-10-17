@@ -35,7 +35,8 @@ ll solve()
   p[0] = q[k+3] = 1;
   for(int i = 1;i<=k+2;i++) p[i] = p[i-1]*(n-i)%mod;
   for(int i = k+2;i>=1;i--) q[i] = q[i+1]*(n-i)%mod;
-  for(int i = 1;i<=k+2;i++) ans+=((k-i+2)%2?(-1):1)*f[i]*(p[i-1]*q[i+1]%mod)%mod *quick(dp[i-1]*dp[k+2-i]%mod,mod-2)%mod;
+  for(int i = 1;i<=k+2;i++)
+  ans+=((k-i+2)%2?(-1):1)*f[i]*(p[i-1]*q[i+1]%mod)%mod *quick(dp[i-1]*dp[k+2-i]%mod,mod-2)%mod;
   return (ans%mod+mod)%mod;
 }
 int main()

@@ -1,111 +1,104 @@
 #include<bits/stdc++.h>
-#define ll long long
 using namespace std;
-
-
-const int maxn=1e5+100;
-int cnt;
-int root[maxn];
-int vis[maxn];
-vector<int>d[maxn];
-int nex[maxn*300][2];
-int v[maxn*300];
-int newnode()
+char yuan[]={'a','e','i','o','u'};
+int isyuan(char c)
 {
-  for(int i=0;i<2;i++)
-   nex[cnt][i]=-1;
- v[cnt++]=0x3f3f3f3f;
-  return cnt-1;
-}
-void insert(int x)
-{
-for(int j=0;j<d[x].size();j++)
-{
-  // cout<<"*"<<d[x][j]<<endl;
-  int now=root[d[x][j]];
-  v[now]=min(v[now],x);
-  for(int i=20;i>=0;i--)
+  for(int i=0;i<5;i++)
   {
-    int id=((x>>i)&1);
-    if(nex[now][id]==-1) nex[now][id]=newnode();
-    now=nex[now][id];
-    v[now]=min(v[now],x);
+    if(c==yuan[i])
+     return 1;
   }
+  return 0;
 }
-}
-ll query(int bian,ll ma,ll x)
+int x,y;
+const int maxn=1e6+100;
+char s[maxn];
+int dp[maxn][2];
+int check()
 {
-  // cout<<bian<<" "<<ma<<" "<<x<<endl;
-  int now=root[bian];
-  ll val=0;
-  for(int i=20;i>=0;i--)
+  int len=strlen(s);
+  dp[0][0]=dp[0][1]=0;
+for(int i=1;i<=len;i++)
+{
+  if(s[i-1]=='?')
   {
-    int id=((x>>i)&1);
-    id^=1;
-    // cout<<nex[now][id]<<" "<<nex[now][id^1]<<endl;
-    if(nex[now][id]!=-1&&v[nex[now][id]]<=ma)
-       {
-         now=nex[now][id];
-         val+=(id<<i);
-       }
-    else if(nex[now][id^1]!=-1&&v[nex[now][id^1]]<=ma)
+    if(dp[i-1][1]<x)
     {
-       now=nex[now][id^1];
-       val+=((id^1)<<i);
+      dp[i][1]=dp[i-1][1]+1;
+      dp[i][0]=1;
     }
-    else return -1;
-    // cout<<i<<" "<<val<<endl;
+    if(dp[i-1][0]<y)
+    {
+      dp[i][0]=min(dp[i][0],dp[i-1][0]+1);
+      dp[i][1]=1;
+    }
   }
-  return val;
-}
-void Init()
-{
-  for(int i=1;i<maxn;i++)
+  else if(s[i-1]=='1')
   {
-      for(int j=i;j<maxn;j+=i)
-        {
-          d[j].push_back(i);
-        }
-    }
-
-  cnt=0;
-  for(int i=1;i<maxn;i++)
-   root[i]=newnode();
+    if(dp[i-1][1]<x)
+       dp[i][1]=dp[i-1][1]+1;
+      if(dp[i-1][0]<y)
+         dp[i][1]=1;
+  }
+  else if(s[i-1]=='0')
+  {
+    if(dp[i-1][0]<y)
+      dp[i][0]=dp[i-1][0]+1;
+    if(dp[i-1][1]<x)
+      dp[i][0]=1;
+  }
+    if(dp[i][1]>=x&&dp[i][0]>=y) return 0;
 }
-
+return 1;
+}
 int main()
 {
-    // freopen("in.txt","r",stdin);
-    // freopen("out.txt","w",stdout);
-  int q;
-  while(scanf("%d",&q)==1)
+  int t;
+  scanf("%d",&t);
+  int cas=0;
+  while(t--)
   {
-  Init();
- memset(vis,0,sizeof(vis));
-  for(int i=1;i<=q;i++)
-  {
-    int op;
-    scanf("%d",&op);
-  //  cout<<op<<endl;
-    if(op==1)
+    memset(dp,0x3f,sizeof(dp));
+    scanf("%s",s);
+    scanf("%d%d",&x,&y);
+    int f1=0;int f2=0;
+    int len=strlen(s);
+    int maa=0;int mab=0;
+    int sa=0;int sb=0;
+    for(int i=0;i<len;i++)
     {
-      int u;
-      scanf("%d",&u);
-      if(vis[u]) continue;
-      vis[u]=1;
-     insert(u);
+      if(isyuan(s[i]))
+      {
+        s[i]='1';
+        sa++;
+        maa=max(sa,maa);
+        sb=0;
+      }
+      else if(s[i]!='?')
+      {
+        s[i]='0';
+        sb++;
+        sa=0;
+        mab=max(sb,mab);
+      }
+      else if(s[i]=='?')
+      {
+        sa++;
+        sb++;
+        maa=max(maa,sa);
+        mab=max(mab,sb);
+      }
     }
-    else
-    {
-      int x,k,s;
-      scanf("%d%d%d",&x,&k,&s);
-      if(x%k)
-        {
-          printf("-1\n");
-          continue;
-        }
-      printf("%lld\n",query(k,s-x,x));
-    }
+    if(maa>=x||mab>=y)
+      f1=1;
+    if(check()) f2=1;
+    printf("Case #%d: ",++cas);
+    if(f1&&f2)
+     printf("SURPRISE\n");
+    else if(f1)
+      printf("DISLIKE\n");
+    else if(f2)
+     printf("LIKE\n");
+
   }
-}
 }

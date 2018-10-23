@@ -9,6 +9,7 @@ const double pi = acos(-1);
 const int INF = 0x3f3f3f3f;
 double shu[3][1005][1005];
 double dp[1005][1005];
+// wa 了一次 ，少了个特判一定走到他自己的情况
 int main()
 {
   int r,c;
@@ -29,10 +30,17 @@ int main()
     {
       for(int j = c;j>=1;j--)
       {
-        dp[i][j] = (dp[i][j+1]*shu[1][i][j]+dp[i+1][j]*shu[2][i][j]+1)/(1-shu[0][i][j]);
+        if(i == r && j == c) continue;
+        if(shu[0][i][j] == 1.00) continue;
+        dp[i][j] =  1.0*(dp[i][j+1]*shu[1][i][j]+dp[i+1][j]*shu[2][i][j]+2)/(1-shu[0][i][j]);
       }
     }
-    cout<<dp[1][1]<<endl;
+    printf("%.3lf\n",dp[1][1]);
   }
   return 0;
 }
+/*
+2 2
+0.00 0.50 0.50    0.50 0.00 0.50
+0.50 0.50 0.00    1.00 0.00 0.00
+*/

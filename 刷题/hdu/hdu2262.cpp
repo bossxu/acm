@@ -1,23 +1,3 @@
-<<<<<<< HEAD
-#include<bits/stdc++.h>
-using namespace std;
-#define ll long long
-#define clr(shu,x) memset(shu,x,sizeof(shu))
-const int mod = 1e9+7;
-const double eps = 1e-6;
-const double pi = acos(-1);
-#define pb push_back
-const int INF = 0x3f3f3f3f;
-double dp[30][30];
-char shu[30][30];
-// 看到这个题，第一感觉是建立一张225大小的方程组
-// 跑高斯消元。
-int main()
-{
-  int n,m;
-  while(scanf("%d%d",&n,&m) == 2)
-  {
-=======
 //langman
 #include<bits/stdc++.h>
 using namespace std;
@@ -80,14 +60,11 @@ int main()
     clr(vis,0);
     int a,b;
     int x,y;
->>>>>>> a4a374d292db75457868c84643d198b706442924
     for(int i = 1;i<=n;i++)
     {
       for(int j = 1;j<=m;j++)
       {
         scanf("%c",&shu[i][j]);
-<<<<<<< HEAD
-=======
         if(shu[i][j] == '$') b = cal(i,j);
         if(shu[i][j] == '@') a = cal(i,j),x = i,y = j;
       }
@@ -113,7 +90,6 @@ int main()
         if(check(i,j+1)) op[cal(i,j)][cal(i,j+1)] = -1.0/tot;
         if(check(i-1,j)) op[cal(i,j)][cal(i-1,j)] = -1.0/tot;
         if(check(i,j-1)) op[cal(i,j)][cal(i,j-1)] = -1.0/tot;
->>>>>>> a4a374d292db75457868c84643d198b706442924
       }
     }
 

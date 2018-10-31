@@ -1,111 +1,38 @@
 #include<bits/stdc++.h>
-#define ll long long
 using namespace std;
-
-
-const int maxn=1e5+100;
-int cnt;
-int root[maxn];
-int vis[maxn];
-vector<int>d[maxn];
-int nex[maxn*300][2];
-int v[maxn*300];
-int newnode()
-{
-  for(int i=0;i<2;i++)
-   nex[cnt][i]=-1;
- v[cnt++]=0x3f3f3f3f;
-  return cnt-1;
-}
-void insert(int x)
-{
-for(int j=0;j<d[x].size();j++)
-{
-  // cout<<"*"<<d[x][j]<<endl;
-  int now=root[d[x][j]];
-  v[now]=min(v[now],x);
-  for(int i=20;i>=0;i--)
-  {
-    int id=((x>>i)&1);
-    if(nex[now][id]==-1) nex[now][id]=newnode();
-    now=nex[now][id];
-    v[now]=min(v[now],x);
-  }
-}
-}
-ll query(int bian,ll ma,ll x)
-{
-  // cout<<bian<<" "<<ma<<" "<<x<<endl;
-  int now=root[bian];
-  ll val=0;
-  for(int i=20;i>=0;i--)
-  {
-    int id=((x>>i)&1);
-    id^=1;
-    // cout<<nex[now][id]<<" "<<nex[now][id^1]<<endl;
-    if(nex[now][id]!=-1&&v[nex[now][id]]<=ma)
-       {
-         now=nex[now][id];
-         val+=(id<<i);
-       }
-    else if(nex[now][id^1]!=-1&&v[nex[now][id^1]]<=ma)
-    {
-       now=nex[now][id^1];
-       val+=((id^1)<<i);
-    }
-    else return -1;
-    // cout<<i<<" "<<val<<endl;
-  }
-  return val;
-}
-void Init()
-{
-  for(int i=1;i<maxn;i++)
-  {
-      for(int j=i;j<maxn;j+=i)
-        {
-          d[j].push_back(i);
-        }
-    }
-
-  cnt=0;
-  for(int i=1;i<maxn;i++)
-   root[i]=newnode();
-}
-
+const int maxn=1e5+10;
+map<int,int>dp[maxn];
+map<int,int>::iterator it,it2;
 int main()
 {
-    // freopen("in.txt","r",stdin);
-    // freopen("out.txt","w",stdout);
-  int q;
-  while(scanf("%d",&q)==1)
+  int n,m;
+  while(cin>>n>>m)
   {
-  Init();
- memset(vis,0,sizeof(vis));
-  for(int i=1;i<=q;i++)
-  {
-    int op;
-    scanf("%d",&op);
-  //  cout<<op<<endl;
-    if(op==1)
+    int ans=0;
+    for(int i=1;i<=m;i++)
     {
-      int u;
-      scanf("%d",&u);
-      if(vis[u]) continue;
-      vis[u]=1;
-     insert(u);
+      int a,b,w;
+      cin>>a>>b>>w;
+      dp[a][-1]=0;dp[b][-1]=0;
+      it=dp[a].lower_bound(w);
+       it--;
+     it2=dp[b].upper_bound(w);
+     it2--;
+      int cnt=it->second+1;
+      //if(it2->second>cnt) continue;
+      if(it2->second>=cnt) continue;
+      dp[b][w]=cnt;
+      ans=max(ans,cnt);
+      it2=dp[b].upper_bound(w);
+      // cout<<a<<" "<<b<<" "<<ans<<endl;
+     for(;it2!=dp[b].end();)
+       {
+         // cout<<"*"<<it->first<<" "<<it->second<<endl;
+         if(it2->second<=cnt)
+            it2=dp[b].erase(it2);
+          else break;
+       }
     }
-    else
-    {
-      int x,k,s;
-      scanf("%d%d%d",&x,&k,&s);
-      if(x%k)
-        {
-          printf("-1\n");
-          continue;
-        }
-      printf("%lld\n",query(k,s-x,x));
-    }
+    cout<<ans<<endl;
   }
-}
 }

@@ -1,0 +1,36 @@
+\documentclass[a4paper,13.6pt]{article}
+\usepackage{listings}
+\usepackage{CJKutf8}
+\usepackage{minted}
+\usepackage{picinpar,graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{CJK}
+\usepackage{geometry}
+\author{langman}
+\title{no money for new}
+
+
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+\section{guess}
+东西不多，一道例题
+\inputminted{c++}{../../scoure/other/a.cpp}
+\section{shai}
+欧拉函数前缀和
+\inputminted{c++}{../../scoure/other/b.cpp}
+莫比乌斯函数前缀和
+\inputminted{c++}{../../scoure/other/c.cpp}
+\section{ min25 筛}
+
+$$f(x) = 1 [x == 1]$$
+$$f(x) = x^2+2x-1 [x is prime]$$
+$$f(x) = -3 [x is p^k p is prime]$$
+\inputminted{c++}{../../scoure/other/d.cpp}
+
+\section{meissel lehmer}
+用来算n里面有多少个素数，n可以很大。
+\inputminted{c++}{../../scoure/other/e.cpp}
+
+\end{CJK}
+\end{document}

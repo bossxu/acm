@@ -12,10 +12,10 @@ using namespace std;
 const int mod = 1e9+7;
 const double eps = 1e-6;
 char shu[20][20];
-double dp[230]; // Õâ¸ö±íÊ¾µÄÊÇÏÖÔÚÕâ¸öµãµ½ÖÕµãµÄÆÚÍû
+double dp[230]; // è¿™ä¸ªè¡¨ç¤ºçš„æ˜¯ç°åœ¨è¿™ä¸ªç‚¹åˆ°ç»ˆç‚¹çš„æœŸæœ›
 double op[230][230];
 int n,m;
-int cal(int i,int j)  //Ëã³öÒ»Î¬×ø±ê
+int cal(int i,int j)  //ç®—å‡ºä¸€ç»´åæ ‡
 {
   return i*m+j;
 }
@@ -37,7 +37,7 @@ int num(int i,int j)
 }
 bool tag;
 int flag = 0;
-void dfs(int x,int y) // ÅĞ¿ÉĞĞ
+void dfs(int x,int y) // åˆ¤å¯è¡Œ
 {
   if(shu[x][y] == '$') tag = 1;
   if(Hash[x][y] == -1) Hash[x][y] = flag++;
@@ -82,7 +82,7 @@ void build()
   }
 }
 int var,equ;
-int Gauss()//GaussÏûÔªÇó½â
+int Gauss()//Gaussæ¶ˆå…ƒæ±‚è§£
 {
     var = equ = flag;
     for(int k = 0, col = 0; k < equ && col < var; k++, col++)

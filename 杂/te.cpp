@@ -1,59 +1,60 @@
-#include <bits/stdc++.h>
+#include<WINSOCK2.H>
+#include<stdio.h>
+#include<iostream>
+#include<cstdio>
+#include<string>
 using namespace std;
-
-const int N = 500;
-
-int dp[2][1 << 20];
+#pragma comment(lib, "ws2_32.lib")
 
 int main()
 {
-    int n, m;
-    while(cin >> n >> m){
-    vector<bitset<N> > vec(n);
-    string s;
-    for (int i = 0; i < n; i++)
-    {
-        cin >> s;
-        for (int j = 0; j < m; j++)
-            if (s[j] == '1') vec[i].set(j);
-    }
-    if (m <= 20)
-    {
-        memset(dp, 0xc0, sizeof(dp));
-        dp[0][0] = 0;
-        for (int i = 0; i < n; i++)
-        {
-            memset(dp[i & 1 ^ 1], 0xc0, sizeof(dp[i & 1 ^ 1]));
-            for (int j = 0; j < (1 << m); j++)
-                dp[i & 1 ^ 1][j] = max(dp[i & 1][j ^ (vec[i].to_ulong())] + 1, dp[i & 1][j]);
-        }
-        cout << dp[n & 1][0] << endl;
-    }
-    else
-    {
-        unordered_map<bitset<N>, int> dic;
-        int nn = n / 2;
-        int mm = n - nn;
-        bitset<N> tmp;
-        for (int i = 0; i < (1 << nn); i++)
-        {
-            tmp.reset();
-            for (int j = 0; j < nn; j++)
-                if (i >> j & 1)
-                    tmp ^= vec[j];
-            dic[tmp] = max(dic[tmp], __builtin_popcount(i));
-        }
-        int ans = 0;
-        for (int i = 0; i < (1 << mm); i++)
-        {
-            tmp.reset();
-            for (int j = 0; j < mm; j++)
-                if (i >> j & 1)
-                    tmp ^= vec[nn + j];
-            ans = max(ans, dic[tmp] + __builtin_popcount(i));
-        }
-        cout << ans << endl;
-    }
-  }
-    return 0;
+	WORD sockVersion = MAKEWORD(2, 2);
+	WSADATA data;
+	if (WSAStartup(sockVersion, &data) != 0)
+	{
+		return 0;
+	}
+	while (true) {
+		SOCKET sclient = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+		if (sclient == INVALID_SOCKET)
+		{
+			printf("invalid socket!");
+			return 0;
+		}
+
+		sockaddr_in serAddr;
+		serAddr.sin_family = AF_INET;
+		serAddr.sin_port = htons(8888);
+		serAddr.sin_addr.S_un.S_addr = inet_addr("127.0.0.1");
+		if (connect(sclient, (sockaddr *)&serAddr, sizeof(serAddr)) == SOCKET_ERROR)
+		{  //连接失败
+			printf("connect error !");
+			closesocket(sclient);
+			return 0;
+		}
+
+		string data;
+		cin >> data;
+		const char * sendData;
+		sendData = data.c_str();   //string转const char*
+								   //char * sendData = "你好，TCP服务端，我是客户端\n";
+		send(sclient, sendData, strlen(sendData), 0);
+		//send()用来将数据由指定的socket传给对方主机
+		//int send(int s, const void * msg, int len, unsigned int flags)
+		//s为已建立好连接的socket，msg指向数据内容，len则为数据长度，参数flags一般设0
+		//成功则返回实际传送出去的字符数，失败返回-1，错误原因存于error
+
+		char recData[255];
+		int ret = recv(sclient, recData, 255, 0);
+		if (ret>0) {
+			recData[ret] = 0x00;
+			printf(recData);
+		}
+		closesocket(sclient);
+	}
+
+
+	WSACleanup();
+	return 0;
+
 }

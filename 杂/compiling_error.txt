@@ -1,0 +1,10 @@
+C:\Users\langman\AppData\Local\Temp\ccuXgSSK.o:te.cpp:(.text+0x32): undefined reference to `WSAStartup@8'
+C:\Users\langman\AppData\Local\Temp\ccuXgSSK.o:te.cpp:(.text+0x64): undefined reference to `socket@12'
+C:\Users\langman\AppData\Local\Temp\ccuXgSSK.o:te.cpp:(.text+0x9b): undefined reference to `htons@4'
+C:\Users\langman\AppData\Local\Temp\ccuXgSSK.o:te.cpp:(.text+0xb1): undefined reference to `inet_addr@4'
+C:\Users\langman\AppData\Local\Temp\ccuXgSSK.o:te.cpp:(.text+0xd7): undefined reference to `connect@12'
+C:\Users\langman\AppData\Local\Temp\ccuXgSSK.o:te.cpp:(.text+0xfb): undefined reference to `closesocket@4'
+C:\Users\langman\AppData\Local\Temp\ccuXgSSK.o:te.cpp:(.text+0x164): undefined reference to `send@16'
+C:\Users\langman\AppData\Local\Temp\ccuXgSSK.o:te.cpp:(.text+0x18c): undefined reference to `recv@16'
+C:\Users\langman\AppData\Local\Temp\ccuXgSSK.o:te.cpp:(.text+0x1bf): undefined reference to `closesocket@4'
+collect2.exe: error: ld returned 1 exit status

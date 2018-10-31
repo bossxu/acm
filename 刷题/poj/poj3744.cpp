@@ -17,6 +17,7 @@ const int mod = 1e9+7;
 const double eps = 1e-7;
 vector<ll>q;
 vector<double>ans;
+// 坑点 在于一个是q没排序 一个是输入 ".lf" 输出应该是 ".f" 一个是输出 -0.0000000 
 struct node
 {
   double p[2][2];
@@ -56,21 +57,6 @@ int main()
   int n;
   while(scanf("%d",&n) == 1)
   {
-<<<<<<< HEAD
-    clr(dp,0);
-    clr(op,0);
-    clr(vis,0);
-    int a,b;
-    int x,y;
-    for(int i = 1;i<=n;i++)
-    {
-      for(int j = 1;j<=m;j++)
-      {
-        scanf("%c",&shu[i][j]);
-        if(shu[i][j] == '$') b = cal(i,j);
-        if(shu[i][j] == '@') a = cal(i,j),x = i,y = j;
-      }
-=======
     q.clear();
     double P;
     scanf("%lf",&P);
@@ -78,7 +64,6 @@ int main()
     {
       ll op;scanf("%lld",&op);
       q.pb(op);
->>>>>>> 7c1af85bb6e8bd4ac4461a18ad5bfaa1fa25030c
     }
     sort(q.begin(),q.end());
     double base = 1.0;
@@ -92,20 +77,6 @@ int main()
     double ans = 1;
     for(int i = 0;i<n;i++)
     {
-<<<<<<< HEAD
-      for(int j = 1;j<=m;j++)
-      {
-        int tot = num(i,j);
-        if(shu[i][j] == '$') continue;
-        if(tot == 0)
-        {  dp[cal(i,j)] = INF;  continue; }
-        op[cal(i,j)][cal(i,j)] = 1;
-        if(check(i+1,j)) op[cal(i,j)][cal(i+1,j)] = -1.0/tot;
-        if(check(i,j+1)) op[cal(i,j)][cal(i,j+1)] = -1.0/tot;
-        if(check(i-1,j)) op[cal(i,j)][cal(i-1,j)] = -1.0/tot;
-        if(check(i,j-1)) op[cal(i,j)][cal(i,j-1)] = -1.0/tot;
-      }
-=======
       node a;
       clr(a.p,0);
       a.p[0][0] = P;
@@ -119,7 +90,6 @@ int main()
       //cout<< base << endl;
       pre = base;
       pr = q[i]+1;
->>>>>>> 7c1af85bb6e8bd4ac4461a18ad5bfaa1fa25030c
     }
     if(ans > eps)
     printf("%.7f\n",ans);

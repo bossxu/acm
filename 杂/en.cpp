@@ -1,38 +1,145 @@
 #include<bits/stdc++.h>
 using namespace std;
-const int maxn=1e5+10;
-map<int,int>dp[maxn];
-map<int,int>::iterator it,it2;
+int ff;
+struct trie
+{
+  int next[maxnode][2],fail[maxnode],ed[maxnode];
+  int root,cnt;
+  int newnode()
+  {
+    for(int i=0;i<2;i++)
+     next[cnt][i]=-1;
+     ed[cnt++]=0;
+     return cnt-1;
+  }
+  void init()
+  {
+    ff=0;
+    cnt=0;root=newnode();
+  }
+  void insert(char *buf)
+  {
+    int len=strlen(buf);
+    int flag=1;
+    if(buf[0]=='+')
+     flag=-1;
+     ll x=0;ll now=0;
+     ll range=-1;
+     for(int i=0;i<len;i++)
+     {
+       if(s[i]=='/')
+       {
+         range=0;
+         for(int j=i+1;j<len;j++)
+           range=range*10+s[j]-'0';
+           break;
+       }
+       else if(s[i]=='.')
+       {
+         x=x*1000+now;
+         now=0;
+         continue;
+       }
+       else now=now*10+s[i]-'0';
+     }
+
+     for(int i=31;i>=0;i--)
+     {
+       int id=(x>>i)&1;
+       if(next[now][id]==-1)
+          next[now][id]=newnode();
+
+       now=next[now][id];
+     if(range!=-1&&i<=32-range&&id==0)
+      {
+       next[now][1]=newnode();
+    if(ed[next[now][1]]==0||ed[[now][1]]==flag)
+        ed[next[now][1]]=flag;//must include
+      else ff=1;
+      }
+     }
+     if(ed[now]==0||ed[now]==flag)
+     ed[now]=flag;
+     else ff=1;
+
+    }
+    void build()
+    {
+      queue<int>que;
+      fail[root]=root;
+      for(int i=0;i<2;i++)
+      {
+        if(next[root][i]==-1)
+         next[root][i]=root;
+         else
+         {
+           fail[next[root][i]]=root;
+           que.push(next[root][i]);
+         }
+      }
+      while(!que.empty())
+      {
+        int now=que.front();
+        que.pop();
+        for(int i=0;i<2;i++)
+        {
+          if(next[now][i]==-1)
+           next[now][i]=next[fail[now]][i];
+           else
+           {
+             fail[next[now][i]]=next[fail[now]][i];
+             if(ed[now])
+             {
+               if(ed[next[now][i]]&&ed[next[now][i]]!=ed[now])
+                 ff=1;
+                 else ed[next[now][i]]=ed[now];
+             }
+             que.push(next[now][i]);
+           }
+        }
+      }
+    }
+    int dfs(int pos)
+    {
+     if(ed[pos]==-1) return -1;// bu ke xing
+     int x=0;
+     if(next[pos][1])
+       x=dfs(next[pos][1]);
+     int y=0;
+    if(next[pos][0])
+       y=dfs(next[pos][0]);
+     if(x==-1||y==-1) return -1;
+     if(ed[pos]==1)
+     {
+       vec.push(pos);
+       return 1;
+     }
+     return x+y;
+    }
+    int query()
+    {
+      if(ff) return -1;
+      return dfs(root);
+    }
+}ac;
 int main()
 {
-  int n,m;
-  while(cin>>n>>m)
+  int n;
+  while(scanf("%d",&n)==1)
   {
-    int ans=0;
-    for(int i=1;i<=m;i++)
+    ac.init();
+    for(int i=1;i<=n;i++)
     {
-      int a,b,w;
-      cin>>a>>b>>w;
-      dp[a][-1]=0;dp[b][-1]=0;
-      it=dp[a].lower_bound(w);
-       it--;
-     it2=dp[b].upper_bound(w);
-     it2--;
-      int cnt=it->second+1;
-      //if(it2->second>cnt) continue;
-      if(it2->second>=cnt) continue;
-      dp[b][w]=cnt;
-      ans=max(ans,cnt);
-      it2=dp[b].upper_bound(w);
-      // cout<<a<<" "<<b<<" "<<ans<<endl;
-     for(;it2!=dp[b].end();)
-       {
-         // cout<<"*"<<it->first<<" "<<it->second<<endl;
-         if(it2->second<=cnt)
-            it2=dp[b].erase(it2);
-          else break;
-       }
+      scanf("%s",s);
+      ac.insert(s);
     }
-    cout<<ans<<endl;
+    ac.build();
+    int x=ac.query();
+     if(x==-1) printf("-1\n");
+     else
+     {
+       printf("%d\n",asn);
+     }
+
   }
 }

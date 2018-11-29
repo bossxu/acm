@@ -1,78 +1,120 @@
 #include<bits/stdc++.h>
 #define ll long long
-#define ios_close ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL)
+#define mkr make_pair
 using namespace std;
-const int maxn=1e6+100;
-int a[maxn],b[maxn],c[maxn];
-int f[maxn];
+const int maxnode=75e5;
+int ff;
+vector<int>tmp;
+vector< pair<ll,int> > ans;
+
+struct trie
+{
+  int next[maxnode][2],fail[maxnode],ed[maxnode];
+  int root,cnt;
+  int newnode()
+  {
+    for(int i=0;i<2;i++)
+     next[cnt][i]=-1;
+     ed[cnt++]=0;
+     return cnt-1;
+  }
+  void init()
+  {
+    ff=0;
+    cnt=0;root=newnode();
+  }
+
+  void insert(char *buf)
+  {
+    int len=strlen(buf);
+    int flag=0;
+    if(buf[0]=='+')
+     flag=1;
+     ll x=0;ll now=0;
+     int range=32;
+     for(int i=1;i<len;i++)
+     {
+       if(buf[i]=='/')
+       {
+         range=0;
+         x=(x<<8)+now;
+         for(int j=i+1;j<len;j++)
+           range=range*10+buf[j]-'0';
+           break;
+       }
+       else if(buf[i]=='.')
+       {
+         x=(x<<8)+now;
+         now=0;
+         continue;
+       }
+       else now=now*10+buf[i]-'0';
+     }
+     // cout<<x<<endl;
+      now=0;
+     for(int i=31;i>=32-range;i--)
+     {
+        ed[now]|=1<<flag;
+       int id=(x>>i)&1;
+       if(next[now][id]==-1)
+          next[now][id]=newnode();
+       now=next[now][id];
+     }
+     ed[now]|=1<<flag;
+     tmp.push_back(now);
+    for(int i=0;i<tmp.size();i++)
+     if(ed[tmp[i]]==3)
+      ff=1;
+  }
+  void dfs(int now,int l,ll mask)
+  {
+    if((ed[now]&1)==0) return;
+    if(ed[now]==1)
+    {
+      ans.push_back(mkr(mask,32-l));
+      return;
+    }
+    l--;
+    if(l<0) return ;
+    for(int i=0;i<2;i++)
+    {
+      if(next[now][i]!=-1)
+       dfs(next[now][i],l,mask^((ll)i<<l));
+    }
+  }
+
+}ac;
+void prin(pair<ll,int> p)
+{
+  ll mask=p.first;
+  printf("%lld.%lld.%lld.%lld/%d\n",(mask>>24)&255,(mask>>16)&255,(mask>>8)&255,mask&255,p.second);
+}
+
+char s[maxnode];
 int main()
 {
-    ios_close;
-   int n,m,k;
-   while(cin>>n>>m>>k)
-   {
-     memset(f,0,sizeof(f));
-     for(int i=1;i<=m;i++)
-      cin>>b[i],f[b[i]]=1;
-     for(int i=1;i<=k;i++)
-      cin>>c[i];
-    if(b[1]==0&&m!=0) {
-      cout<<-1<<endl;
-      continue;
-    }
-    b[0]=-1;
-    int jv=0;
-    int cnt=0;
-    for(int i=1;i<=m;i++)
+  int n;
+  while(scanf("%d",&n)==1)
+  {
+    ans.clear();
+    tmp.clear();
+    ac.init();
+    for(int i=1;i<=n;i++)
     {
-      if(b[i]==b[i-1]+1)
+      scanf("%s",s);
+      ac.insert(s);
+    }
+      if(ff==1)
       {
-        cnt++;
+        printf("No\n");
       }
       else
       {
-        jv=max(jv,cnt);
-        cnt=1;
+        ac.dfs(0,32,0);
+       printf("%d\n",ans.size());
+        for(int i=0;i<ans.size();i++)
+         prin(ans[i]);
       }
     }
-    jv=max(jv,cnt);
-    jv++;
-    if(jv>k)
-    {
-      cout<<-1<<endl;
-      continue;
-    }
-    a[0]=0;
-    for(int i=1;i<=n;i++)
-    {
-      if(f[i])
-        a[i]=a[i-1];
-      else a[i]=i;
-      //  cout<<i<<" "<<a[i]<<endl;
-    }
-     ll ans=1e16;
-    for(int i=jv;i<=k;i++)
-    {
-      int now=0;
-      cnt=1;int flag=1;
-      while(now<n)
-      {
-        if(now+i>=n)
-        {
-          //cnt++;
-          break;
-        }
-        // cout<<"*"<<i<<" "<<now<<endl;
-        if(now==a[now+i])
-        { flag=0;break;}
-        now=a[now+i];
-        cnt++;
-      }
-    if(flag)  ans=min(ans,1LL*cnt*c[i]);
-    }
 
-    printf("%lld\n",ans);
-
-   }
-  return 0;
 }
